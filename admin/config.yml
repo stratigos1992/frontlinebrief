@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: stratigos1992/frontlinebrief
+  name: git-gateway
   branch: main
 
 media_folder: "images"
