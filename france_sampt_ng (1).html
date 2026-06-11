@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>France Upgrades Ground-Based Air Defence | Frontline Brief</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+  <style>
+    :root { --navy:#0D1B2A; --steel:#1E3A5F; --cold:#F0F4F8; --amber:#E8A020; --muted:#8A9BB0; --border:rgba(130,155,176,0.2); }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Inter',sans-serif; background:var(--navy); color:var(--cold); line-height:1.7; }
+    nav { background:var(--navy); border-bottom:1px solid var(--border); padding:0 40px; display:flex; align-items:center; justify-content:space-between; height:64px; position:sticky; top:0; z-index:100; }
+    .nav-logo { font-family:'Playfair Display',serif; font-size:18px; font-weight:700; color:var(--cold); text-decoration:none; }
+    .nav-logo span { color:var(--amber); }
+    .back-link { color:var(--amber); text-decoration:none; font-size:13px; font-weight:500; display:flex; align-items:center; gap:6px; }
+
+    /* LANGUAGE SWITCHER */
+    .lang-bar { background:rgba(30,58,95,0.3); border-bottom:1px solid var(--border); padding:12px 40px; display:flex; gap:8px; align-items:center; }
+    .lang-btn { background:transparent; border:1px solid var(--border); color:var(--muted); font-size:12px; font-weight:600; letter-spacing:1px; padding:5px 14px; border-radius:3px; cursor:pointer; transition:all .2s; text-transform:uppercase; }
+    .lang-btn:hover { border-color:var(--amber); color:var(--cold); }
+    .lang-btn.active { background:var(--amber); border-color:var(--amber); color:var(--navy); }
+
+    .article-hero { padding:60px 40px 50px; max-width:860px; margin:0 auto; }
+    .category-tag { display:inline-block; background:var(--amber); color:var(--navy); font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:4px 12px; border-radius:2px; margin-bottom:20px; }
+    .article-title { font-family:'Playfair Display',serif; font-size:36px; font-weight:700; line-height:1.25; margin-bottom:18px; }
+    .article-subtitle { font-size:17px; color:var(--muted); font-weight:300; line-height:1.6; margin-bottom:32px; }
+    .article-meta { display:flex; gap:24px; align-items:center; padding-top:24px; border-top:1px solid var(--border); }
+    .meta-item { display:flex; align-items:center; gap:8px; color:var(--muted); font-size:13px; }
+    .meta-item i { color:var(--amber); }
+
+    .article-body { max-width:860px; margin:0 auto; padding:50px 40px 80px; }
+    .article-body h2 { font-family:'Playfair Display',serif; font-size:24px; font-weight:600; color:var(--cold); margin:44px 0 16px; padding-bottom:10px; border-bottom:1px solid var(--border); }
+    .article-body p { font-size:16px; color:#c8d8e8; line-height:1.85; margin-bottom:20px; }
+    .article-body strong { color:var(--cold); font-weight:600; }
+    .callout { background:rgba(30,58,95,0.4); border-left:3px solid var(--amber); padding:20px 24px; margin:32px 0; border-radius:0 4px 4px 0; }
+    .callout p { margin:0; font-size:15px; color:var(--muted); font-style:italic; }
+    .data-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:32px 0; }
+    .data-card { background:rgba(30,58,95,0.3); border:1px solid var(--border); border-radius:6px; padding:20px; text-align:center; }
+    .data-card .value { font-family:'Playfair Display',serif; font-size:28px; font-weight:700; color:var(--amber); }
+    .data-card .label { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-top:6px; }
+    .tag-list { display:flex; flex-wrap:wrap; gap:8px; margin-top:40px; padding-top:32px; border-top:1px solid var(--border); }
+    .tag { background:rgba(30,58,95,0.4); border:1px solid var(--border); color:var(--muted); font-size:12px; padding:4px 12px; border-radius:20px; }
+
+    .lang-content { display:none; }
+    .lang-content.active { display:block; }
+
+    @media(max-width:768px) {
+      .article-hero,.article-body { padding:32px 20px; }
+      .article-title { font-size:26px; }
+      .data-grid { grid-template-columns:1fr; }
+      .lang-bar { padding:12px 20px; flex-wrap:wrap; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">FRONTLINE <span>BRIEF</span></a>
+  <a href="index.html" class="back-link"><i class="ti ti-arrow-left"></i> Back</a>
+</nav>
+
+<div class="lang-bar">
+  <span style="color:var(--muted);font-size:12px;margin-right:8px;">🌐</span>
+  <button class="lang-btn active" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('el')">ΕΛ</button>
+  <button class="lang-btn" onclick="setLang('fr')">FR</button>
+  <button class="lang-btn" onclick="setLang('da')">DA</button>
+  <button class="lang-btn" onclick="setLang('sv')">SV</button>
+</div>
+
+<!-- ========== ENGLISH ========== -->
+<div class="lang-content active" id="lang-en">
+<div class="article-hero">
+  <span class="category-tag">Defence Policy</span>
+  <h1 class="article-title">France Upgrades Ground-Based Air Defence with Multi-Layer SAMP/T NG</h1>
+  <p class="article-subtitle">Paris orders an integrated ASTER/MICA VL configuration, marking a doctrinal shift toward layered, high-density threat response — positioning France at the forefront of European air defence modernisation.</p>
+  <div class="article-meta">
+    <div class="meta-item"><i class="ti ti-calendar"></i> June 11, 2026</div>
+    <div class="meta-item"><i class="ti ti-map-pin"></i> Paris · Brussels</div>
+    <div class="meta-item"><i class="ti ti-tag"></i> France · MBDA · NATO</div>
+  </div>
+</div>
+<div class="article-body">
+  <h2>Strategic Context</h2>
+  <p>France has formalised a significant evolution in its ground-based air defence posture. Through OCCAR, acting on behalf of the French DGA, Paris has awarded Eurosam a contract for a new multi-layer variant of the SAMP/T NG — combining the long-range <strong>ASTER</strong> interceptor with the short-range <strong>MICA VL</strong> missile under a unified command architecture.</p>
+  <p>The decision reflects growing recognition that modern air threats require layered, integrated responses rather than single-tier systems.</p>
+  <div class="callout"><p>"The evolution responds to new battlefield conditions, where aerial threats are becoming increasingly numerous and complex, often appearing simultaneously in saturation attacks." — French Ministry of Armed Forces</p></div>
+  <h2>System Architecture</h2>
+  <p>The core innovation is the <strong>Engagement Module New Generation (ME NG)</strong> — a software-driven command layer managing missiles of different types from a single fire control centre. A single battery will now integrate both ASTER 30 launchers for area defence and MICA VL launchers for the short-to-medium range layer against drones and cruise missiles. The radar backbone is the <strong>Ground Fire 300</strong>, an AESA multi-function radar.</p>
+  <div class="data-grid">
+    <div class="data-card"><div class="value">8</div><div class="label">Systems Ordered</div></div>
+    <div class="data-card"><div class="value">2030+</div><div class="label">Delivery Timeline</div></div>
+    <div class="data-card"><div class="value">2</div><div class="label">Interceptor Layers</div></div>
+  </div>
+  <h2>Operational Precedent: Paris 2024</h2>
+  <p>MICA VL batteries were deployed operationally for the first time during the <strong>2024 Paris Olympics</strong>, validating the system's readiness and integration with broader air surveillance networks.</p>
+  <h2>Implications for European Air Defence</h2>
+  <p>France's procurement arrives at a moment when European ground-based air defence is under intense scrutiny. The war in Ukraine has demonstrated demand for layered systems capable of simultaneously engaging ballistic missiles, cruise missiles, and drone swarms. With eight systems from 2030, France sets a benchmark — and potentially an export model — for European allies reassessing their own postures.</p>
+  <div class="tag-list"><span class="tag">France</span><span class="tag">SAMP/T NG</span><span class="tag">MBDA</span><span class="tag">Air Defence</span><span class="tag">ASTER</span><span class="tag">MICA VL</span><span class="tag">NATO</span></div>
+</div>
+</div>
+
+<!-- ========== GREEK ========== -->
+<div class="lang-content" id="lang-el">
+<div class="article-hero">
+  <span class="category-tag">Αμυντική Πολιτική</span>
+  <h1 class="article-title">Η Γαλλία αναβαθμίζει την εδαφική αεράμυνα με το πολυεπίπεδο SAMP/T NG</h1>
+  <p class="article-subtitle">Το Παρίσι παραγγέλνει την ολοκληρωμένη διαμόρφωση ASTER/MICA VL, σηματοδοτώντας δογματική στροφή προς πολυεπίπεδη αντιμετώπιση απειλών υψηλής πυκνότητας.</p>
+  <div class="article-meta">
+    <div class="meta-item"><i class="ti ti-calendar"></i> 11 Ιουνίου 2026</div>
+    <div class="meta-item"><i class="ti ti-map-pin"></i> Παρίσι · Βρυξέλλες</div>
+    <div class="meta-item"><i class="ti ti-tag"></i> Γαλλία · MBDA · ΝΑΤΟ</div>
+  </div>
+</div>
+<div class="article-body">
+  <h2>Στρατηγικό Πλαίσιο</h2>
+  <p>Η Γαλλία επισημοποίησε μια σημαντική εξέλιξη στην εδαφική αεράμυνά της. Μέσω του OCCAR, η Γαλλική Υπηρεσία Αμυντικών Προμηθειών (DGA) ανέθεσε στην Eurosam σύμβαση για νέα πολυεπίπεδη παραλλαγή του SAMP/T NG — συνδυάζοντας τον πύραυλο μεγάλης εμβέλειας <strong>ASTER</strong> με τον βραχείας εμβέλειας <strong>MICA VL</strong> υπό ενιαία αρχιτεκτονική διοίκησης.</p>
+  <p>Η απόφαση αντικατοπτρίζει την αυξανόμενη αναγνώριση ότι οι σύγχρονες εναέριες απειλές απαιτούν πολυεπίπεδες, ολοκληρωμένες αντιδράσεις.</p>
+  <div class="callout"><p>«Η εξέλιξη ανταποκρίνεται στις νέες συνθήκες του σύγχρονου πεδίου μάχης, όπου οι εναέριες απειλές γίνονται ολοένα πιο πολυάριθμες και σύνθετες, συχνά εμφανιζόμενες ταυτόχρονα σε επιθέσεις κορεσμού.» — Γαλλικό Υπουργείο Εθνικής Άμυνας</p></div>
+  <h2>Αρχιτεκτονική Συστήματος</h2>
+  <p>Η βασική καινοτομία είναι η <strong>Μονάδα Εμπλοκής Νέας Γενιάς (ME NG)</strong> — ένα λογισμικό-κεντρικό επίπεδο διοίκησης που διαχειρίζεται πυραύλους διαφορετικών τύπων από ένα κέντρο ελέγχου πυρός. Μία μπαταρία θα ενσωματώνει πλέον εκτοξευτές ASTER 30 για αεράμυνα περιοχής και εκτοξευτές MICA VL για το βραχύ-μεσαίο επίπεδο κατά drones και πυραύλων. Το ραντάρ είναι το <strong>Ground Fire 300</strong> τεχνολογίας AESA.</p>
+  <div class="data-grid">
+    <div class="data-card"><div class="value">8</div><div class="label">Συστήματα</div></div>
+    <div class="data-card"><div class="value">2030+</div><div class="label">Παράδοση</div></div>
+    <div class="data-card"><div class="value">2</div><div class="label">Επίπεδα Αναχαίτισης</div></div>
+  </div>
+  <h2>Επιχειρησιακό Προηγούμενο: Παρίσι 2024</h2>
+  <p>Οι μπαταρίες MICA VL αναπτύχθηκαν επιχειρησιακά για πρώτη φορά κατά τους <strong>Ολυμπιακούς Αγώνες του Παρισιού 2024</strong>, επιβεβαιώνοντας την ετοιμότητα και ενσωμάτωσή τους με ευρύτερα δίκτυα εναέριας επιτήρησης.</p>
+  <h2>Επιπτώσεις για την Ευρωπαϊκή Αεράμυνα</h2>
+  <p>Η προμήθεια της Γαλλίας έρχεται σε μια στιγμή έντονου προβληματισμού για την ευρωπαϊκή εδαφική αεράμυνα. Ο πόλεμος στην Ουκρανία ανέδειξε την ανάγκη για πολυεπίπεδα συστήματα ικανά να αντιμετωπίζουν ταυτόχρονα βαλλιστικούς πυραύλους, πυραύλους cruise και σμήνη drones. Με οκτώ συστήματα από το 2030, η Γαλλία θέτει πρότυπο για τους Ευρωπαίους συμμάχους.</p>
+  <div class="tag-list"><span class="tag">Γαλλία</span><span class="tag">SAMP/T NG</span><span class="tag">MBDA</span><span class="tag">Αεράμυνα</span><span class="tag">ASTER</span><span class="tag">MICA VL</span><span class="tag">ΝΑΤΟ</span></div>
+</div>
+</div>
+
+<!-- ========== FRENCH ========== -->
+<div class="lang-content" id="lang-fr">
+<div class="article-hero">
+  <span class="category-tag">Politique de Défense</span>
+  <h1 class="article-title">La France modernise sa défense sol-air avec le SAMP/T NG multicouche</h1>
+  <p class="article-subtitle">Paris commande la configuration intégrée ASTER/MICA VL, marquant un tournant doctrinal vers une réponse multicouche aux menaces aériennes de haute densité.</p>
+  <div class="article-meta">
+    <div class="meta-item"><i class="ti ti-calendar"></i> 11 juin 2026</div>
+    <div class="meta-item"><i class="ti ti-map-pin"></i> Paris · Bruxelles</div>
+    <div class="meta-item"><i class="ti ti-tag"></i> France · MBDA · OTAN</div>
+  </div>
+</div>
+<div class="article-body">
+  <h2>Contexte Stratégique</h2>
+  <p>La France a officialisé une évolution majeure de sa posture de défense sol-air. Via l'OCCAR, agissant pour le compte de la DGA, Paris a attribué à Eurosam un contrat pour une nouvelle variante multicouche du SAMP/T NG — combinant l'intercepteur longue portée <strong>ASTER</strong> et le missile courte portée <strong>MICA VL</strong> sous une architecture de commandement unifiée.</p>
+  <div class="callout"><p>« Cette évolution répond aux nouvelles conditions du champ de bataille moderne, où les menaces aériennes deviennent de plus en plus nombreuses et complexes, apparaissant souvent simultanément lors d'attaques de saturation. » — Ministère des Armées français</p></div>
+  <h2>Architecture du Système</h2>
+  <p>L'innovation centrale est le <strong>Module d'Engagement Nouvelle Génération (ME NG)</strong> — une couche de commandement logicielle gérant des missiles de différents types depuis un centre de conduite de tir unique. Une batterie intégrera désormais des lanceurs ASTER 30 pour la défense de zone et des lanceurs MICA VL pour la couche courte-moyenne portée. Le radar est le <strong>Ground Fire 300</strong>, de technologie AESA.</p>
+  <div class="data-grid">
+    <div class="data-card"><div class="value">8</div><div class="label">Systèmes Commandés</div></div>
+    <div class="data-card"><div class="value">2030+</div><div class="label">Livraisons</div></div>
+    <div class="data-card"><div class="value">2</div><div class="label">Couches d'Interception</div></div>
+  </div>
+  <h2>Implications pour la Défense Européenne</h2>
+  <p>La commande française intervient à un moment de remise en question profonde de la défense sol-air européenne. La guerre en Ukraine a démontré le besoin de systèmes multicouches capables d'engager simultanément missiles balistiques, missiles de croisière et essaims de drones. Avec huit systèmes livrés à partir de 2030, la France établit un référentiel pour ses alliés européens.</p>
+  <div class="tag-list"><span class="tag">France</span><span class="tag">SAMP/T NG</span><span class="tag">MBDA</span><span class="tag">Défense Aérienne</span><span class="tag">ASTER</span><span class="tag">MICA VL</span><span class="tag">OTAN</span></div>
+</div>
+</div>
+
+<!-- ========== DANISH ========== -->
+<div class="lang-content" id="lang-da">
+<div class="article-hero">
+  <span class="category-tag">Forsvarspolitik</span>
+  <h1 class="article-title">Frankrig opgraderer jordbaseret luftforsvar med flerlaget SAMP/T NG</h1>
+  <p class="article-subtitle">Paris bestiller den integrerede ASTER/MICA VL-konfiguration og markerer et doktrinært skift mod flerlaget respons på trusler med høj tæthed.</p>
+  <div class="article-meta">
+    <div class="meta-item"><i class="ti ti-calendar"></i> 11. juni 2026</div>
+    <div class="meta-item"><i class="ti ti-map-pin"></i> Paris · Bruxelles</div>
+    <div class="meta-item"><i class="ti ti-tag"></i> Frankrig · MBDA · NATO</div>
+  </div>
+</div>
+<div class="article-body">
+  <h2>Strategisk Kontekst</h2>
+  <p>Frankrig har formaliseret en betydelig udvikling i sin jordbaserede luftforsvarsposition. Via OCCAR har Paris tildelt Eurosam en kontrakt om en ny flerlaget variant af SAMP/T NG — der kombinerer den langrækkende <strong>ASTER</strong>-interceptor med den kortrækkende <strong>MICA VL</strong>-missil under en samlet kommandoarkitektur.</p>
+  <div class="callout"><p>»Udviklingen reagerer på nye kamppladsforhold, hvor lufttrusler bliver stadig mere talrige og komplekse, der ofte optræder samtidigt i mætningsangreb.« — Det franske forsvarsministerium</p></div>
+  <h2>Systemarkitektur</h2>
+  <p>Kerneinnnovationen er <strong>Engagement Module New Generation (ME NG)</strong> — et softwarebaseret kommandolag, der styrer missiler af forskellig type fra ét ildledelsescenter. Et enkelt batteri vil nu integrere ASTER 30-affyringsramper til områdeforsvar og MICA VL-affyringsramper mod droner og krydsermissiler. Radaren er <strong>Ground Fire 300</strong> af AESA-teknologi.</p>
+  <div class="data-grid">
+    <div class="data-card"><div class="value">8</div><div class="label">Bestilte Systemer</div></div>
+    <div class="data-card"><div class="value">2030+</div><div class="label">Leveringstidslinje</div></div>
+    <div class="data-card"><div class="value">2</div><div class="label">Interceptorlag</div></div>
+  </div>
+  <h2>Betydning for Europæisk Luftforsvar</h2>
+  <p>Frankrigs indkøb kommer på et tidspunkt med intenst fokus på europæisk jordbaseret luftforsvar. Krigen i Ukraine har vist behovet for flerlagede systemer, der kan engagere ballistiske missiler, krydsermissiler og dronesværme samtidigt. Med otte systemer fra 2030 sætter Frankrig standarden for europæiske allierede.</p>
+  <div class="tag-list"><span class="tag">Frankrig</span><span class="tag">SAMP/T NG</span><span class="tag">MBDA</span><span class="tag">Luftforsvar</span><span class="tag">ASTER</span><span class="tag">MICA VL</span><span class="tag">NATO</span></div>
+</div>
+</div>
+
+<!-- ========== SWEDISH ========== -->
+<div class="lang-content" id="lang-sv">
+<div class="article-hero">
+  <span class="category-tag">Försvarspolitik</span>
+  <h1 class="article-title">Frankrike uppgraderar markbaserat luftförsvar med flerskiktat SAMP/T NG</h1>
+  <p class="article-subtitle">Paris beställer den integrerade ASTER/MICA VL-konfigurationen och markerar ett doktrinärt skifte mot flerskiktat svar på högdensitetshot.</p>
+  <div class="article-meta">
+    <div class="meta-item"><i class="ti ti-calendar"></i> 11 juni 2026</div>
+    <div class="meta-item"><i class="ti ti-map-pin"></i> Paris · Bryssel</div>
+    <div class="meta-item"><i class="ti ti-tag"></i> Frankrike · MBDA · NATO</div>
+  </div>
+</div>
+<div class="article-body">
+  <h2>Strategiskt Sammanhang</h2>
+  <p>Frankrike har formaliserat en betydande utveckling av sin markbaserade luftförsvarsposition. Via OCCAR har Paris tilldelat Eurosam ett kontrakt för en ny flerskiktad variant av SAMP/T NG — som kombinerar den långräckviddiga <strong>ASTER</strong>-interceptorn med den korträckviddiga <strong>MICA VL</strong>-missilen under en enhetlig kommandoarkitektur.</p>
+  <div class="callout"><p>»Utvecklingen svarar mot nya stridsfältsförhållanden, där lufthot blir allt fler och mer komplexa, ofta förekommande samtidigt i mättnadsangrepp.« — Franska försvarsdepartementet</p></div>
+  <h2>Systemarkitektur</h2>
+  <p>Kärninnovationen är <strong>Engagement Module New Generation (ME NG)</strong> — ett mjukvarudrivet kommandolager som hanterar missiler av olika typer från ett enda eldledningscentrum. Ett batteri integrerar nu ASTER 30-ramper för områdesförsvar och MICA VL-ramper mot drönare och kryssningsmissiler. Radarn är <strong>Ground Fire 300</strong> med AESA-teknik.</p>
+  <div class="data-grid">
+    <div class="data-card"><div class="value">8</div><div class="label">Beställda System</div></div>
+    <div class="data-card"><div class="value">2030+</div><div class="label">Leveranstid</div></div>
+    <div class="data-card"><div class="value">2</div><div class="label">Interceptorskikt</div></div>
+  </div>
+  <h2>Betydelse för Europeiskt Luftförsvar</h2>
+  <p>Frankrikes upphandling kommer vid ett tillfälle med intenst fokus på europeiskt markbaserat luftförsvar. Kriget i Ukraina har visat behovet av flerskiktade system som kan engagera ballistiska missiler, kryssningsmissiler och drönarsvärmar samtidigt. Med åtta system från 2030 sätter Frankrike standarden för europeiska allierade.</p>
+  <div class="tag-list"><span class="tag">Frankrike</span><span class="tag">SAMP/T NG</span><span class="tag">MBDA</span><span class="tag">Luftförsvar</span><span class="tag">ASTER</span><span class="tag">MICA VL</span><span class="tag">NATO</span></div>
+</div>
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('lang-' + lang).classList.add('active');
+  event.target.classList.add('active');
+  localStorage.setItem('preferred-lang', lang);
+}
+// Auto-detect saved preference
+window.onload = function() {
+  const saved = localStorage.getItem('preferred-lang');
+  if (saved) setLang(saved);
+}
+</script>
+</body>
+</html>
