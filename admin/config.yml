@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: stratigos1992/frontlinebrief
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "_articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title (EN)", name: "title_en", widget: "string"}
+      - {label: "Title (ΕΛ)", name: "title_el", widget: "string"}
+      - {label: "Title (FR)", name: "title_fr", widget: "string"}
+      - {label: "Title (DA)", name: "title_da", widget: "string"}
+      - {label: "Title (SV)", name: "title_sv", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Strategic Affairs", "Defence Policy", "Eastern Mediterranean", "Geo-economics"]}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body (EN)", name: "body_en", widget: "markdown"}
+      - {label: "Body (ΕΛ)", name: "body_el", widget: "markdown"}
+      - {label: "Body (FR)", name: "body_fr", widget: "markdown"}
+      - {label: "Body (DA)", name: "body_da", widget: "markdown"}
+      - {label: "Body (SV)", name: "body_sv", widget: "markdown"}
