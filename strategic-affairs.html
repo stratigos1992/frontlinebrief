@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategic Affairs | Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover,.navlinks li a.active{color:var(--amber);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+
+.pagehero{padding:48px 48px 32px;max-width:1100px;margin:0 auto;}
+.back-link{color:var(--amber);text-decoration:none;font-size:12px;font-weight:500;display:inline-flex;align-items:center;gap:6px;margin-bottom:24px;letter-spacing:.06em;text-transform:uppercase;}
+.back-link:hover{color:var(--cold);}
+.pageicon{font-size:32px;color:var(--amber);margin-bottom:16px;display:block;}
+.pagehero h1{font-family:'Playfair Display',serif;font-size:42px;font-weight:700;margin-bottom:14px;}
+.pagehero p{font-size:15px;font-weight:300;color:var(--muted);max-width:620px;line-height:1.8;}
+
+.divider{height:.5px;background:var(--border);margin:0 48px;}
+
+.articles{padding:44px 48px;max-width:1100px;margin:0 auto;}
+.articles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.acard{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-radius:8px;padding:24px;text-decoration:none;display:block;transition:border-color .2s,background .2s;}
+.acard:hover{border-color:var(--amber);background:rgba(30,58,95,.4);}
+.acat{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:10px;}
+.atitle{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);line-height:1.4;margin-bottom:10px;}
+.adesc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:14px;}
+.ameta{font-size:11px;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:6px;}
+.ameta i{font-size:12px;}
+
+.empty-note{text-align:center;padding:60px 40px;color:var(--muted);font-size:13px;border:.5px dashed var(--border);border-radius:8px;}
+.empty-note i{font-size:28px;color:var(--amber);margin-bottom:14px;display:block;}
+.empty-note .et{font-family:'Playfair Display',serif;font-size:18px;color:var(--cold);margin-bottom:8px;}
+
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+
+@media(max-width:768px){
+  nav{padding:14px 20px;}
+  .navlinks{display:none;}
+  .pagehero,.articles{padding-left:20px;padding-right:20px;}
+  .pagehero h1{font-size:30px;}
+  .articles-grid{grid-template-columns:1fr;}
+  footer{padding:20px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon">
+      <div class="rring"></div><div class="rring"></div><div class="rring"></div>
+      <div class="ldot"></div>
+    </div>
+    <div class="ltext">
+      <span class="lmain">Frontline Brief</span>
+      <span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span>
+    </div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" class="active" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html"  data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html"  data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<section class="pagehero">
+  <a href="index.html" class="back-link"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Home</span></a>
+  <i class="ti ti-world pageicon"></i>
+  <h1 data-i18n="page_title">Strategic Affairs</h1>
+  <p data-i18n="page_desc">Great power competition, NATO dynamics, EU security architecture and regional flashpoints — tracking the shifting balance of power across the Euro-Atlantic space and beyond.</p>
+</section>
+
+<div class="divider"></div>
+
+<section class="articles">
+  <div class="empty-note">
+    <i class="ti ti-news-off"></i>
+    <div class="et" data-i18n="empty_title">No articles yet</div>
+    <div data-i18n="empty_desc">Check back soon — new analysis in this category is published regularly.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="footl">
+    <span class="footbrand">Frontline Brief</span>
+    <span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span>
+  </div>
+  <div class="footlocs">
+    <span class="floc">Athens</span>
+    <span class="floc">Brussels</span>
+    <span class="floc">Copenhagen</span>
+    <span class="floc">Nicosia</span>
+    <span class="floc">Malmö</span>
+  </div>
+</footer>
+
+<script>
+const translations = {
+  "en": {
+    "lsub":"Geopolitical · Military · Economic",
+    "nav_strategic":"Strategic Affairs","nav_easternmed":"Eastern Mediterranean","nav_defence":"Defence Policy","nav_geoeconomics":"Geo-economics",
+    "back":"Back to Home",
+    "page_title":"Strategic Affairs",
+    "page_desc":"Great power competition, NATO dynamics, EU security architecture and regional flashpoints — tracking the shifting balance of power across the Euro-Atlantic space and beyond.",
+    "empty_title":"No articles yet",
+    "empty_desc":"Check back soon — new analysis in this category is published regularly.",
+    "foot_copy":"© 2026 · Independent analysis · Not affiliated with any government or institution"
+  },
+  "el": {
+    "lsub":"Γεωπολιτική · Στρατιωτική · Οικονομία",
+    "nav_strategic":"Στρατηγικές Υποθέσεις","nav_easternmed":"Ανατολική Μεσόγειος","nav_defence":"Αμυντική Πολιτική","nav_geoeconomics":"Γεω-οικονομία",
+    "back":"Αρχική",
+    "page_title":"Strategic Affairs",
+    "page_desc":"Great power competition, NATO dynamics, EU security architecture and regional flashpoints — tracking the shifting balance of power across the Euro-Atlantic space and beyond.",
+    "empty_title":"Δεν υπάρχουν ακόμα άρθρα",
+    "empty_desc":"Επανέλθετε σύντομα — νέα ανάλυση σε αυτή την κατηγορία δημοσιεύεται τακτικά.",
+    "foot_copy":"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κυβερνητικές συνδέσεις"
+  },
+  "fr": {
+    "lsub":"Géopolitique · Militaire · Économique",
+    "nav_strategic":"Affaires Stratégiques","nav_easternmed":"Méditerranée Orientale","nav_defence":"Politique de Défense","nav_geoeconomics":"Géo-économie",
+    "back":"Retour à l'accueil",
+    "page_title":"Strategic Affairs",
+    "page_desc":"Great power competition, NATO dynamics, EU security architecture and regional flashpoints — tracking the shifting balance of power across the Euro-Atlantic space and beyond.",
+    "empty_title":"Aucun article pour le moment",
+    "empty_desc":"Revenez bientôt — de nouvelles analyses dans cette catégorie sont publiées régulièrement.",
+    "foot_copy":"© 2026 · Analyse indépendante · Sans affiliation gouvernementale"
+  },
+  "da": {
+    "lsub":"Geopolitisk · Militær · Økonomisk",
+    "nav_strategic":"Strategiske Anliggender","nav_easternmed":"Østlige Middelhav","nav_defence":"Forsvarspolitik","nav_geoeconomics":"Geo-økonomi",
+    "back":"Tilbage til forsiden",
+    "page_title":"Strategic Affairs",
+    "page_desc":"Great power competition, NATO dynamics, EU security architecture and regional flashpoints — tracking the shifting balance of power across the Euro-Atlantic space and beyond.",
+    "empty_title":"Ingen artikler endnu",
+    "empty_desc":"Kig forbi igen snart — ny analyse i denne kategori udgives regelmæssigt.",
+    "foot_copy":"© 2026 · Uafhængig analyse · Ikke tilknyttet nogen regering"
+  },
+  "sv": {
+    "lsub":"Geopolitisk · Militär · Ekonomisk",
+    "nav_strategic":"Strategiska Frågor","nav_easternmed":"Östra Medelhavet","nav_defence":"Försvarspolitik","nav_geoeconomics":"Geo-ekonomi",
+    "back":"Tillbaka till start",
+    "page_title":"Strategic Affairs",
+    "page_desc":"Great power competition, NATO dynamics, EU security architecture and regional flashpoints — tracking the shifting balance of power across the Euro-Atlantic space and beyond.",
+    "empty_title":"Inga artiklar än",
+    "empty_desc":"Kom tillbaka snart — ny analys i den här kategorin publiceras regelbundet.",
+    "foot_copy":"© 2026 · Oberoende analys · Ej ansluten till någon regering"
+  }
+};
+
+function setLang(lang, btn) {
+  document.querySelectorAll('.lb').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.documentElement.lang = lang;
+  localStorage.setItem('preferred-lang', lang);
+}
+window.onload = function() {
+  const saved = localStorage.getItem('preferred-lang');
+  if (saved) {
+    const btn = document.querySelector(`.lb[onclick="setLang('${saved}',this)"]`);
+    if (btn) setLang(saved, btn);
+  }
+};
+</script>
+</body>
+</html>
