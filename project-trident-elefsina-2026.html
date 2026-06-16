@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Trident: Greece, the US and South Korea Sign €1.35bn Deal to Build Submarines at Elefsina — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero{padding:64px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.meta-date{font-size:12px;color:var(--muted);}
+.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;line-height:1.12;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--amber);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.carousel{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.carousel-frame{position:relative;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);aspect-ratio:1/1;max-width:480px;margin:0 auto;}
+.carousel-track{display:flex;width:500%;height:100%;transition:transform .4s ease;}
+.cslide{width:20%;height:100%;flex-shrink:0;}
+.cslide img{width:100%;height:100%;object-fit:cover;display:block;}
+.carousel-nav{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:background .2s;}
+.cdot.active{background:var(--amber);}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,27,42,.55);border:.5px solid var(--border);color:var(--cold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;}
+.carousel-arrow.prev{left:10px;}
+.carousel-arrow.next{right:10px;}
+.phases-section{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.phase-card{background:rgba(30,58,95,.35);border-radius:10px;padding:24px;border:.5px solid rgba(138,155,176,.15);position:relative;}
+.phase-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--amber);border-radius:4px 0 0 4px;}
+.phase-num{font-size:11px;color:var(--amber);letter-spacing:.16em;font-weight:600;margin-bottom:6px;}
+.phase-val{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--cold);margin-bottom:4px;}
+.phase-label{font-size:13px;color:var(--muted);line-height:1.5;}
+.stats-row{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.stat-card{background:var(--steel);border-radius:8px;padding:20px;text-align:center;}
+.stat-num{font-size:32px;font-weight:700;color:var(--amber);font-family:'Inter',sans-serif;line-height:1;}
+.stat-label{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5;}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+.pull-quote{border-left:3px solid var(--amber);padding:16px 24px;margin:32px 0;background:rgba(232,160,32,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.timeline{max-width:680px;margin:0 auto 48px;padding:0 48px;}
+.tl-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:20px;font-weight:600;}
+.tl-item{display:flex;gap:16px;margin-bottom:20px;}
+.tl-dot{width:10px;height:10px;border-radius:50%;background:var(--amber);margin-top:6px;flex-shrink:0;position:relative;z-index:2;}
+.tl-item:not(:last-child) .tl-dot::after{content:'';position:absolute;left:4px;top:10px;width:2px;height:calc(100% + 14px);background:rgba(232,160,32,.2);}
+.tl-date{font-size:11px;color:var(--amber);font-weight:600;letter-spacing:.08em;}
+.tl-text{font-size:13px;color:var(--muted);line-height:1.5;margin-top:4px;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){
+  nav{padding:14px 20px;}
+  .hero,.phases-section,.stats-row,.article-body,.timeline,.sources,.carousel{padding-left:20px;padding-right:20px;}
+  .article-title{font-size:30px;}
+  .phases-section,.stats-row{grid-template-columns:1fr;}
+  footer{padding:20px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon">
+      <div class="rring"></div><div class="rring"></div><div class="rring"></div>
+      <div class="ldot"></div>
+    </div>
+    <div class="ltext">
+      <span class="lmain">Frontline Brief</span>
+      <span class="lsub">Geopolitical · Military · Economic</span>
+    </div>
+  </a>
+  <a class="nav-back" href="eastern-med.html"><i class="ti ti-arrow-left"></i> Back to Eastern Mediterranean</a>
+</nav>
+
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag">Eastern Mediterranean</span>
+    <span class="meta-date">15 June 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> 6 min read</span>
+  </div>
+  <h1 class="article-title">Project Trident: Greece, the US and South Korea sign <em>€1.35bn deal</em> to build submarines at Elefsina</h1>
+  <p class="article-subtitle">The largest defence-industrial investment in Greek history turns the Elefsina shipyard into the Eastern Mediterranean's naval hub — with a domestically built submarine targeted for 2034 and a role for the US 6th Fleet from day one.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">FB</div>
+    <div>
+      <div class="byline-name">Frontline Brief Editorial</div>
+      <div class="byline-role">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+    </div>
+  </div>
+</section>
+
+<div class="carousel">
+  <div class="carousel-frame">
+    <div class="carousel-track" id="ctrack">
+      <div class="cslide"><img src="assets/trident-elefsina-en.jpg" alt="Project Trident — English"></div>
+      <div class="cslide"><img src="assets/trident-elefsina-el.jpg" alt="Project Trident — Ελληνικά"></div>
+      <div class="cslide"><img src="assets/trident-elefsina-fr.jpg" alt="Project Trident — Français"></div>
+      <div class="cslide"><img src="assets/trident-elefsina-da.jpg" alt="Project Trident — Dansk"></div>
+      <div class="cslide"><img src="assets/trident-elefsina-sv.jpg" alt="Project Trident — Svenska"></div>
+    </div>
+    <button class="carousel-arrow prev" onclick="cmove(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="carousel-arrow next" onclick="cmove(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  <div class="carousel-nav">
+    <button class="cdot active" onclick="cgo(0)"></button>
+    <button class="cdot" onclick="cgo(1)"></button>
+    <button class="cdot" onclick="cgo(2)"></button>
+    <button class="cdot" onclick="cgo(3)"></button>
+    <button class="cdot" onclick="cgo(4)"></button>
+  </div>
+</div>
+
+<div class="phases-section">
+  <div class="phase-card">
+    <div class="phase-num">PHASE 1</div>
+    <div class="phase-val">€150M</div>
+    <div class="phase-label">New dry docks and repair facilities. Prioritises support for the US 6th Fleet and Hellenic Navy from day one.</div>
+  </div>
+  <div class="phase-card">
+    <div class="phase-num">PHASE 2</div>
+    <div class="phase-val">€200M</div>
+    <div class="phase-label">Dual-use port infrastructure, strategic mobility upgrades and supply-chain logistics for the region.</div>
+  </div>
+  <div class="phase-card">
+    <div class="phase-num">PHASE 3</div>
+    <div class="phase-val">€1bn</div>
+    <div class="phase-label">Automated production lines for submarine construction, based on the Korean KSS-III design with US combat systems. First delivery: 2034.</div>
+  </div>
+</div>
+
+<div class="stats-row">
+  <div class="stat-card">
+    <div class="stat-num">€1.35bn</div>
+    <div class="stat-label">Total investment — largest defence-industrial deal in Greek history</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">10,000</div>
+    <div class="stat-label">Direct and indirect high-skilled jobs projected</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">70%</div>
+    <div class="stat-label">Domestic content target for future defence programmes</div>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+
+  <div id="lang-en" class="lang-section active">
+    <h2>The deal that changes everything</h2>
+    <p>On 29 May 2026, ONEX Shipyards & Technologies and South Korea's Hanwha Ocean signed a memorandum of understanding at the residence of US Ambassador to Greece Kimberly Guilfoyle in Athens. The agreement, branded "Project Trident", committed €1.35 billion to transform the Elefsina shipyards in western Attica into a regional hub for shipbuilding, naval maintenance and — in its most consequential phase — submarine construction. Greece, the United States and South Korea are the three parties to the framework.</p>
+    <p>The US Ambassador described the deal as far more than a business arrangement, framing it as a strategic alignment among three nations committed to maritime security in the Eastern Mediterranean and Black Sea. The project is projected to contribute roughly 0.8 percent of Greece's annual GDP and generate up to 10,000 direct and indirect jobs in high-skilled sectors.</p>
+    <h2>Three phases, one ambition</h2>
+    <p>Project Trident is structured in three phases. The first, worth €150 million, focuses on expanding ship repair and maintenance capacity, with new dry docks and support facilities explicitly designed to service US 6th Fleet vessels and allied naval forces. The second phase, valued at €200 million, targets dual-use port infrastructure and strategic mobility improvements, positioning Elefsina as a logistics node for the broader region. The third and largest phase — the €1 billion centrepiece — foresees automated production lines capable of building advanced submarines based on the Korean KSS-III design, enhanced with American combat systems and electronics.</p>
+    <p>ONEX president Panos Xenokostas stated at the Greece 2030 conference that if a submarine construction programme began today, the first vessel could be delivered to the Hellenic Navy by 2034. The project targets a domestic value-added rate of up to 70 percent, meaning that Greek industry, workers and suppliers would account for the large majority of the construction effort — a level of industrial sovereignty that Greece has not previously achieved in naval procurement.</p>
+    <div class="pull-quote"><p>If submarine construction begins today, the first vessel could be delivered to the Hellenic Navy by 2034 — ONEX president Panos Xenokostas, Greece 2030 conference</p></div>
+    <h2>The KSS-III: what Greece would actually be building</h2>
+    <p>The KSS-III (Dosan Ahn Changho class) is South Korea's most advanced conventional submarine, developed by Hanwha Ocean from the German Type 214 lineage. It displaces around 3,700 tonnes submerged, uses air-independent propulsion (AIP) with lithium-ion batteries and is equipped with a vertical launch system capable of firing submarine-launched ballistic missiles — a capability unique among non-nuclear submarines. The hull features anechoic tiles to absorb sonar signals, and all internal machinery is mounted on vibration-isolating rafts to minimise acoustic signature.</p>
+    <p>Reports in Greek media have noted that the US is considering releasing Tomahawk cruise missiles for integration into a Greek KSS-III variant, which would give the Hellenic Navy its first genuine sea-based strategic strike capability. No official confirmation has been issued by Washington, but the direction of travel — F-35s already contracted, Tomahawk discussions ongoing — signals a deepening of the US-Greece defence relationship that goes well beyond traditional NATO standardisation.</p>
+    <h2>The strategic picture: why Elefsina, why now</h2>
+    <p>Greece's choice of Elefsina is not accidental. The site sits at the heart of the Eastern Mediterranean, within striking distance of the Suez corridor, the Black Sea exit, and the main shipping lanes connecting Europe with Asia and the Gulf. The US 6th Fleet, which has historically rotated through Naples, gains a new Eastern Mediterranean maintenance node — a significant capability enhancement at a moment when the alliance is managing simultaneous pressure from Russia in the Black Sea and instability across the Middle Eastern littoral.</p>
+    <p>For Athens, the deal represents a structural shift in Greece's role within the NATO industrial base. Rather than being a net importer of defence equipment — as it has been for decades — Greece is positioning itself as an exporter, a maintenance hub and, eventually, a manufacturer of some of the most technically demanding naval platforms in the world. At the same time, Salamis Shipyards recently debuted as a hull-block manufacturer for the French Navy, and Skaramagas is mid-way through a €100 million modernisation — suggesting that Elefsina is not an isolated ambition but part of a deliberate national shipbuilding strategy.</p>
+  </div>
+
+  <div id="lang-el" class="lang-section">
+    <h2>Η συμφωνία που αλλάζει τα πάντα</h2>
+    <p>Στις 29 Μαΐου 2026, η ONEX Ναυπηγεία & Τεχνολογίες και η νοτιοκορεατική Hanwha Ocean υπέγραψαν μνημόνιο συνεργασίας στην κατοικία της Αμερικανίδας πρέσβειρας στην Ελλάδα, Kimberly Guilfoyle, στην Αθήνα. Η συμφωνία, γνωστή ως «Project Trident», δεσμεύει 1,35 δισ. ευρώ για τη μετατροπή των Ναυπηγείων Ελευσίνας σε περιφερειακό κόμβο ναυπηγικής, συντήρησης ναυτικών μονάδων και — στην πιο φιλόδοξη φάση της — κατασκευής υποβρυχίων. Ελλάδα, ΗΠΑ και Νότια Κορέα είναι τα τρία μέρη του πλαισίου.</p>
+    <p>Η Αμερικανίδα πρέσβειρα χαρακτήρισε τη συμφωνία πολύ περισσότερο από επιχειρηματική συμφωνία — μια στρατηγική ευθυγράμμιση τριών εθνών που δεσμεύονται για την ασφάλεια στην Ανατολική Μεσόγειο και τη Μαύρη Θάλασσα. Το πρόγραμμα αναμένεται να συνεισφέρει περίπου 0,8% στο ελληνικό ΑΕΠ και να δημιουργήσει έως 10.000 θέσεις εργασίας υψηλής εξειδίκευσης.</p>
+    <h2>Τρεις φάσεις, μία φιλοδοξία</h2>
+    <p>Το Project Trident δομείται σε τρεις φάσεις. Η πρώτη, αξίας 150 εκατ. ευρώ, εστιάζει στην επέκταση των ικανοτήτων επισκευής πλοίων, με νέες δεξαμενές σχεδιασμένες ρητά για τον 6ο Στόλο των ΗΠΑ και συμμαχικές ναυτικές δυνάμεις. Η δεύτερη φάση, αξίας 200 εκατ. ευρώ, στοχεύει σε dual-use λιμενική υποδομή και βελτιώσεις στρατηγικής κινητικότητας. Η τρίτη και μεγαλύτερη φάση — το κεντρικό κεφάλαιο του 1 δισ. ευρώ — προβλέπει αυτοματοποιημένες γραμμές παραγωγής για υποβρύχια βασισμένα στον κορεατικό σχεδιασμό KSS-III, εξοπλισμένα με αμερικανικά βοηθητικά συστήματα.</p>
+    <p>Ο πρόεδρος της ONEX Πάνος Ξενοκώστας δήλωσε στο συνέδριο Greece 2030 ότι αν ξεκινούσε σήμερα πρόγραμμα κατασκευής υποβρυχίων, το πρώτο σκάφος θα μπορούσε να παραδοθεί στο Πολεμικό Ναυτικό ως το 2034. Το πρόγραμμα στοχεύει σε ποσοστό εγχώριας προστιθέμενης αξίας έως 70%, πράγμα που σημαίνει ότι η ελληνική βιομηχανία, εργαζόμενοι και προμηθευτές θα αναλαμβάνουν τη μεγάλη πλειονότητα της κατασκευαστικής προσπάθειας.</p>
+    <div class="pull-quote"><p>Αν ξεκινούσε σήμερα πρόγραμμα κατασκευής υποβρυχίων, το πρώτο σκάφος μπορεί να παραδοθεί στο Πολεμικό Ναυτικό ως το 2034 — Πάνος Ξενοκώστας, συνέδριο Greece 2030</p></div>
+    <h2>Το KSS-III: τι θα κατασκευάζει η Ελλάδα</h2>
+    <p>Το KSS-III (κλάση Dosan Ahn Changho) είναι το πιο σύγχρονο συμβατικό υποβρύχιο της Νότιας Κορέας, ανεπτυγμένο από τη Hanwha Ocean στη βάση της γερμανικής γενεαλογίας Type 214. Εκτοπίζει περίπου 3.700 τόνους σε κατάδυση, χρησιμοποιεί αναερόβια πρόωση (AIP) με μπαταρίες ιόντων λιθίου και διαθέτει κάθετο σύστημα εκτόξευσης (VLS) ικανό να εκτοξεύει βαλλιστικούς πυραύλους — μοναδική ικανότητα μεταξύ μη πυρηνικών υποβρυχίων. Το κύτος φέρει ανηχοϊκά πλακίδια και όλα τα μηχανήματα είναι τοποθετημένα σε αντικραδασμικές βάσεις.</p>
+    <p>Ελληνικά ΜΜΕ ανέφεραν ότι οι ΗΠΑ εξετάζουν την απελευθέρωση πώλησης πυραύλων Tomahawk για ενσωμάτωση σε ελληνική παραλλαγή KSS-III, γεγονός που θα προσέδιδε στο Ελληνικό Πολεμικό Ναυτικό πραγματική ικανότητα στρατηγικής κρούσης από τη θάλασσα. Καμία επίσημη επιβεβαίωση δεν έχει εκδοθεί από την Ουάσινγκτον, αλλά η κατεύθυνση — F-35 ήδη συμβεβλημένα, συζητήσεις για Tomahawk σε εξέλιξη — αναδεικνύει τη βαθύτερη ελληνοαμερικανική αμυντική σχέση.</p>
+    <h2>Η στρατηγική εικόνα: γιατί Ελευσίνα, γιατί τώρα</h2>
+    <p>Η επιλογή της Ελευσίνας δεν είναι τυχαία. Βρίσκεται στην καρδιά της Ανατολικής Μεσογείου, σε κοντινή απόσταση από τον διάδρομο Σουέζ, την έξοδο της Μαύρης Θάλασσας και τις κύριες ναυτιλιακές γραμμές που συνδέουν Ευρώπη με Ασία και Κόλπο. Ο 6ος Στόλος των ΗΠΑ αποκτά νέο κόμβο συντήρησης στην Ανατολική Μεσόγειο, σε μια κρίσιμη συγκυρία ταυτόχρονης πίεσης από τη Ρωσία στη Μαύρη Θάλασσα και αστάθειας στη Μέση Ανατολή.</p>
+    <p>Για την Αθήνα, η συμφωνία σηματοδοτεί δομική αλλαγή στον ρόλο της Ελλάδας εντός της ΝΑΤΟϊκής αμυντικής βιομηχανικής βάσης. Αντί να είναι καθαρός εισαγωγέας αμυντικού εξοπλισμού — όπως ήταν για δεκαετίες — η Ελλάδα τοποθετείται ως εξαγωγός, κόμβος συντήρησης και, τελικά, κατασκευαστής ορισμένων από τις πιο απαιτητικές τεχνολογικά ναυτικές πλατφόρμες στον κόσμο.</p>
+  </div>
+
+  <div id="lang-fr" class="lang-section">
+    <h2>L'accord qui change la donne</h2>
+    <p>Le 29 mai 2026, ONEX Shipyards & Technologies et le géant sud-coréen Hanwha Ocean ont signé un mémorandum d'entente à la résidence de l'ambassadrice américaine en Grèce, Kimberly Guilfoyle, à Athènes. Baptisé « Project Trident », cet accord engage 1,35 milliard d'euros pour transformer les chantiers navals d'Eleusis en un hub régional de construction navale, de maintenance et — dans sa phase la plus ambitieuse — de construction de sous-marins. La Grèce, les États-Unis et la Corée du Sud en sont les trois parties.</p>
+    <p>L'ambassadrice américaine a décrit l'accord comme bien plus qu'un simple partenariat commercial : une convergence stratégique de trois nations engagées pour la sécurité maritime en Méditerranée orientale et en mer Noire. Le projet devrait contribuer environ 0,8 % du PIB grec et créer jusqu'à 10 000 emplois directs et indirects dans des secteurs à haute valeur ajoutée.</p>
+    <h2>Trois phases, une ambition</h2>
+    <p>Project Trident se structure en trois phases. La première, dotée de 150 millions d'euros, vise à étendre les capacités de réparation navale, avec de nouvelles cales sèches destinées explicitement à servir la 6e Flotte américaine et les forces navales alliées. La deuxième phase, à 200 millions d'euros, cible des infrastructures portuaires à double usage et des améliorations logistiques. La troisième et plus importante phase — le milliard d'euros central — prévoit des lignes de production automatisées pour la construction de sous-marins avancés dérivés du design coréen KSS-III, dotés de systèmes de combat américains.</p>
+    <p>Le président d'ONEX, Panos Xenokostas, a déclaré lors de la conférence Greece 2030 que si un programme de construction de sous-marins débutait aujourd'hui, le premier bâtiment pourrait être livré à la marine hellénique d'ici 2034. L'objectif est d'atteindre 70 % de valeur ajoutée nationale — un niveau de souveraineté industrielle que la Grèce n'a jamais atteint en matière de marchés navals.</p>
+    <div class="pull-quote"><p>Si un programme de construction démarre aujourd'hui, le premier sous-marin pourrait être livré à la marine hellénique d'ici 2034 — Panos Xenokostas, conférence Greece 2030</p></div>
+    <h2>Le KSS-III : ce que la Grèce construirait concrètement</h2>
+    <p>Le KSS-III (classe Dosan Ahn Changho) est le sous-marin conventionnel le plus avancé de Corée du Sud, développé par Hanwha Ocean à partir de la lignée allemande Type 214. Il déplace environ 3 700 tonnes en plongée, utilise une propulsion anaérobie (AIP) avec batteries lithium-ion et est équipé d'un système de lancement vertical capable de tirer des missiles balistiques — une capacité unique parmi les sous-marins non nucléaires. La coque est couverte de carreaux anéchoïques, et tous les équipements internes sont montés sur des supports anti-vibratoires.</p>
+    <p>Des médias grecs ont rapporté que les États-Unis envisagent d'autoriser la vente de missiles Tomahawk pour intégration dans une variante grecque du KSS-III, ce qui donnerait à la marine hellénique une première véritable capacité de frappe stratégique depuis la mer. Aucune confirmation officielle n'a été émise par Washington, mais la trajectoire — F-35 déjà contractualisés, discussions Tomahawk en cours — signale un approfondissement notable de la relation de défense américano-grecque.</p>
+    <h2>La logique stratégique : pourquoi Eleusis, pourquoi maintenant</h2>
+    <p>Le choix d'Eleusis n'est pas fortuit. Le site est au cœur de la Méditerranée orientale, à portée du corridor de Suez, de la sortie de la mer Noire et des grandes routes maritimes reliant l'Europe à l'Asie et au Golfe. La 6e Flotte américaine, basée à Naples, dispose désormais d'un nouveau nœud de maintenance en Méditerranée orientale — un atout considérable à un moment où l'Alliance gère simultanément la pression russe en mer Noire et l'instabilité sur le littoral moyen-oriental.</p>
+    <p>Pour Athènes, l'accord représente un virage structurel dans le rôle de la Grèce au sein de la base industrielle de défense de l'OTAN. Plutôt que d'être un importateur net d'équipements de défense — comme elle l'a été pendant des décennies — la Grèce se positionne désormais comme exportateur, hub de maintenance et, à terme, constructeur de certaines des plateformes navales les plus techniquement exigeantes au monde.</p>
+  </div>
+
+  <div id="lang-da" class="lang-section">
+    <h2>Aftalen der forandrer alt</h2>
+    <p>Den 29. maj 2026 underskrev ONEX Shipyards & Technologies og sydkoreanske Hanwha Ocean et samarbejdsmemorandum på den amerikanske ambassadørs residens i Athen. Aftalen, kaldet "Project Trident", forpligter 1,35 milliarder euro til at forvandle Elefsina-skibsværftet i det vestlige Attika til et regionalt knudepunkt for skibsbygning, naval vedligeholdelse og — i sin mest ambitiøse fase — ubådskonstruktion. Grækenland, USA og Sydkorea er de tre parter i rammen.</p>
+    <p>Den amerikanske ambassadør beskrev aftalen som langt mere end en forretningsaftale: en strategisk tilpasning af tre nationer forpligtet til maritim sikkerhed i det østlige Middelhav og Sortehavet. Projektet forventes at bidrage med ca. 0,8 procent af Grækenlands BNP og skabe op til 10.000 direkte og indirekte jobs i højkvalifikationssektorer.</p>
+    <h2>Tre faser, én ambition</h2>
+    <p>Project Trident er struktureret i tre faser. Den første, til 150 millioner euro, fokuserer på at udvide skibsreparationskapaciteten med nye tørdokker designet til at betjene den amerikanske 6. flåde og allierede marinestyrker. Den anden fase, til 200 millioner euro, målretter sig mod dual-use havneinfrastruktur og logistikforbedringer. Den tredje og største fase — milliarden i centrum — forudser automatiserede produktionslinjer til avancerede ubåde baseret på det koreanske KSS-III-design med amerikanske kampsystemer.</p>
+    <p>ONEX-præsident Panos Xenokostas erklærede på Greece 2030-konferencen, at hvis et ubådsbyggeprogram startede i dag, kunne det første fartøj leveres til den hellenske marine inden 2034. Projektet sigter mod en indenlandsk merværdi på op til 70 procent.</p>
+    <div class="pull-quote"><p>Hvis ubådskonstruktion begynder i dag, kan det første fartøj leveres til den hellenske marine inden 2034 — Panos Xenokostas, Greece 2030-konferencen</p></div>
+    <h2>KSS-III: hvad Grækenland faktisk vil bygge</h2>
+    <p>KSS-III (Dosan Ahn Changho-klassen) er Sydkoreas mest avancerede konventionelle ubåd, udviklet af Hanwha Ocean fra den tyske Type 214-slægt. Den fortrænger ca. 3.700 tons neddykket, bruger luftuafhængig fremdrift (AIP) med lithium-ion-batterier og er udstyret med et vertikalt affyringssystem til ballistiske missiler — en kapabilitet unik blandt ikke-nukleare ubåde. Skroget er beklædt med anekkoiske fliser, og al intern mekanik er monteret på vibrationsdæmpende beslag.</p>
+    <p>Græske medier har rapporteret, at USA overvejer at frigive salg af Tomahawk-krydsermissiler til integration i en græsk KSS-III-variant, hvilket ville give den hellenske marine dens første reelle søbaserede strategiske angrebsevne. Ingen officiel bekræftelse er udsendt fra Washington, men retningen — F-35 allerede kontrakteret, Tomahawk-forhandlinger i gang — signalerer en uddybning af det amerikansk-græske forsvarsforhold.</p>
+    <h2>Det strategiske billede: hvorfor Elefsina, hvorfor nu</h2>
+    <p>Valget af Elefsina er ikke tilfældigt. Stedet ligger i hjertet af det østlige Middelhav, tæt på Suez-korridoren, Sortehavets udgang og de vigtigste søveje mellem Europa og Asien. Den amerikanske 6. flåde får et nyt vedligeholdelsesknudepunkt i det østlige Middelhav, på et tidspunkt hvor alliancen håndterer samtidigt pres fra Rusland i Sortehavet og ustabilitet i Mellemøsten. For Athen repræsenterer aftalen en strukturel ændring i Grækenlands rolle i NATOs forsvarsindustrielle base.</p>
+  </div>
+
+  <div id="lang-sv" class="lang-section">
+    <h2>Avtalet som förändrar allt</h2>
+    <p>Den 29 maj 2026 undertecknade ONEX Shipyards & Technologies och sydkoreanska Hanwha Ocean ett samförståndsavtal på den amerikanska ambassadörens residens i Aten. Avtalet, kallat "Project Trident", binder 1,35 miljarder euro för att omvandla Elefsina-varvet i västra Attika till ett regionalt nav för skeppsbyggnad, naval underhåll och — i sin mest ambitiösa fas — ubåtsbygge. Grekland, USA och Sydkorea är de tre parterna i ramverket.</p>
+    <p>Den amerikanska ambassadören beskrev avtalet som långt mer än en affärsuppgörelse: en strategisk samordning av tre nationer åtagande sig säkerheten i östra Medelhavet och Svarta havet. Projektet beräknas bidra med cirka 0,8 procent av Greklands BNP och skapa upp till 10 000 direkta och indirekta jobb i högkvalificerade sektorer.</p>
+    <h2>Tre faser, en ambition</h2>
+    <p>Project Trident är strukturerat i tre faser. Den första, värd 150 miljoner euro, fokuserar på att utöka fartygsreparationskapaciteten med nya torrdockor utformade för att betjäna den amerikanska 6:e flottan och allierade marinstryrkor. Den andra fasen, värd 200 miljoner euro, riktar sig mot dual-use hamninfrastruktur och logistikförbättringar. Den tredje och största fasen — miljardens kärna — förutser automatiserade produktionslinjer för avancerade ubåtar baserade på det koreanska KSS-III-designet med amerikanska stridsystem.</p>
+    <p>ONEX:s president Panos Xenokostas uppgav vid konferensen Greece 2030 att om ett ubåtsbyggnadsprogram startade idag, kunde det första fartyget levereras till den hellenska flottan senast 2034. Projektet syftar till en inhemsk förädlingsgrad på upp till 70 procent.</p>
+    <div class="pull-quote"><p>Om ubåtskonstruktion börjar idag kan det första fartyget levereras till hellenska flottan senast 2034 — Panos Xenokostas, Greece 2030-konferensen</p></div>
+    <h2>KSS-III: vad Grekland faktiskt skulle bygga</h2>
+    <p>KSS-III (Dosan Ahn Changho-klassen) är Sydkoreas mest avancerade konventionella ubåt, utvecklad av Hanwha Ocean från den tyska Type 214-linjen. Den förflyttar ca 3 700 ton neddykkt, använder luftoberoende framdrivning (AIP) med litiumjonbatterier och är utrustad med ett vertikalt avfyrningssystem för ballistiska missiler — en förmåga unik bland icke-nukleära ubåtar. Skrovet är belagt med anekkoiska plattor och all intern mekanik är monterad på vibrationsdämpande stödben.</p>
+    <p>Grekiska medier har rapporterat att USA överväger att frigöra försäljning av Tomahawk-kryssningsrobotar för integrering i en grekisk KSS-III-variant, vilket skulle ge hellenska flottan sin första verkliga sjöbaserade strategiska anfallsförmåga. Ingen officiell bekräftelse har utfärdats från Washington, men riktningen — F-35 redan kontrakterade, Tomahawk-diskussioner pågår — signalerar ett fördjupat amerikansk-grekiskt försvarsförhållande som går långt utöver traditionell Nato-standardisering.</p>
+    <h2>Den strategiska bilden: varför Elefsina, varför nu</h2>
+    <p>Valet av Elefsina är inte slumpmässigt. Platsen ligger i hjärtat av östra Medelhavet, inom räckhåll för Suez-korridoren, Svartahavsutloppet och de viktigaste sjövägarna som förbinder Europa med Asien och Gulfen. Den amerikanska 6:e flottan, som historiskt roteriat via Neapel, får nu ett nytt underhållsnav i östra Medelhavet. För Aten representerar avtalet en strukturell förändring av Greklands roll i Natos försvarsindustriella bas — från nettoimportör av försvarsmateriel till exportör, underhållsnav och, på sikt, tillverkare av några av världens mest tekniskt krävande marina plattformar.</p>
+  </div>
+</div>
+
+<div class="timeline">
+  <div class="tl-title">PROJECT TRIDENT — Key milestones</div>
+  <div class="tl-item"><div class="tl-dot"></div><div><div class="tl-date">29 May 2026</div><div class="tl-text">ONEX and Hanwha Ocean sign MoU at US Ambassador Guilfoyle's residence in Athens. Project Trident unveiled as a Greece–US–South Korea trilateral initiative.</div></div></div>
+  <div class="tl-item"><div class="tl-dot"></div><div><div class="tl-date">10 June 2026</div><div class="tl-text">ONEX president Xenokostas at Greece 2030 conference: first domestically built submarine deliverable to the Hellenic Navy by 2034 if programme begins immediately.</div></div></div>
+  <div class="tl-item"><div class="tl-dot"></div><div><div class="tl-date">Phase 1 (ongoing)</div><div class="tl-text">€150M to expand dry docks and maintenance facilities for the US 6th Fleet and allied forces. Over 900 ship repair projects already completed at ONEX Elefsina since 2019.</div></div></div>
+  <div class="tl-item"><div class="tl-dot"></div><div><div class="tl-date">Phase 2 (mid-term)</div><div class="tl-text">€200M dual-use port infrastructure: logistics, strategic mobility and supply-chain upgrades positioning Elefsina as the region's primary naval logistics hub.</div></div></div>
+  <div class="tl-item"><div class="tl-dot"></div><div><div class="tl-date">Phase 3 · target: 2034</div><div class="tl-text">€1bn automated KSS-III submarine production lines with US combat systems. 70% domestic content target. Greece becomes a submarine-manufacturing nation.</div></div></div>
+</div>
+
+<div class="sources">
+  <div class="sources-title">Sources</div>
+  <p>ProtoThema / Greek City Times / GreekReporter — Project Trident MoU signing, Athens (29 May 2026)</p>
+  <p>Athens Times — ONEX CEO Xenokostas: first Greek submarine deliverable by 2034 (Greece 2030 conference, 10 June 2026)</p>
+  <p>Caliber.az / IndexBox — Project Trident investment breakdown and economic projections</p>
+  <p>Enikos.gr — KSS-III stealth specifications, Tomahawk and 6th Fleet context (2 June 2026)</p>
+  <p>Defence Review / Pentapostagma / Pti.gr — KSS-III technical analysis and Hellenic Navy acquisition context</p>
+</div>
+
+<footer>
+  <div>
+    <div class="foot-brand">Frontline Brief</div>
+    <div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div>
+  </div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+
+<script>
+function setLang(lang,btn){
+  document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));
+  document.getElementById('lang-'+lang).classList.add('active');
+  btn.classList.add('active');
+}
+let cIndex=0;
+function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*20)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
+function cmove(dir){cIndex=(cIndex+dir+5)%5;cgo(cIndex);}
+</script>
+</body>
+</html>
