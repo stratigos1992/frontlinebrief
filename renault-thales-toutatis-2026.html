@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renault is Now a Defence Manufacturer: Three Military Programmes, One Carmaker — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero{padding:64px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.meta-event{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(79,209,197,.1);color:var(--teal);border:.5px solid rgba(79,209,197,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--amber);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.carousel{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.carousel-wrap{width:100%;max-width:480px;margin:0 auto;}
+.carousel-frame{position:relative;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);width:100%;}
+.carousel-track{display:flex;flex-wrap:nowrap;width:500%;transition:transform .4s ease;will-change:transform;}
+.cslide{width:20%;flex-shrink:0;}
+.cslide img{width:100%;height:auto;display:block;}
+.carousel-nav{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:background .2s;}
+.cdot.active{background:var(--amber);}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,27,42,.55);border:.5px solid var(--border);color:var(--cold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;}
+.carousel-arrow.prev{left:10px;}
+.carousel-arrow.next{right:10px;}
+.portfolio-section{max-width:860px;margin:0 auto;padding:0 48px 40px;display:flex;flex-direction:column;gap:12px;}
+.prog-row{background:rgba(30,58,95,.35);border-radius:10px;padding:20px 24px;border:.5px solid rgba(138,155,176,.12);display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;position:relative;}
+.prog-row::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:4px 0 0 4px;}
+.prog-row.featured::before{background:var(--amber);}
+.prog-row.secondary::before{background:var(--muted);}
+.prog-badge{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;border-radius:12px;margin-bottom:8px;display:inline-block;background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.prog-name{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--cold);margin-bottom:4px;}
+.prog-detail{font-size:13px;color:var(--muted);}
+.prog-val{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:var(--amber);text-align:right;line-height:1;}
+.prog-unit{font-size:11px;color:var(--muted);text-align:right;margin-top:4px;}
+.prog-row.secondary .prog-val{color:var(--muted);}
+.stats-row{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.stat-card{background:var(--steel);border-radius:8px;padding:20px;text-align:center;}
+.stat-num{font-size:26px;font-weight:700;color:var(--amber);font-family:'Playfair Display',serif;line-height:1;}
+.stat-label{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5;}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+.pull-quote{border-left:3px solid var(--amber);padding:16px 24px;margin:32px 0;background:rgba(232,160,32,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.portfolio-section,.stats-row,.article-body,.sources,.carousel{padding-left:20px;padding-right:20px;}.article-title{font-size:30px;}.stats-row{grid-template-columns:1fr;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <a class="nav-back" href="defence.html"><i class="ti ti-arrow-left"></i> Back to Defence Policy</a>
+</nav>
+
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag">Defence Policy</span>
+    <span class="meta-event">⚔️ Eurosatory 2026</span>
+    <span class="meta-date">16 June 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> 5 min read</span>
+  </div>
+  <h1 class="article-title">Renault is now <em>a defence manufacturer</em>: three military programmes, one carmaker</h1>
+  <p class="article-subtitle">The announcement at Eurosatory that Renault will produce Thales' Toutatis loitering munitions at 1,000 units a month is not an isolated deal. It is the third military programme the French carmaker has entered in 18 months — and it signals a structural shift in how European countries intend to scale war production.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">FB</div>
+    <div><div class="byline-name">Frontline Brief Editorial</div><div class="byline-role">Athens · Brussels · Copenhagen · Nicosia · Malmö</div></div>
+  </div>
+</section>
+
+<div class="carousel">
+  <div class="carousel-wrap">
+  <div class="carousel-frame">
+    <div class="carousel-track" id="ctrack">
+      <div class="cslide"><img src="assets/renault-thales-en.jpg" alt="Renault Defence Portfolio — English"></div>
+      <div class="cslide"><img src="assets/renault-thales-el.jpg" alt="Renault Defence Portfolio — Ελληνικά"></div>
+      <div class="cslide"><img src="assets/renault-thales-fr.jpg" alt="Renault Defence Portfolio — Français"></div>
+      <div class="cslide"><img src="assets/renault-thales-da.jpg" alt="Renault Defence Portfolio — Dansk"></div>
+      <div class="cslide"><img src="assets/renault-thales-sv.jpg" alt="Renault Defence Portfolio — Svenska"></div>
+    </div>
+    <button class="carousel-arrow prev" onclick="cmove(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="carousel-arrow next" onclick="cmove(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  </div>
+  <div class="carousel-nav">
+    <button class="cdot active" onclick="cgo(0)"></button>
+    <button class="cdot" onclick="cgo(1)"></button>
+    <button class="cdot" onclick="cgo(2)"></button>
+    <button class="cdot" onclick="cgo(3)"></button>
+    <button class="cdot" onclick="cgo(4)"></button>
+  </div>
+</div>
+
+<div class="portfolio-section">
+  <div class="prog-row featured">
+    <div>
+      <div class="prog-badge">× Thales · NEW</div>
+      <div class="prog-name">Toutatis loitering munition</div>
+      <div class="prog-detail">Short-range strike · Injection moulding · –40% parts · Export-first · Announced Eurosatory 2026</div>
+    </div>
+    <div>
+      <div class="prog-val">1,000</div>
+      <div class="prog-unit">units/month · 2027</div>
+    </div>
+  </div>
+  <div class="prog-row secondary">
+    <div>
+      <div class="prog-badge" style="background:rgba(138,155,176,.1);color:var(--muted);border-color:rgba(138,155,176,.3);">× Turgis & Gaillard</div>
+      <div class="prog-name">Chorus long-range drone</div>
+      <div class="prog-detail">Le Mans plant · Demonstrator end-2026 · Long-range loitering capability</div>
+    </div>
+    <div>
+      <div class="prog-val">600</div>
+      <div class="prog-unit">units/month</div>
+    </div>
+  </div>
+  <div class="prog-row secondary">
+    <div>
+      <div class="prog-badge" style="background:rgba(138,155,176,.1);color:var(--muted);border-color:rgba(138,155,176,.3);">× John Cockerill</div>
+      <div class="prog-name">Ground combat drone</div>
+      <div class="prog-detail">Land warfare application · Ex-Arquus industrial base · Belgian defence group</div>
+    </div>
+    <div>
+      <div class="prog-val" style="font-size:22px;">TBD</div>
+      <div class="prog-unit">in development</div>
+    </div>
+  </div>
+</div>
+
+<div class="stats-row">
+  <div class="stat-card">
+    <div class="stat-num">×10</div>
+    <div class="stat-label">Production increase — from 100 to 1,000 Toutatis units per month</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">–40%</div>
+    <div class="stat-label">Reduction in parts and fasteners through design adaptation for injection moulding</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">Export</div>
+    <div class="stat-label">Primary target market — no significant French domestic order currently planned</div>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+
+  <div id="lang-en" class="lang-section active">
+    <h2>The deal that changes the picture</h2>
+    <p>At Eurosatory 2026 on 16 June, Renault Group and Thales announced that Renault would manufacture Thales' Toutatis loitering munition at one of its factories, with a target output of 1,000 units per month starting as early as 2027. The agreement is the second partnership between the two groups — they are also co-developing a military vehicle — and it marks a significant step in France's effort to scale drone and munitions production through the repurposing of automotive industrial capacity.</p>
+    <p>The numbers are striking. Thales currently produces around 100 Toutatis units per year. The Renault partnership is designed to increase that output by a factor of ten — to 1,000 per month — within roughly 18 months. The scale-up is made possible by two connected changes: a shift in manufacturing process from 3D printing to injection moulding, and a redesign of the drone itself to reduce the number of parts and fasteners by 40 percent. Both changes are necessary for high-volume production; neither would have been feasible without the involvement of an industrial partner with Renault's manufacturing depth.</p>
+    <div class="pull-quote"><p>We started with the military need. We closely examined what's happening in a number of theatres of operation, particularly in the East — Patrice Caine, CEO, Thales</p></div>
+    <h2>This is not Renault's first military programme</h2>
+    <p>What the Eurosatory announcement does not make immediately visible is that the Toutatis deal is Renault's third separate military programme, not its first. In parallel with the Thales partnership, Renault is working with French drone maker Turgis & Gaillard on a longer-range model called Chorus — with a first demonstrator expected by end-2026 and a production target of 600 units per month at Renault's Le Mans plant. A third programme, developed with Belgian defence group John Cockerill — which acquired French military vehicle maker Arquus from Volvo in 2024 — covers ground-based combat drones for land warfare applications.</p>
+    <p>Taken together, the three programmes constitute something more significant than a series of opportunistic defence contracts. They represent a deliberate strategic repositioning by a major European automotive manufacturer: Renault is building the manufacturing infrastructure and industrial partnerships to operate as a genuine defence producer. The company is careful to say that making cars remains its core business. But the portfolio it has assembled in 18 months tells a different story about where it sees growth, strategic relevance and government demand heading.</p>
+    <h2>The broader logic: why car factories matter in war</h2>
+    <p>The war in Ukraine has demonstrated, more clearly than any exercise, that the bottleneck in modern high-intensity conflict is not the design of weapons but the volume of their production. Loitering munitions — drones that hover, identify and strike — have been used in extraordinary quantities on both sides of the front line. Ukraine's own drone production has scaled rapidly, largely through the repurposing of civilian manufacturing capacity. Russia has similarly converted automotive and electronics factories to military output. The lesson has not been lost on Western European defence ministries, which spent decades optimising procurement for quality over quantity and now face a threat environment that demands both.</p>
+    <p>France's response — unlike Germany's or the UK's, which have focused primarily on ammunition and artillery — has concentrated on the drone sector, where its industrial base has genuine depth. Thales is the lead systems integrator; KNDS and MBDA are developing competing munition systems; and now Renault has entered as the production partner that can bridge the gap between bespoke defence manufacturing and true industrial-scale output. Renault CEO François Provost was explicit on this point at Eurosatory: Renault's industrial expertise will help scale drone production more quickly and at lower cost than a purely defence-sector supply chain could achieve. This is precisely the argument that has been made in Washington about the need to integrate the commercial-industrial base into defence production — Europe is now acting on it.</p>
+    <h2>The export dimension</h2>
+    <p>The companies were notably clear that there are no firm plans for France to purchase significant volumes of Toutatis domestically. The primary target is the export market — a posture that reflects both the commercial logic of the venture and a degree of political sensitivity about France being seen to prioritise exports of strike munitions. For potential buyers — particularly in the Middle East, Asia-Pacific and in NATO's eastern members that are significantly scaling their drone inventories — Renault's involvement is a credibility signal: this is not a small defence startup making artisanal drones in limited numbers. This is a company that builds four million vehicles a year, and it is applying that industrial discipline to a loitering munition at a competitive price point.</p>
+  </div>
+
+  <div id="lang-el" class="lang-section">
+    <h2>Η συμφωνία που αλλάζει την εικόνα</h2>
+    <p>Στο Eurosatory 2026 στις 16 Ιουνίου, η Renault Group και η Thales ανακοίνωσαν ότι η Renault θα κατασκευάζει το πλανήτη βλήμα Toutatis της Thales σε ένα από τα εργοστάσιά της, με στόχο παραγωγή 1.000 μονάδων το μήνα από το 2027. Η Thales παράγει σήμερα περίπου 100 μονάδες Toutatis ετησίως. Η συνεργασία με τη Renault έχει σχεδιαστεί για να αυξήσει αυτόν τον αριθμό κατά δέκα φορές — μέσω αλλαγής από 3D εκτύπωση σε εγχυτική διαμόρφωση και επανασχεδιασμού του drone για μείωση των εξαρτημάτων κατά 40%.</p>
+    <p>Αυτό που δεν γίνεται αμέσως ορατό είναι ότι η συμφωνία Toutatis είναι το τρίτο χωριστό στρατιωτικό πρόγραμμα της Renault, όχι το πρώτο. Παράλληλα με τη Thales, η Renault αναπτύσσει με την Turgis & Gaillard το long-range drone Chorus — με 600 μονάδες/μήνα στο Le Mans — και με τη John Cockerill χερσαία μάχιμα drones. Τρία στρατιωτικά προγράμματα, 18 μήνες, ένας κατασκευαστής αυτοκινήτων. Αυτό δεν είναι ευκαιριακή συνεργασία — είναι δομική αναδιάταξη.</p>
+    <div class="pull-quote"><p>Ξεκινήσαμε από τις στρατιωτικές ανάγκες. Εξετάσαμε προσεκτικά τι συμβαίνει σε θέατρα επιχειρήσεων, ιδίως στην Ανατολή — Patrice Caine, CEO, Thales</p></div>
+    <h2>Γιατί τα εργοστάσια αυτοκινήτων έχουν σημασία σε πόλεμο</h2>
+    <p>Ο πόλεμος στην Ουκρανία απέδειξε ότι το εμπόδιο στη σύγχρονη υψηλής έντασης σύγκρουση δεν είναι ο σχεδιασμός των όπλων αλλά ο όγκος της παραγωγής τους. Τα πλανήτη βλήματα χρησιμοποιήθηκαν σε εξαιρετικές ποσότητες και από τις δύο πλευρές. Η Γαλλία απαντά μέσω του drone sector, όπου η βιομηχανική της βάση έχει πραγματικό βάθος. Η είσοδος της Renault ως βιομηχανικός εταίρος γεφυρώνει το χάσμα μεταξύ αμυντικής κατασκευής και βιομηχανικής κλίμακας.</p>
+    <h2>Η εξαγωγική διάσταση</h2>
+    <p>Οι εταιρείες ήταν σαφείς: δεν υπάρχουν σχέδια για σημαντικές εγχώριες αγορές Toutatis από τη Γαλλία. Ο πρωταρχικός στόχος είναι η αγορά εξαγωγών — για πιθανούς αγοραστές στη Μέση Ανατολή, τον Ειρηνικό και τα ανατολικά μέλη του ΝΑΤΟ, η συμμετοχή της Renault αποτελεί σήμα αξιοπιστίας. Αυτή δεν είναι μια μικρή αμυντική startup που κατασκευάζει χειροτεχνικά drones. Είναι μια εταιρεία που κατασκευάζει τέσσερα εκατομμύρια οχήματα το χρόνο.</p>
+  </div>
+
+  <div id="lang-fr" class="lang-section">
+    <h2>L'accord qui change la donne</h2>
+    <p>À Eurosatory 2026 le 16 juin, Renault Group et Thales ont annoncé que Renault fabriquera la munition rôdeuse Toutatis de Thales dans l'une de ses usines, avec un objectif de 1 000 unités par mois dès 2027. Thales produit actuellement environ 100 unités de Toutatis par an. Le partenariat avec Renault est conçu pour multiplier cette production par dix — grâce au passage de l'impression 3D au moulage par injection et à une refonte du drone réduisant de 40 % le nombre de pièces.</p>
+    <p>Ce que l'annonce d'Eurosatory ne rend pas immédiatement visible, c'est que l'accord Toutatis est le troisième programme militaire distinct de Renault — pas le premier. Parallèlement à Thales, Renault développe avec Turgis & Gaillard le drone longue portée Chorus — 600 unités par mois à l'usine du Mans — et avec John Cockerill des drones de combat terrestres. Trois programmes militaires, 18 mois, un constructeur automobile. Ce n'est pas de l'opportunisme industriel — c'est un repositionnement structurel délibéré.</p>
+    <div class="pull-quote"><p>Nous sommes partis du besoin militaire. Nous avons examiné de près ce qui se passe dans plusieurs théâtres d'opérations, notamment à l'Est — Patrice Caine, PDG, Thales</p></div>
+    <h2>Pourquoi les usines automobiles comptent en temps de guerre</h2>
+    <p>La guerre en Ukraine a démontré que le goulet d'étranglement dans les conflits de haute intensité n'est pas la conception des armes mais le volume de leur production. La France répond par le secteur des drones, où sa base industrielle a une profondeur réelle. L'entrée de Renault comme partenaire industriel comble le fossé entre la fabrication de défense sur mesure et une production à l'échelle industrielle. Les sociétés ont été claires : il n'existe pas de plans d'achat domestique significatif de Toutatis par la France. Le marché export est la cible principale.</p>
+  </div>
+
+  <div id="lang-da" class="lang-section">
+    <h2>Den aftale der ændrer billedet</h2>
+    <p>På Eurosatory 2026 den 16. juni meddelte Renault Group og Thales, at Renault vil producere Thales' kredsende ammunition Toutatis på en af sine fabrikker, med et mål på 1.000 enheder om måneden fra 2027. Thales producerer i øjeblikket ca. 100 Toutatis-enheder om året. Renault-partnerskabet er designet til at tidoble den produktion — ved at skifte fra 3D-printning til sprøjtestøbning og ved at redesigne dronen til 40 % færre dele.</p>
+    <p>Hvad Eurosatory-meddelelsen ikke umiddelbart afslører, er at Toutatis-aftalen er Renaults tredje separate militærprogram — ikke det første. Sideløbende med Thales udvikler Renault med Turgis & Gaillard den langtrækkende drone Chorus og med John Cockerill kampdroner til landkrig. Tre militærprogrammer, 18 måneder, én bilfabrikant. Det er ikke opportunistiske enkeltaftaler — det er en strukturel strategisk omstilling.</p>
+    <div class="pull-quote"><p>Vi startede med det militære behov. Vi kiggede nøje på, hvad der sker i en række operationsteatre, særligt i øst — Patrice Caine, CEO, Thales</p></div>
+  </div>
+
+  <div id="lang-sv" class="lang-section">
+    <h2>Avtalet som förändrar bilden</h2>
+    <p>På Eurosatory 2026 den 16 juni meddelade Renault Group och Thales att Renault kommer att tillverka Thales kryssande ammunition Toutatis i en av sina fabriker, med ett mål på 1 000 enheter per månad från 2027. Thales producerar för närvarande ca 100 Toutatis-enheter per år. Renault-partnerskapet är utformat för att tiodubla den produktionen — genom att byta från 3D-printing till formsprutning och genom att designa om dronen för att minska antalet delar med 40 %.</p>
+    <p>Vad Eurosatory-tillkännagivandet inte gör omedelbart synligt är att Toutatis-affären är Renaults tredje separata militärprogram — inte det första. Parallellt med Thales utvecklar Renault med Turgis & Gaillard den långdistansdronen Chorus och med John Cockerill markstridsdroner. Tre militärprogram, 18 månader, en biltillverkare. Det är inte opportunistiska enstaka avtal — det är en strukturell strategisk ompositionering.</p>
+    <div class="pull-quote"><p>Vi började med det militära behovet. Vi undersökte noggrant vad som händer i ett antal operationsteatrar, särskilt i öst — Patrice Caine, VD, Thales</p></div>
+  </div>
+</div>
+
+<div class="sources">
+  <div class="sources-title">Sources</div>
+  <p>Defense News / Reuters — Renault teams up with Thales to boost France's drone production (16 June 2026, Gilles Guillaume & Florence Loeve)</p>
+  <p>Renault Group CEO François Provost — Eurosatory 2026 press statement</p>
+  <p>Thales CEO Patrice Caine — Eurosatory 2026 press statement</p>
+  <p>French Armed Forces Ministry — February 2026 request to Renault on defence sector strengthening</p>
+</div>
+
+<footer>
+  <div><div class="foot-brand">Frontline Brief</div><div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div></div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+
+<script>
+function setLang(lang,btn){document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));document.getElementById('lang-'+lang).classList.add('active');btn.classList.add('active');}
+let cIndex=0;
+function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*20)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
+function cmove(dir){cIndex=(cIndex+dir+5)%5;cgo(cIndex);}
+</script>
+</body>
+</html>
