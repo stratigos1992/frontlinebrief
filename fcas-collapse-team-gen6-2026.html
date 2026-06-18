@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The End of FCAS: How Europe's Most Ambitious Fighter Programme Collapsed — and What Berlin Does Next — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero{padding:64px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.meta-analysis{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(79,209,197,.1);color:var(--teal);border:.5px solid rgba(79,209,197,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--amber);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.carousel{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.carousel-wrap{width:100%;max-width:480px;margin:0 auto;}
+.carousel-frame{position:relative;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);width:100%;}
+.carousel-track{display:flex;flex-wrap:nowrap;width:500%;transition:transform .4s ease;will-change:transform;}
+.cslide{width:20%;flex-shrink:0;}
+.cslide img{width:100%;height:auto;display:block;}
+.carousel-nav{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:background .2s;}
+.cdot.active{background:var(--amber);}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,27,42,.55);border:.5px solid var(--border);color:var(--cold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;}
+.carousel-arrow.prev{left:10px;}
+.carousel-arrow.next{right:10px;}
+.paths-section{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.path-card{background:rgba(30,58,95,.35);border-radius:10px;padding:24px;border:.5px solid rgba(138,155,176,.15);position:relative;}
+.path-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:4px 0 0 4px;}
+.path-card.preferred::before{background:var(--amber);}
+.path-card.viable::before{background:var(--teal);}
+.path-card.fallback::before{background:var(--muted);}
+.path-badge{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:10px;margin-bottom:10px;display:inline-block;}
+.path-card.preferred .path-badge{background:rgba(232,160,32,.15);color:var(--amber);border:.5px solid rgba(232,160,32,.4);}
+.path-card.viable .path-badge{background:rgba(79,209,197,.12);color:var(--teal);border:.5px solid rgba(79,209,197,.3);}
+.path-card.fallback .path-badge{background:rgba(138,155,176,.1);color:var(--muted);border:.5px solid rgba(138,155,176,.3);}
+.path-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--cold);margin-bottom:8px;}
+.path-desc{font-size:13px;color:var(--muted);line-height:1.6;}
+.stats-row{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.stat-card{background:var(--steel);border-radius:8px;padding:20px;text-align:center;}
+.stat-num{font-size:28px;font-weight:700;color:var(--amber);font-family:'Playfair Display',serif;line-height:1;}
+.stat-label{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5;}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+.pull-quote{border-left:3px solid var(--amber);padding:16px 24px;margin:32px 0;background:rgba(232,160,32,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.timeline{margin:32px 0;}
+.tl-item{display:flex;gap:16px;margin-bottom:16px;}
+.tl-dot{width:10px;height:10px;border-radius:50%;background:var(--amber);margin-top:5px;flex-shrink:0;position:relative;z-index:2;}
+.tl-item:not(:last-child) .tl-dot::after{content:'';position:absolute;left:4px;top:10px;width:2px;height:calc(100% + 10px);background:rgba(232,160,32,.2);}
+.tl-date{font-size:11px;color:var(--amber);font-weight:700;letter-spacing:.08em;white-space:nowrap;}
+.tl-text{font-size:14px;color:var(--muted);line-height:1.5;margin-top:2px;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){
+  nav{padding:14px 20px;}
+  .hero,.paths-section,.stats-row,.article-body,.sources,.carousel{padding-left:20px;padding-right:20px;}
+  .article-title{font-size:30px;}
+  .paths-section,.stats-row{grid-template-columns:1fr;}
+  footer{padding:20px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon">
+      <div class="rring"></div><div class="rring"></div><div class="rring"></div>
+      <div class="ldot"></div>
+    </div>
+    <div class="ltext">
+      <span class="lmain">Frontline Brief</span>
+      <span class="lsub">Geopolitical · Military · Economic</span>
+    </div>
+  </a>
+  <a class="nav-back" href="strategic-affairs.html"><i class="ti ti-arrow-left"></i> Back to Strategic Affairs</a>
+</nav>
+
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag">Strategic Affairs</span>
+    <span class="meta-analysis">In-depth Analysis</span>
+    <span class="meta-date">18 June 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> 8 min read</span>
+  </div>
+  <h1 class="article-title">The end of FCAS: how Europe's most ambitious fighter programme collapsed — <em>and what Berlin does next</em></h1>
+  <p class="article-subtitle">Nine years. Roughly €3.2 billion committed. Zero aircraft built. When Chancellor Merz told President Macron in Montenegro on 5 June that Germany would not continue the joint Next Generation Fighter, he was ending not just a programme but a theory: that Franco-German industrial parity could be the engine of European strategic autonomy. It could not. Now Europe's air power future has three possible shapes — and none of them is what anyone planned in 2017.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">FB</div>
+    <div>
+      <div class="byline-name">Frontline Brief Editorial</div>
+      <div class="byline-role">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+    </div>
+  </div>
+</section>
+
+<div class="carousel">
+  <div class="carousel-wrap">
+  <div class="carousel-frame">
+    <div class="carousel-track" id="ctrack">
+      <div class="cslide"><img src="assets/fcas-collapse-en.jpg" alt="FCAS Collapse — English"></div>
+      <div class="cslide"><img src="assets/fcas-collapse-el.jpg" alt="FCAS Collapse — Ελληνικά"></div>
+      <div class="cslide"><img src="assets/fcas-collapse-fr.jpg" alt="FCAS Collapse — Français"></div>
+      <div class="cslide"><img src="assets/fcas-collapse-da.jpg" alt="FCAS Collapse — Dansk"></div>
+      <div class="cslide"><img src="assets/fcas-collapse-sv.jpg" alt="FCAS Collapse — Svenska"></div>
+    </div>
+    <button class="carousel-arrow prev" onclick="cmove(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="carousel-arrow next" onclick="cmove(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  </div>
+  <div class="carousel-nav">
+    <button class="cdot active" onclick="cgo(0)"></button>
+    <button class="cdot" onclick="cgo(1)"></button>
+    <button class="cdot" onclick="cgo(2)"></button>
+    <button class="cdot" onclick="cgo(3)"></button>
+    <button class="cdot" onclick="cgo(4)"></button>
+  </div>
+</div>
+
+<div class="paths-section">
+  <div class="path-card preferred">
+    <div class="path-badge">① Preferred</div>
+    <div class="path-title">Team Gen 6</div>
+    <div class="path-desc">Eight German companies led by Airbus, plus Spain's Indra-led group, lobbying for an Airbus-led European sixth-generation fighter with Saab as potential partner. Berlin's national aviation strategy requires Airbus to co-lead any future German fighter.</div>
+  </div>
+  <div class="path-card viable">
+    <div class="path-badge">② Viable</div>
+    <div class="path-title">Join GCAP</div>
+    <div class="path-desc">UK-Italy-Japan's Global Combat Air Programme has functioning governance, a 2035 service-entry target, and Leonardo CEO Mariani has publicly welcomed German participation — but warned the programme's 2035 deadline is non-negotiable.</div>
+  </div>
+  <div class="path-card fallback">
+    <div class="path-badge">③ Fallback</div>
+    <div class="path-title">Order More F-35s</div>
+    <div class="path-desc">Defence Minister Pistorius has explicitly named the F-35 as an option. Germany already operates F-35As as Tornado replacements. Procuring more would be the fastest path to capability — but would end Germany's sixth-generation ambitions entirely.</div>
+  </div>
+</div>
+
+<div class="stats-row">
+  <div class="stat-card">
+    <div class="stat-num">€100bn</div>
+    <div class="stat-label">Programme valuation — cancelled with no prototype ever flown</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">9 years</div>
+    <div class="stat-label">2017–2026 · from Macron-Merkel announcement to Merz-Macron cancellation</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">2050s</div>
+    <div class="stat-label">Eurofighter Typhoon now has no agreed European replacement</div>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+
+  <div id="lang-en" class="lang-section active">
+    <h2>How it ended</h2>
+    <p>The political execution was clean and fast. On 5 June, on the margins of the EU-Western Balkans Summit in Tivat, Montenegro, Chancellor Friedrich Merz told President Emmanuel Macron that Germany would not continue development of the manned Next Generation Fighter. The public announcement followed on 8 June, timed to the opening of ILA Berlin. German Defence Minister Boris Pistorius delivered the epitaph with directness: "It was an ambitious, large-scale European project that is now collapsing in the face of reality." The following day, eight German companies unveiled Team Gen 6 — a positioning paper to Berlin and the German Air Force, arguing that the capabilities developed under FCAS must be preserved and that Germany should lead a successor programme.</p>
+    <p>What died, technically, is the manned fighter element — the Next Generation Fighter that was to replace the Eurofighter Typhoon in Germany and Spain, and the Rafale in France, from around 2040. The FCAS System of Systems — the combat cloud architecture linking aircraft, remote carriers, sensors and satellites — continues. The EUMET engine consortium of Safran, MTU Aero Engines and ITP Aero also survives, as does development work on remote carrier drones. Merz himself, at ILA, called for the combat cloud to become a central Franco-German project, with a new industrial work plan expected at the intergovernmental council meeting in July.</p>
+
+    <h2>What actually killed it</h2>
+    <p>The programme's collapse was not sudden. It was the accumulation of nine years of an unresolvable structural contradiction. France and Germany did not want the same aircraft. France required a carrier-capable, nuclear-certified platform — requirements shaped by the Charles de Gaulle carrier and the Force de Frappe. Germany and Spain needed a long-range conventional air superiority fighter. A single airframe that satisfied both sets of requirements without compromising either was, in engineering terms, extremely demanding; in political terms, it meant every design decision became a negotiation about national priorities.</p>
+    <p>On top of divergent requirements sat a more elementary dispute: who leads. Dassault Aviation, as France's national champion and one of the few firms with independent combat aircraft design authority in the world, insisted on the "best athlete" principle — its engineers would make the fundamental design decisions because they had the deepest expertise. Airbus, carrying the weight of German and Spanish industrial expectations, insisted on genuine parity. By 2025, reports indicated Dassault was seeking up to 80 percent of the fighter workshare. A mediation process launched after a Macron-Merz dinner in Brussels on 18 March 2026 failed. The programme was formally stuck at Phase 1B — Technology Development — having never moved to Phase 2, the demonstrator aircraft. The 2026 flight-test target for a demonstrator had already slipped to 2045 or later. There was no contract on workshare, no agreed airframe, no signed industrial agreement. There was a model at the Paris Air Show.</p>
+
+    <div class="pull-quote"><p>Nine years and €3.2 billion committed to the development phase alone produced no flying aircraft, no finalised design, and no signed industrial agreement on workshare.</p></div>
+
+    <h2>The three paths now open to Berlin</h2>
+    <p>German Defence Minister Pistorius outlined three options publicly, and each carries a different strategic logic. The first is to order additional F-35A Lightning II jets. Germany already operates the type as a Tornado replacement; acquiring more would be the fastest path to advanced capability but would effectively end Germany's sixth-generation ambitions and consolidate transatlantic dependency at a moment when Berlin is explicitly pursuing greater strategic autonomy. Few in Team Gen 6 expect this to be Berlin's primary choice — but it remains a credible pressure lever in negotiations with Airbus and potential GCAP partners.</p>
+    <p>The second option is joining GCAP — the Global Combat Air Programme developed by the United Kingdom, Italy and Japan with a 2035 service-entry target. GCAP is genuinely more advanced than FCAS was at any comparable stage: it has functioning tri-national governance, a jointly agreed industrial framework, and is on track for demonstrator flight tests. Leonardo CEO Lorenzo Mariani welcomed German participation in terms of capabilities and cost-sharing — but explicitly flagged that the 2035 deadline cannot be moved and that integrating a fourth major industrial partner into a programme already in design-phase development would require "careful management". Germany would likely enter as a junior partner, which, after a decade of fighting Dassault over industrial control, may not be politically saleable in Berlin or to IG Metall.</p>
+    <p>The third option — and the one Team Gen 6 is lobbying for — is an Airbus-led European programme with Germany at the centre, Spain as a committed partner, and Saab of Sweden being sounded out as an additional industrial collaborator. This is the path most consistent with Germany's national aviation strategy, adopted by cabinet on 10 June, which explicitly states that Airbus must co-lead any future German fighter. It is also the slowest and most uncertain route. Germany does not have recent indigenous experience in designing a modern combat aircraft. Airbus has never been a prime contractor on a fighter from scratch. The programme would need to build from the technology developed under FCAS — which is why the German and Spanish industry statements place so much emphasis on preserving the expertise already accumulated, warning that a funding gap would lead to "irreversible" loss of capability.</p>
+
+    <h2>What this means for European air power</h2>
+    <p>The strategic picture is stark. The Eurofighter Typhoon — the aircraft FCAS was meant to succeed — now has no agreed European replacement on the horizon. The Rafale is in the same position. Britain, Italy and Japan are pressing ahead with GCAP. The United States is developing the F-47 under the Next Generation Air Dominance programme. China has publicly flown not one but two sixth-generation prototypes. Europe's flagship collective answer to all of them has just been cancelled.</p>
+    <p>FCAS was conceived explicitly as a demonstration of European strategic autonomy — the argument that Europe could develop, without American or British-led participation, the most demanding category of military capability. Its collapse is a data point in the opposite direction. The programme did not fail because the technology was beyond reach. It failed because the political and industrial framework designed to share both costs and sovereignty could not survive contact with genuine industrial competition between France and Germany. GCAP has moved faster not because UK-Italy-Japan cooperation is inherently easier, but because the three partners agreed in 2022 on a jointly governed industrial framework that structurally prevented any single partner from claiming unilateral lead authority. That is precisely the arrangement Dassault refused.</p>
+    <p>Germany and Spain's Team Gen 6 companies are right to argue that the intellectual capital built under FCAS — in stealth design, sensor fusion, propulsion and combat cloud architecture — represents a genuine European asset that should not be allowed to dissipate. Whether Berlin will fund the preservation of that capability while simultaneously making a strategic decision about which of the three paths to take is the central question of European defence planning for the next 24 months. The decision is expected by autumn 2026. The Eurofighter fleets of Germany, Spain, Italy, the UK and Austria will be waiting for the answer well into the 2040s.</p>
+  </div>
+
+  <div id="lang-el" class="lang-section">
+    <h2>Πώς τελείωσε</h2>
+    <p>Η πολιτική εκτέλεση ήταν καθαρή και ταχύτατη. Στις 5 Ιουνίου, στο περιθώριο της Συνόδου ΕΕ-Δυτικών Βαλκανίων στο Τίβατ του Μαυροβουνίου, ο Καγκελάριος Friedrich Merz ανακοίνωσε στον Πρόεδρο Μακρόν ότι η Γερμανία δεν θα συνεχίσει την ανάπτυξη του επανδρωμένου Next Generation Fighter. Η δημόσια ανακοίνωση ακολούθησε στις 8 Ιουνίου, συντονισμένη με την έναρξη της ILA Βερολίνου. Ο Γερμανός Υπουργός Άμυνας Boris Pistorius έθεσε τον επιτάφιο με αμεσότητα: «Ήταν ένα φιλόδοξο, μεγάλης κλίμακας ευρωπαϊκό πρόγραμμα που τώρα καταρρέει μπρος στην πραγματικότητα.» Την επόμενη μέρα, οκτώ γερμανικές εταιρείες ανακοίνωσαν το Team Gen 6.</p>
+    <p>Αυτό που πέθανε, τεχνικά, είναι το επανδρωμένο τμήμα — ο Next Generation Fighter. Η αρχιτεκτονική combat cloud, τα τηλεκατευθυνόμενα σκάφη, η κινητήρια κοινοπραξία EUMET — αυτά επιβιώνουν. Ο ίδιος ο Merz στην ILA κάλεσε το combat cloud να γίνει κεντρικό γαλλο-γερμανικό έργο, με νέο βιομηχανικό πλάνο που αναμένεται στο διακυβερνητικό συμβούλιο τον Ιούλιο.</p>
+
+    <h2>Ποιος σκότωσε το FCAS</h2>
+    <p>Η κατάρρευση δεν ήταν αιφνίδια. Ήταν η συσσώρευση εννέα χρόνων άλυτης δομικής αντίφασης. Γαλλία και Γερμανία δεν ήθελαν το ίδιο αεροσκάφος. Η Γαλλία χρειαζόταν πλατφόρμα ικανή να προσγειώνεται σε αεροπλανοφόρο και να μεταφέρει πυρηνικά βλήματα — απαιτήσεις που σχηματίζονται από το Charles de Gaulle και τη Force de Frappe. Η Γερμανία και η Ισπανία χρειάζονταν ένα συμβατικό υπερηχητικό αεροσκάφος αεροπορικής υπεροχής μεγάλης εμβέλειας. Ένα μόνο σχέδιο που να ικανοποιεί και τα δύο σύνολα απαιτήσεων χωρίς συμβιβασμούς ήταν στρατηγικά άλυτο.</p>
+    <p>Πάνω στις αποκλίνουσες απαιτήσεις υπήρχε μια πιο θεμελιώδης διαφωνία: ποιος ηγείται. Η Dassault Aviation, ως εθνικός πρωταθλητής της Γαλλίας, επέμενε στην αρχή του «καλύτερου αθλητή» — οι μηχανικοί της θα έπαιρναν τις θεμελιώδεις αποφάσεις σχεδίασης. Η Airbus, φέροντας το βάρος των γερμανικών και ισπανικών βιομηχανικών προσδοκιών, επέμενε σε πραγματική ισοτιμία. Ως το 2025, υπήρχαν αναφορές ότι η Dassault ζητούσε έως το 80% του βιομηχανικού μεριδίου. Μια μεσολαβητική διαδικασία μετά από δείπνο Μακρόν-Merz στις Βρυξέλλες στις 18 Μαρτίου 2026 απέτυχε. Εννέα χρόνια και περίπου 3,2 δισ. € δεν παρήγαγαν κανένα αεροπλάνο, καμία τελικοποιημένη σχεδίαση, καμία υπογεγραμμένη βιομηχανική συμφωνία.</p>
+
+    <div class="pull-quote"><p>Το FCAS δεν απέτυχε επειδή η τεχνολογία ήταν εκτός εμβέλειας. Απέτυχε επειδή το πλαίσιο βιομηχανικής συνεργασίας δεν άντεξε στον πραγματικό ανταγωνισμό μεταξύ Γαλλίας και Γερμανίας.</p></div>
+
+    <h2>Τι σημαίνει για την ευρωπαϊκή αεροπορική ισχύ</h2>
+    <p>Το στρατηγικό τοπίο είναι σκληρό. Το Eurofighter Typhoon — το αεροσκάφος που το FCAS έπρεπε να αντικαταστήσει — δεν έχει πλέον συμφωνημένο ευρωπαϊκό διάδοχο στον ορίζοντα. Ηνωμένο Βασίλειο, Ιταλία και Ιαπωνία προχωρούν με το GCAP. Οι ΗΠΑ αναπτύσσουν το F-47. Η Κίνα έχει πετάξει δημόσια όχι ένα αλλά δύο πρωτότυπα έκτης γενιάς. Η ευρωπαϊκή κοινή απάντηση σε όλα αυτά μόλις ακυρώθηκε.</p>
+    <p>Το GCAP προχώρησε ταχύτερα όχι επειδή η συνεργασία ΗΒ-Ιταλία-Ιαπωνία είναι εκ φύσεως ευκολότερη, αλλά επειδή οι τρεις εταίροι συμφώνησαν το 2022 σε ένα από κοινού διοικούμενο βιομηχανικό πλαίσιο που δομικά εμπόδισε κάθε εταίρο να διεκδικήσει μονομερή ηγεσία. Αυτή ακριβώς ήταν η ρύθμιση που αρνήθηκε η Dassault. Η Γερμανία, η Ισπανία και τα οκτώ μέλη του Team Gen 6 έχουν δίκιο να υποστηρίζουν ότι το πνευματικό κεφάλαιο που αναπτύχθηκε υπό το FCAS — στη σχεδίαση stealth, στη σύντηξη αισθητήρων, στην αρχιτεκτονική combat cloud — αποτελεί πραγματικό ευρωπαϊκό πλεονέκτημα που δεν πρέπει να διαλυθεί.</p>
+  </div>
+
+  <div id="lang-fr" class="lang-section">
+    <h2>Comment c'est terminé</h2>
+    <p>L'exécution politique fut nette et rapide. Le 5 juin, en marge du Sommet UE-Balkans occidentaux à Tivat, au Monténégro, le Chancelier Friedrich Merz a informé le Président Emmanuel Macron que l'Allemagne ne poursuivrait pas le développement du chasseur de nouvelle génération habité. L'annonce publique suivit le 8 juin, synchronisée avec l'ouverture de l'ILA Berlin. Le ministre de la Défense allemand Boris Pistorius formula l'épitaphe avec franchise : « C'était un projet européen ambitieux et de grande envergure qui s'effondre désormais face à la réalité. » Le lendemain, huit entreprises allemandes dévoilèrent Team Gen 6.</p>
+    <p>Ce qui meurt, techniquement, c'est le chasseur habité — le Next Generation Fighter qui devait remplacer l'Eurofighter Typhoon en Allemagne et en Espagne, et le Rafale en France. L'architecture combat cloud, les drones porteurs, le consortium moteur EUMET — tout cela survit. Merz lui-même, à l'ILA, a appelé le combat cloud à devenir un projet franco-allemand central, avec un nouveau plan de travail industriel attendu au conseil intergouvernemental de juillet.</p>
+
+    <h2>Ce qui a réellement tué le programme</h2>
+    <p>L'effondrement n'était pas soudain. Il était l'accumulation de neuf ans d'une contradiction structurelle irrésoluble. La France et l'Allemagne ne voulaient pas le même avion. La France exigeait une plateforme embarquable et certifiée nucléaire — des contraintes imposées par le porte-avions Charles de Gaulle et la Force de Frappe. L'Allemagne et l'Espagne avaient besoin d'un chasseur de supériorité aérienne conventionnel à longue portée. Un appareil unique satisfaisant les deux ensembles d'exigences sans compromis était, stratégiquement, une équation sans solution.</p>
+    <p>À cette divergence s'ajoutait un différend plus élémentaire : qui dirige. Dassault Aviation, en tant que champion national français disposant d'une maîtrise d'œuvre autonome en matière d'avions de combat, a insisté sur le principe du « meilleur athlète ». Airbus, portant le poids des attentes industrielles allemandes et espagnoles, a exigé une véritable parité. En 2025, des rapports indiquaient que Dassault réclamait jusqu'à 80 % de la part industrielle du chasseur. Une tentative de médiation après un dîner Macron-Merz à Bruxelles le 18 mars 2026 échoua. Neuf ans et environ 3,2 milliards d'euros engagés dans la seule phase de développement n'ont produit aucun avion volant, aucun design finalisé, aucun accord industriel signé.</p>
+
+    <div class="pull-quote"><p>Le SCAF n'a pas échoué parce que la technologie était hors de portée. Il a échoué parce que le cadre de coopération industrielle n'a pas résisté à la compétition réelle entre la France et l'Allemagne.</p></div>
+
+    <h2>Ce que cela signifie pour la puissance aérienne européenne</h2>
+    <p>Le tableau stratégique est sombre. L'Eurofighter Typhoon — l'appareil que le SCAF devait succéder — n'a désormais plus de successeur européen convenu à l'horizon. Le Rafale est dans la même situation. Le Royaume-Uni, l'Italie et le Japon poursuivent le GCAP. Les États-Unis développent le F-47. La Chine a publiquement fait voler non pas un, mais deux prototypes de sixième génération. La réponse collective européenne à tout cela vient d'être annulée.</p>
+    <p>Le GCAP a avancé plus vite non parce que la coopération RU-Italie-Japon est intrinsèquement plus aisée, mais parce que les trois partenaires ont convenu en 2022 d'un cadre industriel conjointement gouverné qui empêche structurellement tout partenaire de revendiquer une autorité unilatérale. C'est précisément l'arrangement que Dassault a refusé. La décision de Berlin est attendue à l'automne 2026. Les flottes d'Eurofighter de l'Allemagne, de l'Espagne, de l'Italie, du Royaume-Uni et de l'Autriche attendront la réponse bien dans les années 2040.</p>
+  </div>
+
+  <div id="lang-da" class="lang-section">
+    <h2>Hvordan det sluttede</h2>
+    <p>Den politiske afvikling var ren og hurtig. Den 5. juni, i randzonen af EU-Vestbalkan-topmødet i Tivat, Montenegro, meddelte kansler Friedrich Merz præsident Emmanuel Macron, at Tyskland ikke ville fortsætte udviklingen af den bemandede Next Generation Fighter. Den offentlige meddelelse fulgte den 8. juni, koordineret med åbningen af ILA Berlin. Forsvarsminister Boris Pistorius formulerede epitafiet direkte: "Det var et ambitiøst, storstilet europæisk projekt, der nu bryder sammen over for virkeligheden." Dagen efter afslørede otte tyske virksomheder Team Gen 6.</p>
+    <p>Det, der teknisk set dør, er den bemandede jager. Combat cloud-arkitekturen, fjernbetjente bærere og EUMET-motorkonsortiet overlever. Merz selv opfordrede på ILA til, at combat cloud skal blive et centralt tysk-fransk projekt.</p>
+
+    <h2>Hvad der reelt dræbte programmet</h2>
+    <p>Sammenbruddet var ikke pludseligt. Det var akkumulationen af ni år med en uløselig strukturel modsætning. Frankrig og Tyskland ville ikke have det samme fly. Frankrig krævede en hangarskibskapabel, nuklear-certificeret platform. Tyskland og Spanien havde brug for en konventionel luftoverlegenhedsjager med lang rækkevidde. Oven i de divergerende krav lå en mere grundlæggende strid: hvem leder. Dassault insisterede på "bedste atlet"-princippet. Airbus krævede reel paritet. I 2025 angav rapporter, at Dassault søgte op til 80% af industriens andel. Et mæglingsforløb efter et Macron-Merz-middag i Bruxelles den 18. marts 2026 mislykkedes. Ni år og ca. 3,2 milliarder euro producerede intet flyvende fly, intet færdigudviklet design, ingen underskrevet industriaftale.</p>
+
+    <div class="pull-quote"><p>FCAS mislykkedes ikke fordi teknologien var uden for rækkevidde. Det mislykkedes fordi det industrielle samarbejdsramme ikke overlevede reel konkurrence mellem Frankrig og Tyskland.</p></div>
+
+    <h2>Hvad det betyder for europæisk luftmagt</h2>
+    <p>Det strategiske billede er barskt. Eurofighter Typhoon — det fly FCAS skulle afløse — har nu ingen aftalt europæisk efterfølger i sigte. UK, Italien og Japan presser på med GCAP. USA udvikler F-47. Kina har offentligt fløjet ikke ét men to sjette-generationsprototyper. Europas kollektive svar på alt dette er netop annulleret. GCAP rykkede hurtigere frem ikke fordi UK-Italien-Japan-samarbejde er nemmere, men fordi de tre partnere i 2022 aftalte en fælles styret industriel ramme, der strukturelt forhindrede en enkelt partner i at kræve ensidig ledelse. Det var præcis den aftale Dassault afviste. Berlins beslutning forventes efteråret 2026.</p>
+  </div>
+
+  <div id="lang-sv" class="lang-section">
+    <h2>Hur det slutade</h2>
+    <p>Det politiska avvecklingen var ren och snabb. Den 5 juni, i utkanten av EU-Västra Balkantoppmötet i Tivat, Montenegro, meddelade förbundskansler Friedrich Merz president Emmanuel Macron att Tyskland inte skulle fortsätta utvecklingen av den bemannade Next Generation Fighter. Det offentliga tillkännagivandet följde den 8 juni, samordnat med öppningen av ILA Berlin. Försvarsminister Boris Pistorius formulerade epitafet rakt på sak: "Det var ett ambitiöst, storskaligt europeiskt projekt som nu kollapsar inför verkligheten." Dagen därpå presenterade åtta tyska företag Team Gen 6.</p>
+    <p>Det som tekniskt sett dör är den bemannade jaktplanet. Combat cloud-arkitekturen, fjärrstyrda bärare och EUMET-motorkonsortiet överlever. Merz uppmanade själv på ILA att combat cloud ska bli ett centralt tysk-franskt projekt.</p>
+
+    <h2>Vad som verkligen dödade programmet</h2>
+    <p>Kollapsen var inte plötslig. Den var ackumuleringen av nio år av en olöslig strukturell motsättning. Frankrike och Tyskland ville inte ha samma flygplan. Frankrike krävde en hangarfartygskapabel, nukleär-certifierad plattform. Tyskland och Spanien behövde ett konventionellt luftöverlägsenhetsjaktplan med lång räckvidd. Ovanpå de divergerande kraven låg en mer grundläggande tvist: vem leder. Dassault insisterade på "bäste idrottare"-principen. Airbus krävde verklig paritet. Under 2025 rapporterades att Dassault sökte upp till 80% av industriandelen. En medlingsprocess efter en Macron-Merz-middag i Bryssel den 18 mars 2026 misslyckades. Nio år och ca 3,2 miljarder euro producerade inget flygande flygplan, ingen slutgiltig design, inget undertecknat industriavtal.</p>
+
+    <div class="pull-quote"><p>FCAS misslyckades inte för att teknologin var utom räckhåll. Det misslyckades för att det industriella samarbetsramverket inte överlevde verklig konkurrens mellan Frankrike och Tyskland.</p></div>
+
+    <h2>Vad det innebär för europeisk luftmakt</h2>
+    <p>Den strategiska bilden är dyster. Eurofighter Typhoon — det flygplan FCAS var tänkt att efterfölja — saknar nu en överenskommen europeisk efterträdare i sikte. UK, Italien och Japan driver på med GCAP. USA utvecklar F-47. Kina har offentligt flugit inte ett utan två sjättegeneration-prototyper. Europas kollektiva svar på allt detta har just ställts in. GCAP har rört sig snabbare inte för att UK-Italien-Japan-samarbete är lättare, utan för att de tre partnerna 2022 kom överens om ett gemensamt styrt industriellt ramverk som strukturellt hindrade en enskild partner från att kräva ensidigt ledarskap. Det var exakt den överenskommelse Dassault avvisade. Berlins beslut väntas hösten 2026.</p>
+  </div>
+</div>
+
+<div class="sources">
+  <div class="sources-title">Sources</div>
+  <p>Defense News — German, Spanish FCAS companies rally to preserve breakthrough fighter tech (11 June 2026, Sebastian Sprenger)</p>
+  <p>The Aviationist — German Industry Announces "Team Gen 6" to Develop FCAS Alternative (12 June 2026)</p>
+  <p>TechTimes — Germany Kills €100 Billion FCAS Fighter at ILA Berlin (10 June 2026)</p>
+  <p>Grosswald Signal No. 77 — Germany and France Abandon the Joint FCAS Fighter (8–10 June 2026)</p>
+  <p>MiGFlug.com — FCAS Dead, Germany Eyes GCAP Entry; Team Gen 6: Eight German Companies Build a Fighter Without France (June 2026)</p>
+  <p>DEFENSEMAGAZINE.com — End of an Ambitious Dream: FCAS Cancelled (June 2026)</p>
+  <p>Bundesregierung / Élysée Palace — Official statements, 8 June 2026</p>
+  <p>Defence Minister Boris Pistorius — ILA Berlin press conference, 8 June 2026</p>
+  <p>Leonardo CEO Lorenzo Mariani — GCAP openness statement (Defense News, 10 June 2026)</p>
+</div>
+
+<footer>
+  <div>
+    <div class="foot-brand">Frontline Brief</div>
+    <div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div>
+  </div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+
+<script>
+function setLang(lang,btn){
+  document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));
+  document.getElementById('lang-'+lang).classList.add('active');
+  btn.classList.add('active');
+}
+let cIndex=0;
+function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*20)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
+function cmove(dir){cIndex=(cIndex+dir+5)%5;cgo(cIndex);}
+</script>
+</body>
+</html>
