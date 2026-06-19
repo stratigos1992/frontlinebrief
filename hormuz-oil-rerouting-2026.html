@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hormuz Crisis 2026: How the Iran War Rewrote Global Oil Trade Routes — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;--red:#E84040;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero{padding:64px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.meta-analysis{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(79,209,197,.1);color:var(--teal);border:.5px solid rgba(79,209,197,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--amber);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+/* Map image */
+.map-section{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.map-img{width:100%;max-width:600px;display:block;margin:0 auto;border-radius:12px;border:.5px solid var(--border);}
+.map-caption{font-size:12px;color:var(--muted);text-align:center;margin-top:10px;font-style:italic;}
+/* Flow stats */
+.flows-grid{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.flow-card{background:rgba(30,58,95,.35);border-radius:10px;padding:20px;border:.5px solid rgba(138,155,176,.12);text-align:center;}
+.flow-label{font-size:10px;color:var(--amber);letter-spacing:.14em;font-weight:600;text-transform:uppercase;margin-bottom:8px;}
+.flow-val{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;line-height:1;}
+.flow-note{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.4;}
+/* Route cards */
+.routes-section{max-width:860px;margin:0 auto;padding:0 48px 40px;display:flex;flex-direction:column;gap:12px;}
+.route-card{background:rgba(30,58,95,.35);border-radius:10px;padding:20px 24px;border:.5px solid rgba(138,155,176,.12);display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;position:relative;}
+.route-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:4px 0 0 4px;}
+.route-card.blocked::before{background:var(--red);}
+.route-card.cape::before{background:var(--amber);}
+.route-card.pipeline::before{background:var(--teal);}
+.route-badge{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;border-radius:12px;display:inline-block;margin-bottom:6px;}
+.route-card.blocked .route-badge{background:rgba(232,64,64,.12);color:var(--red);border:.5px solid rgba(232,64,64,.3);}
+.route-card.cape .route-badge{background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.route-card.pipeline .route-badge{background:rgba(79,209,197,.1);color:var(--teal);border:.5px solid rgba(79,209,197,.3);}
+.route-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--cold);margin-bottom:4px;}
+.route-detail{font-size:13px;color:var(--muted);}
+.route-stat{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;text-align:right;line-height:1;}
+.route-unit{font-size:11px;color:var(--muted);text-align:right;margin-top:4px;}
+.route-card.blocked .route-stat{color:var(--red);}
+.route-card.cape .route-stat{color:var(--amber);}
+.route-card.pipeline .route-stat{color:var(--teal);}
+/* Article body */
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+.pull-quote{border-left:3px solid var(--amber);padding:16px 24px;margin:32px 0;background:rgba(232,160,32,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.map-section,.flows-grid,.routes-section,.article-body,.sources{padding-left:20px;padding-right:20px;}.article-title{font-size:30px;}.flows-grid{grid-template-columns:repeat(2,1fr);}.route-card{grid-template-columns:1fr;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <a class="nav-back" href="geoeconomics.html"><i class="ti ti-arrow-left"></i> Back to Geo-economics</a>
+</nav>
+
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag">Geo-economics</span>
+    <span class="meta-analysis">In-depth Analysis</span>
+    <span class="meta-date">18 June 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> 6 min read</span>
+  </div>
+  <h1 class="article-title">Hormuz Crisis 2026: how the Iran war <em>rewrote global oil trade routes</em></h1>
+  <p class="article-subtitle">A fifth of the world's seaborne oil — roughly 20 million barrels a day — passed through the Strait of Hormuz before the war. Now 5.1 million barrels flow through. The rest has had to find another way: south around Africa, or overland through Saudi Arabia's East-West pipeline to Yanbu on the Red Sea.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">FB</div>
+    <div><div class="byline-name">Frontline Brief Editorial</div><div class="byline-role">Athens · Brussels · Copenhagen · Nicosia · Malmö</div></div>
+  </div>
+</section>
+
+<div class="map-section">
+  <img class="map-img" src="assets/hormuz-map-2026.jpg" alt="Hormuz Crisis 2026 — Oil Flow Rerouting Map">
+  <p class="map-caption">Oil flow rerouting since the Strait of Hormuz closure — Cape of Good Hope route (amber) and Saudi Petroline East-West pipeline (teal) · Frontline Brief, June 2026</p>
+</div>
+
+<div class="flows-grid">
+  <div class="flow-card">
+    <div class="flow-label">Pre-war flows</div>
+    <div class="flow-val" style="color:var(--muted)">20 mbd</div>
+    <div class="flow-note">~25% of global seaborne oil</div>
+  </div>
+  <div class="flow-card">
+    <div class="flow-label">Current flows (June)</div>
+    <div class="flow-val" style="color:var(--red)">5.1 mbd</div>
+    <div class="flow-note">JPMorgan estimate · 18 June 2026</div>
+  </div>
+  <div class="flow-card">
+    <div class="flow-label">Cape reroute</div>
+    <div class="flow-val" style="color:var(--amber)">+14 days</div>
+    <div class="flow-note">+3,800 nautical miles per voyage</div>
+  </div>
+  <div class="flow-card">
+    <div class="flow-label">Tankers stranded</div>
+    <div class="flow-val" style="color:var(--cold)">130</div>
+    <div class="flow-note">Empty vessels in Persian Gulf · vs 250 pre-war</div>
+  </div>
+</div>
+
+<div class="routes-section">
+  <div class="route-card blocked">
+    <div>
+      <div class="route-badge">BLOCKED</div>
+      <div class="route-name">Strait of Hormuz</div>
+      <div class="route-detail">34 km wide · Iran declared closure March 2026 · vessel attacks ongoing · 130 empty tankers stranded in Gulf</div>
+    </div>
+    <div>
+      <div class="route-stat">5.1 mbd</div>
+      <div class="route-unit">flowing · vs 20 mbd pre-war</div>
+    </div>
+  </div>
+  <div class="route-card cape">
+    <div>
+      <div class="route-badge">ACTIVE REROUTE</div>
+      <div class="route-name">Cape of Good Hope</div>
+      <div class="route-detail">Yanbu (Red Sea) → around Africa → Europe / Asia · +3,800 NM · +14 days · freight rates surging</div>
+    </div>
+    <div>
+      <div class="route-stat">+14 days</div>
+      <div class="route-unit">per voyage · significant cost increase</div>
+    </div>
+  </div>
+  <div class="route-card pipeline">
+    <div>
+      <div class="route-badge">PARTIAL RELIEF</div>
+      <div class="route-name">Saudi Petroline (East-West)</div>
+      <div class="route-detail">Abqaiq → Yanbu · 1,200 km overland · design capacity 5–7 mbd · currently ~2 mbd utilised · 3–5 mbd spare available</div>
+    </div>
+    <div>
+      <div class="route-stat">3–5 mbd</div>
+      <div class="route-unit">spare capacity available</div>
+    </div>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+
+  <div id="lang-en" class="lang-section active">
+    <h2>The anatomy of a chokepoint crisis</h2>
+    <p>The Strait of Hormuz is 34 kilometres wide at its narrowest point and runs between the Iranian coast and the Omani exclave of Musandam. In normal times, roughly 20 million barrels of crude oil, condensate and petroleum products pass through it every day — approximately one in five barrels of all seaborne oil traded globally. There is no alternative that can replace this volume at comparable cost and speed: the Suez Canal handles oil moving from the Gulf towards Europe, but its capacity is finite and its northern approach runs through a region that has itself been contested; the Saudi East-West pipeline can carry perhaps 5–7 million barrels per day at maximum capacity; and the Cape of Good Hope route adds two weeks and several million dollars in additional freight costs per voyage.</p>
+    <p>When Iran declared the strait "closed to hostile vessels" in March 2026, following the opening of US-Israeli air strikes on Iranian nuclear and military facilities, the immediate effect on global oil flows was dramatic. Flows through Hormuz fell from 20 million barrels per day to approximately 2.2 million barrels per day by the end of March — a drop of nearly 90 percent. Some of the vessels that continued to transit were Iranian or Chinese-flagged tankers operating outside the sanctions framework; most international shipping companies suspended their Gulf of Oman operations within days of the first Iranian maritime interdictions.</p>
+    <div class="pull-quote"><p>The concentration of roughly 20 percent of global oil supply through a 34-kilometre-wide channel represents a systemic risk with no adequate short-term substitute.</p></div>
+    <h2>The partial recovery — and what is driving it</h2>
+    <p>By June 2026, flows through Hormuz have partially recovered, to approximately 5.1 million barrels per day according to the most recent JPMorgan tanker-tracking estimate. The recovery has been gradual and uneven: 2.2 mbd in March, 3.3 mbd in April, an estimated 4.4 mbd in May, and the June figure of 5.1 mbd. Analysts note that some portion of the reported flow — perhaps 1 to 1.5 mbd — consists of tankers that appear in tracking data as transiting the strait but that turn back before reaching open water, likely in response to continued Iranian patrol activity. The "clean" flow — vessels that successfully complete the transit — may be closer to 3.5 to 4 million barrels per day.</p>
+    <p>The main compensating mechanism has been the Saudi East-West Petroline. The 1,200-kilometre pipeline connecting the Eastern Province oil fields around Abqaiq and Qatif to the Red Sea port of Yanbu has a design capacity of approximately 5–7 million barrels per day, though it was operating at around 2 million barrels per day before the crisis. Since March, Saudi Aramco has been steadily increasing throughput, and the Yanbu terminal has seen a significant increase in loading operations for tankers heading south around Africa or north through the Red Sea and Suez Canal. This routing is longer and more expensive but has proven viable for crude destined for European refineries.</p>
+    <h2>The recovery problem</h2>
+    <p>Even if a ceasefire agreement is reached in the coming weeks — as diplomatic contacts in Geneva and the Gulf have suggested may be possible — the path back to normal Hormuz operations is not straightforward. Iranian naval mines laid in or near the strait during the conflict will need to be located and cleared before commercial shipping companies are willing to resume normal transits. That process typically takes weeks to months even in well-resourced operations, and the scale of mining in and around the Strait of Hormuz remains unknown. Ship captains and cargo insurers will require sustained confidence — not just a ceasefire declaration — that attacks have genuinely stopped and the waterway is physically safe before volumes return to anything approaching pre-war levels. Lloyd's of London war-risk premiums for Gulf transits remain at levels roughly twelve times their pre-conflict baseline as of mid-June 2026.</p>
+    <p>The longer-term structural consequence of the crisis is a permanent reassessment of Hormuz dependency by both producers and consumers. Saudi Arabia has accelerated investment in Yanbu terminal capacity. The UAE has revisited expansion plans for its Abu Dhabi Crude Oil Pipeline, which connects its inland fields to Fujairah on the Gulf of Oman — outside the strait entirely. Major Asian importers, particularly China, South Korea and Japan, have been drawing down strategic petroleum reserves at an accelerated pace and are likely to emerge from the crisis with a stronger political commitment to diversifying both their supplier base and their routing options. The Hormuz crisis has made visible, at extraordinary cost, a vulnerability that energy security analysts have been documenting for decades.</p>
+  </div>
+
+  <div id="lang-el" class="lang-section">
+    <h2>Η ανατομία μιας κρίσης αρτηρίας</h2>
+    <p>Το Στενό του Hormuz είναι 34 χιλιόμετρα πλάτος στο στενότερο σημείο του και συνδέει τον Περσικό Κόλπο με τον Ωκεανό. Σε κανονικές συνθήκες, περίπου 20 εκατομμύρια βαρέλια αργού πετρελαίου, κονδένσατ και πετρελαϊκών προϊόντων διέρχονται από αυτό κάθε ημέρα — περίπου ένα στα πέντε βαρέλια από το παγκόσμιο θαλάσσιο εμπόριο πετρελαίου. Δεν υπάρχει εναλλακτική που να μπορεί να αντικαταστήσει αυτόν τον όγκο με συγκρίσιμο κόστος και ταχύτητα.</p>
+    <p>Όταν το Ιράν κήρυξε το στενό «κλειστό σε εχθρικά σκάφη» τον Μάρτιο 2026, ακολουθώντας τις αμερικανο-ισραηλινές αεροπορικές επιδρομές, οι ροές μέσω Hormuz έπεσαν από 20 εκατ. βαρέλια/ημέρα σε περίπου 2,2 εκατ. ήδη μέχρι το τέλος Μαρτίου — πτώση σχεδόν 90%. Τον Ιούνιο 2026, οι ροές έχουν μερικώς ανακάμψει στα 5,1 εκατ. βαρέλια/ημέρα σύμφωνα με εκτιμήσεις της JPMorgan.</p>
+    <div class="pull-quote"><p>Η συγκέντρωση περίπου 20% της παγκόσμιας προσφοράς πετρελαίου μέσα από ένα 34χλμ. κανάλι αποτελεί συστημικό κίνδυνο χωρίς επαρκή βραχυπρόθεσμη εναλλακτική.</p></div>
+    <h2>Το πρόβλημα της ανάκαμψης</h2>
+    <p>Ακόμη κι αν επιτευχθεί κατάπαυση πυρός στις επόμενες εβδομάδες, η επιστροφή στις κανονικές επιχειρήσεις Hormuz δεν είναι απλή υπόθεση. Τα ναυτικά νάρκα που έθεσε το Ιράν θα χρειαστούν εντοπισμό και εκκαθάριση — διαδικασία εβδομάδων έως μηνών. Τα ασφάλιστρα πολεμικού κινδύνου του Lloyd's of London για τον Κόλπο παραμένουν 12 φορές υψηλότερα από τα προπολεμικά επίπεδα στα μέσα Ιουνίου 2026. Η μακροπρόθεσμη συνέπεια της κρίσης είναι μια μόνιμη επανεκτίμηση της εξάρτησης από το Hormuz — τόσο από τους παραγωγούς όσο και από τους καταναλωτές.</p>
+  </div>
+
+  <div id="lang-fr" class="lang-section">
+    <h2>L'anatomie d'une crise du goulet d'étranglement</h2>
+    <p>Le détroit d'Ormuz mesure 34 kilomètres dans sa partie la plus étroite. En temps normal, environ 20 millions de barils de pétrole brut, de condensats et de produits pétroliers le traversent chaque jour — soit environ un baril sur cinq de tout le pétrole échangé par voie maritime dans le monde. Lorsque l'Iran a déclaré le détroit "fermé aux navires hostiles" en mars 2026, les flux ont chuté de 20 millions de barils par jour à environ 2,2 millions en fin de mois — une baisse de près de 90 %. En juin 2026, ils se sont partiellement redressés à 5,1 millions de barils par jour, selon la dernière estimation de JPMorgan.</p>
+    <div class="pull-quote"><p>La concentration d'environ 20 % de l'offre mondiale de pétrole dans un canal de 34 kilomètres de large représente un risque systémique sans substitut à court terme adéquat.</p></div>
+    <h2>Le problème de la reprise</h2>
+    <p>Même si un accord de cessez-le-feu est conclu dans les prochaines semaines, le retour à des opérations normales à Ormuz n'est pas simple. Les mines navales posées par l'Iran devront être localisées et déminées — un processus qui prend des semaines, voire des mois. Les primes de risque de guerre de Lloyd's of London pour les traversées du Golfe restent environ douze fois supérieures à leur niveau d'avant-conflit à la mi-juin 2026. La conséquence structurelle à long terme de la crise est une réévaluation permanente de la dépendance à Ormuz par les producteurs comme par les consommateurs.</p>
+  </div>
+
+  <div id="lang-da" class="lang-section">
+    <h2>Anatomien af en flaskehalskrise</h2>
+    <p>Hormuz-strædet er 34 kilometer bredt på sit smalleste punkt. Under normale omstændigheder passerer cirka 20 millioner tønder råolie, kondensat og olieprodukter igennem det hver dag — omtrent én ud af fem tønder af al søtransporteret olie på verdensplan. Da Iran erklærede strædet "lukket for fjendtlige fartøjer" i marts 2026, faldt flowet fra 20 millioner tønder per dag til cirka 2,2 millioner ved udgangen af marts — et fald på næsten 90 %. I juni 2026 er det delvist genoprettet til 5,1 millioner tønder per dag ifølge JPMorgans seneste skøn.</p>
+    <div class="pull-quote"><p>Koncentrationen af cirka 20 % af den globale olieforsyning gennem en 34 kilometer bred kanal udgør en systemisk risiko uden nogen tilstrækkelig kortsigtet erstatning.</p></div>
+    <h2>Genopretningsproblemet</h2>
+    <p>Selv hvis en våbenhvileaftale indgås i de kommende uger, er vejen tilbage til normale Hormuz-operationer ikke ligetil. Søminerne, som Iran lagde, skal lokaliseres og ryddes — en proces der typisk tager uger til måneder. Lloyd's of Londons krigsforsikringspræmier for Golfpassager forbliver cirka tolv gange højere end niveauet inden konflikten pr. midt-juni 2026. Den langsigtede strukturelle konsekvens er en permanent genopvurdering af Hormuz-afhængighed fra både producenters og forbrugeres side.</p>
+  </div>
+
+  <div id="lang-sv" class="lang-section">
+    <h2>Anatomin av en flaskhalserkris</h2>
+    <p>Hormuzsundet är 34 kilometer brett i sin smalaste del. Under normala förhållanden passerar ungefär 20 miljoner fat råolja, kondensat och oljeprodukter genom det varje dag — ungefär ett av fem fat av all sjötransporterad olja som handlas globalt. När Iran förklarade sundet "stängt för fientliga fartyg" i mars 2026 föll flödena från 20 miljoner fat per dag till ungefär 2,2 miljoner i slutet av mars — en minskning med nästan 90 %. I juni 2026 har de delvis återhämtat sig till 5,1 miljoner fat per dag enligt JPMorgans senaste uppskattning.</p>
+    <div class="pull-quote"><p>Koncentrationen av ungefär 20 % av den globala oljeförsörjningen genom en 34 kilometer bred kanal utgör en systemrisk utan någon tillräcklig kortsiktig ersättning.</p></div>
+    <h2>Återhämtningsproblemet</h2>
+    <p>Även om ett vapenstillestånd nås under de kommande veckorna är vägen tillbaka till normala Hormuzsundsoperationer inte enkel. Sjöminorna som Iran lade ut behöver lokaliseras och röjas — en process som typiskt tar veckor till månader. Lloyd's of Londons krigsriskpremier för Gulfpassager förblir ungefär tolv gånger högre än nivån före konflikten i mitten av juni 2026. Den långsiktiga strukturella konsekvensen av krisen är en permanent omprövning av Hormuzberoende från både producenter och konsumenter.</p>
+  </div>
+</div>
+
+<div class="sources">
+  <div class="sources-title">Sources</div>
+  <p>OnAlert.gr — Πόλεμος στη Μέση Ανατολή: Πώς αλλάζει ο χάρτης στις ροές πετρελαίου (June 2026)</p>
+  <p>JPMorgan — Global oil flow estimate via tanker tracking, 18 June 2026</p>
+  <p>CNBC — Oil prices, Hormuz tanker tracking data (June 2026)</p>
+  <p>Lloyd's of London — Gulf of Oman war-risk premium data (June 2026)</p>
+  <p>Saudi Aramco — East-West Petroline / Yanbu terminal operations</p>
+  <p>Reuters — Iran Hormuz closure declaration and vessel interdiction reports (March–June 2026)</p>
+</div>
+
+<footer>
+  <div><div class="foot-brand">Frontline Brief</div><div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div></div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+
+<script>
+function setLang(lang,btn){document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));document.getElementById('lang-'+lang).classList.add('active');btn.classList.add('active');}
+</script>
+</body>
+</html>
