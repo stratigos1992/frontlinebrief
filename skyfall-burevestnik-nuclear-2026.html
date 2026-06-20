@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skyfall Leaves a Radioactive Trail: MIT Researchers Crack How Russia's Nuclear Cruise Missile Works — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;--red:#E84040;--green:#48BB78;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero{padding:64px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(72,187,120,.1);color:var(--green);border:.5px solid rgba(72,187,120,.3);}
+.meta-analysis{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,64,64,.1);color:var(--red);border:.5px solid rgba(232,64,64,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--red);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.carousel{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.carousel-wrap{width:100%;max-width:480px;margin:0 auto;}
+.carousel-frame{position:relative;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);width:100%;}
+.carousel-track{display:flex;flex-wrap:nowrap;width:500%;transition:transform .4s ease;will-change:transform;}
+.cslide{width:20%;flex-shrink:0;}
+.cslide img{width:100%;height:auto;display:block;}
+.carousel-nav{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:background .2s;}
+.cdot.active{background:var(--green);}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,27,42,.55);border:.5px solid var(--border);color:var(--cold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;}
+.carousel-arrow.prev{left:10px;}
+.carousel-arrow.next{right:10px;}
+.specs-section{max-width:860px;margin:0 auto;padding:0 48px 40px;display:flex;flex-direction:column;gap:10px;}
+.spec-row{background:rgba(20,38,60,.55);border-radius:10px;padding:18px 22px;border:.5px solid rgba(138,155,176,.1);display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;position:relative;}
+.spec-row::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:4px 0 0 4px;}
+.spec-row.red::before{background:var(--red);}
+.spec-row.amber::before{background:var(--amber);}
+.spec-row.green::before{background:var(--green);}
+.spec-row.muted::before{background:var(--muted);}
+.spec-label{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px;}
+.spec-row.red .spec-label{color:var(--red);}
+.spec-row.amber .spec-label{color:var(--amber);}
+.spec-row.green .spec-label{color:var(--green);}
+.spec-row.muted .spec-label{color:var(--muted);}
+.spec-note{font-size:13px;color:var(--muted);}
+.spec-val{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;text-align:right;line-height:1.2;}
+.spec-row.red .spec-val{color:var(--red);}
+.spec-row.amber .spec-val{color:var(--amber);}
+.spec-row.green .spec-val{color:var(--green);}
+.spec-row.muted .spec-val{color:var(--muted);}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--green);color:var(--navy);border-color:var(--green);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+.pull-quote{border-left:3px solid var(--green);padding:16px 24px;margin:32px 0;background:rgba(72,187,120,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.tech-box{background:rgba(20,38,60,.6);border:.5px solid var(--border);border-radius:10px;padding:20px 24px;margin:28px 0;}
+.tech-box-title{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:12px;}
+.tech-box p{font-size:14px;color:var(--muted);margin:0;line-height:1.6;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.specs-section,.article-body,.sources,.carousel{padding-left:20px;padding-right:20px;}.article-title{font-size:30px;}.spec-row{grid-template-columns:1fr;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <a class="nav-back" href="strategic-affairs.html"><i class="ti ti-arrow-left"></i> Back to Strategic Affairs</a>
+</nav>
+
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag">Strategic Affairs · Nuclear</span>
+    <span class="meta-analysis">MIT Research</span>
+    <span class="meta-date">19 June 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> 7 min read</span>
+  </div>
+  <h1 class="article-title">Skyfall leaves a <em>radioactive trail</em>: MIT researchers crack how Russia's nuclear cruise missile actually works</h1>
+  <p class="article-subtitle">Two MIT researchers have published the most detailed public analysis yet of the Burevestnik — NATO codename Skyfall — Russia's nuclear-powered cruise missile. Their conclusion: it almost certainly uses a direct-cycle engine that vents radioactive gas throughout every flight. The missile is more alarming than previously understood.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">FB</div>
+    <div><div class="byline-name">Frontline Brief Editorial</div><div class="byline-role">Athens · Brussels · Copenhagen · Nicosia · Malmö</div></div>
+  </div>
+</section>
+
+<div class="carousel">
+  <div class="carousel-wrap">
+  <div class="carousel-frame">
+    <div class="carousel-track" id="ctrack">
+      <div class="cslide"><img src="assets/skyfall-burevestnik-en.jpg" alt="Skyfall Burevestnik — English"></div>
+      <div class="cslide"><img src="assets/skyfall-burevestnik-el.jpg" alt="Skyfall Burevestnik — Ελληνικά"></div>
+      <div class="cslide"><img src="assets/skyfall-burevestnik-fr.jpg" alt="Skyfall Burevestnik — Français"></div>
+      <div class="cslide"><img src="assets/skyfall-burevestnik-da.jpg" alt="Skyfall Burevestnik — Dansk"></div>
+      <div class="cslide"><img src="assets/skyfall-burevestnik-sv.jpg" alt="Skyfall Burevestnik — Svenska"></div>
+    </div>
+    <button class="carousel-arrow prev" onclick="cmove(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="carousel-arrow next" onclick="cmove(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  </div>
+  <div class="carousel-nav">
+    <button class="cdot active" onclick="cgo(0)"></button>
+    <button class="cdot" onclick="cgo(1)"></button>
+    <button class="cdot" onclick="cgo(2)"></button>
+    <button class="cdot" onclick="cgo(3)"></button>
+    <button class="cdot" onclick="cgo(4)"></button>
+  </div>
+</div>
+
+<div class="specs-section">
+  <div class="spec-row red">
+    <div><div class="spec-label">Engine Type</div><div class="spec-note">Air passes directly through the reactor core — heated to high temperature — expelled as jet thrust. No heat exchanger. Maximally efficient but inherently contaminating.</div></div>
+    <div class="spec-val">Direct-cycle<br>nuclear turbojet</div>
+  </div>
+  <div class="spec-row amber">
+    <div><div class="spec-label">Reactor Power</div><div class="spec-note">4.3 MWth at cruise altitude. Demand spikes to over 15 MWth during climbs and terminal manoeuvring — may require supplemental chemical interburner.</div></div>
+    <div class="spec-val">4.3 MWth cruise<br>15+ MWth peak</div>
+  </div>
+  <div class="spec-row red">
+    <div><div class="spec-label">Radioactive Trail</div><div class="spec-note">Monte Carlo simulations: escaping neutrons generate &gt;5 TBq of gaseous radionuclides per MW-hr of flight. Includes ⁴¹Ar, ⁸⁵ᵐKr, ⁸³ᵐKr, ¹⁴C — some detectable by existing international monitoring networks.</div></div>
+    <div class="spec-val">&gt;5 TBq<br>per MW-hr</div>
+  </div>
+  <div class="spec-row green">
+    <div><div class="spec-label">Range / Endurance</div><div class="spec-note">Theoretically unlimited while reactor operates. 15-hour test confirmed by Gen. Gerasimov, Oct 2025: "not the maximum limit." Can loiter, map defences, attack from unexpected direction.</div></div>
+    <div class="spec-val">Unlimited<br>days–weeks</div>
+  </div>
+  <div class="spec-row muted">
+    <div><div class="spec-label">Physical Dimensions (MIT estimate)</div><div class="spec-note">9.5 ± 0.32m length · 5.6 ± 0.18m wingspan · subsonic · derived from open-source satellite imagery of the Pankovo test site on Yuzhny Island, Novaya Zemlya.</div></div>
+    <div class="spec-val">9.5m × 5.6m<br>wingspan</div>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+
+  <div id="lang-en" class="lang-section active">
+    <h2>What the MIT paper concludes</h2>
+    <p>Jake Hecla, an MIT professor covering aerospace and nuclear science and engineering, and co-author R. Scott Kemp have published a paper — "Modeling the Performance of the Burevestnik Nuclear-Powered Cruise Missile" — that uses open-source data, satellite imagery and nuclear-aircraft modelling to constrain the missile's probable specifications. Their central conclusion is that the Burevestnik almost certainly uses a direct-cycle nuclear turbojet, in which intake air passes directly through the reactor core, is heated to high temperature, and is expelled as thrust. The paper essentially rules out the alternative — a nuclear ramjet — as inconsistent with the missile's observed dimensions and flight characteristics.</p>
+    <p>The critical implication of the direct-cycle architecture is environmental. In a direct-cycle engine, the propulsive airflow contacts the reactor fuel and coolant directly. Neutrons from the reactor core interact with atmospheric nitrogen, argon, and other gases passing through, generating radioactive isotopes — primarily argon-41, krypton-85m, krypton-83m and carbon-14 — that are then vented into the atmosphere as exhaust. The MIT team's Monte Carlo simulations calculate that this process generates more than 5 terabecquerels of gaseous radionuclides per megawatt-hour of flight. At the missile's estimated 4.3 MWth cruise power, this means every hour of Burevestnik flight produces roughly 21 TBq of airborne radioactive material — a figure that the paper notes may be detectable using existing international nuclear monitoring networks.</p>
+
+    <div class="tech-box">
+      <div class="tech-box-title">Direct-cycle vs indirect-cycle — why it matters</div>
+      <p>A direct-cycle nuclear engine routes intake air through the reactor core itself. An indirect-cycle engine uses a separate heat exchanger — air never contacts the reactor. The direct-cycle approach is simpler, more efficient and lighter — but it means the exhaust is inherently radioactive. The US Project Pluto in the 1960s used a direct-cycle nuclear ramjet for the same reason: efficiency. Russia has apparently made the same trade-off for Burevestnik.</p>
+    </div>
+
+    <div class="pull-quote"><p>The Burevestnik is a subsonic cruise missile measuring 9.5m in length, with a 5.6m wingspan, powered by a direct-cycle nuclear turbojet. Escaping neutrons will generate in excess of 5 TBq of gaseous radionuclides per MW-hr of flight — Hecla &amp; Kemp, MIT, June 2026</p></div>
+
+    <h2>The Burevestnik programme — what we know happened</h2>
+    <p>Putin revealed the Burevestnik in March 2018 as one of six "super weapons", describing it as a nuclear-powered cruise missile with virtually unlimited range. He said it would make all US missile defence systems obsolete. What followed was a series of mostly failed tests. The US intelligence community reported the loss of a Burevestnik at sea during a 2017 test, and Russia subsequently conducted a recovery mission to retrieve the missile from the seabed. In August 2019, an explosion at the Nyonoksa naval test site killed five Rosatom scientists and generated a radiation spike in the city of Severodvinsk — attributed by Western governments to the explosion of a Burevestnik reactor recovered from that earlier test. Russian authorities briefly acknowledged the detection of short-lived fission products in the resulting plume before deleting the statement.</p>
+    <p>The programme appears to have continued despite these setbacks. In October 2025, Russian Chief of the General Staff Valery Gerasimov announced a successful test above the Arctic Circle, describing a 15-hour flight and explicitly stating that this was "not the maximum limit" for the system's endurance. This was apparently the first long-endurance test of the missile, confirming that Russia has solved whatever engineering problems caused the earlier failures.</p>
+
+    <h2>Strategic implications</h2>
+    <p>The Burevestnik is explicitly designed as a second-strike weapon — a system that could survive an initial nuclear exchange by flying unpredictably for days, evading radar detection through terrain-hugging flight and missile defences through manoeuvre, before striking targets. Russian military bloggers and former officials have described the intended warhead as a multiple-megaton thermonuclear weapon. Its unlimited range means it could attack targets from any direction after flying arbitrary routes, rendering fixed-geometry missile defence networks far less effective than they would be against ballistic missiles approaching on predictable trajectories.</p>
+    <p>The MIT paper's finding about the radioactive trail adds a new dimension to the weapon's strategic profile. If Burevestnik can be tracked by international nuclear monitoring networks during flight — because its direct-cycle exhaust is detectably radioactive — then there may be a means of warning about its deployment that does not exist for conventional or ballistic systems. Whether existing monitoring infrastructure has the density and sensitivity to reliably detect a single Burevestnik in flight is a question the paper raises but cannot answer from open-source data alone.</p>
+  </div>
+
+  <div id="lang-el" class="lang-section">
+    <h2>Τι καταλήγει το άρθρο ΜΙΤ</h2>
+    <p>Ο Jake Hecla του ΜΙΤ και ο συν-συγγραφέας R. Scott Kemp δημοσίευσαν άρθρο — "Μοντελοποίηση Απόδοσης του Burevestnik" — χρησιμοποιώντας ανοιχτά δεδομένα, δορυφορικές εικόνες και μοντελοποίηση πυρηνικών αεροσκαφών. Το κεντρικό συμπέρασμα: το Burevestnik σχεδόν σίγουρα χρησιμοποιεί πυρηνικό τουρμποτζέτ άμεσου κύκλου, στο οποίο ο αέρας διέρχεται απευθείας μέσα από τον πυρηνικό αντιδραστήρα και εκτονώνεται ως ώση.</p>
+
+    <div class="tech-box">
+      <div class="tech-box-title">Άμεσος έναντι έμμεσου κύκλου — γιατί έχει σημασία</div>
+      <p>Ένας κινητήρας άμεσου κύκλου διοχετεύει τον αέρα εισαγωγής μέσα από τον ίδιο τον πυρηνικό αντιδραστήρα. Η εξάτμιση είναι εγγενώς ραδιενεργή. Η Αμερικανική Επιχείρηση Pluto στη δεκαετία του 1960 χρησιμοποίησε ακριβώς αυτή την προσέγγιση για λόγους απόδοσης. Η Ρωσία φαίνεται να έχει κάνει τον ίδιο συμβιβασμό για το Burevestnik.</p>
+    </div>
+
+    <div class="pull-quote"><p>Το Burevestnik είναι υποηχητικός κρουαζιερόπυραυλος 9,5μ με άνοιγμα πτερύγων 5,6μ, κινούμενος από πυρηνικό τουρμποτζέτ άμεσου κύκλου που εκπέμπει πάνω από 5 TBq ραδιενεργών ισοτόπων ανά MW-ώρα πτήσης — Hecla &amp; Kemp, ΜΙΤ, Ιούνιος 2026</p></div>
+
+    <h2>Στρατηγικές επιπτώσεις</h2>
+    <p>Το Burevestnik σχεδιάστηκε ρητά ως όπλο δεύτερου πλήγματος — ένα σύστημα που θα μπορούσε να επιβιώσει μιας αρχικής πυρηνικής ανταλλαγής πετώντας απρόβλεπτα για μέρες, αποφεύγοντας την ανίχνευση ραντάρ μέσω πτήσης χαμηλού ύψους και τα αντιβαλλιστικά συστήματα μέσω ελιγμού. Το εύρημα του ΜΙΤ για το ραδιενεργό ίχνος προσθέτει νέα διάσταση: αν το Burevestnik μπορεί να εντοπιστεί από διεθνή δίκτυα πυρηνικής παρακολούθησης κατά την πτήση λόγω της ραδιενεργής εξάτμισης, τότε μπορεί να υπάρξει μέσο έγκαιρης προειδοποίησης για την ανάπτυξή του.</p>
+  </div>
+
+  <div id="lang-fr" class="lang-section">
+    <h2>Ce que conclut l'article du MIT</h2>
+    <p>Jake Hecla du MIT et le co-auteur R. Scott Kemp ont publié un article — "Modélisation des performances du missile de croisière Burevestnik" — utilisant des données open source, des images satellitaires et des modèles d'aéronefs nucléaires. Leur conclusion centrale : le Burevestnik utilise presque certainement un turboréacteur nucléaire à cycle direct, dans lequel l'air traverse directement le cœur du réacteur et est expulsé comme poussée.</p>
+
+    <div class="tech-box">
+      <div class="tech-box-title">Cycle direct versus cycle indirect — pourquoi c'est important</div>
+      <p>Un moteur à cycle direct achemine l'air d'admission à travers le cœur du réacteur lui-même. Les gaz d'échappement sont intrinsèquement radioactifs. Le projet américain Pluto dans les années 1960 utilisait exactement cette approche pour des raisons d'efficacité. La Russie semble avoir fait le même compromis pour le Burevestnik.</p>
+    </div>
+
+    <div class="pull-quote"><p>Le Burevestnik est un missile de croisière subsonique de 9,5m de long, avec une envergure de 5,6m, propulsé par un turboréacteur nucléaire à cycle direct qui émet plus de 5 TBq de radio-isotopes gazeux par MW-heure de vol — Hecla &amp; Kemp, MIT, juin 2026</p></div>
+  </div>
+
+  <div id="lang-da" class="lang-section">
+    <h2>Hvad MIT-artiklen konkluderer</h2>
+    <p>Jake Hecla fra MIT og co-autor R. Scott Kemp har publiceret en artikel — "Modellering af Burevestnik-missilets ydeevne" — ved hjælp af åbne data, satellitbilleder og nuklear fly-modellering. Deres centrale konklusion: Burevestnik bruger næsten bestemt en nuklear direktcyklusturbojet, hvor luft passerer direkte gennem reaktorkærnen og udstødes som fremdrivning.</p>
+
+    <div class="tech-box">
+      <div class="tech-box-title">Direktcyklus versus indirekte cyklus — hvorfor det betyder noget</div>
+      <p>En direktcyklusmotor leder indtagsluft direkte gennem selve reaktorkærnen. Udstødningen er iboende radioaktiv. Det amerikanske Project Pluto i 1960'erne brugte præcis denne tilgang af effektivitetshensyn. Rusland ser ud til at have gjort det samme kompromis for Burevestnik.</p>
+    </div>
+
+    <div class="pull-quote"><p>Burevestnik er et subsonisk krydsermissil på 9,5m i længden med et vingefang på 5,6m, drevet af en nuklear direktcyklusturbojet der emitterer mere end 5 TBq gasformige radionuklider pr. MW-time i flyvning — Hecla &amp; Kemp, MIT, juni 2026</p></div>
+  </div>
+
+  <div id="lang-sv" class="lang-section">
+    <h2>Vad MIT-artikeln drar för slutsatser</h2>
+    <p>Jake Hecla från MIT och co-autor R. Scott Kemp har publicerat en artikel — "Modellering av Burevestnik kärnkraftsdrivna kryssningsrobotens prestanda" — med öppna data, satellitbilder och kärnkraftsflygmodellering. Deras centrala slutsats: Burevestnik använder nästan säkert en nukleär direktcykelturbofläkt, där luft passerar direkt genom reaktorhärden och utvinns som framdrivning.</p>
+
+    <div class="tech-box">
+      <div class="tech-box-title">Direktcykel kontra indirekt cykel — varför det spelar roll</div>
+      <p>En direktcykelmotor leder intagsluft direkt genom reaktorhärden. Avgaserna är i grunden radioaktiva. Det amerikanska Project Pluto på 1960-talet använde exakt detta tillvägagångssätt av effektivitetsskäl. Ryssland verkar ha gjort samma kompromiss för Burevestnik.</p>
+    </div>
+
+    <div class="pull-quote"><p>Burevestnik är en subsonisk kryssningsrobot på 9,5m med ett vingspann på 5,6m, driven av en nukleär direktcykelturbofläkt som emitterar mer än 5 TBq gasformiga radionuklider per MW-timme flygtid — Hecla &amp; Kemp, MIT, juni 2026</p></div>
+  </div>
+</div>
+
+<div class="sources">
+  <div class="sources-title">Sources</div>
+  <p>Jake J. Hecla &amp; R. Scott Kemp — "Modeling the Performance of the Burevestnik Nuclear-Powered Cruise Missile," MIT Department of Nuclear Science and Engineering (June 2026)</p>
+  <p>The War Zone — "Here Is How Russia's Skyfall Nuclear Powered Cruise Missile Actually Works" (Thomas Newdick, 19 June 2026)</p>
+  <p>Kremlin.ru — Gen. Valery Gerasimov statement on Burevestnik test, October 2025</p>
+  <p>Russian Ministry of Defence — March 2018 "super weapons" announcement</p>
+  <p>US intelligence community — 2018 report on 2017 Burevestnik sea loss</p>
+  <p>Roshydromet (deleted statement) — fission product detection, Severodvinsk, August 2019</p>
+</div>
+
+<footer>
+  <div><div class="foot-brand">Frontline Brief</div><div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div></div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+
+<script>
+function setLang(lang,btn){document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));document.getElementById('lang-'+lang).classList.add('active');btn.classList.add('active');}
+let cIndex=0;
+function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*20)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
+function cmove(dir){cIndex=(cIndex+dir+5)%5;cgo(cIndex);}
+</script>
+</body>
+</html>
