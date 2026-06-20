@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trump: Russia Made Its Biggest Mistake in 2022 — Could Have Taken Kyiv in Four Hours — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;--red:#E84040;--orange:#E87020;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero{padding:64px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,112,32,.12);color:var(--orange);border:.5px solid rgba(232,112,32,.3);}
+.meta-analysis{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,64,64,.1);color:var(--red);border:.5px solid rgba(232,64,64,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--amber);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.carousel{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.carousel-wrap{width:100%;max-width:480px;margin:0 auto;}
+.carousel-frame{position:relative;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);width:100%;}
+.carousel-track{display:flex;flex-wrap:nowrap;width:500%;transition:transform .4s ease;will-change:transform;}
+.cslide{width:20%;flex-shrink:0;}
+.cslide img{width:100%;height:auto;display:block;}
+.carousel-nav{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:background .2s;}
+.cdot.active{background:var(--orange);}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,27,42,.55);border:.5px solid var(--border);color:var(--cold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;}
+.carousel-arrow.prev{left:10px;}
+.carousel-arrow.next{right:10px;}
+.claim-grid{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.claim-card{background:rgba(30,58,95,.35);border-radius:10px;padding:22px;border:.5px solid rgba(138,155,176,.12);position:relative;}
+.claim-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:4px 0 0 4px;}
+.claim-card.trump::before{background:var(--orange);}
+.claim-card.fact::before{background:var(--red);}
+.claim-label{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;}
+.claim-card.trump .claim-label{color:var(--orange);}
+.claim-card.fact .claim-label{color:var(--red);}
+.claim-text{font-family:'Playfair Display',serif;font-size:16px;font-style:italic;color:var(--cold);line-height:1.5;}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--orange);color:white;border-color:var(--orange);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+.pull-quote{border-left:3px solid var(--orange);padding:16px 24px;margin:32px 0;background:rgba(232,112,32,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.fact-box{background:rgba(232,64,64,.06);border:.5px solid rgba(232,64,64,.3);border-radius:8px;padding:20px 24px;margin:28px 0;}
+.fact-box-title{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:10px;}
+.fact-box p{font-size:14px;color:var(--muted);margin:0;line-height:1.6;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.claim-grid,.article-body,.sources,.carousel{padding-left:20px;padding-right:20px;}.article-title{font-size:30px;}.claim-grid{grid-template-columns:1fr;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <a class="nav-back" href="strategic-affairs.html"><i class="ti ti-arrow-left"></i> Back to Strategic Affairs</a>
+</nav>
+
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag">Strategic Affairs</span>
+    <span class="meta-analysis">Fact-checked</span>
+    <span class="meta-date">20 June 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> 5 min read</span>
+  </div>
+  <h1 class="article-title">Trump: Russia made its <em>biggest mistake</em> in 2022 — could have taken Kyiv in four hours</h1>
+  <p class="article-subtitle">In an interview with Axios on 19 June, President Trump said Russia could have ended the war in a day if a general had not driven tanks through mud instead of down the highway. Military analysts and historians say it did not happen that way. Here is what Trump said, what the record shows, and why he is saying it now.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">FB</div>
+    <div><div class="byline-name">Frontline Brief Editorial</div><div class="byline-role">Athens · Brussels · Copenhagen · Nicosia · Malmö</div></div>
+  </div>
+</section>
+
+<div class="carousel">
+  <div class="carousel-wrap">
+  <div class="carousel-frame">
+    <div class="carousel-track" id="ctrack">
+      <div class="cslide"><img src="assets/trump-russia-mistake-en.jpg" alt="Trump Russia Biggest Mistake — English"></div>
+      <div class="cslide"><img src="assets/trump-russia-mistake-el.jpg" alt="Trump Russia Biggest Mistake — Ελληνικά"></div>
+      <div class="cslide"><img src="assets/trump-russia-mistake-fr.jpg" alt="Trump Russia Biggest Mistake — Français"></div>
+      <div class="cslide"><img src="assets/trump-russia-mistake-da.jpg" alt="Trump Russia Biggest Mistake — Dansk"></div>
+      <div class="cslide"><img src="assets/trump-russia-mistake-sv.jpg" alt="Trump Russia Biggest Mistake — Svenska"></div>
+    </div>
+    <button class="carousel-arrow prev" onclick="cmove(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="carousel-arrow next" onclick="cmove(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  </div>
+  <div class="carousel-nav">
+    <button class="cdot active" onclick="cgo(0)"></button>
+    <button class="cdot" onclick="cgo(1)"></button>
+    <button class="cdot" onclick="cgo(2)"></button>
+    <button class="cdot" onclick="cgo(3)"></button>
+    <button class="cdot" onclick="cgo(4)"></button>
+  </div>
+</div>
+
+<div class="claim-grid">
+  <div class="claim-card trump">
+    <div class="claim-label">Trump's claim — Axios, 19 June 2026</div>
+    <div class="claim-text">"If this general had just driven straight down the concrete road, they would have been in Kyiv within four hours, and Ukraine would have done nothing about it. This war would have been over in a day. That was a terrible mistake."</div>
+  </div>
+  <div class="claim-card fact">
+    <div class="claim-label">What analysts say</div>
+    <div class="claim-text">Russia used highways and farmland simultaneously. The Kyiv column was stopped by Ukrainian resistance, Javelin missiles, logistical failures and overextended supply lines — not a single general's routing decision.</div>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+
+  <div id="lang-en" class="lang-section active">
+    <h2>What Trump said</h2>
+    <p>In an interview with Axios published on 19 June 2026, President Trump revisited his long-standing account of Russia's February 2022 attempt to seize Kyiv. According to Trump, Putin had hundreds of tanks driving down the highway — "concrete, very good highway, solid as a rock" — towards the Ukrainian capital. About halfway there, a Russian general made the decision to divert the column through farmland. It had rained heavily, the ground turned to mud, and the tanks became stuck. "If this general had just driven straight down the concrete road, they would have been in Kyiv within four hours, and Ukraine would have done nothing about it. This war would have been over in a day. That was a terrible mistake."</p>
+    <p>Trump also used the interview to simultaneously assert that he is not "nice to Russia" — pointing to his decision to supply Ukraine with Javelin anti-tank missiles in his first term. "I gave them Javelins, and those tanks were destroyed," he said. He has repeated variants of this account multiple times over the past year, including in a May 2026 statement where he said Kyiv could have been taken in "five hours" had the column not got stuck.</p>
+
+    <div class="pull-quote"><p>If this general had just driven straight down the concrete road, they would have been in Kyiv within four hours. This war would have been over in a day — President Donald Trump, Axios, 19 June 2026</p></div>
+
+    <h2>What the record shows</h2>
+    <div class="fact-box">
+      <div class="fact-box-title">Fact check</div>
+      <p>Multiple military analysts, historians and Ukrainian officials have disputed Trump's account since he began making it in mid-2025. The core problem is that Russia's advance on Kyiv in February-March 2022 did use roads and highways — not just farmland. Multiple columns advanced on the capital from different directions, including along the E40 highway from Belarus. They were stopped by a combination of factors: fierce Ukrainian military resistance including Javelin and NLAW anti-tank fire; catastrophic Russian logistical failures (the famous 64-kilometre convoy ran out of fuel); electronic warfare disruption; and Ukrainian special forces targeting Russian command vehicles. The mud was a factor — particularly in the north-west approaches — but it was neither the only factor nor the decisive one. Euronews, CNN and multiple independent fact-checkers have rated Trump's account as misleading or false.</p>
+    </div>
+
+    <h2>Why Trump is saying it now</h2>
+    <p>The interview comes as the Trump administration is attempting to broker a ceasefire between Russia and Ukraine. Diplomatic contacts in Geneva and through Gulf intermediaries have been ongoing since at least April 2026. The G7 summit in Biarritz, which concluded on 19 June, produced a communiqué endorsing a negotiated settlement framework. A call between Trump, Zelenskyy and Macron took place on the evening of 17 June — hours before Ukraine launched its largest-ever drone strike on Moscow.</p>
+    <p>Trump's repeated insistence that Russia could have ended the war quickly in 2022 serves a specific diplomatic function: it frames the war as an avoidable catastrophe caused by a Russian tactical error, not as a deliberate act of aggression. This framing allows Trump to simultaneously criticise the war's origins without directly assigning blame to Putin — whom he needs to be a willing partner in any ceasefire — and to present himself as the pragmatic dealmaker who can end what he calls "Biden's war." It also implicitly validates Trump's frequently stated view that Ukraine should have accepted Russian demands rather than fight, without requiring him to say so explicitly.</p>
+    <p>The account also allows Trump to contrast his first-term policy (Javelins) with Biden's first-term policy (restraint), and to claim credit for the Kyiv offensive's failure — a claim that is at least partially supportable, given that US-supplied Javelins did play a significant role in destroying Russian armour in the early weeks of the invasion.</p>
+  </div>
+
+  <div id="lang-el" class="lang-section">
+    <h2>Τι είπε ο Τραμπ</h2>
+    <p>Σε συνέντευξη στο Axios που δημοσιεύτηκε στις 19 Ιουνίου 2026, ο Πρόεδρος Τραμπ επανήλθε στην πολυσυζητημένη εκδοχή του για την αποτυχημένη ρωσική επίθεση στο Κίεβο τον Φεβρουάριο 2022. Σύμφωνα με τον Τραμπ, ένας Ρώσος στρατηγός εκτράπηκε σε αγρούς αντί να συνεχίσει τον αυτοκινητόδρομο. «Αν αυτός ο στρατηγός απλώς κατέβαινε ευθεία στον τσιμεντένιο δρόμο, θα ήταν στο Κίεβο μέσα σε τέσσερις ώρες, και η Ουκρανία δεν θα έκανε τίποτα. Αυτός ο πόλεμος θα είχε τελειώσει σε μία μέρα. Αυτό ήταν ένα τρομερό λάθος.»</p>
+
+    <div class="fact-box">
+      <div class="fact-box-title">Έλεγχος πραγματικότητας</div>
+      <p>Πολλαπλοί στρατιωτικοί αναλυτές και ιστορικοί έχουν αμφισβητήσει την εκδοχή Τραμπ. Η Ρωσία χρησιμοποίησε ΤΟΣΟ αυτοκινητοδρόμους ΟΣΟ και αγρούς. Οι στήλες της σταμάτησαν από συνδυασμό παραγόντων: σφοδρή ουκρανική αντίσταση με Javelin και NLAW, καταστροφικές ρωσικές αποτυχίες εφοδιασμού, ηλεκτρονικό πόλεμο και ουκρανικές ειδικές δυνάμεις. Η λάσπη ήταν ένας παράγοντας — αλλά όχι ο μοναδικός ούτε ο αποφασιστικός.</p>
+    </div>
+
+    <div class="pull-quote"><p>Αν αυτός ο στρατηγός απλώς κατέβαινε ευθεία στον τσιμεντένιο δρόμο, θα ήταν στο Κίεβο σε τέσσερις ώρες. Αυτός ο πόλεμος θα είχε τελειώσει σε μία μέρα — Πρόεδρος Ντόναλντ Τραμπ, Axios, 19 Ιουνίου 2026</p></div>
+
+    <h2>Γιατί το λέει τώρα</h2>
+    <p>Η συνέντευξη έρχεται καθώς η κυβέρνηση Τραμπ προσπαθεί να μεσολαβήσει για κατάπαυση πυρός μεταξύ Ρωσίας και Ουκρανίας. Η επίμονη εκδοχή του Τραμπ ότι η Ρωσία θα μπορούσε να είχε τελειώσει γρήγορα τον πόλεμο το 2022 εξυπηρετεί συγκεκριμένη διπλωματική λειτουργία: πλαισιώνει τον πόλεμο ως αποφεύξιμη καταστροφή λόγω ρωσικού τακτικού λάθους, όχι ως σκόπιμη πράξη επιθετικότητας. Αυτό επιτρέπει στον Τραμπ να επικρίνει τις απαρχές του πολέμου χωρίς να κατηγορεί ευθέως τον Πούτιν — τον οποίο χρειάζεται ως εταίρο σε οποιαδήποτε κατάπαυση πυρός.</p>
+  </div>
+
+  <div id="lang-fr" class="lang-section">
+    <h2>Ce que Trump a dit</h2>
+    <p>Dans une interview accordée à Axios le 19 juin 2026, le président Trump a repris son récit bien rodé de la tentative russe de s'emparer de Kyiv en février 2022. Selon lui, un général russe a dévié vers des champs au lieu de rester sur l'autoroute. "Si ce général avait simplement roulé tout droit sur la route en béton, ils auraient été à Kyiv dans les quatre heures, et l'Ukraine n'aurait rien pu faire. Cette guerre aurait été terminée en un jour. C'était une terrible erreur."</p>
+
+    <div class="fact-box">
+      <div class="fact-box-title">Vérification des faits</div>
+      <p>De nombreux analystes militaires et historiens ont contesté le récit de Trump. La Russie a utilisé AUSSI BIEN les routes que les champs. Ses colonnes ont été arrêtées par une combinaison de facteurs : résistance ukrainienne acharnée avec Javelins et NLAW, défaillances logistiques catastrophiques, guerre électronique et forces spéciales ukrainiennes. La boue était un facteur — mais ni le seul ni le décisif.</p>
+    </div>
+
+    <div class="pull-quote"><p>Si ce général avait simplement roulé tout droit sur la route en béton, ils auraient été à Kyiv dans les quatre heures. Cette guerre aurait été terminée en un jour — Président Donald Trump, Axios, 19 juin 2026</p></div>
+
+    <h2>Pourquoi Trump le dit maintenant</h2>
+    <p>L'interview intervient alors que l'administration Trump tente de négocier un cessez-le-feu entre la Russie et l'Ukraine. Le récit répété de Trump selon lequel la Russie aurait pu terminer rapidement la guerre en 2022 sert une fonction diplomatique précise : il cadre la guerre comme une catastrophe évitable causée par une erreur tactique russe, et non comme un acte d'agression délibéré. Cela lui permet de critiquer les origines de la guerre sans blâmer directement Poutine.</p>
+  </div>
+
+  <div id="lang-da" class="lang-section">
+    <h2>Hvad Trump sagde</h2>
+    <p>I et interview med Axios den 19. juni 2026 genoplivede præsident Trump sin velkendte fortælling om Ruslands forsøg på at tage Kyiv i februar 2022. Ifølge Trump afveg en russisk general til marker i stedet for at holde sig til motorvejen. "Hvis denne general bare var kørt ligeud ad betonvejen, ville de have været i Kyiv inden for fire timer, og Ukraine ville ikke have gjort noget ved det. Denne krig ville have været slut på én dag. Det var en frygtelig fejltagelse."</p>
+
+    <div class="fact-box">
+      <div class="fact-box-title">Faktatjek</div>
+      <p>Adskillige militæranalytikere og historikere har bestridt Trumps version. Rusland brugte BÅDE motorveje og marker. Kolonnerne blev stoppet af ukrainsk modstand med Javelins og NLAW, katastrofale russiske logistiksvigt og elektronisk krigsførelse. Mudderet var en faktor — men hverken den eneste eller den afgørende.</p>
+    </div>
+
+    <div class="pull-quote"><p>Hvis denne general bare var kørt ligeud ad betonvejen, ville de have været i Kyiv inden for fire timer. Denne krig ville have været slut på én dag — Præsident Donald Trump, Axios, 19. juni 2026</p></div>
+  </div>
+
+  <div id="lang-sv" class="lang-section">
+    <h2>Vad Trump sade</h2>
+    <p>I en intervju med Axios den 19 juni 2026 återupplivade president Trump sin välkända berättelse om Rysslands försök att ta Kyiv i februari 2022. Enligt Trump avvek en rysk general till åkermark istället för att hålla sig på motorvägen. "Om den här generalen bara hade kört rakt fram på betongsvägen, hade de varit i Kyiv inom fyra timmar, och Ukraina hade inte kunnat göra något. Det här kriget hade avslutats på en dag. Det var ett fruktansvärt misstag."</p>
+
+    <div class="fact-box">
+      <div class="fact-box-title">Faktakontroll</div>
+      <p>Åtskilliga militäranalytiker och historiker har bestritt Trumps version. Ryssland använde BÅDE motorvägar och åkermark. Kolonnerna stoppades av ukrainskt motstånd med Javelins och NLAW, katastrofala ryska logistikproblem och elektronisk krigföring. Leran var en faktor — men varken den enda eller den avgörande.</p>
+    </div>
+
+    <div class="pull-quote"><p>Om den här generalen bara hade kört rakt fram på betongsvägen, hade de varit i Kyiv inom fyra timmar. Det här kriget hade avslutats på en dag — President Donald Trump, Axios, 19 juni 2026</p></div>
+  </div>
+</div>
+
+<div class="sources">
+  <div class="sources-title">Sources</div>
+  <p>Defencenet.gr — Ν.Τραμπ: «Η Ρωσία έκανε μέγιστο λάθος το 2022 – Μπορούσε να καταλάβει το Κίεβο σε λίγες ώρες» (20 June 2026)</p>
+  <p>Axios — Trump interview (19 June 2026)</p>
+  <p>Ukraine Today — "They could have easily taken Kyiv": Trump shared his version of the start of the war (19 June 2026)</p>
+  <p>Euronews — Debunking Trump's account of Russia's failed bid to seize Kyiv (August 2025)</p>
+  <p>CNN Fact Check — Trump's latest fake history about the war in Ukraine (multiple dates 2025–2026)</p>
+  <p>The Hill — A year of failure: Trump's attempt to end the Russia-Ukraine war (February 2026)</p>
+</div>
+
+<footer>
+  <div><div class="foot-brand">Frontline Brief</div><div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div></div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+
+<script>
+function setLang(lang,btn){document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));document.getElementById('lang-'+lang).classList.add('active');btn.classList.add('active');}
+let cIndex=0;
+function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*20)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
+function cmove(dir){cIndex=(cIndex+dir+5)%5;cgo(cIndex);}
+</script>
+</body>
+</html>
