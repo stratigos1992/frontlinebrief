@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spain Fires the Hornet at Sea — Frontline Brief</title>
+<meta name="description" content="The Spanish Navy carries out the first at-sea firing of the Destinus Hornet Block 1 from the frigate Santa María.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:var(--cold);line-height:1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="defence.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Defence Policy</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Defence Policy</span>
+    <span class="tag" data-i18n="a_tag">🛳️ Naval C-UAS</span>
+    <span class="sep">·</span><span data-i18n="a_date">21 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">4 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">Spain fires the Hornet at sea: how <em>Destinus' containerised interceptor</em> went naval aboard the Santa María</h1>
+  <p class="standfirst" data-i18n="a_stand">The Spanish Navy has carried out the first at-sea firing of the Destinus Hornet Block 1, launching the canister-based interceptor from the frigate Santa María on 18 June 2026. The demonstration lifts containerised counter-drone defence from the firing range onto the deck of a warship, and points to a cheaper way for Europe's fleets to fight the drone swarm.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/spanish-hornet-santa-maria-en.jpg" alt="Spain fires the Destinus Hornet at sea — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/spanish-hornet-santa-maria-el.jpg" alt="Spain fires the Destinus Hornet at sea — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/spanish-hornet-santa-maria-fr.jpg" alt="Spain fires the Destinus Hornet at sea — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/spanish-hornet-santa-maria-da.jpg" alt="Spain fires the Destinus Hornet at sea — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/spanish-hornet-santa-maria-sv.jpg" alt="Spain fires the Destinus Hornet at sea — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">Destinus · At-sea firing · 18 June 2026</div><h3 data-i18n="p1_h">Hornet Block 1</h3><p data-i18n="p1_p">Canister-launched · radar cue into an autonomous EO/IR and radar terminal phase · operates GNSS-denied · 1.5 kg warhead. Fired from a containerised launcher on the helo deck of frigate F-81 Santa María.</p></div><div class="stat"><b>75+ km</b><small data-i18n="p1_s">quoted range</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">Cost asymmetry · The maths of the swarm</div><h3 data-i18n="p2_h">Volume and price over firepower</h3><p data-i18n="p2_p">A conventional interceptor can top €1M, while the drones it kills cost around €35k. Containerised rounds let a warship thin a swarm without emptying its magazines.</p></div><div class="stat"><b>28×</b><small data-i18n="p2_s">drones per interceptor</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">Next · Block 2 + industry</div><h3 data-i18n="p3_h">Dual-role, and a Rheinmetall venture</h3><p data-i18n="p3_p">Hornet Block 2 (dual-role, 3 kg, AI-coordinated swarms) is in development. In April 2026 Destinus and Rheinmetall agreed a joint venture, Rheinmetall Destinus Strike Systems, due to stand up in H2 2026.</p></div><div class="stat"><b>150+ km</b><small data-i18n="p3_s">Block 2 range</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <h2>The first shot at sea</h2>
+    <p>The Spanish Navy has carried out the first at-sea firing of the Destinus Hornet Block 1, launching the canister-based interceptor from the frigate <strong>Santa María</strong> on 18 June 2026. Run jointly with the European defence-tech firm Destinus, the trial saw a single Hornet leave a containerised launcher fitted to the helicopter platform of F-81 Santa María, an ageing Oliver Hazard Perry-class frigate.</p>
+    <p>The choice of an older hull was deliberate. The point was to show that the system can be bolted onto an existing platform without the structural surgery and dedicated vertical launch cells that conventional naval missiles demand.</p>
+    <h2>How the Hornet works</h2>
+    <p>The Hornet Block 1 is built to hunt subsonic drones and coordinated swarms. It opens an engagement on radar cueing, then hands over to an autonomous terminal phase that fuses electro-optical, infrared and radar seekers, and it is designed to keep working when satellite navigation is jammed or spoofed. Destinus quotes a range beyond <strong>75 km</strong> and a 1.5 kg warhead, positioning the weapon against Group 3 UAVs and saturation attacks rather than fast jets.</p>
+    <h2>The maths of the swarm</h2>
+    <p>That last point is the whole argument. A conventional interceptor can run past one million euros, while the drones it is fired at may cost in the region of 35,000 euros. Spending a high-value round on a cheap aircraft is a losing exchange, and navies are now looking for ways to thin out an incoming swarm without emptying their magazines.</p>
+    <p class="pull">A cheap drone can threaten a platform worth far more than itself. The answer Europe is testing is not a better missile, but a cheaper one in greater numbers.</p>
+    <p>Because the launcher sits inside a standard shipping container, it can be parked on deck or worked into a ship's existing layout, multiplying the number of ready interceptors a surface combatant can carry without cutting new launch cells into the hull. For older escorts with no spare vertical launch capacity, the appeal is obvious.</p>
+    <h2>Block 2 and the Rheinmetall venture</h2>
+    <p>A follow-on <strong>Hornet Block 2</strong> is already in development as a dual-role weapon, able both to intercept drones and to strike maritime or ground targets, with a range past 150 km, a 3 kg payload and AI-coordinated swarm operation. In April 2026 Destinus and Rheinmetall agreed a joint venture, Rheinmetall Destinus Strike Systems, due to stand up in the second half of the year to build missiles for European and NATO customers.</p>
+    <p>Madrid has become an early proving ground. The same interceptor was put through a live intercept on land during the Spanish Army's TEC 3 experimentation campaign at Viator in April, watched by King Felipe VI; the naval firing now carries that interest from the army to the fleet. Spain released no detail on the threat profile, the engagement parameters or the result of the shot. What the test does signal is a direction of travel: containerised, lower-cost interceptors are heading to sea.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <h2>Η πρώτη βολή εν πλω</h2>
+    <p>Το ισπανικό Πολεμικό Ναυτικό πραγματοποίησε την πρώτη εν πλω βολή του Hornet Block 1 της Destinus, εκτοξεύοντας τον αναχαιτιστή που φέρεται σε κάνιστρο από τη φρεγάτα <strong>Santa María</strong> στις 18 Ιουνίου 2026. Η δοκιμή, σε συνεργασία με την ευρωπαϊκή εταιρεία αμυντικής τεχνολογίας Destinus, περιελάμβανε την εκτόξευση ενός Hornet από εκτοξευτή-κάνιστρο στην ελικοπτεροφόρο πλατφόρμα της F-81 Santa María, μιας παλαιάς φρεγάτας κλάσης Oliver Hazard Perry.</p>
+    <p>Η επιλογή ενός γηραιού σκάφους ήταν συνειδητή: να αποδειχθεί ότι το σύστημα προσαρτάται σε υφιστάμενη πλατφόρμα χωρίς τις δομικές επεμβάσεις και τα ειδικά κάθετα φρεάτια εκτόξευσης που απαιτούν οι συμβατικοί ναυτικοί πύραυλοι.</p>
+    <h2>Πώς λειτουργεί ο Hornet</h2>
+    <p>Ο Hornet Block 1 σχεδιάστηκε για την αναχαίτιση υποηχητικών drones και συντονισμένων σμηνών. Ανοίγει την εμπλοκή με καθοδήγηση από ραντάρ και μεταβαίνει σε αυτόνομη τελική φάση που συνδυάζει ηλεκτρο-οπτικούς, υπέρυθρους και ραντάρ αναζητητές, ενώ λειτουργεί ακόμη και υπό παρεμβολή ή πλαστογράφηση της δορυφορικής πλοήγησης. Η Destinus αναφέρει βεληνεκές άνω των <strong>75 χλμ.</strong> και κεφαλή 1,5 κιλού, τοποθετώντας το όπλο απέναντι σε UAV Ομάδας 3 και επιθέσεις κορεσμού.</p>
+    <h2>Τα μαθηματικά του σμήνους</h2>
+    <p>Εκεί ακριβώς βρίσκεται όλο το επιχείρημα. Ένας συμβατικός αναχαιτιστής μπορεί να ξεπερνά το ένα εκατομμύριο ευρώ, τη στιγμή που τα drones κατά των οποίων εκτοξεύεται κοστίζουν περίπου 35.000 ευρώ. Το να δαπανάς πανάκριβο πύραυλο για φθηνό ιπτάμενο μέσο είναι χαμένη ανταλλαγή, και τα ναυτικά αναζητούν τρόπους να αραιώσουν ένα εισερχόμενο σμήνος χωρίς να αδειάζουν τις αποθήκες τους.</p>
+    <p class="pull">Ένα φθηνό drone απειλεί πλατφόρμα πολλαπλάσιας αξίας. Η απάντηση που δοκιμάζει η Ευρώπη δεν είναι ένας καλύτερος πύραυλος, αλλά ένας φθηνότερος σε μεγαλύτερους αριθμούς.</p>
+    <p>Επειδή ο εκτοξευτής βρίσκεται μέσα σε τυποποιημένο εμπορευματοκιβώτιο, τοποθετείται στο κατάστρωμα ή εντάσσεται στη διάταξη του πλοίου, πολλαπλασιάζοντας τους έτοιμους αναχαιτιστές χωρίς να ανοιχτούν νέα φρεάτια στη γάστρα. Για παλαιότερες συνοδείες χωρίς διαθέσιμη χωρητικότητα κάθετης εκτόξευσης, το πλεονέκτημα είναι προφανές.</p>
+    <h2>Το Block 2 και η κοινοπραξία με τη Rheinmetall</h2>
+    <p>Ένας διάδοχος <strong>Hornet Block 2</strong> βρίσκεται ήδη υπό ανάπτυξη ως όπλο διπλού ρόλου, ικανό τόσο να αναχαιτίζει drones όσο και να πλήττει ναυτικούς ή χερσαίους στόχους, με βεληνεκές άνω των 150 χλμ., φορτίο 3 κιλών και συντονισμό σμήνους με τεχνητή νοημοσύνη. Τον Απρίλιο του 2026 η Destinus και η Rheinmetall συμφώνησαν κοινοπραξία, τη Rheinmetall Destinus Strike Systems, που αναμένεται να λειτουργήσει στο β' εξάμηνο του έτους.</p>
+    <p>Η Μαδρίτη έχει εξελιχθεί σε πρώιμο πεδίο δοκιμών. Ο ίδιος αναχαιτιστής είχε εκτελέσει ζωντανή αναχαίτιση στην ξηρά κατά την εκστρατεία TEC 3 του ισπανικού Στρατού στο Viator τον Απρίλιο, υπό την παρακολούθηση του βασιλιά Φελίπε ΣΤ'. Η Ισπανία δεν έδωσε λεπτομέρειες για το προφίλ της απειλής ή το αποτέλεσμα της βολής· αυτό που σηματοδοτεί η δοκιμή είναι μια κατεύθυνση πορείας.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <h2>Le premier tir en mer</h2>
+    <p>La marine espagnole a réalisé le premier tir en mer du Hornet Block 1 de Destinus, en lançant cet intercepteur en canister depuis la frégate <strong>Santa María</strong> le 18 juin 2026. Mené conjointement avec la société européenne de technologie de défense Destinus, l'essai a vu un seul Hornet quitter un lanceur en canister installé sur la plateforme hélicoptère de la F-81 Santa María, une frégate vieillissante de la classe Oliver Hazard Perry.</p>
+    <p>Le choix d'une coque ancienne n'a rien d'anodin : il s'agissait de prouver que le système peut être greffé sur une plateforme existante, sans les modifications structurelles ni les puits de lancement vertical dédiés qu'exigent les missiles navals classiques.</p>
+    <h2>Comment fonctionne le Hornet</h2>
+    <p>Le Hornet Block 1 est conçu pour traquer les drones subsoniques et les essaims coordonnés. Il ouvre l'engagement par désignation radar, puis bascule vers une phase terminale autonome combinant autodirecteurs électro-optique, infrarouge et radar, et fonctionne même lorsque la navigation par satellite est brouillée ou leurrée. Destinus annonce une portée supérieure à <strong>75 km</strong> et une charge de 1,5 kg, face aux drones du Groupe 3 et aux attaques de saturation.</p>
+    <h2>Le calcul de l'essaim</h2>
+    <p>C'est là que réside tout l'argument. Un intercepteur classique peut dépasser le million d'euros, alors que les drones visés coûtent de l'ordre de 35 000 euros. Dépenser une munition de grande valeur contre un aéronef bon marché est un échange perdant, et les marines cherchent désormais à éclaircir un essaim sans vider leurs soutes.</p>
+    <p class="pull">Un drone bon marché peut menacer une plateforme bien plus coûteuse. La réponse que teste l'Europe n'est pas un meilleur missile, mais un missile moins cher, en plus grand nombre.</p>
+    <p>Parce que le lanceur tient dans un conteneur maritime standard, il peut être posé sur le pont ou intégré à l'aménagement du navire, multipliant le nombre d'intercepteurs disponibles sans percer de nouveaux puits dans la coque. Pour les escorteurs anciens dépourvus de lancement vertical, l'intérêt saute aux yeux.</p>
+    <h2>Le Block 2 et la coentreprise Rheinmetall</h2>
+    <p>Un successeur, le <strong>Hornet Block 2</strong>, est déjà en développement comme arme à double rôle, capable d'intercepter des drones et de frapper des cibles navales ou terrestres, avec une portée supérieure à 150 km, une charge de 3 kg et une gestion d'essaim coordonnée par IA. En avril 2026, Destinus et Rheinmetall ont signé une coentreprise, Rheinmetall Destinus Strike Systems, attendue au second semestre.</p>
+    <p>Madrid s'impose comme un terrain d'essai précoce. Le même intercepteur avait réalisé une interception réelle au sol lors de la campagne TEC 3 de l'armée de terre espagnole à Viator en avril, sous le regard du roi Felipe VI. L'Espagne n'a livré aucun détail sur le profil de la menace ou le résultat du tir ; ce que l'essai signale, c'est une direction.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <h2>Den første affyring til søs</h2>
+    <p>Den spanske flåde har gennemført den første affyring til søs af Destinus' Hornet Block 1 og sendt den canister-baserede interceptor af sted fra fregatten <strong>Santa María</strong> den 18. juni 2026. Forsøget, der blev gennemført sammen med den europæiske forsvarsteknologivirksomhed Destinus, bestod i, at en enkelt Hornet forlod en containerbaseret affyringsenhed på helikopterplatformen på F-81 Santa María, en aldrende fregat af Oliver Hazard Perry-klassen.</p>
+    <p>Valget af et ældre skrog var bevidst: pointen var at vise, at systemet kan monteres på en eksisterende platform uden de strukturelle indgreb og dedikerede lodrette affyringsceller, som konventionelle flådemissiler kræver.</p>
+    <h2>Sådan virker Hornet</h2>
+    <p>Hornet Block 1 er bygget til at jage subsoniske droner og koordinerede sværme. Den indleder engagementet med radarpejling og skifter til en autonom slutfase, der kombinerer elektrooptiske, infrarøde og radarsøgere, og virker selv når satellitnavigation jammes eller spoofes. Destinus oplyser en rækkevidde på over <strong>75 km</strong> og en sprængladning på 1,5 kg, rettet mod Gruppe 3-droner og mætningsangreb.</p>
+    <h2>Sværmens regnestykke</h2>
+    <p>Det er hele argumentet. En konventionel interceptor kan koste over en million euro, mens de droner, den affyres imod, kan koste omkring 35.000 euro. At bruge et dyrt missil på et billigt luftfartøj er en tabsforretning, og flåderne leder nu efter måder at tynde en indkommende sværm ud på uden at tømme magasinerne.</p>
+    <p class="pull">En billig drone kan true en platform til langt mere end sig selv. Svaret, Europa afprøver, er ikke et bedre missil, men et billigere, i større antal.</p>
+    <p>Fordi affyringsenheden sidder i en standardcontainer, kan den placeres på dækket eller indpasses i skibets indretning og dermed mangedoble antallet af klar-til-brug interceptorer uden at skære nye affyringsceller i skroget. For ældre eskorteskibe uden lodret affyringskapacitet er fordelen indlysende.</p>
+    <h2>Block 2 og Rheinmetall-aftalen</h2>
+    <p>En efterfølger, <strong>Hornet Block 2</strong>, er allerede under udvikling som et dobbeltrolle-våben, der både kan opfange droner og ramme mål til søs og på land, med en rækkevidde på over 150 km, en nyttelast på 3 kg og AI-koordineret sværmstyring. I april 2026 indgik Destinus og Rheinmetall et joint venture, Rheinmetall Destinus Strike Systems, der ventes at træde i kraft i andet halvår.</p>
+    <p>Madrid er blevet en tidlig prøvestand. Den samme interceptor gennemførte en skarp opfangning på land under den spanske hærs TEC 3-kampagne i Viator i april, overværet af kong Felipe VI. Spanien har ikke oplyst noget om trusselsprofilen eller resultatet af skuddet; det, forsøget signalerer, er en retning.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <h2>Det första skottet till sjöss</h2>
+    <p>Spanska flottan har genomfört den första avfyrningen till sjöss av Destinus Hornet Block 1 och skickat iväg den canisterbaserade interceptorn från fregatten <strong>Santa María</strong> den 18 juni 2026. Provet, som genomfördes tillsammans med det europeiska försvarsteknikföretaget Destinus, innebar att en enda Hornet lämnade en containerbaserad avfyrningsenhet på helikopterplattformen på F-81 Santa María, en åldrande fregatt av Oliver Hazard Perry-klass.</p>
+    <p>Valet av ett äldre skrov var medvetet: poängen var att visa att systemet kan monteras på en befintlig plattform utan de strukturella ingrepp och dedikerade vertikala avfyrningsceller som konventionella sjömålsrobotar kräver.</p>
+    <h2>Så fungerar Hornet</h2>
+    <p>Hornet Block 1 är byggd för att jaga subsoniska drönare och samordnade svärmar. Den inleder striden med radarinmätning och växlar till en autonom slutfas som kombinerar elektrooptiska, infraröda och radarmålsökare, och fungerar även när satellitnavigeringen störs eller förfalskas. Destinus uppger en räckvidd på över <strong>75 km</strong> och en stridsdel på 1,5 kg, mot Grupp 3-drönare och mättnadsangrepp.</p>
+    <h2>Svärmens matematik</h2>
+    <p>Det är hela poängen. En konventionell interceptor kan kosta över en miljon euro, medan drönarna den avfyras mot kan kosta runt 35 000 euro. Att lägga en dyr robot på en billig farkost är en förlustaffär, och flottorna söker nu sätt att glesa ut en inkommande svärm utan att tömma magasinen.</p>
+    <p class="pull">En billig drönare kan hota en plattform värd långt mer än den själv. Svaret Europa prövar är inte en bättre robot, utan en billigare, i större antal.</p>
+    <p>Eftersom avfyrningsenheten ryms i en standardcontainer kan den ställas på däck eller arbetas in i fartygets utformning, vilket mångdubblar antalet stridsklara interceptorer utan att skära nya avfyrningsceller i skrovet. För äldre eskortfartyg utan vertikal avfyrningskapacitet är fördelen uppenbar.</p>
+    <h2>Block 2 och Rheinmetall-avtalet</h2>
+    <p>En efterföljare, <strong>Hornet Block 2</strong>, är redan under utveckling som ett dubbelrollsvapen, som både kan fånga upp drönare och slå mot mål till sjöss och på land, med en räckvidd på över 150 km, en nyttolast på 3 kg och AI-samordnad svärmhantering. I april 2026 enades Destinus och Rheinmetall om ett samriskbolag, Rheinmetall Destinus Strike Systems, som väntas träda i kraft under andra halvåret.</p>
+    <p>Madrid har blivit en tidig provbänk. Samma interceptor genomförde en skarp upptagning på land under spanska arméns TEC 3-kampanj i Viator i april, bevittnad av kung Felipe VI. Spanien har inte lämnat några uppgifter om hotbilden eller resultatet av skottet; vad provet signalerar är en riktning.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>Naval News — Spanish Navy tests Hornet Block 1 interceptor from Santa María frigate (June 2026)</li>
+      <li>Destinus — Hornet Block 1 / Block 2 specifications and containerised launch concept</li>
+      <li>Rheinmetall &amp; Destinus — Rheinmetall Destinus Strike Systems joint venture (April 2026)</li>
+      <li>Spanish Army — TEC 3 experimentation campaign, Viator (April 2026)</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Defence Policy",a_cat:"Defence Policy",a_tag:"🛳️ Naval C-UAS",a_date:"21 June 2026",a_read:"4 min read",a_title:"Spain fires the Hornet at sea: how <em>Destinus' containerised interceptor</em> went naval aboard the Santa María",a_stand:"The Spanish Navy has carried out the first at-sea firing of the Destinus Hornet Block 1, launching the canister-based interceptor from the frigate Santa María on 18 June 2026. The demonstration lifts containerised counter-drone defence from the firing range onto the deck of a warship.",p1_h:"Hornet Block 1",p1_p:"Canister-launched · radar cue into an autonomous EO/IR and radar terminal phase · operates GNSS-denied · 1.5 kg warhead. Fired from a containerised launcher on the helo deck of frigate F-81 Santa María.",p1_s:"quoted range",p2_h:"Volume and price over firepower",p2_p:"A conventional interceptor can top €1M, while the drones it kills cost around €35k. Containerised rounds let a warship thin a swarm without emptying its magazines.",p2_s:"drones per interceptor",p3_h:"Dual-role, and a Rheinmetall venture",p3_p:"Hornet Block 2 (dual-role, 3 kg, AI-coordinated swarms) is in development. In April 2026 Destinus and Rheinmetall agreed a joint venture, Rheinmetall Destinus Strike Systems, due to stand up in H2 2026.",p3_s:"Block 2 range",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στην Αμυντική Πολιτική",a_cat:"Αμυντική Πολιτική",a_tag:"🛳️ Ναυτικό C-UAS",a_date:"21 Ιουνίου 2026",a_read:"4' ανάγνωση",a_title:"Πρώτη βολή του Hornet εν πλω: πώς ο <em>αναχαιτιστής της Destinus σε κάνιστρο</em> πέρασε στο ναυτικό πεδίο με τη Santa María",a_stand:"Το ισπανικό Πολεμικό Ναυτικό πραγματοποίησε την πρώτη εν πλω βολή του Destinus Hornet Block 1, εκτοξεύοντας τον αναχαιτιστή από κάνιστρο από τη φρεγάτα Santa María στις 18 Ιουνίου 2026. Η επίδειξη μεταφέρει την αντι-drone άμυνα από κοντέινερ στο κατάστρωμα ενός πολεμικού πλοίου.",p1_h:"Hornet Block 1",p1_p:"Εκτόξευση από κάνιστρο · ραντάρ και αυτόνομη τελική φάση EO/IR · λειτουργία χωρίς GNSS · κεφαλή 1,5 κιλού. Από εκτοξευτή σε κοντέινερ στην ελικοπτεροφόρο πλατφόρμα της F-81 Santa María.",p1_s:"βεληνεκές",p2_h:"Όγκος και τιμή έναντι ισχύος πυρός",p2_p:"Ένας συμβατικός αναχαιτιστής ξεπερνά το 1 εκατ. €, ενώ τα drones που καταρρίπτει κοστίζουν περίπου 35.000 €. Οι αναχαιτιστές σε κοντέινερ αραιώνουν ένα σμήνος χωρίς να αδειάζουν τις αποθήκες.",p2_s:"drones ανά αναχαιτιστή",p3_h:"Διπλός ρόλος και κοινοπραξία με Rheinmetall",p3_p:"Ο Hornet Block 2 (διπλού ρόλου, 3 κιλά, σμήνη με AI) είναι υπό ανάπτυξη. Τον Απρίλιο 2026 Destinus και Rheinmetall συμφώνησαν την κοινοπραξία Rheinmetall Destinus Strike Systems, εντός β' εξαμήνου 2026.",p3_s:"βεληνεκές Block 2",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Politique de Défense",a_cat:"Politique de Défense",a_tag:"🛳️ C-UAS naval",a_date:"21 juin 2026",a_read:"4 min de lecture",a_title:"L'Espagne tire le Hornet en mer : comment l'<em>intercepteur conteneurisé de Destinus</em> est passé au naval depuis la Santa María",a_stand:"La marine espagnole a réalisé le premier tir en mer du Destinus Hornet Block 1, en lançant l'intercepteur en canister depuis la frégate Santa María le 18 juin 2026. La démonstration porte la défense anti-drone conteneurisée sur le pont d'un bâtiment de combat.",p1_h:"Hornet Block 1",p1_p:"Lancé en canister · désignation radar puis phase terminale autonome EO/IR · fonctionne sans GNSS · charge 1,5 kg. Tiré depuis un lanceur conteneurisé sur la plateforme hélicoptère de la frégate F-81 Santa María.",p1_s:"portée annoncée",p2_h:"Le volume et le prix avant la puissance de feu",p2_p:"Un intercepteur classique peut dépasser 1 M€, alors que les drones visés coûtent environ 35 000 €. Les munitions conteneurisées éclaircissent un essaim sans vider les soutes.",p2_s:"drones par intercepteur",p3_h:"Double rôle, et une coentreprise Rheinmetall",p3_p:"Le Hornet Block 2 (double rôle, 3 kg, essaims pilotés par IA) est en développement. En avril 2026, Destinus et Rheinmetall ont créé la coentreprise Rheinmetall Destinus Strike Systems, attendue au S2 2026.",p3_s:"portée Block 2",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Forsvarspolitik",a_cat:"Forsvarspolitik",a_tag:"🛳️ Maritim C-UAS",a_date:"21. juni 2026",a_read:"4 min. læsning",a_title:"Spanien affyrer Hornet til søs: hvordan Destinus' <em>containerbaserede interceptor</em> blev maritim fra Santa María",a_stand:"Den spanske flåde har gennemført den første affyring til søs af Destinus Hornet Block 1 fra fregatten Santa María den 18. juni 2026. Demonstrationen bringer containerbaseret droneforsvar op på dækket af et krigsskib.",p1_h:"Hornet Block 1",p1_p:"Canister-affyret · radarpejling og autonom EO/IR-slutfase · virker uden GNSS · 1,5 kg sprænghoved. Affyret fra en containerbaseret enhed på helikopterdækket på fregatten F-81 Santa María.",p1_s:"oplyst rækkevidde",p2_h:"Mængde og pris frem for ildkraft",p2_p:"En konventionel interceptor kan koste over 1 mio. €, mens dronerne koster omkring 35.000 €. Containerbaserede skud tynder en sværm uden at tømme magasinerne.",p2_s:"droner pr. interceptor",p3_h:"Dobbeltrolle og en Rheinmetall-aftale",p3_p:"Hornet Block 2 (dobbeltrolle, 3 kg, AI-koordinerede sværme) er under udvikling. I april 2026 indgik Destinus og Rheinmetall joint venturet Rheinmetall Destinus Strike Systems, ventet i 2. halvår 2026.",p3_s:"Block 2-rækkevidde",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Försvarspolitik",a_cat:"Försvarspolitik",a_tag:"🛳️ Marin C-UAS",a_date:"21 juni 2026",a_read:"4 min läsning",a_title:"Spanien skjuter Hornet till sjöss: hur Destinus <em>containerbaserade interceptor</em> blev marin från Santa María",a_stand:"Spanska flottan har genomfört den första avfyrningen till sjöss av Destinus Hornet Block 1 från fregatten Santa María den 18 juni 2026. Demonstrationen tar containerbaserat drönarförsvar upp på däcket av ett örlogsfartyg.",p1_h:"Hornet Block 1",p1_p:"Canisteravfyrad · radarinmätning och autonom EO/IR-slutfas · fungerar utan GNSS · 1,5 kg stridsdel. Avfyrad från en containerbaserad enhet på helikopterdäcket på fregatten F-81 Santa María.",p1_s:"uppgiven räckvidd",p2_h:"Volym och pris före eldkraft",p2_p:"En konventionell interceptor kan kosta över 1 M€, medan drönarna kostar runt 35 000 €. Containerbaserade skott glesar ut en svärm utan att tömma magasinen.",p2_s:"drönare per interceptor",p3_h:"Dubbelroll och ett Rheinmetall-bolag",p3_p:"Hornet Block 2 (dubbelroll, 3 kg, AI-samordnade svärmar) är under utveckling. I april 2026 enades Destinus och Rheinmetall om samriskbolaget Rheinmetall Destinus Strike Systems, väntat H2 2026.",p3_s:"Block 2-räckvidd",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
