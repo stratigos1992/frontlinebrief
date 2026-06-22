@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Polish Missile for Rampart — Frontline Brief</title>
+<meta name="description" content="Naval Group, MESKO and TELESYSTEM sign an agreement to demonstrate the Piorun missile from Naval Group's Rampart launcher.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--cold);line-height:1.1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="defence.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Defence Policy</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Defence Policy</span>
+    <span class="tag" data-i18n="a_tag">🚀 Naval Air Defence</span>
+    <span class="sep">·</span><span data-i18n="a_date">21 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">3 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">A Polish missile for Rampart: Naval Group, MESKO and TELESYSTEM agree to fire <em>Piorun</em> from the modular launcher</h1>
+  <p class="standfirst" data-i18n="a_stand">On 19 June 2026, Naval Group, MESKO and TELESYSTEM signed an agreement to demonstrate MESKO's Piorun missile from Naval Group's Rampart launcher during future naval exercises. It is the first step toward integrating the Polish short-range missile into the French launching system — and another piece of Europe's layered answer to the low-end air threat.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/naval-group-piorun-rampart-en.jpg" alt="A Polish missile for Rampart — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/naval-group-piorun-rampart-el.jpg" alt="A Polish missile for Rampart — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/naval-group-piorun-rampart-fr.jpg" alt="A Polish missile for Rampart — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/naval-group-piorun-rampart-da.jpg" alt="A Polish missile for Rampart — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/naval-group-piorun-rampart-sv.jpg" alt="A Polish missile for Rampart — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">The launcher · Naval Group Rampart</div><h3 data-i18n="p1_h">Modular, multi-effector</h3><p data-i18n="p1_p">Naval Group's modular launcher (formerly MPLS), shown at Eurosatory 2026. Up to 1,000 kg payload across four interchangeable modules — 68/70 mm rockets, VSHORAD missiles and loitering munitions. First at-sea trials due October 2026.</p></div><div class="stat"><b>4 modules</b><small>1,000 kg payload</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The effector · MESKO Piorun</div><h3 data-i18n="p2_h">Short-range, proximity-fuzed</h3><p data-i18n="p2_p">A modern short-range surface-to-air missile built to counter low-flying threats — aircraft, helicopters, UAVs and winged rockets. A proximity-fuzed warhead destroys the target on a close pass, not only a direct hit.</p></div><div class="stat"><b>SHORAD</b><small>combat-proven</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The play · Integrated European solution</div><h3 data-i18n="p3_h">A French prime, a Polish missile</h3><p data-i18n="p3_p">Naval Group brings warship weapons integration; MESKO and TELESYSTEM bring missile production and supply. Together they pitch an integrated European answer to conventional and asymmetric threats across naval, air and land.</p></div><div class="stat"><b>3 firms</b><small>FR + PL</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <h2>A Polish missile for Rampart</h2>
+    <p>On 19 June 2026, Naval Group, MESKO and TELESYSTEM signed an agreement to demonstrate MESKO's <strong>Piorun</strong> missile from Naval Group's <strong>Rampart</strong> launcher during future naval exercises. The three companies describe it as the first step of a strategic cooperation aimed at integrating the Polish missile into the French launching system.</p>
+    <h2>What Rampart is</h2>
+    <p>Rampart is Naval Group's modular naval launcher, unveiled at Eurosatory 2026 and developed from the firm's earlier MPLS. It is built around interchangeable modules and can carry up to a 1,000 kg payload, mixing 68/70 mm rockets, VSHORAD missiles and loitering munitions for both naval and land use, with its first at-sea trials expected in October 2026. Adding Piorun would give the launcher a proven short-range air-defence round alongside its strike options.</p>
+    <h2>What Piorun brings</h2>
+    <p>MESKO's Piorun is a modern short-range surface-to-air missile designed to counter low-flying aerial threats, including aircraft, helicopters, UAVs and winged rockets. Its warhead is fitted with a proximity sensor, so it can destroy a target on a close pass rather than requiring a direct hit — a useful trait against small, agile drones.</p>
+    <p class="pull">A modular launcher that can mix rockets, loitering munitions and now a combat-proven short-range missile — cheap, layered air defence at sea.</p>
+    <h2>An integrated European solution</h2>
+    <p>The partners frame the project as an integrated European answer to conventional and asymmetric threats, addressing naval, air and land forces at once. Naval Group contributes its experience integrating weapons, launching systems and equipment on warships, while MESKO and TELESYSTEM bring expertise in producing and supplying the missile. The arrangement also deepens Franco-Polish industrial ties and raises Poland's profile as a missile supplier to a major French prime.</p>
+    <h2>Why it matters</h2>
+    <p>The logic echoes the containerised interceptors now heading to sea elsewhere in Europe: rather than spending a high-value round on every cheap threat, navies want a modular launcher that can field the right effector for the target — rockets and loitering munitions for some jobs, a short-range missile such as Piorun for low-flying aircraft and drones. The agreement is only a first step, and no demonstration date or naval exercise has been named, but the direction is a layered, lower-cost approach to the air threat at sea.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <h2>Ένας πολωνικός πύραυλος για το Rampart</h2>
+    <p>Στις 19 Ιουνίου 2026, η Naval Group, η MESKO και η TELESYSTEM υπέγραψαν συμφωνία για τη δοκιμαστική εκτόξευση του πυραύλου <strong>Piorun</strong> της MESKO από τον εκτοξευτή <strong>Rampart</strong> της Naval Group σε μελλοντικές ναυτικές ασκήσεις. Οι τρεις εταιρείες την περιγράφουν ως το πρώτο βήμα μιας στρατηγικής συνεργασίας με στόχο την ενσωμάτωση του πολωνικού πυραύλου στο γαλλικό σύστημα εκτόξευσης.</p>
+    <h2>Τι είναι το Rampart</h2>
+    <p>Το Rampart είναι ο αρθρωτός ναυτικός εκτοξευτής της Naval Group, που παρουσιάστηκε στη Eurosatory 2026 και προέκυψε από το προγενέστερο MPLS της εταιρείας. Είναι σχεδιασμένο γύρω από εναλλάξιμες μονάδες και μπορεί να φέρει φορτίο έως 1.000 κιλών, συνδυάζοντας πυραύλους 68/70 χλστ., πυραύλους VSHORAD και loitering munitions για ναυτική και χερσαία χρήση, με τις πρώτες δοκιμές εν πλω να αναμένονται τον Οκτώβριο του 2026. Η προσθήκη του Piorun θα έδινε στον εκτοξευτή έναν δοκιμασμένο πύραυλο αντιαεροπορικής άμυνας μικρού βεληνεκούς δίπλα στις επιθετικές του επιλογές.</p>
+    <h2>Τι προσφέρει το Piorun</h2>
+    <p>Το Piorun της MESKO είναι ένας σύγχρονος πύραυλος επιφανείας-αέρος μικρού βεληνεκούς, σχεδιασμένος να αντιμετωπίζει χαμηλά ιπτάμενες απειλές: αεροσκάφη, ελικόπτερα, UAV και πτερυγιοφόρους πυραύλους. Η κεφαλή του διαθέτει αισθητήρα εγγύτητας, ώστε να καταστρέφει τον στόχο σε κοντινό πέρασμα και όχι μόνο με άμεσο πλήγμα — χρήσιμο χαρακτηριστικό απέναντι σε μικρά, ευέλικτα drones.</p>
+    <p class="pull">Ένας αρθρωτός εκτοξευτής που συνδυάζει ρουκέτες, loitering munitions και τώρα έναν δοκιμασμένο πύραυλο μικρού βεληνεκούς — φθηνή, πολυεπίπεδη αντιαεροπορική άμυνα στη θάλασσα.</p>
+    <h2>Μια ολοκληρωμένη ευρωπαϊκή λύση</h2>
+    <p>Οι εταίροι παρουσιάζουν το εγχείρημα ως μια ολοκληρωμένη ευρωπαϊκή απάντηση σε συμβατικές και ασύμμετρες απειλές, που αφορά ταυτόχρονα ναυτικές, αεροπορικές και χερσαίες δυνάμεις. Η Naval Group συνεισφέρει την εμπειρία της στην ενσωμάτωση όπλων, συστημάτων εκτόξευσης και εξοπλισμού σε πολεμικά πλοία, ενώ η MESKO και η TELESYSTEM φέρνουν την τεχνογνωσία στην παραγωγή και προμήθεια του πυραύλου. Η συμφωνία ενισχύει επίσης τους γαλλο-πολωνικούς βιομηχανικούς δεσμούς και αναβαθμίζει τον ρόλο της Πολωνίας ως προμηθευτή πυραύλων σε μεγάλη γαλλική εταιρεία.</p>
+    <h2>Γιατί έχει σημασία</h2>
+    <p>Η λογική θυμίζει τους αναχαιτιστές σε κοντέινερ που βγαίνουν στη θάλασσα αλλού στην Ευρώπη: αντί να δαπανά έναν ακριβό πύραυλο για κάθε φθηνή απειλή, το ναυτικό θέλει έναν αρθρωτό εκτοξευτή που να βάζει τον κατάλληλο φορέα για κάθε στόχο — ρουκέτες και loitering munitions για ορισμένες αποστολές, πύραυλο μικρού βεληνεκούς όπως το Piorun για χαμηλά ιπτάμενα αεροσκάφη και drones. Η συμφωνία είναι μόνο το πρώτο βήμα και δεν έχει ανακοινωθεί ημερομηνία ή άσκηση, όμως η κατεύθυνση είναι μια πολυεπίπεδη, χαμηλότερου κόστους προσέγγιση της αεροπορικής απειλής εν πλω.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <h2>Un missile polonais pour le Rampart</h2>
+    <p>Le 19 juin 2026, Naval Group, MESKO et TELESYSTEM ont signé un accord visant à démontrer le missile <strong>Piorun</strong> de MESKO depuis le lanceur <strong>Rampart</strong> de Naval Group lors de futurs exercices navals. Les trois entreprises le présentent comme la première étape d'une coopération stratégique destinée à intégrer le missile polonais au système de lancement français.</p>
+    <h2>Ce qu'est le Rampart</h2>
+    <p>Le Rampart est le lanceur naval modulaire de Naval Group, dévoilé à Eurosatory 2026 et issu du précédent MPLS de la société. Conçu autour de modules interchangeables, il peut emporter jusqu'à 1 000 kg de charge utile, en combinant roquettes de 68/70 mm, missiles VSHORAD et munitions rôdeuses pour un usage naval et terrestre, ses premiers essais en mer étant attendus en octobre 2026. L'ajout du Piorun lui apporterait une munition de défense antiaérienne courte portée éprouvée, aux côtés de ses options de frappe.</p>
+    <h2>Ce qu'apporte le Piorun</h2>
+    <p>Le Piorun de MESKO est un missile surface-air courte portée moderne, conçu pour contrer les menaces aériennes à basse altitude : avions, hélicoptères, drones et roquettes ailées. Sa charge est dotée d'un capteur de proximité, lui permettant de détruire la cible lors d'un passage rapproché et pas uniquement par impact direct — un atout face aux petits drones agiles.</p>
+    <p class="pull">Un lanceur modulaire capable de mêler roquettes, munitions rôdeuses et désormais un missile courte portée éprouvé — une défense antiaérienne en couches, et bon marché, en mer.</p>
+    <h2>Une solution européenne intégrée</h2>
+    <p>Les partenaires présentent le projet comme une réponse européenne intégrée aux menaces conventionnelles et asymétriques, couvrant à la fois les forces navales, aériennes et terrestres. Naval Group apporte son expérience de l'intégration des armes, des systèmes de lancement et des équipements sur les navires de guerre, tandis que MESKO et TELESYSTEM apportent leur savoir-faire dans la production et la fourniture du missile. L'accord renforce aussi les liens industriels franco-polonais et rehausse le rôle de la Pologne comme fournisseur de missiles d'un grand maître d'œuvre français.</p>
+    <h2>Pourquoi c'est important</h2>
+    <p>La logique fait écho aux intercepteurs conteneurisés qui prennent la mer ailleurs en Europe : plutôt que de dépenser une munition de grande valeur contre chaque menace bon marché, les marines veulent un lanceur modulaire capable d'aligner le bon effecteur selon la cible — roquettes et munitions rôdeuses pour certaines missions, un missile courte portée comme le Piorun pour les aéronefs et drones volant bas. L'accord n'est qu'une première étape et aucune date ni aucun exercice n'a été annoncé, mais la direction est claire : une approche en couches et moins coûteuse de la menace aérienne en mer.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <h2>Et polsk missil til Rampart</h2>
+    <p>Den 19. juni 2026 underskrev Naval Group, MESKO og TELESYSTEM en aftale om at demonstrere MESKO's <strong>Piorun</strong>-missil fra Naval Groups <strong>Rampart</strong>-affyringsenhed under kommende flådeøvelser. De tre virksomheder beskriver det som første skridt i et strategisk samarbejde, der sigter mod at integrere det polske missil i det franske affyringssystem.</p>
+    <h2>Hvad Rampart er</h2>
+    <p>Rampart er Naval Groups modulære flådeaffyringsenhed, præsenteret på Eurosatory 2026 og udviklet fra virksomhedens tidligere MPLS. Den er bygget op om udskiftelige moduler og kan bære op til 1.000 kg nyttelast, hvor den kombinerer 68/70 mm raketter, VSHORAD-missiler og loitering munitions til både flåde- og landbrug, med de første prøver til søs ventet i oktober 2026. At tilføje Piorun ville give affyringsenheden et gennemprøvet kortrækkende luftforsvarsmissil ved siden af dens angrebsmuligheder.</p>
+    <h2>Hvad Piorun bringer</h2>
+    <p>MESKO's Piorun er et moderne kortrækkende jord-til-luft-missil, designet til at imødegå lavtflyvende trusler: fly, helikoptere, droner og vingede raketter. Sprænghovedet er udstyret med en nærhedssensor, så det kan ødelægge målet ved en tæt passage og ikke kun ved et direkte træf — en nyttig egenskab mod små, adrætte droner.</p>
+    <p class="pull">En modulær affyringsenhed, der kan blande raketter, loitering munitions og nu et gennemprøvet kortrækkende missil — billigt, lagdelt luftforsvar til søs.</p>
+    <h2>En integreret europæisk løsning</h2>
+    <p>Partnerne fremstiller projektet som et integreret europæisk svar på konventionelle og asymmetriske trusler, der dækker flåde-, luft- og landstyrker på én gang. Naval Group bidrager med sin erfaring i at integrere våben, affyringssystemer og udstyr på krigsskibe, mens MESKO og TELESYSTEM bringer ekspertise i at producere og levere missilet. Aftalen uddyber også de fransk-polske industrielle bånd og hæver Polens profil som missilleverandør til en stor fransk hovedleverandør.</p>
+    <h2>Hvorfor det betyder noget</h2>
+    <p>Logikken minder om de containerbaserede interceptorer, der nu går til søs andre steder i Europa: i stedet for at bruge et dyrt missil mod hver billig trussel vil flåderne have en modulær affyringsenhed, der kan stille den rette effektor op mod målet — raketter og loitering munitions til nogle opgaver, et kortrækkende missil som Piorun mod lavtflyvende fly og droner. Aftalen er kun et første skridt, og ingen dato eller øvelse er nævnt, men retningen er en lagdelt, billigere tilgang til lufttruslen til søs.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <h2>En polsk robot till Rampart</h2>
+    <p>Den 19 juni 2026 undertecknade Naval Group, MESKO och TELESYSTEM ett avtal om att demonstrera MESKO:s <strong>Piorun</strong>-robot från Naval Groups <strong>Rampart</strong>-avfyrningsenhet under kommande flottövningar. De tre företagen beskriver det som första steget i ett strategiskt samarbete som syftar till att integrera den polska roboten i det franska avfyrningssystemet.</p>
+    <h2>Vad Rampart är</h2>
+    <p>Rampart är Naval Groups modulära avfyrningsenhet för fartyg, presenterad på Eurosatory 2026 och utvecklad ur företagets tidigare MPLS. Den är uppbyggd kring utbytbara moduler och kan bära upp till 1 000 kg nyttolast, där den kombinerar 68/70 mm raketer, VSHORAD-robotar och loitering munitions för både marin och markbunden användning, med de första provningarna till sjöss väntade i oktober 2026. Att lägga till Piorun skulle ge avfyrningsenheten en beprövad korträckviddig luftvärnsrobot vid sidan av dess anfallsalternativ.</p>
+    <h2>Vad Piorun tillför</h2>
+    <p>MESKO:s Piorun är en modern korträckviddig yt-till-luft-robot, byggd för att möta lågflygande hot: flygplan, helikoptrar, drönare och vingade raketer. Stridsdelen är försedd med en närhetssensor, så att den kan förstöra målet vid en nära passage och inte bara genom en direktträff — en användbar egenskap mot små, snabba drönare.</p>
+    <p class="pull">En modulär avfyrningsenhet som kan blanda raketer, loitering munitions och nu en beprövad korträckviddig robot — billigt, skiktat luftförsvar till sjöss.</p>
+    <h2>En integrerad europeisk lösning</h2>
+    <p>Parterna framställer projektet som ett integrerat europeiskt svar på konventionella och asymmetriska hot, som omfattar marin-, flyg- och markstyrkor på en gång. Naval Group bidrar med sin erfarenhet av att integrera vapen, avfyrningssystem och utrustning på örlogsfartyg, medan MESKO och TELESYSTEM bidrar med kompetens i att tillverka och leverera roboten. Avtalet fördjupar också de fransk-polska industriella banden och höjer Polens profil som robotleverantör till en stor fransk huvudleverantör.</p>
+    <h2>Varför det spelar roll</h2>
+    <p>Logiken påminner om de containerbaserade interceptorerna som nu går till sjöss på andra håll i Europa: i stället för att lägga en dyr robot mot varje billigt hot vill flottorna ha en modulär avfyrningsenhet som kan ställa rätt verkansdel mot målet — raketer och loitering munitions för vissa uppgifter, en korträckviddig robot som Piorun mot lågflygande flygplan och drönare. Avtalet är bara ett första steg, och inget datum eller någon övning har nämnts, men riktningen är ett skiktat, billigare grepp om lufthotet till sjöss.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>Naval News — Naval Group, MESKO and TELESYSTEM sign a sea firing trials agreement for demonstration (19 June 2026)</li>
+      <li>Naval Group — press release on the Piorun / Rampart cooperation</li>
+      <li>Naval News — Naval Group's MPLS close-in weapon system becomes Rampart (June 2026)</li>
+      <li>MESKO — Piorun short-range surface-to-air missile</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Defence Policy",a_cat:"Defence Policy",a_tag:"🚀 Naval Air Defence",a_date:"21 June 2026",a_read:"3 min read",a_title:"A Polish missile for Rampart: Naval Group, MESKO and TELESYSTEM agree to fire <em>Piorun</em> from the modular launcher",a_stand:"On 19 June 2026, Naval Group, MESKO and TELESYSTEM signed an agreement to demonstrate MESKO's Piorun missile from Naval Group's Rampart launcher during future naval exercises. It is the first step toward integrating the Polish short-range missile into the French launching system.",p1_h:"Modular, multi-effector",p1_p:"Naval Group's modular launcher (formerly MPLS), shown at Eurosatory 2026. Up to 1,000 kg payload across four interchangeable modules — 68/70 mm rockets, VSHORAD missiles and loitering munitions. First at-sea trials due October 2026.",p2_h:"Short-range, proximity-fuzed",p2_p:"A modern short-range surface-to-air missile built to counter low-flying threats — aircraft, helicopters, UAVs and winged rockets. A proximity-fuzed warhead destroys the target on a close pass, not only a direct hit.",p3_h:"A French prime, a Polish missile",p3_p:"Naval Group brings warship weapons integration; MESKO and TELESYSTEM bring missile production and supply. Together they pitch an integrated European answer to conventional and asymmetric threats across naval, air and land.",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στην Αμυντική Πολιτική",a_cat:"Αμυντική Πολιτική",a_tag:"🚀 Ναυτική Αντιαεροπορική",a_date:"21 Ιουνίου 2026",a_read:"3' ανάγνωση",a_title:"Ένας πολωνικός πύραυλος για το Rampart: Naval Group, MESKO και TELESYSTEM συμφωνούν να εκτοξεύσουν το <em>Piorun</em> από τον αρθρωτό εκτοξευτή",a_stand:"Στις 19 Ιουνίου 2026, η Naval Group, η MESKO και η TELESYSTEM υπέγραψαν συμφωνία για τη δοκιμή του πυραύλου Piorun από τον εκτοξευτή Rampart σε μελλοντικές ναυτικές ασκήσεις. Είναι το πρώτο βήμα για την ενσωμάτωση του πολωνικού πυραύλου μικρού βεληνεκούς στο γαλλικό σύστημα εκτόξευσης.",p1_h:"Αρθρωτός, πολλαπλών φορέων",p1_p:"Ο αρθρωτός εκτοξευτής της Naval Group (πρώην MPLS), στη Eurosatory 2026. Φορτίο έως 1.000 κιλά σε τέσσερις εναλλάξιμες μονάδες — ρουκέτες 68/70 χλστ., πύραυλοι VSHORAD και loitering munitions. Πρώτες δοκιμές εν πλω τον Οκτώβριο 2026.",p2_h:"Μικρού βεληνεκούς, με αισθητήρα εγγύτητας",p2_p:"Σύγχρονος πύραυλος επιφανείας-αέρος μικρού βεληνεκούς για χαμηλά ιπτάμενες απειλές — αεροσκάφη, ελικόπτερα, UAV και πτερυγιοφόρους πυραύλους. Η κεφαλή με αισθητήρα εγγύτητας πλήττει σε κοντινό πέρασμα, όχι μόνο με άμεσο χτύπημα.",p3_h:"Γάλλος κατασκευαστής, πολωνικός πύραυλος",p3_p:"Η Naval Group φέρνει την ενσωμάτωση όπλων σε πλοία· MESKO και TELESYSTEM την παραγωγή και προμήθεια του πυραύλου. Μαζί προτείνουν μια ολοκληρωμένη ευρωπαϊκή απάντηση σε συμβατικές και ασύμμετρες απειλές, ναυτικές, αεροπορικές, χερσαίες.",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Politique de Défense",a_cat:"Politique de Défense",a_tag:"🚀 Défense aérienne navale",a_date:"21 juin 2026",a_read:"3 min de lecture",a_title:"Un missile polonais pour le Rampart : Naval Group, MESKO et TELESYSTEM s'accordent pour tirer le <em>Piorun</em> depuis le lanceur modulaire",a_stand:"Le 19 juin 2026, Naval Group, MESKO et TELESYSTEM ont signé un accord pour démontrer le missile Piorun depuis le lanceur Rampart lors de futurs exercices navals. C'est la première étape vers l'intégration du missile polonais courte portée au système de lancement français.",p1_h:"Modulaire, multi-effecteurs",p1_p:"Le lanceur modulaire de Naval Group (ex-MPLS), présenté à Eurosatory 2026. Jusqu'à 1 000 kg de charge sur quatre modules interchangeables — roquettes de 68/70 mm, missiles VSHORAD et munitions rôdeuses. Premiers essais en mer en octobre 2026.",p2_h:"Courte portée, à fusée de proximité",p2_p:"Un missile surface-air courte portée moderne contre les menaces à basse altitude — avions, hélicoptères, drones et roquettes ailées. Une charge à capteur de proximité détruit la cible lors d'un passage rapproché, pas seulement par impact direct.",p3_h:"Un maître d'œuvre français, un missile polonais",p3_p:"Naval Group apporte l'intégration des armes sur navires ; MESKO et TELESYSTEM la production et la fourniture du missile. Ensemble, ils proposent une réponse européenne intégrée aux menaces conventionnelles et asymétriques, navales, aériennes et terrestres.",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Forsvarspolitik",a_cat:"Forsvarspolitik",a_tag:"🚀 Maritimt luftforsvar",a_date:"21. juni 2026",a_read:"3 min. læsning",a_title:"Et polsk missil til Rampart: Naval Group, MESKO og TELESYSTEM enige om at affyre <em>Piorun</em> fra den modulære affyringsenhed",a_stand:"Den 19. juni 2026 underskrev Naval Group, MESKO og TELESYSTEM en aftale om at demonstrere Piorun-missilet fra Rampart-affyringsenheden under kommende flådeøvelser. Det er første skridt mod at integrere det polske kortrækkende missil i det franske affyringssystem.",p1_h:"Modulær, multi-effektor",p1_p:"Naval Groups modulære affyringsenhed (tidligere MPLS), vist på Eurosatory 2026. Op til 1.000 kg nyttelast på fire udskiftelige moduler — 68/70 mm raketter, VSHORAD-missiler og loitering munitions. Første prøver til søs i oktober 2026.",p2_h:"Kortrækkende, med nærhedsbrand",p2_p:"Et moderne kortrækkende jord-til-luft-missil mod lavtflyvende trusler — fly, helikoptere, droner og vingede raketter. Et sprænghoved med nærhedssensor ødelægger målet ved en tæt passage, ikke kun ved direkte træf.",p3_h:"En fransk hovedleverandør, et polsk missil",p3_p:"Naval Group bidrager med våbenintegration på skibe; MESKO og TELESYSTEM med produktion og levering af missilet. Sammen tilbyder de et integreret europæisk svar på konventionelle og asymmetriske trusler — flåde, luft og land.",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Försvarspolitik",a_cat:"Försvarspolitik",a_tag:"🚀 Marint luftförsvar",a_date:"21 juni 2026",a_read:"3 min läsning",a_title:"En polsk robot till Rampart: Naval Group, MESKO och TELESYSTEM enas om att avfyra <em>Piorun</em> från den modulära avfyrningsenheten",a_stand:"Den 19 juni 2026 undertecknade Naval Group, MESKO och TELESYSTEM ett avtal om att demonstrera Piorun-roboten från Rampart-avfyrningsenheten under kommande flottövningar. Det är första steget mot att integrera den polska korträckviddiga roboten i det franska avfyrningssystemet.",p1_h:"Modulär, multi-verkansdel",p1_p:"Naval Groups modulära avfyrningsenhet (tidigare MPLS), visad på Eurosatory 2026. Upp till 1 000 kg nyttolast på fyra utbytbara moduler — 68/70 mm raketer, VSHORAD-robotar och loitering munitions. Första provningar till sjöss i oktober 2026.",p2_h:"Korträckviddig, med närhetszonrör",p2_p:"En modern korträckviddig yt-till-luft-robot mot lågflygande hot — flygplan, helikoptrar, drönare och vingade raketer. En stridsdel med närhetssensor förstör målet vid en nära passage, inte bara genom direktträff.",p3_h:"En fransk huvudleverantör, en polsk robot",p3_p:"Naval Group bidrar med vapenintegration på fartyg; MESKO och TELESYSTEM med tillverkning och leverans av roboten. Tillsammans erbjuder de ett integrerat europeiskt svar på konventionella och asymmetriska hot — marint, luft och mark.",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
