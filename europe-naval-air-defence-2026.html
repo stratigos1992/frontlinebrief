@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cheap-Drone Problem Goes to Sea — Frontline Brief</title>
+<meta name="description" content="Analysis: from Spain's Hornet to Poland's Piorun, Europe is scrambling for affordable, layered, modular naval air defence against cheap drones.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--cold);line-height:1.1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="defence.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Defence Policy</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Defence Policy</span>
+    <span class="tag" data-i18n="a_tag">🧭 Analysis</span>
+    <span class="sep">·</span><span data-i18n="a_date">21 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">5 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">The cheap-drone problem goes to sea: how Europe is scrambling for <em>affordable naval air defence</em></h1>
+  <p class="standfirst" data-i18n="a_stand">In one week of June 2026, two announcements — Spain firing the Destinus Hornet from a frigate, and Naval Group agreeing to put Poland's Piorun on its Rampart launcher — told the same story. Europe's navies are no longer trying to beat the drone swarm with the most expensive missile. They are trying to beat it on price.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/europe-naval-air-defence-en.jpg" alt="The cheap-drone war at sea — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/europe-naval-air-defence-el.jpg" alt="The cheap-drone war at sea — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/europe-naval-air-defence-fr.jpg" alt="The cheap-drone war at sea — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/europe-naval-air-defence-da.jpg" alt="The cheap-drone war at sea — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/europe-naval-air-defence-sv.jpg" alt="The cheap-drone war at sea — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">The maths</div><h3 data-i18n="p1_h">Price, not just firepower</h3><p data-i18n="p1_p">A premium interceptor can exceed €1M; the drone it stops may cost around €35k. Firing high-value rounds at cheap aircraft is a losing exchange — the goal now is to thin a swarm by volume and price.</p></div><div class="stat"><b>~28×</b><small>cost gap per shot</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The method</div><h3 data-i18n="p2_h">Modular and bolt-on</h3><p data-i18n="p2_p">Containerised interceptors and modular launchers that mix rockets, loitering munitions and short-range missiles let a warship field the right effector for each target, without new vertical launch cells.</p></div><div class="stat"><b>Modular</b><small>multi-effector</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The map</div><h3 data-i18n="p3_h">An industrial realignment</h3><p data-i18n="p3_p">Destinus and Rheinmetall; Naval Group, MESKO and TELESYSTEM. The new air defence is also a story of European industrial tie-ups and cross-border supply.</p></div><div class="stat"><b>EU primes</b><small>cross-border</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <h2>The threat that changed the maths</h2>
+    <p>The cheap, mass-produced drone has rewritten the economics of air defence. A small UAV or loitering munition can be bought for a few tens of thousands of euros, while the missiles traditionally used to shoot them down can cost a thousand times more. A navy that answers every drone with a premium interceptor wins the engagement and loses the war of attrition, emptying expensive magazines against an enemy that can replace its losses for pocket change.</p>
+    <h2>Two signals in one week</h2>
+    <p>Within days of each other in June 2026, two European developments pointed the same way. Spain test-fired the Destinus Hornet Block 1 from the frigate Santa María — a containerised interceptor bolted onto an ageing hull, with no vertical launch cells required. Almost simultaneously, Naval Group, MESKO and TELESYSTEM signed an agreement to fire Poland's Piorun missile from Naval Group's modular Rampart launcher. Different countries, different industries, the same instinct: meet the low-end threat with something cheaper and more flexible than a high-end missile.</p>
+    <p class="pull">The shift is not from one missile to another. It is from buying the best interceptor to buying the right mix — and being able to afford the next salvo.</p>
+    <h2>The common thread: modular and cheap</h2>
+    <p>What links the two is architecture, not just hardware. The Hornet is containerised, so it can be added to almost any deck. Rampart is modular, carrying interchangeable packages of 68/70 mm rockets, short-range missiles and loitering munitions, so a captain can match the effector to the target. Both designs accept that no single weapon answers every threat, and both prize the ability to reload and adapt over the prestige of a flagship missile. The result is a layered approach: cheap effects for cheap threats, premium rounds held back for the targets that justify them.</p>
+    <h2>An industrial story, too</h2>
+    <p>The trend is as much about factories as physics. In April 2026 Destinus and Rheinmetall agreed a joint venture to industrialise the Hornet; the Piorun project binds a French prime to a Polish missile house. Europe is not only changing how it shoots down drones — it is rewiring who builds the interceptors, deepening cross-border supply chains and spreading the industrial base beyond the traditional primes. For governments worried about both cost and sovereignty, a cheaper, locally producible effector is doubly attractive.</p>
+    <h2>Why it matters for the Eastern Mediterranean</h2>
+    <p>For navies in contested, cluttered seas — the Aegean and the Eastern Mediterranean among them — the calculus is sharper still. These are waters where small drones, fast craft and loitering munitions can be launched cheaply and in numbers, and where a single warship may face a saturating attack rather than a lone missile. Affordable, layered defence is not a luxury here; it is what keeps a fleet in the fight after the first day. The same logic that pushed Madrid and Warsaw will press on Athens and its neighbours.</p>
+    <h2>The limits</h2>
+    <p>None of this is settled. A demonstration is not a deployment, and integrating a missile onto a launcher or proving an interceptor at sea is the start of a long road, not its end. Magazine depth, sensors and electronic warfare still decide who wins a swarm fight, and a cheaper round that misses is no bargain. The promise of these systems will be tested not on a calm range but against a real, adaptive raid.</p>
+    <h2>Bottom line</h2>
+    <p>Still, the direction is clear. Europe's navies are converging on a doctrine of affordable, modular, layered air defence at sea — and the advantage will go to the states that can industrialise it fastest. The cheap-drone problem went to sea some time ago. In June 2026, Europe finally started answering it on the drone's own terms.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <h2>Η απειλή που άλλαξε τα μαθηματικά</h2>
+    <p>Το φθηνό, μαζικά παραγόμενο drone ξαναέγραψε την οικονομία της αντιαεροπορικής άμυνας. Ένα μικρό UAV ή μια loitering munition κοστίζει μερικές δεκάδες χιλιάδες ευρώ, ενώ οι πύραυλοι που παραδοσιακά χρησιμοποιούνται για να τα καταρρίψουν κοστίζουν χίλιες φορές περισσότερο. Ένα ναυτικό που απαντά σε κάθε drone με ακριβό αναχαιτιστή κερδίζει τη μάχη αλλά χάνει τον πόλεμο φθοράς, αδειάζοντας ακριβά βλήματα απέναντι σε έναν εχθρό που αναπληρώνει τις απώλειές του με ψίχουλα.</p>
+    <h2>Δύο μηνύματα σε μία εβδομάδα</h2>
+    <p>Μέσα σε λίγες ημέρες τον Ιούνιο του 2026, δύο ευρωπαϊκές εξελίξεις έδειξαν προς την ίδια κατεύθυνση. Η Ισπανία δοκίμασε τον Destinus Hornet Block 1 από τη φρεγάτα Santa María — έναν αναχαιτιστή σε κοντέινερ, προσαρτημένο σε παλαιό σκάφος, χωρίς κάθετα φρεάτια εκτόξευσης. Σχεδόν ταυτόχρονα, Naval Group, MESKO και TELESYSTEM υπέγραψαν συμφωνία για την εκτόξευση του πολωνικού Piorun από τον αρθρωτό εκτοξευτή Rampart. Διαφορετικές χώρες, διαφορετικές βιομηχανίες, το ίδιο ένστικτο: να αντιμετωπιστεί η χαμηλού κόστους απειλή με κάτι φθηνότερο και πιο ευέλικτο.</p>
+    <p class="pull">Η μετατόπιση δεν είναι από τον έναν πύραυλο στον άλλον. Είναι από το να αγοράζεις τον καλύτερο αναχαιτιστή στο να αγοράζεις το σωστό μείγμα — και να μπορείς να πληρώσεις την επόμενη βολή.</p>
+    <h2>Ο κοινός παρονομαστής: αρθρωτό και φθηνό</h2>
+    <p>Αυτό που συνδέει τα δύο είναι η αρχιτεκτονική, όχι μόνο το υλικό. Ο Hornet είναι σε κοντέινερ, οπότε προστίθεται σχεδόν σε κάθε κατάστρωμα. Το Rampart είναι αρθρωτό, με εναλλάξιμες δέσμες ρουκετών 68/70 χλστ., πυραύλων μικρού βεληνεκούς και loitering munitions, ώστε ο κυβερνήτης να ταιριάζει τον φορέα στον στόχο. Και τα δύο δέχονται ότι κανένα όπλο δεν απαντά σε κάθε απειλή, και εκτιμούν την ικανότητα επαναφόρτισης και προσαρμογής πάνω από το γόητρο ενός κορυφαίου πυραύλου. Το αποτέλεσμα είναι μια πολυεπίπεδη προσέγγιση: φθηνά μέσα για φθηνές απειλές, ακριβά βλήματα για τους στόχους που το δικαιολογούν.</p>
+    <h2>Και μια βιομηχανική ιστορία</h2>
+    <p>Η τάση αφορά τόσο τα εργοστάσια όσο και τη φυσική. Τον Απρίλιο του 2026 Destinus και Rheinmetall συμφώνησαν κοινοπραξία για τη βιομηχανοποίηση του Hornet· το πρόγραμμα Piorun δένει έναν Γάλλο κατασκευαστή με μια πολωνική εταιρεία πυραύλων. Η Ευρώπη δεν αλλάζει μόνο τον τρόπο που καταρρίπτει drones — ανασχηματίζει το ποιος φτιάχνει τους αναχαιτιστές, βαθαίνοντας τις διασυνοριακές αλυσίδες εφοδιασμού. Για κυβερνήσεις που ανησυχούν και για το κόστος και για την αυτονομία, ένας φθηνότερος, εγχωρίως παραγώγιμος φορέας είναι διπλά ελκυστικός.</p>
+    <h2>Γιατί μετράει για την Ανατολική Μεσόγειο</h2>
+    <p>Για τα ναυτικά σε αμφισβητούμενες, πυκνές θάλασσες — όπως το Αιγαίο και η Ανατολική Μεσόγειος — ο υπολογισμός είναι ακόμη πιο κρίσιμος. Εδώ μικρά drones, ταχέα σκάφη και loitering munitions εκτοξεύονται φθηνά και μαζικά, και ένα μόνο πλοίο μπορεί να αντιμετωπίσει κορεσμένη επίθεση αντί για έναν μεμονωμένο πύραυλο. Η οικονομικά προσιτή, πολυεπίπεδη άμυνα δεν είναι πολυτέλεια εδώ· είναι αυτό που κρατά έναν στόλο στη μάχη μετά την πρώτη μέρα. Η ίδια λογική που ώθησε Μαδρίτη και Βαρσοβία θα πιέσει και την Αθήνα.</p>
+    <h2>Τα όρια</h2>
+    <p>Τίποτα από αυτά δεν είναι δεδομένο. Μια επίδειξη δεν είναι επιχειρησιακή ένταξη, και η ενσωμάτωση ενός πυραύλου σε έναν εκτοξευτή ή η δοκιμή ενός αναχαιτιστή εν πλω είναι η αρχή ενός μακρού δρόμου, όχι το τέλος του. Το βάθος των γεμιστήρων, οι αισθητήρες και ο ηλεκτρονικός πόλεμος εξακολουθούν να κρίνουν ποιος κερδίζει μια μάχη σμήνους, και ένα φθηνότερο βλήμα που αστοχεί δεν είναι ευκαιρία. Η αξία αυτών των συστημάτων θα κριθεί απέναντι σε μια πραγματική, προσαρμοζόμενη επιδρομή.</p>
+    <h2>Συμπέρασμα</h2>
+    <p>Παρ' όλα αυτά, η κατεύθυνση είναι σαφής. Τα ναυτικά της Ευρώπης συγκλίνουν σε ένα δόγμα οικονομικής, αρθρωτής, πολυεπίπεδης άμυνας στη θάλασσα — και το πλεονέκτημα θα το έχουν όσα κράτη μπορούν να το βιομηχανοποιήσουν πιο γρήγορα. Το πρόβλημα των φθηνών drones βγήκε στη θάλασσα εδώ και καιρό. Τον Ιούνιο του 2026, η Ευρώπη άρχισε επιτέλους να του απαντά με τους δικούς του όρους.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <h2>La menace qui a changé l'équation</h2>
+    <p>Le drone bon marché, produit en masse, a réécrit l'économie de la défense aérienne. Un petit drone ou une munition rôdeuse coûte quelques dizaines de milliers d'euros, quand les missiles habituellement employés pour les abattre coûtent mille fois plus. Une marine qui répond à chaque drone par un intercepteur de haut de gamme gagne l'engagement mais perd la guerre d'usure, en vidant des soutes coûteuses face à un ennemi qui remplace ses pertes pour presque rien.</p>
+    <h2>Deux signaux en une semaine</h2>
+    <p>À quelques jours d'intervalle en juin 2026, deux développements européens ont pointé dans la même direction. L'Espagne a tiré le Destinus Hornet Block 1 depuis la frégate Santa María — un intercepteur conteneurisé greffé sur une coque ancienne, sans puits de lancement vertical. Presque simultanément, Naval Group, MESKO et TELESYSTEM ont signé pour tirer le missile polonais Piorun depuis le lanceur modulaire Rampart. Des pays différents, des industries différentes, le même réflexe : contrer la menace bas de gamme avec quelque chose de moins cher et de plus souple.</p>
+    <p class="pull">Le basculement ne va pas d'un missile à un autre. Il va de l'achat du meilleur intercepteur à l'achat du bon mélange — et de la capacité à payer la salve suivante.</p>
+    <h2>Le fil commun : modulaire et bon marché</h2>
+    <p>Ce qui relie les deux, c'est l'architecture, pas seulement le matériel. Le Hornet est conteneurisé, donc adaptable à presque tout pont. Le Rampart est modulaire, emportant des paquets interchangeables de roquettes de 68/70 mm, de missiles courte portée et de munitions rôdeuses, pour que le commandant ajuste l'effecteur à la cible. Les deux admettent qu'aucune arme unique ne répond à toutes les menaces et privilégient la capacité à recharger et à s'adapter sur le prestige d'un missile vedette. D'où une approche en couches : des effets bon marché pour les menaces bon marché, des munitions onéreuses réservées aux cibles qui le justifient.</p>
+    <h2>Une histoire industrielle aussi</h2>
+    <p>La tendance tient autant aux usines qu'à la physique. En avril 2026, Destinus et Rheinmetall ont conclu une coentreprise pour industrialiser le Hornet ; le projet Piorun lie un maître d'œuvre français à un missilier polonais. L'Europe ne change pas seulement sa manière d'abattre les drones — elle redessine qui construit les intercepteurs, approfondissant les chaînes d'approvisionnement transfrontalières. Pour des gouvernements soucieux du coût et de la souveraineté, un effecteur moins cher et produit localement est doublement attrayant.</p>
+    <h2>Pourquoi cela compte pour la Méditerranée orientale</h2>
+    <p>Pour les marines opérant dans des mers disputées et encombrées — l'Égée et la Méditerranée orientale en font partie — le calcul est encore plus aigu. Ce sont des eaux où petits drones, embarcations rapides et munitions rôdeuses se lancent à bas coût et en nombre, et où un seul navire peut affronter une attaque saturante plutôt qu'un missile isolé. Une défense abordable et en couches n'y est pas un luxe ; c'est ce qui maintient une flotte au combat après le premier jour. La logique qui a poussé Madrid et Varsovie pèsera aussi sur Athènes.</p>
+    <h2>Les limites</h2>
+    <p>Rien de tout cela n'est acquis. Une démonstration n'est pas une mise en service, et intégrer un missile à un lanceur ou éprouver un intercepteur en mer est le début d'un long chemin, pas sa fin. La profondeur des soutes, les capteurs et la guerre électronique décident encore qui l'emporte dans un combat de saturation, et une munition moins chère qui manque sa cible n'est pas une bonne affaire. La promesse de ces systèmes se vérifiera face à un raid réel et adaptatif.</p>
+    <h2>En conclusion</h2>
+    <p>La direction, pourtant, est claire. Les marines européennes convergent vers une doctrine de défense aérienne abordable, modulaire et en couches en mer — et l'avantage ira aux États qui sauront l'industrialiser le plus vite. Le problème du drone bon marché a pris la mer il y a déjà quelque temps. En juin 2026, l'Europe a enfin commencé à y répondre sur le terrain du drone.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <h2>Truslen, der ændrede regnestykket</h2>
+    <p>Den billige, masseproducerede drone har skrevet luftforsvarets økonomi om. En lille drone eller en loitering munition kan købes for nogle få titusinder af euro, mens de missiler, der traditionelt bruges til at skyde dem ned, koster tusind gange mere. En flåde, der svarer på hver drone med en dyr interceptor, vinder kampen, men taber udmattelseskrigen og tømmer dyre magasiner mod en fjende, der erstatter sine tab for småpenge.</p>
+    <h2>To signaler på én uge</h2>
+    <p>Med få dages mellemrum i juni 2026 pegede to europæiske udviklinger samme vej. Spanien affyrede Destinus Hornet Block 1 fra fregatten Santa María — en containerbaseret interceptor monteret på et ældre skrog, uden lodrette affyringsceller. Næsten samtidig underskrev Naval Group, MESKO og TELESYSTEM en aftale om at affyre det polske Piorun-missil fra den modulære Rampart-affyringsenhed. Forskellige lande, forskellige industrier, samme instinkt: at møde lavpristruslen med noget billigere og mere fleksibelt.</p>
+    <p class="pull">Skiftet går ikke fra ét missil til et andet. Det går fra at købe den bedste interceptor til at købe den rette blanding — og at have råd til næste salve.</p>
+    <h2>Den fælles tråd: modulær og billig</h2>
+    <p>Det, der forbinder de to, er arkitektur, ikke kun isenkram. Hornet er containerbaseret og kan derfor sættes på næsten ethvert dæk. Rampart er modulær og bærer udskiftelige pakker af 68/70 mm raketter, kortrækkende missiler og loitering munitions, så chefen kan matche effektoren til målet. Begge accepterer, at intet enkelt våben svarer på alle trusler, og begge værdsætter evnen til at lade om og tilpasse sig frem for et prestigemissils glans. Resultatet er en lagdelt tilgang: billige effekter mod billige trusler, dyre missiler holdt tilbage til de mål, der retfærdiggør dem.</p>
+    <h2>Også en industriel historie</h2>
+    <p>Tendensen handler lige så meget om fabrikker som om fysik. I april 2026 indgik Destinus og Rheinmetall et joint venture for at industrialisere Hornet; Piorun-projektet binder en fransk hovedleverandør til et polsk missilhus. Europa ændrer ikke kun måden, det skyder droner ned på — det omdanner, hvem der bygger interceptorerne, og uddyber grænseoverskridende forsyningskæder. For regeringer, der bekymrer sig om både omkostninger og suverænitet, er en billigere, lokalt producerbar effektor dobbelt attraktiv.</p>
+    <h2>Hvorfor det betyder noget for Det Østlige Middelhav</h2>
+    <p>For flåder i omstridte, tætpakkede farvande — Det Ægæiske Hav og Det Østlige Middelhav iblandt dem — er regnestykket endnu skarpere. Det er farvande, hvor små droner, hurtige fartøjer og loitering munitions kan affyres billigt og i antal, og hvor et enkelt skib kan møde et mættende angreb frem for et enkelt missil. Et økonomisk overkommeligt, lagdelt forsvar er ikke en luksus her; det er det, der holder en flåde i kampen efter den første dag. Den samme logik, der drev Madrid og Warszawa, vil presse Athen.</p>
+    <h2>Begrænsningerne</h2>
+    <p>Intet af dette er afgjort. En demonstration er ikke en indsættelse, og at integrere et missil på en affyringsenhed eller afprøve en interceptor til søs er starten på en lang vej, ikke dens ende. Magasindybde, sensorer og elektronisk krigsførelse afgør stadig, hvem der vinder en sværmkamp, og et billigere missil, der rammer ved siden af, er ingen god handel. Disse systemers løfte vil blive prøvet mod et virkeligt, tilpasningsdygtigt angreb.</p>
+    <h2>Bundlinjen</h2>
+    <p>Alligevel er retningen klar. Europas flåder konvergerer mod en doktrin om økonomisk, modulært, lagdelt luftforsvar til søs — og fordelen vil tilfalde de stater, der kan industrialisere det hurtigst. Den billige drones problem gik til søs for noget tid siden. I juni 2026 begyndte Europa endelig at svare på dronens egne præmisser.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <h2>Hotet som ändrade kalkylen</h2>
+    <p>Den billiga, massproducerade drönaren har skrivit om luftförsvarets ekonomi. En liten drönare eller en loitering munition kan köpas för några tiotusentals euro, medan robotarna som traditionellt används för att skjuta ner dem kostar tusen gånger mer. En flotta som svarar på varje drönare med en dyr interceptor vinner drabbningen men förlorar utnötningskriget, och tömmer dyra förråd mot en fiende som ersätter sina förluster för småpengar.</p>
+    <h2>Två signaler på en vecka</h2>
+    <p>Med några dagars mellanrum i juni 2026 pekade två europeiska händelser åt samma håll. Spanien provsköt Destinus Hornet Block 1 från fregatten Santa María — en containerbaserad interceptor monterad på ett äldre skrov, utan vertikala avfyrningsceller. Nästan samtidigt undertecknade Naval Group, MESKO och TELESYSTEM ett avtal om att avfyra den polska Piorun-roboten från den modulära Rampart-avfyrningsenheten. Olika länder, olika industrier, samma instinkt: att möta lågprishotet med något billigare och mer flexibelt.</p>
+    <p class="pull">Skiftet går inte från en robot till en annan. Det går från att köpa den bästa interceptorn till att köpa rätt blandning — och att ha råd med nästa salva.</p>
+    <h2>Den gemensamma tråden: modulärt och billigt</h2>
+    <p>Det som förenar de två är arkitektur, inte bara hårdvara. Hornet är containerbaserad och kan därför sättas på nästan vilket däck som helst. Rampart är modulär och bär utbytbara paket av 68/70 mm raketer, korträckviddiga robotar och loitering munitions, så att chefen kan matcha verkansdelen mot målet. Båda accepterar att inget enskilt vapen svarar mot alla hot, och båda värdesätter förmågan att ladda om och anpassa sig framför en prestigerobots glans. Resultatet är ett skiktat grepp: billiga verkansdelar mot billiga hot, dyra robotar sparade till de mål som motiverar dem.</p>
+    <h2>Också en industriell historia</h2>
+    <p>Trenden handlar lika mycket om fabriker som om fysik. I april 2026 bildade Destinus och Rheinmetall ett samriskbolag för att industrialisera Hornet; Piorun-projektet binder en fransk huvudleverantör till ett polskt robothus. Europa förändrar inte bara hur det skjuter ner drönare — det ritar om vem som bygger interceptorerna och fördjupar gränsöverskridande leveranskedjor. För regeringar som oroar sig för både kostnad och suveränitet är en billigare, lokalt tillverkningsbar verkansdel dubbelt attraktiv.</p>
+    <h2>Varför det spelar roll för östra Medelhavet</h2>
+    <p>För flottor i omstridda, trånga vatten — Egeiska havet och östra Medelhavet bland dem — är kalkylen ännu skarpare. Det är vatten där små drönare, snabba farkoster och loitering munitions kan avfyras billigt och i antal, och där ett enda fartyg kan möta ett mättande angrepp i stället för en ensam robot. Ett prisvärt, skiktat försvar är ingen lyx här; det är vad som håller en flotta i striden efter den första dagen. Samma logik som drev Madrid och Warszawa kommer att pressa Aten.</p>
+    <h2>Begränsningarna</h2>
+    <p>Inget av detta är avgjort. En demonstration är inte en insättning, och att integrera en robot på en avfyrningsenhet eller pröva en interceptor till sjöss är början på en lång väg, inte dess slut. Förrådsdjup, sensorer och elektronisk krigföring avgör fortfarande vem som vinner en svärmstrid, och en billigare robot som missar är inget fynd. Dessa systems löfte prövas mot ett verkligt, anpassningsbart angrepp.</p>
+    <h2>Slutsatsen</h2>
+    <p>Ändå är riktningen tydlig. Europas flottor närmar sig en doktrin om prisvärt, modulärt, skiktat luftförsvar till sjöss — och fördelen går till de stater som kan industrialisera det snabbast. Den billiga drönarens problem gick till sjöss för en tid sedan. I juni 2026 började Europa äntligen svara på drönarens egna villkor.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>Frontline Brief — Spain Fires the Hornet at Sea (21 June 2026)</li>
+      <li>Frontline Brief — Naval Group's Rampart Gains a Polish Missile (21 June 2026)</li>
+      <li>Naval News — Naval Group, MESKO and TELESYSTEM sea firing trials agreement (19 June 2026)</li>
+      <li>Industry background — Destinus / Rheinmetall joint venture (April 2026)</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Defence Policy",a_cat:"Defence Policy",a_tag:"🧭 Analysis",a_date:"21 June 2026",a_read:"5 min read",a_title:"The cheap-drone problem goes to sea: how Europe is scrambling for <em>affordable naval air defence</em>",a_stand:"In one week of June 2026, two announcements — Spain firing the Destinus Hornet from a frigate, and Naval Group agreeing to put Poland's Piorun on its Rampart launcher — told the same story. Europe's navies are no longer trying to beat the drone swarm with the most expensive missile. They are trying to beat it on price.",p1_h:"Price, not just firepower",p1_p:"A premium interceptor can exceed €1M; the drone it stops may cost around €35k. Firing high-value rounds at cheap aircraft is a losing exchange — the goal now is to thin a swarm by volume and price.",p2_h:"Modular and bolt-on",p2_p:"Containerised interceptors and modular launchers that mix rockets, loitering munitions and short-range missiles let a warship field the right effector for each target, without new vertical launch cells.",p3_h:"An industrial realignment",p3_p:"Destinus and Rheinmetall; Naval Group, MESKO and TELESYSTEM. The new air defence is also a story of European industrial tie-ups and cross-border supply.",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στην Αμυντική Πολιτική",a_cat:"Αμυντική Πολιτική",a_tag:"🧭 Ανάλυση",a_date:"21 Ιουνίου 2026",a_read:"5' ανάγνωση",a_title:"Ο πόλεμος των φθηνών drones φτάνει στη θάλασσα: πώς η Ευρώπη ψάχνει <em>οικονομική ναυτική αντιαεροπορική άμυνα</em>",a_stand:"Μέσα σε μία εβδομάδα τον Ιούνιο του 2026, δύο εξελίξεις — η Ισπανία που εκτόξευσε τον Destinus Hornet από φρεγάτα, και η Naval Group που συμφώνησε να βάλει το πολωνικό Piorun στο Rampart — είπαν την ίδια ιστορία. Τα ναυτικά της Ευρώπης δεν προσπαθούν πια να νικήσουν το σμήνος με τον ακριβότερο πύραυλο. Προσπαθούν να το νικήσουν στην τιμή.",p1_h:"Τιμή, όχι μόνο ισχύς πυρός",p1_p:"Ένας ακριβός αναχαιτιστής ξεπερνά το 1 εκατ. €· το drone που καταρρίπτει κοστίζει ~35.000 €. Το να ρίχνεις ακριβά βλήματα σε φθηνά μέσα είναι χαμένη ανταλλαγή — ο στόχος είναι να αραιώσεις το σμήνος με όγκο και τιμή.",p2_h:"Αρθρωτό και προσαρτώμενο",p2_p:"Αναχαιτιστές σε κοντέινερ και αρθρωτοί εκτοξευτές που συνδυάζουν ρουκέτες, loitering munitions και πυραύλους μικρού βεληνεκούς επιτρέπουν στο πλοίο να βάλει τον σωστό φορέα για κάθε στόχο, χωρίς νέα κάθετα φρεάτια.",p3_h:"Μια βιομηχανική ανακατάταξη",p3_p:"Destinus και Rheinmetall· Naval Group, MESKO και TELESYSTEM. Η νέα αντιαεροπορική άμυνα είναι και ιστορία ευρωπαϊκών βιομηχανικών συμπράξεων και διασυνοριακού εφοδιασμού.",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Politique de Défense",a_cat:"Politique de Défense",a_tag:"🧭 Analyse",a_date:"21 juin 2026",a_read:"5 min de lecture",a_title:"Le problème du drone bon marché prend la mer : comment l'Europe cherche une <em>défense aérienne navale abordable</em>",a_stand:"En une semaine de juin 2026, deux annonces — l'Espagne tirant le Destinus Hornet depuis une frégate, et Naval Group acceptant de placer le Piorun polonais sur son lanceur Rampart — ont raconté la même histoire. Les marines européennes ne cherchent plus à vaincre l'essaim de drones avec le missile le plus cher. Elles cherchent à le vaincre sur le prix.",p1_h:"Le prix, pas seulement la puissance",p1_p:"Un intercepteur haut de gamme dépasse 1 M€ ; le drone qu'il arrête en coûte environ 35 000. Tirer des munitions onéreuses sur des cibles bon marché est un échange perdant — l'objectif est d'éclaircir l'essaim par le volume et le prix.",p2_h:"Modulaire et greffable",p2_p:"Des intercepteurs conteneurisés et des lanceurs modulaires mêlant roquettes, munitions rôdeuses et missiles courte portée permettent au navire d'aligner le bon effecteur pour chaque cible, sans nouveaux puits verticaux.",p3_h:"Un réalignement industriel",p3_p:"Destinus et Rheinmetall ; Naval Group, MESKO et TELESYSTEM. La nouvelle défense aérienne est aussi une histoire d'alliances industrielles européennes et d'approvisionnement transfrontalier.",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Forsvarspolitik",a_cat:"Forsvarspolitik",a_tag:"🧭 Analyse",a_date:"21. juni 2026",a_read:"5 min. læsning",a_title:"Den billige drones problem går til søs: hvordan Europa jagter <em>et overkommeligt maritimt luftforsvar</em>",a_stand:"På én uge i juni 2026 fortalte to meddelelser — Spanien, der affyrede Destinus Hornet fra en fregat, og Naval Group, der indvilligede i at sætte Polens Piorun på sin Rampart-affyringsenhed — den samme historie. Europas flåder forsøger ikke længere at slå dronesværmen med det dyreste missil. De forsøger at slå den på prisen.",p1_h:"Pris, ikke kun ildkraft",p1_p:"En dyr interceptor overstiger 1 mio. €; dronen, den stopper, koster omkring 35.000. At affyre dyre missiler mod billige mål er en tabsgivende handel — målet er at tynde sværmen med mængde og pris.",p2_h:"Modulær og påmonterbar",p2_p:"Containerbaserede interceptorer og modulære affyringsenheder, der blander raketter, loitering munitions og kortrækkende missiler, lader skibet stille den rette effektor op mod hvert mål, uden nye lodrette celler.",p3_h:"En industriel omlægning",p3_p:"Destinus og Rheinmetall; Naval Group, MESKO og TELESYSTEM. Det nye luftforsvar er også en historie om europæiske industrielle partnerskaber og grænseoverskridende forsyning.",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Försvarspolitik",a_cat:"Försvarspolitik",a_tag:"🧭 Analys",a_date:"21 juni 2026",a_read:"5 min läsning",a_title:"Den billiga drönarens problem går till sjöss: hur Europa söker <em>ett prisvärt marint luftförsvar</em>",a_stand:"På en vecka i juni 2026 berättade två besked — Spanien som sköt Destinus Hornet från en fregatt, och Naval Group som gick med på att sätta Polens Piorun på sin Rampart-avfyrningsenhet — samma historia. Europas flottor försöker inte längre besegra drönarsvärmen med den dyraste roboten. De försöker besegra den på priset.",p1_h:"Pris, inte bara eldkraft",p1_p:"En dyr interceptor överstiger 1 M€; drönaren den stoppar kostar runt 35 000. Att avfyra dyra robotar mot billiga mål är ett förlustbyte — målet är att tunna ut svärmen med mängd och pris.",p2_h:"Modulärt och påmonterbart",p2_p:"Containerbaserade interceptorer och modulära avfyrningsenheter som blandar raketer, loitering munitions och korträckviddiga robotar låter fartyget ställa rätt verkansdel mot varje mål, utan nya vertikala celler.",p3_h:"En industriell omställning",p3_p:"Destinus och Rheinmetall; Naval Group, MESKO och TELESYSTEM. Det nya luftförsvaret är också en historia om europeiska industriella allianser och gränsöverskridande leveranser.",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s&&translations[s]){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
