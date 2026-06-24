@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DroneLight: 30 Drone Kills a Minute — Frontline Brief</title>
+<meta name="description" content="At Eurosatory 2026, Israel's Esh-Tech unveiled DroneLight, a burst-firing laser that claims at least 30 drone shootdowns a minute.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--cold);line-height:1.1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="defence.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Defence Policy</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Defence Policy</span>
+    <span class="tag" data-i18n="a_tag">🔆 Directed Energy</span>
+    <span class="sep">·</span><span data-i18n="a_date">22 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">3 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">A laser that fires in bursts: Israel's <em>DroneLight</em> promises 30 drone kills a minute</h1>
+  <p class="standfirst" data-i18n="a_stand">At Eurosatory 2026, the Israeli start-up Esh-Tech unveiled DroneLight, a laser that fires high-power energy in bursts rather than a continuous beam — and claims at least 30 drone shootdowns a minute. Short-range, low-power and vehicle-mounted, it is pitched squarely at the swarm.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/dronelight-laser-en.jpg" alt="DroneLight laser — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/dronelight-laser-el.jpg" alt="DroneLight laser — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/dronelight-laser-fr.jpg" alt="DroneLight laser — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/dronelight-laser-da.jpg" alt="DroneLight laser — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/dronelight-laser-sv.jpg" alt="DroneLight laser — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">The weapon · DroneLight</div><h3 data-i18n="p1_h">Burst-firing directed energy</h3><p data-i18n="p1_p">A laser that delivers high-power energy in bursts rather than a continuous beam. Esh-Tech says it neutralises a drone in one to two seconds, then switches instantly to the next target — at least 30 kills a minute.</p></div><div class="stat"><b>30/min</b><small>1-2 sec per kill</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The reach · Short-range, low-power</div><h3 data-i18n="p2_h">~1 km, around 4 kW</h3><p data-i18n="p2_p">A close-in system with a reach of up to about one kilometre, running on roughly four kilowatts. Low power draw lets it ride on armoured vehicles, cued by radar, sensors and electro-optics.</p></div><div class="stat"><b>~1 km</b><small>~4 kW</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The timeline · Show floor to field</div><h3 data-i18n="p3_h">Operational September 2026</h3><p data-i18n="p3_p">Shown at Eurosatory 2026 integrated on a military vehicle, with the first DroneLight system expected to enter operational service in September 2026.</p></div><div class="stat"><b>Sep 2026</b><small>first fielded</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <h2>A laser built for swarms</h2>
+    <p>At Eurosatory 2026, the Israeli start-up Esh-Tech presented <strong>DroneLight</strong>, a laser weapon designed to intercept both individual drones and whole swarms. It is pitched as an answer to one of the hardest problems on the modern battlefield: cheap, numerous, fast-moving aerial threats.</p>
+    <h2>Firing in bursts, not beams</h2>
+    <p>What sets DroneLight apart from other counter-drone lasers, according to its maker, is that it delivers high-power directed energy in bursts rather than a continuous stream. Esh-Tech says this lets the system achieve at least 30 shootdowns a minute: instead of dwelling on a single target, it neutralises a drone in one to two seconds and then switches immediately to the next.</p>
+    <p class="pull">A laser shot costs a fraction of a missile, and DroneLight claims thirty a minute — that is the arithmetic the swarm forces on every defender.</p>
+    <h2>Small, low-power, vehicle-ready</h2>
+    <p>DroneLight is a short-range system, with a reach of up to about one kilometre. It runs on roughly four kilowatts and draws little power, which Esh-Tech says allows it to be mounted on a range of platforms, including armoured vehicles; at the show it was displayed integrated on a military vehicle. It can also be tied into radar, sensors and electro-optical systems to feed it additional target-tracking data.</p>
+    <h2>Where it fits</h2>
+    <p>The appeal is in the exchange. A laser shot costs a fraction of a missile or even a gun round, and a system that can clear thirty targets a minute changes the arithmetic of facing a swarm. DroneLight is not a stand-alone shield: at a kilometre and a few kilowatts it is a close-in layer, best used alongside longer-range interceptors and guns. But it points to where short-range air defence is heading, with cheap, fast, reusable effects against the low end of the threat.</p>
+    <h2>What comes next</h2>
+    <p>Esh-Tech says the first DroneLight system is expected to enter operational service in September 2026. If it performs as advertised, the burst-firing approach could become a template for a new class of compact, vehicle-mounted counter-drone lasers.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <h2>Ένα λέιζερ φτιαγμένο για τα σμήνη</h2>
+    <p>Στη Eurosatory 2026, η ισραηλινή start-up Esh-Tech παρουσίασε το <strong>DroneLight</strong>, ένα όπλο-λέιζερ σχεδιασμένο να αναχαιτίζει τόσο μεμονωμένα drones όσο και ολόκληρα σμήνη. Προβάλλεται ως απάντηση σε ένα από τα δυσκολότερα προβλήματα του σύγχρονου πεδίου μάχης: φθηνές, πολυάριθμες και ταχύτατες εναέριες απειλές.</p>
+    <h2>Βολή με ριπές, όχι συνεχή δέσμη</h2>
+    <p>Αυτό που, σύμφωνα με την κατασκευάστρια, ξεχωρίζει το DroneLight από άλλα αντι-drone λέιζερ είναι ότι εκπέμπει κατευθυνόμενη ενέργεια υψηλής ισχύος κατά ριπάς και όχι ως συνεχή ροή. Η Esh-Tech υποστηρίζει ότι αυτό του επιτρέπει τουλάχιστον 30 καταρρίψεις το λεπτό: αντί να παραμένει σε έναν στόχο, εξουδετερώνει ένα drone σε ένα με δύο δευτερόλεπτα και έπειτα μεταπηδά αμέσως στον επόμενο.</p>
+    <p class="pull">Μια βολή λέιζερ κοστίζει κλάσμα ενός πυραύλου, και το DroneLight υπόσχεται τριάντα το λεπτό — αυτή είναι η αριθμητική που επιβάλλει το σμήνος σε κάθε αμυνόμενο.</p>
+    <h2>Μικρό, χαμηλής ισχύος, έτοιμο για όχημα</h2>
+    <p>Το DroneLight είναι σύστημα μικρής εμβέλειας, με βεληνεκές έως περίπου ένα χιλιόμετρο. Λειτουργεί με περίπου τέσσερα κιλοβάτ και έχει χαμηλή κατανάλωση, κάτι που, κατά την Esh-Tech, επιτρέπει την ενσωμάτωσή του σε διάφορες πλατφόρμες, μεταξύ άλλων σε τεθωρακισμένα οχήματα· στην έκθεση παρουσιάστηκε τοποθετημένο πάνω σε στρατιωτικό όχημα. Μπορεί επίσης να συνδεθεί με ραντάρ, αισθητήρες και ηλεκτρο-οπτικά συστήματα που του παρέχουν πρόσθετα δεδομένα παρακολούθησης στόχου.</p>
+    <h2>Πού ταιριάζει</h2>
+    <p>Το ατού βρίσκεται στην ανταλλαγή. Μια βολή λέιζερ κοστίζει ελάχιστα σε σύγκριση με έναν πύραυλο ή ακόμη και ένα βλήμα πυροβόλου, και ένα σύστημα που καθαρίζει τριάντα στόχους το λεπτό αλλάζει την αριθμητική απέναντι σε ένα σμήνος. Το DroneLight δεν είναι αυτόνομη ασπίδα: στο ένα χιλιόμετρο και τα λίγα κιλοβάτ αποτελεί ένα επίπεδο εγγύς άμυνας, που λειτουργεί καλύτερα δίπλα σε αναχαιτιστές και πυροβόλα μεγαλύτερου βεληνεκούς. Δείχνει όμως προς τα πού οδεύει η άμυνα μικρής εμβέλειας: φθηνά, γρήγορα, επαναχρησιμοποιήσιμα μέσα κατά του χαμηλού άκρου της απειλής.</p>
+    <h2>Τα επόμενα βήματα</h2>
+    <p>Η Esh-Tech αναφέρει ότι το πρώτο σύστημα DroneLight αναμένεται να τεθεί σε επιχειρησιακή λειτουργία τον Σεπτέμβριο του 2026. Αν αποδώσει όπως διαφημίζεται, η προσέγγιση της βολής με ριπές θα μπορούσε να γίνει πρότυπο για μια νέα κατηγορία συμπαγών, οχηματοφερόμενων αντι-drone λέιζερ.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <h2>Un laser conçu pour les essaims</h2>
+    <p>À Eurosatory 2026, la start-up israélienne Esh-Tech a dévoilé <strong>DroneLight</strong>, une arme laser conçue pour intercepter aussi bien des drones isolés que des essaims entiers. Elle se présente comme une réponse à l'un des problèmes les plus difficiles du champ de bataille moderne : des menaces aériennes bon marché, nombreuses et rapides.</p>
+    <h2>Un tir en rafale, pas un faisceau continu</h2>
+    <p>Ce qui distingue le DroneLight des autres lasers anti-drones, selon son fabricant, c'est qu'il délivre une énergie dirigée de forte puissance par rafales plutôt qu'en flux continu. Esh-Tech affirme que cela lui permet d'atteindre au moins 30 destructions par minute : au lieu de s'attarder sur une cible, il neutralise un drone en une à deux secondes, puis passe immédiatement au suivant.</p>
+    <p class="pull">Un tir laser coûte une fraction d'un missile, et le DroneLight en promet trente par minute — c'est l'arithmétique que l'essaim impose à tout défenseur.</p>
+    <h2>Compact, peu gourmand, prêt pour le véhicule</h2>
+    <p>Le DroneLight est un système à courte portée, atteignant jusqu'à environ un kilomètre. Il fonctionne avec quelque quatre kilowatts et consomme peu, ce qui, selon Esh-Tech, permet de l'installer sur diverses plateformes, dont des véhicules blindés ; au salon, il était présenté intégré sur un véhicule militaire. Il peut aussi être relié à des radars, des capteurs et des systèmes électro-optiques pour des données de suivi de cible supplémentaires.</p>
+    <h2>Où il s'inscrit</h2>
+    <p>L'intérêt tient à l'échange. Un tir laser coûte une fraction d'un missile, voire d'un obus, et un système capable de traiter trente cibles par minute change l'arithmétique face à un essaim. Le DroneLight n'est pas un bouclier autonome : à un kilomètre et quelques kilowatts, c'est une couche de défense rapprochée, à employer aux côtés d'intercepteurs et de canons à plus longue portée. Mais il indique la direction de la défense aérienne courte portée : des effets bon marché, rapides et réutilisables contre le bas du spectre.</p>
+    <h2>La suite</h2>
+    <p>Esh-Tech indique que le premier système DroneLight devrait entrer en service opérationnel en septembre 2026. S'il tient ses promesses, l'approche par rafales pourrait devenir un modèle pour une nouvelle catégorie de lasers anti-drones compacts et montés sur véhicule.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <h2>En laser bygget til sværme</h2>
+    <p>På Eurosatory 2026 afslørede den israelske start-up Esh-Tech <strong>DroneLight</strong>, et laservåben designet til at opfange både enkelte droner og hele sværme. Det præsenteres som et svar på et af de sværeste problemer på den moderne slagmark: billige, talrige og hurtige luftbårne trusler.</p>
+    <h2>Affyring i byger, ikke en stråle</h2>
+    <p>Det, der ifølge producenten adskiller DroneLight fra andre anti-drone-lasere, er, at den leverer rettet energi af høj effekt i byger frem for en kontinuerlig strøm. Esh-Tech siger, at det giver systemet mindst 30 nedskydninger i minuttet: i stedet for at dvæle ved ét mål neutraliserer den en drone på et til to sekunder og skifter så straks til det næste.</p>
+    <p class="pull">Et laserskud koster en brøkdel af et missil, og DroneLight lover tredive i minuttet — det er den regning, sværmen påtvinger enhver forsvarer.</p>
+    <h2>Lille, energieffektiv, køretøjsklar</h2>
+    <p>DroneLight er et kortrækkende system med en rækkevidde på op til omkring en kilometer. Den kører på cirka fire kilowatt og trækker lidt strøm, hvilket ifølge Esh-Tech gør det muligt at montere den på en række platforme, herunder pansrede køretøjer; på messen blev den vist integreret på et militærkøretøj. Den kan også kobles til radar, sensorer og elektro-optiske systemer for ekstra måldata.</p>
+    <h2>Hvor den passer ind</h2>
+    <p>Det tiltrækkende ligger i byttet. Et laserskud koster en brøkdel af et missil eller endda en kanongranat, og et system, der kan rydde tredive mål i minuttet, ændrer regnestykket over for en sværm. DroneLight er ikke et selvstændigt skjold: ved en kilometer og få kilowatt er den et nærforsvarslag, bedst brugt sammen med interceptorer og kanoner med længere rækkevidde. Men den peger på, hvor kortrækkende luftforsvar er på vej hen: billige, hurtige, genanvendelige effekter mod den lave ende af truslen.</p>
+    <h2>Hvad der kommer næst</h2>
+    <p>Esh-Tech siger, at det første DroneLight-system ventes at gå i operativ tjeneste i september 2026. Hvis det leverer som lovet, kan byge-tilgangen blive en skabelon for en ny klasse af kompakte, køretøjsmonterede anti-drone-lasere.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <h2>En laser byggd för svärmar</h2>
+    <p>På Eurosatory 2026 visade den israeliska start-upen Esh-Tech <strong>DroneLight</strong>, ett laservapen utformat för att fånga upp både enskilda drönare och hela svärmar. Det presenteras som ett svar på ett av de svåraste problemen på den moderna slagfältet: billiga, talrika och snabba luftburna hot.</p>
+    <h2>Eld i skurar, inte en kontinuerlig stråle</h2>
+    <p>Det som enligt tillverkaren skiljer DroneLight från andra anti-drönarlasrar är att den levererar riktad högeffektsenergi i skurar i stället för en kontinuerlig ström. Esh-Tech uppger att detta ger systemet minst 30 nedskjutningar i minuten: i stället för att dröja vid ett mål oskadliggör den en drönare på en till två sekunder och växlar sedan omedelbart till nästa.</p>
+    <p class="pull">Ett laserskott kostar en bråkdel av en robot, och DroneLight lovar trettio i minuten — det är den kalkyl som svärmen tvingar på varje försvarare.</p>
+    <h2>Liten, energisnål, fordonsredo</h2>
+    <p>DroneLight är ett korträckviddigt system med en räckvidd på upp till ungefär en kilometer. Den drivs av cirka fyra kilowatt och drar lite ström, vilket enligt Esh-Tech gör att den kan monteras på olika plattformar, däribland pansrade fordon; på mässan visades den integrerad på ett militärfordon. Den kan också kopplas till radar, sensorer och elektrooptiska system för ytterligare måldata.</p>
+    <h2>Var den passar in</h2>
+    <p>Det lockande ligger i bytet. Ett laserskott kostar en bråkdel av en robot eller till och med en kanongranat, och ett system som kan rensa trettio mål i minuten ändrar kalkylen mot en svärm. DroneLight är ingen självständig sköld: vid en kilometer och några kilowatt är den ett närförsvarsskikt, bäst använt tillsammans med interceptorer och kanoner med längre räckvidd. Men den pekar dit korträckviddigt luftförsvar är på väg: billiga, snabba, återanvändbara verkansdelar mot hotets lägre ände.</p>
+    <h2>Vad som kommer härnäst</h2>
+    <p>Esh-Tech uppger att det första DroneLight-systemet väntas tas i operativ tjänst i september 2026. Om det presterar som utlovat kan skurmetoden bli en mall för en ny klass av kompakta, fordonsmonterade anti-drönarlasrar.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>OnAlert.gr — Eurosatory 2026: «30 καταρρίψεις drones το λεπτό» υπόσχεται το νέο ισραηλινό λέιζερ DroneLight (Άρης Δημητράτος, 22 June 2026)</li>
+      <li>Esh-Tech — DroneLight laser counter-UAS system (Eurosatory 2026 presentation)</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Defence Policy",a_cat:"Defence Policy",a_tag:"🔆 Directed Energy",a_date:"22 June 2026",a_read:"3 min read",a_title:"A laser that fires in bursts: Israel's <em>DroneLight</em> promises 30 drone kills a minute",a_stand:"At Eurosatory 2026, the Israeli start-up Esh-Tech unveiled DroneLight, a laser that fires high-power energy in bursts rather than a continuous beam — and claims at least 30 drone shootdowns a minute. Short-range, low-power and vehicle-mounted, it is pitched squarely at the swarm.",p1_h:"Burst-firing directed energy",p1_p:"A laser that delivers high-power energy in bursts rather than a continuous beam. Esh-Tech says it neutralises a drone in one to two seconds, then switches instantly to the next target — at least 30 kills a minute.",p2_h:"~1 km, around 4 kW",p2_p:"A close-in system with a reach of up to about one kilometre, running on roughly four kilowatts. Low power draw lets it ride on armoured vehicles, cued by radar, sensors and electro-optics.",p3_h:"Operational September 2026",p3_p:"Shown at Eurosatory 2026 integrated on a military vehicle, with the first DroneLight system expected to enter operational service in September 2026.",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στην Αμυντική Πολιτική",a_cat:"Αμυντική Πολιτική",a_tag:"🔆 Όπλα Ενέργειας",a_date:"22 Ιουνίου 2026",a_read:"3' ανάγνωση",a_title:"Ένα λέιζερ που βάλλει με ριπές: το ισραηλινό <em>DroneLight</em> υπόσχεται 30 καταρρίψεις drones το λεπτό",a_stand:"Στη Eurosatory 2026, η ισραηλινή start-up Esh-Tech παρουσίασε το DroneLight, ένα λέιζερ που εκπέμπει ενέργεια υψηλής ισχύος κατά ριπάς αντί για συνεχή δέσμη — και υπόσχεται τουλάχιστον 30 καταρρίψεις drones το λεπτό. Μικρής εμβέλειας, χαμηλής ισχύος και οχηματοφερόμενο, στοχεύει ευθέως στο σμήνος.",p1_h:"Κατευθυνόμενη ενέργεια κατά ριπάς",p1_p:"Λέιζερ που εκπέμπει ενέργεια υψηλής ισχύος κατά ριπάς αντί για συνεχή δέσμη. Η Esh-Tech αναφέρει ότι εξουδετερώνει ένα drone σε 1-2 δευτερόλεπτα και μεταπηδά αμέσως στον επόμενο στόχο — τουλάχιστον 30 καταρρίψεις το λεπτό.",p2_h:"~1 χλμ., περίπου 4 kW",p2_p:"Σύστημα εγγύς άμυνας με βεληνεκές έως περίπου ένα χιλιόμετρο, με ισχύ περίπου τέσσερα κιλοβάτ. Η χαμηλή κατανάλωση επιτρέπει εγκατάσταση σε τεθωρακισμένα οχήματα, με καθοδήγηση από ραντάρ, αισθητήρες και ηλεκτρο-οπτικά.",p3_h:"Επιχειρησιακό τον Σεπτέμβριο 2026",p3_p:"Παρουσιάστηκε στη Eurosatory 2026 πάνω σε στρατιωτικό όχημα, με το πρώτο σύστημα DroneLight να αναμένεται σε επιχειρησιακή λειτουργία τον Σεπτέμβριο του 2026.",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Politique de Défense",a_cat:"Politique de Défense",a_tag:"🔆 Énergie dirigée",a_date:"22 juin 2026",a_read:"3 min de lecture",a_title:"Un laser qui tire en rafale : le <em>DroneLight</em> israélien promet 30 drones abattus par minute",a_stand:"À Eurosatory 2026, la start-up israélienne Esh-Tech a dévoilé le DroneLight, un laser qui délivre une énergie de forte puissance par rafales plutôt qu'en faisceau continu — et revendique au moins 30 destructions de drones par minute. Courte portée, peu gourmand et monté sur véhicule, il vise directement l'essaim.",p1_h:"Énergie dirigée par rafales",p1_p:"Un laser qui délivre une énergie de forte puissance par rafales plutôt qu'en faisceau continu. Esh-Tech affirme qu'il neutralise un drone en une à deux secondes, puis passe aussitôt à la cible suivante — au moins 30 destructions par minute.",p2_h:"~1 km, environ 4 kW",p2_p:"Un système rapproché d'une portée allant jusqu'à environ un kilomètre, fonctionnant avec quelque quatre kilowatts. Sa faible consommation permet de l'embarquer sur des véhicules blindés, guidé par radar, capteurs et électro-optique.",p3_h:"Opérationnel en septembre 2026",p3_p:"Présenté à Eurosatory 2026 intégré sur un véhicule militaire, le premier système DroneLight devant entrer en service opérationnel en septembre 2026.",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Forsvarspolitik",a_cat:"Forsvarspolitik",a_tag:"🔆 Rettet energi",a_date:"22. juni 2026",a_read:"3 min. læsning",a_title:"En laser der affyrer i byger: Israels <em>DroneLight</em> lover 30 nedskudte droner i minuttet",a_stand:"På Eurosatory 2026 afslørede den israelske start-up Esh-Tech DroneLight, en laser der leverer højeffektsenergi i byger frem for en kontinuerlig stråle — og hævder mindst 30 nedskydninger af droner i minuttet. Kortrækkende, energieffektiv og køretøjsmonteret er den rettet direkte mod sværmen.",p1_h:"Rettet energi i byger",p1_p:"En laser der leverer højeffektsenergi i byger frem for en kontinuerlig stråle. Esh-Tech siger, den neutraliserer en drone på et til to sekunder og skifter straks til næste mål — mindst 30 nedskydninger i minuttet.",p2_h:"~1 km, omkring 4 kW",p2_p:"Et nærforsvarssystem med en rækkevidde på op til cirka en kilometer, der kører på cirka fire kilowatt. Det lave strømforbrug gør, at den kan monteres på pansrede køretøjer, styret af radar, sensorer og elektro-optik.",p3_h:"Operationel i september 2026",p3_p:"Vist på Eurosatory 2026 integreret på et militærkøretøj, med det første DroneLight-system ventet i operativ tjeneste i september 2026.",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Försvarspolitik",a_cat:"Försvarspolitik",a_tag:"🔆 Riktad energi",a_date:"22 juni 2026",a_read:"3 min läsning",a_title:"En laser som skjuter i skurar: Israels <em>DroneLight</em> lovar 30 nedskjutna drönare i minuten",a_stand:"På Eurosatory 2026 visade den israeliska start-upen Esh-Tech DroneLight, en laser som levererar högeffektsenergi i skurar i stället för en kontinuerlig stråle — och hävdar minst 30 nedskjutningar av drönare i minuten. Korträckviddig, energisnål och fordonsmonterad är den riktad rakt mot svärmen.",p1_h:"Riktad energi i skurar",p1_p:"En laser som levererar högeffektsenergi i skurar i stället för en kontinuerlig stråle. Esh-Tech uppger att den oskadliggör en drönare på en till två sekunder och växlar genast till nästa mål — minst 30 nedskjutningar i minuten.",p2_h:"~1 km, omkring 4 kW",p2_p:"Ett närförsvarssystem med en räckvidd på upp till ungefär en kilometer, som drivs av cirka fyra kilowatt. Den låga strömförbrukningen gör att den kan monteras på pansrade fordon, styrd av radar, sensorer och elektrooptik.",p3_h:"Operativ september 2026",p3_p:"Visad på Eurosatory 2026 integrerad på ett militärfordon, med det första DroneLight-systemet väntat i operativ tjänst i september 2026.",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s&&translations[s]){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
