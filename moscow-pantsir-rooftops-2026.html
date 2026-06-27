@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moscow Mounts Pantsir Systems on Apartment Rooftops — Frontline Brief</title>
+<meta name="description" content="Russia is hoisting Pantsir air-defence systems onto Moscow apartment rooftops by Mi-26 helicopter to fend off Ukraine's deepening drone raids.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--cold);line-height:1.1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="strategic-affairs.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Strategic Affairs</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Strategic Affairs</span>
+    <span class="tag" data-i18n="a_tag">🛡️ Air Defence</span>
+    <span class="sep">·</span><span data-i18n="a_date">26 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">3 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">Moscow goes vertical: Russia bolts <em>Pantsir launchers onto apartment rooftops</em> against Ukraine's drones</h1>
+  <p class="standfirst" data-i18n="a_stand">As Ukrainian drones reach ever deeper into the Russian capital, Moscow is lifting Pantsir air-defence systems by heavy helicopter onto the roofs of residential tower blocks. It is a vivid sign of how far the war has come home — and a move with as much to do with optics as with interception.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/moscow-pantsir-rooftops-en.jpg" alt="Pantsir on the rooftops — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/moscow-pantsir-rooftops-el.jpg" alt="Pantsir on the rooftops — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/moscow-pantsir-rooftops-fr.jpg" alt="Pantsir on the rooftops — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/moscow-pantsir-rooftops-da.jpg" alt="Pantsir on the rooftops — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/moscow-pantsir-rooftops-sv.jpg" alt="Pantsir on the rooftops — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">The move · Rooftop air defence</div><h3 data-i18n="p1_h">SAMs above the flats</h3><p data-i18n="p1_p">Russia is placing Pantsir systems on the roofs of multi-storey Moscow apartment blocks, lifted into position by Mi-26 helicopters. Footage from the Chertanovo Severnoye district shows the practice, reported on an almost daily basis.</p></div><div class="stat"><b>Mi-26</b><small>rooftop SAMs</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The trigger · Drones over Moscow</div><h3 data-i18n="p2_h">The war reaches the capital</h3><p data-i18n="p2_p">Recent Ukrainian drone raids on Moscow — including the region's largest refinery and the Dubna satellite-communications centre — have alarmed the authorities. Zelensky has publicly cited the rooftop deployments.</p></div><div class="stat"><b>Moscow</b><small>drone raids</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The catch · Optics and own-goals</div><h3 data-i18n="p3_h">A shield, and a narrative</h3><p data-i18n="p3_p">The aim looks twofold: defend the city, and be able to argue that any strike near the launchers hits "residential areas". Yet the 18 June oil-tank blast was later attributed, most likely, to Russian air-defence fire.</p></div><div class="stat"><b>18 Jun</b><small>friendly fire</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <h2>Air defence on the roof</h2>
+    <p>The images are striking even by the standards of this war: a <strong>Pantsir</strong> short-range air-defence system, slung beneath a heavy Mi-26 helicopter, being lowered onto the roof of a residential tower block in Moscow. According to footage circulating on social media, Russian forces have been installing the systems on high-rise apartment buildings in the city's Chertanovo Severnoye district, and reports of similar moves around the capital now arrive almost daily.</p>
+    <h2>Why Moscow is scrambling</h2>
+    <p>The trigger is the steady deepening of Ukraine's long-range drone campaign. Recent raids have struck the largest oil refinery in the wider Moscow region and the satellite-communications centre at Dubna, jolting the Russian authorities into visible action. President Volodymyr Zelensky has himself pointed to the rooftop deployments, citing the picture his security services are assembling. Putting interceptors on tall buildings buys altitude and a clearer field of fire over a sprawling city — the logic of a capital that no longer feels out of reach.</p>
+    <p class="pull">Bolting missile launchers to the roofs of apartment blocks is what it looks like when a capital that once felt untouchable starts feeling the war.</p>
+    <h2>A defensive measure — and a messaging one</h2>
+    <p>Russia's calculation appears to run on two tracks. The first is straightforward: thicken the air-defence net over Moscow against the dozens of drones now probing it. The second is narrative. By siting launchers on residential blocks, the Kremlin positions itself to argue that any Ukrainian strike against them lands on "residential areas" rather than military targets — a framing aimed at domestic and international audiences alike. Placing weapons among civilians is a choice with its own legal and moral weight.</p>
+    <h2>When the shield misfires</h2>
+    <p>The catch is that a denser air-defence umbrella over a crowded city carries its own risks. The spectacular explosion that tore part of an oil tank into the air on 18 June 2026 — footage that travelled the world — was later attributed, in all likelihood, to Russian air-defence fire rather than a Ukrainian weapon. Interceptors that miss, or whose debris falls back to earth, can do real damage in a dense urban environment, and rooftop batteries do not change that arithmetic.</p>
+    <h2>The bigger picture</h2>
+    <p>For most of the war Moscow projected an air of normality, insulated from the front by hundreds of kilometres. The sight of Pantsir batteries being craned onto apartment roofs punctures that image. It will not, on its own, stop a determined drone campaign — air defence rarely offers a hermetic seal — but as a signal it is hard to miss: the war the Kremlin launched is now being fought, visibly, above the heads of Muscovites.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <h2>Αντιαεροπορική άμυνα στην ταράτσα</h2>
+    <p>Οι εικόνες είναι εντυπωσιακές ακόμη και με τα μέτρα αυτού του πολέμου: ένα σύστημα μικρού βεληνεκούς <strong>Pantsir</strong>, κρεμασμένο κάτω από βαρύ ελικόπτερο Mi-26, να κατεβαίνει στην οροφή πολυώροφης πολυκατοικίας στη Μόσχα. Σύμφωνα με βίντεο που κυκλοφορεί στα μέσα κοινωνικής δικτύωσης, ρωσικές δυνάμεις τοποθετούν τα συστήματα σε ψηλά κτίρια κατοικιών στη συνοικία Τσερτάνοβο Σεβέρνογιε της πόλης, ενώ αναφορές για ανάλογες κινήσεις γύρω από την πρωτεύουσα φτάνουν πλέον σχεδόν καθημερινά.</p>
+    <h2>Γιατί τρέχει η Μόσχα</h2>
+    <p>Η αφορμή είναι η σταθερή διείσδυση της ουκρανικής εκστρατείας drones μεγάλου βεληνεκούς. Πρόσφατες επιδρομές έπληξαν το μεγαλύτερο διυλιστήριο της ευρύτερης περιοχής της Μόσχας και το κέντρο δορυφορικών επικοινωνιών στην Ντούμπνα, αναγκάζοντας τις ρωσικές αρχές σε ορατή αντίδραση. Ο ίδιος ο Βολοντίμιρ Ζελένσκι έχει αναφερθεί στις τοποθετήσεις στις ταράτσες, επικαλούμενος την εικόνα που συγκεντρώνουν οι υπηρεσίες ασφαλείας του. Τα αναχαιτιστικά σε ψηλά κτίρια κερδίζουν ύψος και καθαρότερο πεδίο βολής πάνω από μια απέραντη πόλη — η λογική μιας πρωτεύουσας που δεν νιώθει πια απρόσιτη.</p>
+    <p class="pull">Το να βιδώνεις εκτοξευτές πυραύλων στις ταράτσες πολυκατοικιών είναι η εικόνα μιας πρωτεύουσας που, ενώ κάποτε ένιωθε άτρωτη, αρχίζει να νιώθει τον πόλεμο.</p>
+    <h2>Ένα αμυντικό μέτρο — και ένα μήνυμα</h2>
+    <p>Ο υπολογισμός της Ρωσίας φαίνεται να κινείται σε δύο άξονες. Ο πρώτος είναι απλός: να πυκνώσει το αντιαεροπορικό δίχτυ πάνω από τη Μόσχα απέναντι στα δεκάδες drones που τη δοκιμάζουν. Ο δεύτερος είναι αφηγηματικός. Τοποθετώντας εκτοξευτές σε κτίρια κατοικιών, το Κρεμλίνο προετοιμάζει το έδαφος ώστε να ισχυριστεί ότι κάθε ουκρανικό πλήγμα εναντίον τους χτυπά «κατοικημένες περιοχές» και όχι στρατιωτικούς στόχους — μια αφήγηση που απευθύνεται τόσο στο εσωτερικό όσο και στο διεθνές κοινό. Η τοποθέτηση όπλων ανάμεσα σε αμάχους είναι επιλογή με το δικό της νομικό και ηθικό βάρος.</p>
+    <h2>Όταν η ασπίδα αστοχεί</h2>
+    <p>Το πρόβλημα είναι ότι μια πυκνότερη αντιαεροπορική ομπρέλα πάνω από μια πυκνοκατοικημένη πόλη φέρνει τους δικούς της κινδύνους. Η εντυπωσιακή έκρηξη που τίναξε τμήμα δεξαμενής πετρελαίου στον αέρα στις 18 Ιουνίου 2026 — πλάνα που έκαναν τον γύρο του κόσμου — αποδόθηκε εκ των υστέρων, κατά πάσα πιθανότητα, σε ρωσικά αντιαεροπορικά πυρά και όχι σε ουκρανικό όπλο. Αναχαιτιστικά που αστοχούν, ή των οποίων τα συντρίμμια πέφτουν στο έδαφος, μπορούν να προκαλέσουν πραγματικές ζημιές σε πυκνό αστικό περιβάλλον — και οι συστοιχίες στις ταράτσες δεν αλλάζουν αυτή την αριθμητική.</p>
+    <h2>Η ευρύτερη εικόνα</h2>
+    <p>Για το μεγαλύτερο μέρος του πολέμου, η Μόσχα προέβαλλε μια αίσθηση κανονικότητας, προστατευμένη από το μέτωπο με εκατοντάδες χιλιόμετρα. Η εικόνα συστοιχιών Pantsir να ανεβαίνουν με γερανό σε ταράτσες πολυκατοικιών διαρρηγνύει αυτή την εικόνα. Δεν θα σταματήσει από μόνη της μια αποφασισμένη εκστρατεία drones — η αντιαεροπορική άμυνα σπάνια προσφέρει στεγανή κάλυψη — αλλά ως μήνυμα είναι δύσκολο να αγνοηθεί: ο πόλεμος που εξαπέλυσε το Κρεμλίνο διεξάγεται πλέον, ορατά, πάνω από τα κεφάλια των Μοσχοβιτών.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <h2>La défense antiaérienne sur le toit</h2>
+    <p>Les images sont saisissantes, même à l'aune de cette guerre : un système de courte portée <strong>Pantsir</strong>, suspendu sous un lourd hélicoptère Mi-26, descendu sur le toit d'une tour résidentielle de Moscou. Selon des vidéos diffusées sur les réseaux sociaux, les forces russes installent ces systèmes sur des immeubles d'habitation du district de Tchertanovo Severnoïe, et les signalements de manœuvres similaires autour de la capitale se multiplient désormais presque chaque jour.</p>
+    <h2>Pourquoi Moscou s'agite</h2>
+    <p>Le déclencheur est l'approfondissement constant de la campagne de drones à longue portée de l'Ukraine. De récentes frappes ont visé la plus grande raffinerie de la région élargie de Moscou et le centre de communications par satellite de Doubna, poussant les autorités russes à une réaction visible. Volodymyr Zelensky a lui-même évoqué ces déploiements sur les toits, s'appuyant sur le tableau que dressent ses services de sécurité. Placer des intercepteurs en hauteur, c'est gagner de l'altitude et un champ de tir plus dégagé sur une ville tentaculaire — la logique d'une capitale qui ne se sent plus hors d'atteinte.</p>
+    <p class="pull">Boulonner des lanceurs de missiles sur les toits d'immeubles, c'est l'image d'une capitale longtemps jugée intouchable qui commence à sentir la guerre.</p>
+    <h2>Une mesure défensive — et un message</h2>
+    <p>Le calcul russe semble suivre deux voies. La première est limpide : densifier le filet antiaérien au-dessus de Moscou face aux dizaines de drones qui la sondent. La seconde relève du récit. En installant des lanceurs sur des immeubles d'habitation, le Kremlin se ménage la possibilité d'affirmer que toute frappe ukrainienne contre eux touche des « zones résidentielles » et non des cibles militaires — une mise en scène destinée autant à l'opinion intérieure qu'internationale. Placer des armes parmi les civils est un choix qui porte son propre poids juridique et moral.</p>
+    <h2>Quand le bouclier se retourne</h2>
+    <p>Le hic, c'est qu'un parapluie antiaérien plus dense au-dessus d'une ville dense comporte ses propres risques. La spectaculaire explosion qui a projeté en l'air une partie d'un réservoir de pétrole le 18 juin 2026 — des images qui ont fait le tour du monde — a été attribuée par la suite, selon toute vraisemblance, à un tir de la défense antiaérienne russe plutôt qu'à une arme ukrainienne. Des intercepteurs qui manquent leur cible, ou dont les débris retombent, peuvent causer de réels dégâts en milieu urbain dense — et les batteries sur les toits ne changent rien à cette arithmétique.</p>
+    <h2>Le tableau d'ensemble</h2>
+    <p>Pendant l'essentiel de la guerre, Moscou a affiché un air de normalité, à l'abri du front par des centaines de kilomètres. Le spectacle de batteries Pantsir hissées sur des toits d'immeubles fissure cette image. À lui seul, il n'arrêtera pas une campagne de drones déterminée — la défense antiaérienne n'offre presque jamais une étanchéité parfaite — mais comme signal, il est difficile à ignorer : la guerre déclenchée par le Kremlin se livre désormais, visiblement, au-dessus de la tête des Moscovites.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <h2>Luftforsvar på taget</h2>
+    <p>Billederne er slående selv efter denne krigs målestok: et <strong>Pantsir</strong>-luftforsvarssystem med kort rækkevidde, hængende under en tung Mi-26-helikopter, sænket ned på taget af en beboelseshøjhus i Moskva. Ifølge optagelser, der cirkulerer på sociale medier, installerer russiske styrker systemerne på beboelsesejendomme i bydelen Tjertanovo Severnoje, og meldinger om lignende træk omkring hovedstaden kommer nu næsten dagligt.</p>
+    <h2>Hvorfor Moskva skynder sig</h2>
+    <p>Udløseren er den stadige uddybning af Ukraines langtrækkende dronekampagne. Nylige angreb har ramt det største raffinaderi i Moskva-regionen og satellitkommunikationscentret i Dubna og tvunget de russiske myndigheder til en synlig reaktion. Volodymyr Zelenskyj har selv peget på tagudstationeringerne med henvisning til det billede, hans sikkerhedstjenester samler. At placere afskydere højt oppe giver højde og et friere skudfelt over en vidtstrakt by — logikken hos en hovedstad, der ikke længere føler sig uden for rækkevidde.</p>
+    <p class="pull">At bolte missilaffyrere fast på taget af boligblokke er billedet af en hovedstad, der engang føltes urørlig, og nu mærker krigen.</p>
+    <h2>En forsvarsforanstaltning — og et budskab</h2>
+    <p>Ruslands beregning ser ud til at køre ad to spor. Det første er ligetil: at fortætte luftforsvarsnettet over Moskva mod de snesevis af droner, der nu sonderer det. Det andet er fortælling. Ved at placere affyrere på beboelsesejendomme skaffer Kreml sig mulighed for at hævde, at ethvert ukrainsk angreb på dem rammer »beboelsesområder« og ikke militære mål — en iscenesættelse rettet mod både det indenrigske og det internationale publikum. At placere våben blandt civile er et valg med sin egen juridiske og moralske vægt.</p>
+    <h2>Når skjoldet rammer forkert</h2>
+    <p>Hagen er, at en tættere luftforsvarsparaply over en tætpakket by bærer sine egne risici. Den spektakulære eksplosion, der den 18. juni 2026 sprængte en del af en olietank op i luften — optagelser, der gik verden rundt — blev senere efter al sandsynlighed tilskrevet russisk luftforsvarsild snarere end et ukrainsk våben. Afskydere, der rammer ved siden af, eller hvis vragdele falder ned, kan gøre reel skade i et tæt bymiljø — og batterier på tagene ændrer ikke det regnestykke.</p>
+    <h2>Det store billede</h2>
+    <p>I størstedelen af krigen udstrålede Moskva en følelse af normalitet, skærmet fra fronten af hundredvis af kilometer. Synet af Pantsir-batterier, der kranes op på boligtage, punkterer det billede. Det stopper ikke i sig selv en målrettet dronekampagne — luftforsvar giver sjældent en hermetisk forsegling — men som signal er det svært at overse: den krig, Kreml udløste, udkæmpes nu, synligt, over hovederne på moskovitterne.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <h2>Luftvärn på taket</h2>
+    <p>Bilderna är slående till och med med detta krigs mått: ett <strong>Pantsir</strong>-luftvärnssystem med kort räckvidd, hängande under en tung Mi-26-helikopter, sänkt ned på taket av ett bostadshöghus i Moskva. Enligt videor som sprids i sociala medier installerar ryska styrkor systemen på bostadshus i stadsdelen Tjertanovo Severnoje, och uppgifter om liknande drag runt huvudstaden kommer nu nästan dagligen.</p>
+    <h2>Varför Moskva skyndar sig</h2>
+    <p>Utlösaren är den ständiga fördjupningen av Ukrainas långräckviddiga drönarkampanj. Nyliga anfall har träffat det största raffinaderiet i Moskvaregionen och satellitkommunikationscentret i Dubna och tvingat de ryska myndigheterna till en synlig reaktion. Volodymyr Zelenskyj har själv pekat på takutplaceringarna med hänvisning till den bild hans säkerhetstjänster samlar in. Att placera robotar högt upp ger höjd och ett friare skjutfält över en vidsträckt stad — logiken hos en huvudstad som inte längre känner sig utom räckhåll.</p>
+    <p class="pull">Att bulta fast robotlavetter på taken till bostadshus är bilden av en huvudstad som en gång kändes oåtkomlig och nu känner kriget.</p>
+    <h2>En försvarsåtgärd — och ett budskap</h2>
+    <p>Rysslands kalkyl tycks löpa på två spår. Det första är enkelt: att förtäta luftvärnsnätet över Moskva mot de tiotals drönare som nu prövar det. Det andra handlar om berättelsen. Genom att placera lavetter på bostadshus skaffar sig Kreml möjligheten att hävda att varje ukrainskt angrepp mot dem träffar ”bostadsområden” och inte militära mål — en iscensättning riktad både till den inhemska och den internationella publiken. Att placera vapen bland civila är ett val med sin egen juridiska och moraliska tyngd.</p>
+    <h2>När skölden slår fel</h2>
+    <p>Haken är att ett tätare luftvärnsparaply över en tätbefolkad stad bär sina egna risker. Den spektakulära explosion som slet upp en del av en oljetank i luften den 18 juni 2026 — bilder som gick världen runt — tillskrevs senare med all sannolikhet rysk luftvärnseld snarare än ett ukrainskt vapen. Robotar som missar, eller vars vrakdelar faller ner, kan göra verklig skada i en tät stadsmiljö — och batterier på taken ändrar inte den matematiken.</p>
+    <h2>Den större bilden</h2>
+    <p>Under större delen av kriget utstrålade Moskva en känsla av normalitet, skyddad från fronten av hundratals kilometer. Synen av Pantsir-batterier som lyfts upp på bostadstak punkterar den bilden. Den stoppar inte i sig en beslutsam drönarkampanj — luftvärn ger sällan en hermetisk försegling — men som signal är den svår att missa: kriget som Kreml inledde utkämpas nu, synligt, över huvudet på moskoviterna.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>OnAlert.gr — Η Μόσχα «οχυρώνεται» με συστήματα Pantsir σε οροφές κτιρίων (Διονύσης Χατζημιχάλης, 26 June 2026)</li>
+      <li>NOELreports / social-media footage — Pantsir installations in Chertanovo Severnoye, Moscow, via Mi-26</li>
+      <li>Frontline Brief background — Ukraine's deep drone campaign and the 18 June Moscow refinery strike</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Strategic Affairs",a_cat:"Strategic Affairs",a_tag:"🛡️ Air Defence",a_date:"26 June 2026",a_read:"3 min read",a_title:"Moscow goes vertical: Russia bolts <em>Pantsir launchers onto apartment rooftops</em> against Ukraine's drones",a_stand:"As Ukrainian drones reach ever deeper into the Russian capital, Moscow is lifting Pantsir air-defence systems by heavy helicopter onto the roofs of residential tower blocks. It is a vivid sign of how far the war has come home — and a move with as much to do with optics as with interception.",p1_h:"SAMs above the flats",p1_p:"Russia is placing Pantsir systems on the roofs of multi-storey Moscow apartment blocks, lifted into position by Mi-26 helicopters. Footage from the Chertanovo Severnoye district shows the practice, reported on an almost daily basis.",p2_h:"The war reaches the capital",p2_p:"Recent Ukrainian drone raids on Moscow — including the region's largest refinery and the Dubna satellite-communications centre — have alarmed the authorities. Zelensky has publicly cited the rooftop deployments.",p3_h:"A shield, and a narrative",p3_p:"The aim looks twofold: defend the city, and be able to argue that any strike near the launchers hits residential areas. Yet the 18 June oil-tank blast was later attributed, most likely, to Russian air-defence fire.",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στις Στρατηγικές Υποθέσεις",a_cat:"Στρατηγικές Υποθέσεις",a_tag:"🛡️ Αντιαεροπορική Άμυνα",a_date:"26 Ιουνίου 2026",a_read:"3' ανάγνωση",a_title:"Η Μόσχα στο ύψος: η Ρωσία βιδώνει <em>εκτοξευτές Pantsir σε ταράτσες πολυκατοικιών</em> κατά των ουκρανικών drones",a_stand:"Καθώς τα ουκρανικά drones φτάνουν όλο και βαθύτερα στη ρωσική πρωτεύουσα, η Μόσχα ανεβάζει συστήματα Pantsir με βαρύ ελικόπτερο στις οροφές πολυκατοικιών. Είναι μια ζωντανή ένδειξη του πόσο ο πόλεμος έφτασε στο σπίτι — και μια κίνηση που έχει να κάνει τόσο με την εικόνα όσο και με την αναχαίτιση.",p1_h:"Πύραυλοι πάνω από τα διαμερίσματα",p1_p:"Η Ρωσία τοποθετεί συστήματα Pantsir στις οροφές πολυώροφων πολυκατοικιών της Μόσχας, με ανύψωση από ελικόπτερα Mi-26. Βίντεο από τη συνοικία Τσερτάνοβο Σεβέρνογιε δείχνει την πρακτική, που αναφέρεται σχεδόν καθημερινά.",p2_h:"Ο πόλεμος φτάνει στην πρωτεύουσα",p2_p:"Πρόσφατες επιδρομές drones στη Μόσχα — με το μεγαλύτερο διυλιστήριο της περιοχής και το κέντρο δορυφορικών επικοινωνιών στην Ντούμπνα — σήμαναν συναγερμό. Ο Ζελένσκι έχει αναφερθεί δημόσια στις τοποθετήσεις στις ταράτσες.",p3_h:"Ασπίδα — και αφήγημα",p3_p:"Ο στόχος φαίνεται διπλός: άμυνα της πόλης, και δυνατότητα να ισχυριστεί ότι κάθε πλήγμα κοντά στους εκτοξευτές χτυπά «κατοικημένες περιοχές». Όμως η έκρηξη δεξαμενής στις 18 Ιουνίου αποδόθηκε μάλλον σε ρωσικά αντιαεροπορικά πυρά.",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Affaires Stratégiques",a_cat:"Affaires Stratégiques",a_tag:"🛡️ Défense Antiaérienne",a_date:"26 juin 2026",a_read:"3 min de lecture",a_title:"Moscou prend de la hauteur : la Russie boulonne des <em>lanceurs Pantsir sur les toits d'immeubles</em> contre les drones ukrainiens",a_stand:"Alors que les drones ukrainiens pénètrent toujours plus profondément dans la capitale russe, Moscou hisse des systèmes Pantsir par hélicoptère lourd sur les toits de tours résidentielles. Un signe frappant de l'arrivée de la guerre à domicile — et un geste qui tient autant de la communication que de l'interception.",p1_h:"Des missiles au-dessus des logements",p1_p:"La Russie place des systèmes Pantsir sur les toits d'immeubles d'habitation de Moscou, hissés par hélicoptères Mi-26. Des vidéos du district de Tchertanovo Severnoïe montrent la pratique, signalée presque chaque jour.",p2_h:"La guerre atteint la capitale",p2_p:"De récentes frappes de drones sur Moscou — dont la plus grande raffinerie de la région et le centre de communications par satellite de Doubna — ont alarmé les autorités. Zelensky a publiquement évoqué ces déploiements sur les toits.",p3_h:"Un bouclier, et un récit",p3_p:"L'objectif paraît double : défendre la ville, et pouvoir affirmer que toute frappe près des lanceurs touche des « zones résidentielles ». Or l'explosion du réservoir du 18 juin a été attribuée, plus probablement, à un tir antiaérien russe.",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Strategiske Forhold",a_cat:"Strategiske Forhold",a_tag:"🛡️ Luftforsvar",a_date:"26. juni 2026",a_read:"3 min. læsning",a_title:"Moskva går i højden: Rusland bolter <em>Pantsir-affyrere fast på boligtage</em> mod Ukraines droner",a_stand:"Mens ukrainske droner når stadig dybere ind i den russiske hovedstad, hejser Moskva Pantsir-luftforsvarssystemer op med tung helikopter på tagene af beboelseshøjhuse. Et tydeligt tegn på, hvor tæt krigen er kommet på — og et træk, der lige så meget handler om optik som om afskæring.",p1_h:"Missiler over lejlighederne",p1_p:"Rusland placerer Pantsir-systemer på tagene af etagebyggeri i Moskva, hejst på plads af Mi-26-helikoptere. Optagelser fra Tjertanovo Severnoje-bydelen viser praksissen, der meldes næsten dagligt.",p2_h:"Krigen når hovedstaden",p2_p:"Nylige ukrainske droneangreb på Moskva — herunder regionens største raffinaderi og satellitkommunikationscentret i Dubna — har alarmeret myndighederne. Zelenskyj har offentligt nævnt tagudstationeringerne.",p3_h:"Et skjold og en fortælling",p3_p:"Målet ser tvedelt ud: forsvar byen, og kunne hævde, at ethvert angreb nær affyrerne rammer »beboelsesområder«. Men olietank-eksplosionen 18. juni blev senere tilskrevet russisk luftforsvarsild.",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Strategiska Frågor",a_cat:"Strategiska Frågor",a_tag:"🛡️ Luftvärn",a_date:"26 juni 2026",a_read:"3 min läsning",a_title:"Moskva tar höjd: Ryssland bultar fast <em>Pantsir-lavetter på bostadstak</em> mot Ukrainas drönare",a_stand:"När ukrainska drönare når allt djupare in i den ryska huvudstaden lyfter Moskva upp Pantsir-luftvärnssystem med tung helikopter på taken till bostadshöghus. Ett tydligt tecken på hur nära kriget har kommit — och ett drag som handlar lika mycket om optik som om bekämpning.",p1_h:"Robotar ovanför lägenheterna",p1_p:"Ryssland placerar Pantsir-system på taken till flervåningshus i Moskva, upplyfta av Mi-26-helikoptrar. Videor från stadsdelen Tjertanovo Severnoje visar bruket, som rapporteras nästan dagligen.",p2_h:"Kriget når huvudstaden",p2_p:"Nyliga ukrainska drönarattacker mot Moskva — inklusive regionens största raffinaderi och satellitkommunikationscentret i Dubna — har larmat myndigheterna. Zelenskyj har offentligt pekat på takutplaceringarna.",p3_h:"En sköld och en berättelse",p3_p:"Syftet ser tvådelat ut: försvara staden, och kunna hävda att varje träff nära lavetterna drabbar ”bostadsområden”. Men oljetanksexplosionen 18 juni tillskrevs senare troligen rysk luftvärnseld.",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s&&translations[s]){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
