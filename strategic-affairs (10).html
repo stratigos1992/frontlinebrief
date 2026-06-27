@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategic Affairs — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.hero{padding:52px 48px 44px;max-width:1100px;margin:0 auto;}
+.ticker{background:rgba(232,160,32,.1);border-left:3px solid var(--amber);padding:8px 16px;margin-bottom:30px;display:flex;align-items:center;gap:12px;border-radius:0 4px 4px 0;}
+.tlabel{font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);white-space:nowrap;}
+.ttext{font-size:12px;color:var(--muted);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.eyebrow{font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.eyebrow::before{content:'';display:block;width:22px;height:1px;background:var(--amber);}
+.hero h1{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;line-height:1.13;max-width:540px;margin-bottom:18px;}
+.hero h1 em{font-style:italic;color:var(--amber);}
+.hero p{font-size:15px;font-weight:300;color:var(--muted);max-width:480px;line-height:1.8;margin-bottom:32px;}
+.cta{display:flex;gap:12px;flex-wrap:wrap;}
+.btnp{font-family:'Inter',sans-serif;font-size:12px;font-weight:500;letter-spacing:.06em;padding:11px 26px;background:var(--amber);color:var(--navy);border:none;border-radius:4px;cursor:pointer;text-transform:uppercase;transition:opacity .2s;text-decoration:none;}
+.btnp:hover{opacity:.88;}
+.btns{font-family:'Inter',sans-serif;font-size:12px;font-weight:400;letter-spacing:.06em;padding:11px 26px;background:transparent;color:var(--cold);border:.5px solid var(--border);border-radius:4px;cursor:pointer;text-transform:uppercase;transition:border-color .2s;}
+.btns:hover{border-color:var(--cold);}
+.divider{height:.5px;background:var(--border);margin:0 48px;}
+.topics{padding:44px 48px;max-width:1100px;margin:0 auto;}
+.slabel{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:28px;}
+.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.tcard{background:var(--navy);padding:22px 18px;cursor:pointer;transition:background .2s;text-decoration:none;color:inherit;display:block;}
+.tcard:hover{background:var(--steel);}
+.tcard.hl{background:rgba(232,160,32,.05);border-left:2px solid var(--amber);}
+.tcard.hl:hover{background:rgba(232,160,32,.1);}
+.tico{font-size:20px;color:var(--amber);margin-bottom:12px;display:block;}
+.ttitle{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--cold);margin-bottom:8px;}
+.tdesc{font-size:11px;color:var(--muted);line-height:1.7;}
+.nbadge{display:inline-block;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:2px 8px;border-radius:10px;background:rgba(29,158,117,.15);color:#1D9E75;border:.5px solid rgba(29,158,117,.3);margin-bottom:10px;}
+
+/* LATEST ARTICLES */
+.articles{padding:44px 48px;max-width:1100px;margin:0 auto;}
+.articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;}
+.acard{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-radius:8px;padding:22px;text-decoration:none;display:block;transition:border-color .2s,background .2s;}
+.acard:hover{border-color:var(--amber);background:rgba(30,58,95,.4);}
+.acat{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:10px;}
+.atitle{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;color:var(--cold);line-height:1.4;margin-bottom:10px;}
+.adesc{font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px;}
+.ameta{font-size:11px;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:6px;}
+.ameta i{font-size:12px;}
+.acard-featured{grid-column:span 2;}
+
+.mapsec{padding:40px 48px;max-width:1100px;margin:0 auto;}
+.maptitle{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+.maptitle::after{content:'';flex:1;height:.5px;background:var(--border);}
+.mapcount{font-size:11px;color:var(--muted);}
+#mapsvg{width:100%;display:block;border-radius:8px;background:#071420;}
+.country{fill:#162B42;stroke:#0A1520;stroke-width:.5;}
+.cline{stroke:#E8A020;stroke-width:.7;stroke-dasharray:5,4;opacity:.4;}
+.pulse-ring{fill:none;stroke:#E8A020;stroke-width:1.4;opacity:0;animation:mpulse 2.8s ease-out infinite;}
+.p1{animation-delay:0s}.p2{animation-delay:.56s}.p3{animation-delay:1.12s}.p4{animation-delay:1.68s}.p5{animation-delay:2.24s}
+@keyframes mpulse{0%{opacity:.8;r:4}70%{opacity:0;r:14}100%{opacity:0;r:4}}
+.info-strip{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;}
+.cpill{display:flex;align-items:center;gap:7px;border:.5px solid rgba(138,155,176,.22);border-radius:20px;padding:5px 13px;transition:border-color .2s;}
+.cpill:hover{border-color:var(--amber);}
+.cpdot{width:5px;height:5px;background:var(--amber);border-radius:50%;}
+.cpname{font-size:11px;font-weight:500;color:var(--cold);}
+.cpcode{font-size:10px;color:var(--muted);}
+.social{padding:44px 48px;background:rgba(30,58,95,.2);}
+.social-inner{max-width:1100px;margin:0 auto;}
+.sochdr{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:24px;}
+.soctitle{font-family:'Playfair Display',serif;font-size:24px;font-weight:600;}
+.socsub{font-size:12px;color:var(--muted);max-width:220px;text-align:right;line-height:1.6;}
+.socgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.socard{border:.5px solid var(--border);border-radius:8px;padding:16px 10px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;background:transparent;position:relative;text-decoration:none;display:block;}
+.socard:hover{border-color:var(--amber);background:rgba(232,160,32,.06);}
+.socard:hover .soplat{color:var(--amber);}
+.soico{font-size:22px;margin-bottom:9px;display:block;color:var(--cold);}
+.soplat{font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;transition:color .2s;}
+.sohand{font-size:10px;color:rgba(138,155,176,.55);}
+.sobadge{position:absolute;top:8px;right:8px;font-size:8px;letter-spacing:.08em;padding:2px 6px;border-radius:10px;text-transform:uppercase;}
+.blive{background:rgba(232,160,32,.15);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.bnew{background:rgba(29,158,117,.15);color:#1D9E75;border:.5px solid rgba(29,158,117,.3);}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){
+  nav{padding:14px 20px;}
+  .navlinks{display:none;}
+  .hero,.topics,.mapsec,.articles{padding-left:20px;padding-right:20px;}
+  .hero h1{font-size:34px;}
+  .tgrid{grid-template-columns:repeat(2,1fr);}
+  .articles-grid{grid-template-columns:1fr;}
+  .acard-featured{grid-column:span 1;}
+  .social{padding:40px 20px;}
+  .socgrid{grid-template-columns:repeat(2,1fr);}
+  footer{padding:20px;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+<section class="articles" style="padding-top:52px;">
+  <div class="eyebrow" data-i18n="dlabel" style="margin-bottom:14px;">Strategic Affairs</div>
+  <h1 data-i18n="dlabel" style="font-family:'Playfair Display',serif;font-size:40px;font-weight:700;margin-bottom:12px;">Strategic Affairs</h1>
+  <p style="font-size:15px;font-weight:300;color:var(--muted);max-width:560px;line-height:1.8;margin-bottom:8px;" data-i18n="dintro">Strategic doctrine, deterrence, great-power competition and the shape of conflict.</p>
+  <div class="articles-grid" style="margin-top:28px;">
+    <a href="airfield-denial-challenge-2026.html" class="acard acard-featured">
+      <div class="acat" data-i18n="art34_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art34_title">A €250,000 Bounty to Ground Russia's Jets: NATO and Ukraine Ask Startups to Shut the Airfields</div>
+      <div class="adesc" data-i18n="art34_desc">NATO's ACT and the NATO-Ukraine JATEC centre launch a €250,000 Airfield Denial Challenge — autonomous, EW-resilient, GPS-denied-capable systems (drones, loitering munitions, swarms) to persistently deny Russia its air bases. Deadline 20 July; pitch day 3 Sept in Poland.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art34_date">June 23, 2026</span> · Brussels · Kyiv</div>
+    </a>
+    <a href="china-df17-hypersonic-2026.html" class="acard">
+      <div class="acat" data-i18n="art33_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art33_title">China Shows Its Hand: the DF-17 'Carrier Killer' Goes Public as a Message to the West</div>
+      <div class="adesc" data-i18n="art33_desc">For the first time, China's CCTV shows the hypersonic DF-17 in action during PLA drills in the Gobi — a Mach 5+ DF-ZF glide weapon, ~2,500 km, that maneuvers to evade defences. Seen publicly only in 2019 and 2025, its debut right after the G7 reads as a signal to Washington.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art33_date">June 22, 2026</span> · Gobi · Beijing</div>
+    </a>
+    <a href="skyfall-burevestnik-nuclear-2026.html" class="acard">
+      <div class="acat" data-i18n="art23_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art23_title">Skyfall Leaves a Radioactive Trail: MIT Cracks How Russia's Nuclear Cruise Missile Works</div>
+      <div class="adesc" data-i18n="art23_desc">Direct-cycle nuclear turbojet · 4.3 MWth · >5 TBq radioactive exhaust per MW-hr · unlimited range. The first rigorous public analysis of Burevestnik.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art23_date">June 19, 2026</span> · Cambridge MA · Arctic</div>
+    </a>
+    <a href="lyman-falling-june-2026.html" class="acard">
+      <div class="acat" data-i18n="art22_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art22_title">Lyman Is Falling: Russia Controls All Districts, Last Supply Route Cut</div>
+      <div class="adesc" data-i18n="art22_desc">25th Army in all districts. FAB-3000 destroyed last bridge. Garrison in 3 pockets. Slaviansk next.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art22_date">June 20, 2026</span> · Krasny Liman · Donetsk</div>
+    </a>
+    <a href="trump-russia-biggest-mistake-2026.html" class="acard">
+      <div class="acat" data-i18n="art21_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art21_title">Trump: Russia Made Its Biggest Mistake in 2022 — Could Have Taken Kyiv in Four Hours</div>
+      <div class="adesc" data-i18n="art21_desc">Trump says a general's mud detour cost Russia the war. Analysts call it fiction. What he said, what the record shows, and why now.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art21_date">June 20, 2026</span> · Washington · Kyiv</div>
+    </a>
+    <a href="baltops-2026-baltic-sea.html" class="acard">
+      <div class="acat" data-i18n="art20_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art20_title">BALTOPS 2026: Half the Size, Full Signal</div>
+      <div class="adesc" data-i18n="art20_desc">~20 vessels from 15 nations — half of 2025. Ships at Hormuz, Arctic, US reductions. Haisch: Russia below Article 5.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art20_date">June 2, 2026</span> · Rostock · Baltic Sea</div>
+    </a>
+    <a href="ukraine-moscow-refinery-2026.html" class="acard">
+      <div class="acat" data-i18n="art18_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art18_title">Ukraine Strikes Moscow's Refinery: Largest Drone Attack on the Russian Capital Since the War Began</div>
+      <div class="adesc" data-i18n="art18_desc">600+ drones, Gazprom Neft hit for the second time in a week — 14 km from the Kremlin. Lavrov threatens massive retaliation.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art18_date">June 18, 2026</span> · Moscow · Kyiv</div>
+    </a>
+    <a href="nato-3-0-force-reductions-2026.html" class="acard">
+      <div class="acat" data-i18n="art16_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art16_title">NATO 3.0: Washington Cuts Its Force Contributions — Europe Has Until Ankara to Fill the Gaps</div>
+      <div class="adesc" data-i18n="art16_desc">Fighter jets cut by a third, carrier strike groups halved, zero US submarines offered. Europe has until 7-8 July to commit replacement capabilities.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art16_date">June 18, 2026</span> · Brussels · Ankara</div>
+    </a>
+    <a href="fcas-collapse-team-gen6-2026.html" class="acard">
+      <div class="acat" data-i18n="art14_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art14_title">The End of FCAS: How Europe's Most Ambitious Fighter Programme Collapsed — and What Berlin Does Next</div>
+      <div class="adesc" data-i18n="art14_desc">Nine years, €3.2bn committed, zero aircraft built. Now Team Gen 6, GCAP or the F-35 are Germany's three paths — and Europe's air power future hangs on the choice.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art14_date">June 18, 2026</span> · Berlin · Brussels</div>
+    </a>
+    <a href="blockade-holds-friday-2026.html" class="acard">
+      <div class="acat" data-i18n="art10_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art10_title">Blockade Holds Until Friday: US Naval Siege of Iran to Lift Only Upon MoU Signing in Geneva</div>
+      <div class="adesc" data-i18n="art10_desc">Despite the ceasefire agreement, the US naval blockade of Iran will not lift until the MoU is signed in Geneva on Friday — as Hormuz de-mining continues and Iran plans transit fees post-deal.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art10_date">June 15, 2026</span> · Geneva · Hormuz</div>
+    </a>
+    <a href="iran-naval-blockade-ceasefire-2026.html" class="acard">
+      <div class="acat" data-i18n="art9_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art9_title">Two Carriers, One Blockade, One Ceasefire Window: America's Naval Posture as Geneva Looms</div>
+      <div class="adesc" data-i18n="art9_desc">The US naval blockade of Iran remains in full effect as of 15 June — two carrier strike groups and 20+ warships holding position pending the ceasefire signing in Geneva on Friday.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art9_date">June 15, 2026</span> · Arabian Sea · Geneva</div>
+    </a>
+    <a href="ukraine-azot-yaroslavl-2026.html" class="acard">
+      <div class="acat" data-i18n="art4_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art4_title">Draining Russia's Industrial Base: Ukraine Hits Explosives Plant and Fuel Depots</div>
+      <div class="adesc" data-i18n="art4_desc">Overnight drone barrage strikes the \"Azot\" chemical plant in Tula and oil storage in Yaroslavl — 700+ km deep. Zelensky confirms. Third major deep strike this week.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art4_date">June 14, 2026</span> · Tula · Yaroslavl</div>
+    </a>
+    <a href="iran_us_hormuz_2026.html" class="acard">
+      <div class="acat" data-i18n="art0_cat">Strategic Affairs</div>
+      <div class="atitle" data-i18n="art0_title">Iran-US Clashes Reach Worst Point Since April Truce, Then a Sudden Diplomatic Breakthrough</div>
+      <div class="adesc" data-i18n="art0_desc">The Strait of Hormuz was briefly declared closed after CENTCOM strikes and Iranian retaliation across three countries, before Washington and Tehran signalled a 14-point framework that could end the conflict within days.</div>
+      <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art0_date">June 11, 2026</span> · Tehran · Washington</div>
+    </a>
+  </div>
+</section>
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+<script>
+const translations = {
+  "en":{"lsub":"Geopolitical · Military · Economic","nav_strategic":"Strategic Affairs","nav_easternmed":"Eastern Mediterranean","nav_defence":"Defence Policy","nav_geoeconomics":"Geo-economics","foot_copy":"© 2026 · Independent analysis · Not affiliated with any government or institution","dlabel":"Strategic Affairs","dintro":"Strategic doctrine, deterrence, great-power competition and the shape of conflict.","art34_cat":"Strategic Affairs","art34_title":"A €250,000 Bounty to Ground Russia's Jets: NATO and Ukraine Ask Startups to Shut the Airfields","art34_desc":"NATO's ACT and the NATO-Ukraine JATEC centre launch a €250,000 Airfield Denial Challenge — autonomous, EW-resilient, GPS-denied-capable systems (drones, loitering munitions, swarms) to persistently deny Russia its air bases. Deadline 20 July; pitch day 3 Sept in Poland.","art34_date":"June 23, 2026","art33_cat":"Strategic Affairs","art33_title":"China Shows Its Hand: the DF-17 'Carrier Killer' Goes Public as a Message to the West","art33_desc":"For the first time, China's CCTV shows the hypersonic DF-17 in action during PLA drills in the Gobi — a Mach 5+ DF-ZF glide weapon, ~2,500 km, that maneuvers to evade defences. Seen publicly only in 2019 and 2025, its debut right after the G7 reads as a signal to Washington.","art33_date":"June 22, 2026","art23_cat":"Strategic Affairs","art23_title":"Skyfall Leaves a Radioactive Trail: MIT Cracks How Russia's Nuclear Cruise Missile Works","art23_desc":"Direct-cycle nuclear turbojet · 4.3 MWth · >5 TBq radioactive exhaust per MW-hr · unlimited range. The first rigorous public analysis of Burevestnik.","art23_date":"June 19, 2026","art22_cat":"Strategic Affairs","art22_title":"Lyman Is Falling: Russia Controls All Districts, Last Supply Route Cut","art22_desc":"25th Army in all districts. FAB-3000 destroyed last bridge. Garrison in 3 pockets. Slaviansk next.","art22_date":"June 20, 2026","art21_cat":"Strategic Affairs","art21_title":"Trump: Russia Made Its Biggest Mistake in 2022 — Could Have Taken Kyiv in Four Hours","art21_desc":"Trump says a general's mud detour cost Russia the war. Analysts call it fiction. What he said, what the record shows, and why now.","art21_date":"June 20, 2026","art20_cat":"Strategic Affairs","art20_title":"BALTOPS 2026: Half the Size, Full Signal","art20_desc":"~20 vessels from 15 nations — half of 2025. Ships at Hormuz, Arctic, US reductions. Haisch: Russia below Article 5.","art20_date":"June 2, 2026","art18_cat":"Strategic Affairs","art18_title":"Ukraine Strikes Moscow's Refinery: Largest Drone Attack on the Russian Capital Since the War Began","art18_desc":"600+ drones, Gazprom Neft hit for the second time in a week — 14 km from the Kremlin. Lavrov threatens massive retaliation.","art18_date":"June 18, 2026","art16_cat":"Strategic Affairs","art16_title":"NATO 3.0: Washington Cuts Its Force Contributions — Europe Has Until Ankara to Fill the Gaps","art16_desc":"Fighter jets cut by a third, carrier strike groups halved, zero US submarines offered. Europe has until 7-8 July to commit replacement capabilities.","art16_date":"June 18, 2026","art14_cat":"Strategic Affairs","art14_title":"The End of FCAS: How Europe's Most Ambitious Fighter Programme Collapsed — and What Berlin Does Next","art14_desc":"Nine years, €3.2bn committed, zero aircraft built. Now Team Gen 6, GCAP or the F-35 are Germany's three paths — and Europe's air power future hangs on the choice.","art14_date":"June 18, 2026","art10_cat":"Strategic Affairs","art10_title":"Blockade Holds Until Friday: US Naval Siege of Iran to Lift Only Upon MoU Signing in Geneva","art10_desc":"Despite the ceasefire agreement, the US naval blockade of Iran will not lift until the MoU is signed in Geneva on Friday — as Hormuz de-mining continues and Iran plans transit fees post-deal.","art10_date":"June 15, 2026","art9_cat":"Strategic Affairs","art9_title":"Two Carriers, One Blockade, One Ceasefire Window: America's Naval Posture as Geneva Looms","art9_desc":"The US naval blockade of Iran remains in full effect as of 15 June — two carrier strike groups and 20+ warships holding position pending the ceasefire signing in Geneva on Friday.","art9_date":"June 15, 2026","art4_cat":"Strategic Affairs","art4_title":"Draining Russia's Industrial Base: Ukraine Hits Explosives Plant and Fuel Depots","art4_desc":"Overnight drone barrage strikes the \"Azot\" chemical plant in Tula and oil storage in Yaroslavl — 700+ km deep. Zelensky confirms. Third major deep strike this week.","art4_date":"June 14, 2026","art0_cat":"Strategic Affairs","art0_title":"Iran-US Clashes Reach Worst Point Since April Truce, Then a Sudden Diplomatic Breakthrough","art0_desc":"The Strait of Hormuz was briefly declared closed after CENTCOM strikes and Iranian retaliation across three countries, before Washington and Tehran signalled a 14-point framework that could end the conflict within days.","art0_date":"June 11, 2026"},
+  "el":{"lsub":"Γεωπολιτική · Στρατιωτική · Οικονομία","nav_strategic":"Στρατηγικές Υποθέσεις","nav_easternmed":"Ανατολική Μεσόγειος","nav_defence":"Αμυντική Πολιτική","nav_geoeconomics":"Γεωοικονομία","foot_copy":"© 2026 · Ανεξάρτητη ανάλυση","dlabel":"Στρατηγικές Υποθέσεις","dintro":"Στρατηγικό δόγμα, αποτροπή, ανταγωνισμός μεγάλων δυνάμεων και η φύση της σύγκρουσης.","art34_cat":"Στρατηγικές Υποθέσεις","art34_title":"Έπαθλο 250.000€ για να Καθηλωθούν τα Ρωσικά Μαχητικά: ΝΑΤΟ και Ουκρανία Ζητούν από Startups να Κλείσουν τα Αεροδρόμια","art34_desc":"Η ACT του ΝΑΤΟ και το κέντρο JATEC ΝΑΤΟ-Ουκρανίας προκηρύσσουν διαγωνισμό 250.000€ — αυτόνομα, ανθεκτικά στον EW συστήματα (drones, πυρομαχικά περιφοράς, σμήνη) για μόνιμο αποκλεισμό των ρωσικών αεροβάσεων. Προθεσμία 20 Ιουλίου· παρουσίαση 3 Σεπτ. στην Πολωνία.","art34_date":"23 Ιουνίου 2026","art33_cat":"Στρατηγικές Υποθέσεις","art33_title":"Η Κίνα Δείχνει τα Χαρτιά της: ο DF-17, ο «Φονιάς Αεροπλανοφόρων», Βγαίνει στο Φως ως Μήνυμα στη Δύση","art33_desc":"Για πρώτη φορά, η κινεζική CCTV δείχνει τον υπερηχητικό DF-17 εν δράσει σε ασκήσεις του PLA στην Γκόμπι — όπλο ολίσθησης DF-ZF άνω των 5 Mach, ~2.500 χλμ., που ελίσσεται για να αποφεύγει την άμυνα. Το ντεμπούτο μετά την G7 διαβάζεται ως μήνυμα στην Ουάσιγκτον.","art33_date":"22 Ιουνίου 2026","art23_cat":"Στρατηγικές Υποθέσεις","art23_title":"Το Skyfall Αφήνει Ραδιενεργό Ίχνος: ΜΙΤ Αποκρυπτογραφεί τον Πυρηνικό Κρουαζιερόπυραυλο της Ρωσίας","art23_desc":"Πυρηνικό τουρμποτζέτ άμεσου κύκλου · 4,3 MWth · >5 TBq ραδιενεργά ανά MW-ώρα · απεριόριστη εμβέλεια. Η πρώτη αυστηρή δημόσια ανάλυση του Burevestnik.","art23_date":"19 Ιουνίου 2026","art22_cat":"Στρατηγικές Υποθέσεις","art22_title":"Η Λίμαν Πέφτει: Ρώσοι σε Όλες τις Συνοικίες, Τελευταία Εφοδιαστική Γραμμή Κόπηκε","art22_desc":"25η Στρατιά σε όλες τις συνοικίες. FAB-3000 κατέστρεψε τελευταία γέφυρα. Φρουρά σε 3 θύλακες. Σλαβιάνσκ επόμενος.","art22_date":"20 Ιουνίου 2026","art21_cat":"Στρατηγικές Υποθέσεις","art21_title":"Τραμπ: Η Ρωσία Έκανε το Μέγιστο Λάθος της το 2022 — Μπορούσε να Πάρει το Κίεβο σε 4 Ώρες","art21_desc":"Ένας στρατηγός στη λάσπη στοίχισε στη Ρωσία τον πόλεμο — λέει ο Τραμπ. Αναλυτές: μύθος. Τι είπε, τι δείχνει η ιστορία, και γιατί το λέει τώρα.","art21_date":"20 Ιουνίου 2026","art20_cat":"Στρατηγικές Υποθέσεις","art20_title":"BALTOPS 2026: Μισά Πλοία, Πλήρες Μήνυμα","art20_desc":"~20 πλοία, 15 χώρες — μισά από το 2025. Πλοία στο Hormuz, Αρκτική, μειώσεις ΗΠΑ. Haisch: Ρωσία κάτω Άρθρου 5.","art20_date":"2 Ιουνίου 2026","art18_cat":"Στρατηγικές Υποθέσεις","art18_title":"Η Ουκρανία Χτυπά το Διυλιστήριο της Μόσχας: Η Μεγαλύτερη Επίθεση Drones από την Έναρξη του Πολέμου","art18_desc":"600+ drones, Gazprom Neft χτυπήθηκε για δεύτερη φορά σε μία εβδομάδα — 14 χλμ. από το Κρεμλίνο. Λαβρόφ: μαζικά αντίποινα.","art18_date":"18 Ιουνίου 2026","art16_cat":"Στρατηγικές Υποθέσεις","art16_title":"NATO 3.0: Η Ουάσιγκτον Περικόπτει τη Συνεισφορά της — Η Ευρώπη Έχει ως την Άγκυρα","art16_desc":"Μαχητικά κατά ένα τρίτο, ομάδες αεροπλανοφόρων στο μισό, μηδέν υποβρύχια. Η Ευρώπη έχει ως τις 7-8 Ιουλίου.","art16_date":"18 Ιουνίου 2026","art14_cat":"Στρατηγικές Υποθέσεις","art14_title":"Το Τέλος του FCAS: Πώς κατέρρευσε το φιλόδοξο ευρωπαϊκό πρόγραμμα μαχητικού — και τι κάνει τώρα το Βερολίνο","art14_desc":"Εννέα χρόνια, 3,2 δισ. €, μηδέν αεροσκάφη. Τώρα Team Gen 6, GCAP ή F-35 — και το μέλλον της ευρωπαϊκής αεροπορικής ισχύος κρέμεται από την επιλογή.","art14_date":"18 Ιουνίου 2026","art10_cat":"Στρατηγικές Υποθέσεις","art10_title":"Ο Αποκλεισμός Κρατά ως την Παρασκευή: Ο Αμερικανικός Ναυτικός Αποκλεισμός Αίρεται Μόνο με Υπογραφή MoU στη Γενεύη","art10_desc":"Παρά τη συμφωνία κατακωχής, ο αμερικανικός ναυτικός αποκλεισμός δεν αίρεται μέχρι την υπογραφή του MoU στη Γενεύη την Παρασκευή — ενώ η αποναρκοθέτηση Hormuz συνεχίζεται.","art10_date":"15 Ιουνίου 2026","art9_cat":"Στρατηγικές Υποθέσεις","art9_title":"Δύο Φορείς, Ένας Αποκλεισμός, Ένα Παράθυρο Κατακωχής: Η Ναυτική Θέση της Αμερικής Καθώς Πλησιάζει η Γενεύη","art9_desc":"Ο αμερικανικός ναυτικός αποκλεισμός του Ιράν παραμένει σε πλήρη ισχύ στις 15 Ιουνίου — δύο ομάδες κρούσης και 20+ πολεμικά κρατούν θέσεις ενόψει υπογραφής κατακωχής στη Γενεύη.","art9_date":"15 Ιουνίου 2026","art4_cat":"Στρατηγικές Υποθέσεις","art4_title":"Αδειάζοντας τη βιομηχανική βάση της Ρωσίας: η Ουκρανία χτυπά εργοστάσιο εκρηκτικών και αποθήκες καυσίμων","art4_desc":"Νυχτερινό μπαράζ drones πλήττει το χημικό εργοστάσιο «Azot» στην Τούλα και πετρελαϊκές αποθήκες στο Γιάροσλαβλ — 700+ χλμ. Ο Ζελένσκι επιβεβαιώνει. Τρίτο μεγάλο χτύπημα αυτή την εβδομάδα.","art4_date":"14 Ιουνίου 2026","art0_cat":"Στρατηγικές Υποθέσεις","art0_title":"Η κλιμάκωση Ιράν-ΗΠΑ φτάνει στο χειρότερο σημείο από την εκεχειρία του Απριλίου, και ξαφνικά μια διπλωματική ανατροπή","art0_desc":"Το Στενό του Ορμούζ κηρύχθηκε σύντομα κλειστό μετά από πλήγματα της CENTCOM και ιρανικά αντίποινα σε τρεις χώρες, πριν Ουάσιγκτον και Τεχεράνη δώσουν το σήμα για ένα πλαίσιο 14 σημείων.","art0_date":"11 Ιουνίου 2026"},
+  "fr":{"lsub":"Géopolitique · Militaire · Économique","nav_strategic":"Affaires Stratégiques","nav_easternmed":"Méditerranée Orientale","nav_defence":"Politique de Défense","nav_geoeconomics":"Géo-économie","foot_copy":"© 2026 · Analyse indépendante","dlabel":"Affaires Stratégiques","dintro":"Doctrine stratégique, dissuasion, compétition entre grandes puissances et formes du conflit.","art34_cat":"Affaires Stratégiques","art34_title":"Une Prime de 250 000 € pour Clouer au Sol les Avions Russes : l'OTAN et l'Ukraine Demandent aux Start-up de Fermer les Aérodromes","art34_desc":"L'ACT de l'OTAN et le centre JATEC OTAN-Ukraine lancent un défi de 250 000 € — des systèmes autonomes, résilients au brouillage et sans GPS (drones, munitions rôdeuses, essaims) pour priver durablement la Russie de ses bases aériennes. Clôture le 20 juillet ; présentation le 3 septembre en Pologne.","art34_date":"23 juin 2026","art33_cat":"Affaires Stratégiques","art33_title":"La Chine Abat ses Cartes : le DF-17, « Tueur de Porte-avions », Sort au Grand Jour comme un Message à l'Occident","art33_desc":"Pour la première fois, la CCTV chinoise montre le DF-17 hypersonique en action lors d'exercices de l'APL dans le Gobi — un planeur DF-ZF à Mach 5+, ~2 500 km, qui manœuvre pour éviter les défenses. Vu en public seulement en 2019 et 2025, ses débuts juste après le G7 sonnent comme un signal à Washington.","art33_date":"22 juin 2026","art23_cat":"Affaires Stratégiques","art23_title":"Skyfall Laisse une Traînée Radioactive : Le MIT Décrypte le Missile de Croisière Nucléaire Russe","art23_desc":"Turboréacteur à cycle direct · 4,3 MWth · >5 TBq de gaz radioactifs par MW-heure · portée illimitée. La première analyse publique rigoureuse du Burevestnik.","art23_date":"19 juin 2026","art22_cat":"Affaires Stratégiques","art22_title":"Lyman Tombe : La Russie Contrôle Tous les Districts, Dernière Voie d'Approvisionnement Coupée","art22_desc":"25e armée dans tous les districts. FAB-3000 a détruit le dernier pont. Garnison en 3 poches. Slaviansk après.","art22_date":"20 juin 2026","art21_cat":"Affaires Stratégiques","art21_title":"Trump : La Russie a Fait sa Plus Grande Erreur en 2022 — Aurait pu Prendre Kyiv en Quatre Heures","art21_desc":"Un général dans la boue a coûté la guerre à la Russie, dit Trump. Les analystes parlent de fiction. Ce qu'il a dit, ce que l'histoire montre, et pourquoi maintenant.","art21_date":"20 juin 2026","art20_cat":"Affaires Stratégiques","art20_title":"BALTOPS 2026 : Moitié des Navires, Signal Complet","art20_desc":"~20 bâtiments de 15 nations — la moitié de 2025. Navires à Ormuz, Arctique, réductions US. Haisch : Russie sous Article 5.","art20_date":"2 juin 2026","art18_cat":"Affaires Stratégiques","art18_title":"L'Ukraine Frappe la Raffinerie de Moscou : Plus Grande Attaque de Drones sur la Capitale Russe Depuis le Début de la Guerre","art18_desc":"600+ drones, Gazprom Neft touchée pour la deuxième fois en une semaine — 14 km du Kremlin. Lavrov menace de représailles massives.","art18_date":"18 juin 2026","art16_cat":"Affaires Stratégiques","art16_title":"NATO 3.0 : Washington Réduit sa Contribution — l'Europe a Jusqu'à Ankara","art16_desc":"Chasseurs réduits d'un tiers, groupes aéronavals divisés par deux, zéro sous-marin. L'Europe a jusqu'au 7-8 juillet.","art16_date":"18 juin 2026","art14_cat":"Affaires Stratégiques","art14_title":"La Fin du SCAF : Comment le Programme de Chasseur Européen le Plus Ambitieux a Sombré","art14_desc":"Neuf ans, 3,2 milliards d'euros engagés, zéro avion produit. Désormais Team Gen 6, GCAP ou F-35 — et l'avenir de la puissance aérienne européenne dépend du choix.","art14_date":"18 juin 2026","art10_cat":"Affaires Stratégiques","art10_title":"Le Blocus Tient Jusqu'à Vendredi : Le Siège Naval Américain de l'Iran Ne Se Lèvera qu'à la Signature du MoU à Genève","art10_desc":"Malgré l'accord de cessez-le-feu, le blocus naval américain de l'Iran ne sera pas levé avant la signature du MoU à Genève vendredi — alors que le déminage d'Ormuz se poursuit.","art10_date":"15 juin 2026","art9_cat":"Affaires Stratégiques","art9_title":"Deux Porte-Avions, Un Blocus, Une Fenêtre de Cessez-le-Feu : La Posture Navale Américaine à l'Approche de Genève","art9_desc":"Le blocus naval américain de l'Iran reste pleinement en vigueur au 15 juin — deux groupes aéronavals et 20+ bâtiments en attente de la signature du cessez-le-feu à Genève vendredi.","art9_date":"15 juin 2026","art4_cat":"Affaires Stratégiques","art4_title":"Vider la base industrielle russe : l'Ukraine frappe une usine d'explosifs et des dépôts de carburant","art4_desc":"Barrage de drones nocturne sur l'usine chimique «Azot» à Toula et des dépôts pétroliers à Iaroslavl — 700+ km de profondeur. Zelensky confirme. Troisième frappe cette semaine.","art4_date":"14 juin 2026","art0_cat":"Affaires Stratégiques","art0_title":"Les affrontements Iran-États-Unis atteignent leur paroxysme depuis la trêve d'avril, avant un revirement diplomatique soudain","art0_desc":"Le détroit d'Ormuz a été brièvement déclaré fermé après des frappes du CENTCOM et des représailles iraniennes dans trois pays, avant que Washington et Téhéran ne signalent un cadre en 14 points.","art0_date":"11 juin 2026"},
+  "da":{"lsub":"Geopolitisk · Militær · Økonomisk","nav_strategic":"Strategiske Forhold","nav_easternmed":"Østlige Middelhav","nav_defence":"Forsvarspolitik","nav_geoeconomics":"Geoøkonomi","foot_copy":"© 2026 · Uafhængig analyse","dlabel":"Strategiske Forhold","dintro":"Strategisk doktrin, afskrækkelse, stormagtsrivalisering og konfliktens form.","art34_cat":"Strategiske Forhold","art34_title":"En Dusør på 250.000 € for at Sætte Russiske Fly på Jorden: NATO og Ukraine Beder Startups om at Lukke Flyvepladserne","art34_desc":"NATO's ACT og NATO-Ukraine-centret JATEC åbner en konkurrence på 250.000 € — autonome, EW-resiliente, GPS-uafhængige systemer (droner, loitermunitioner, sværme) til vedvarende at nægte Rusland brugen af sine flyvebaser. Frist 20. juli; pitch-dag 3. september i Polen.","art34_date":"23. juni 2026","art33_cat":"Strategiske Forhold","art33_title":"Kina Viser Kortene: DF-17, »Hangarskibsdræberen«, Træder Frem som et Budskab til Vesten","art33_desc":"For første gang viser kinesisk CCTV den hypersoniske DF-17 i aktion under PLA-øvelser i Gobi — et DF-ZF-glidevåben på Mach 5+, ~2.500 km, der manøvrerer for at undgå forsvar. Kun set offentligt i 2019 og 2025; debuten lige efter G7 læses som et signal til Washington.","art33_date":"22. juni 2026","art23_cat":"Strategiske Anliggender","art23_title":"Skyfall Efterlader et Radioaktivt Spor: MIT Knækker Koden til Ruslands Nukleare Krydsermissil","art23_desc":"Nuklear direktcyklusturbojet · 4,3 MWth · >5 TBq radioaktivt udslip pr. MW-time · ubegrænset rækkevidde.","art23_date":"19. juni 2026","art22_cat":"Strategiske Anliggender","art22_title":"Lyman Falder: Rusland Kontrollerer Alle Bydele, Sidste Forsyningsrute Afskåret","art22_desc":"25. armé i alle bydele. FAB-3000 ødelagde sidste bro. Garnison i 3 lommer. Slavjansk næste.","art22_date":"20. juni 2026","art21_cat":"Strategiske Anliggender","art21_title":"Trump: Rusland Begik Sin Største Fejl i 2022 — Kunne Have Taget Kyiv på Fire Timer","art21_desc":"En general i mudderet kostede Rusland krigen, siger Trump. Analytikere kalder det fiktion.","art21_date":"20. juni 2026","art20_cat":"Strategiske Anliggender","art20_title":"BALTOPS 2026: Halvt Så Mange Skibe, Fuld Signalværdi","art20_desc":"~20 fartøjer fra 15 nationer — halvdelen af 2025. Skibe ved Hormuz, Arktis, US-reduktioner. Haisch: Rusland under Artikel 5.","art20_date":"2. juni 2026","art18_cat":"Strategiske Anliggender","art18_title":"Ukraine Rammer Moskvas Raffinaderi: Største Droneangreb på Den Russiske Hovedstad Siden Krigens Start","art18_desc":"600+ droner, Gazprom Neft ramt anden gang på en uge — 14 km fra Kreml. Lavrov truer med massive gengældelser.","art18_date":"18. juni 2026","art16_cat":"Strategiske Anliggender","art16_title":"NATO 3.0: Washington Skærer i Sine Bidrag — Europa Har Til Ankara","art16_desc":"Kampfly skåret en tredjedel, hangarskibsgrupper halveret, nul ubåde. Europa har til 7.-8. juli.","art16_date":"18. juni 2026","art14_cat":"Strategiske Anliggender","art14_title":"FCAS' Endeligt: Hvordan Europas Mest Ambitiøse Kampflyprojekt Kollapsede","art14_desc":"Ni år, 3,2 milliarder euro, nul fly. Nu er Team Gen 6, GCAP eller F-35 Berlins tre veje — og europæisk luftmagts fremtid afhænger af valget.","art14_date":"18. juni 2026","art10_cat":"Strategiske Anliggender","art10_title":"Blokaden Holder Til Fredag: Amerikansk Flådeblokade Af Iran Ophæves Kun Ved MoU-Underskrift i Genève","art10_desc":"Trods våbenstilstandsaftalen ophæves den amerikanske flådeblokade ikke før MoU'et underskrives i Genève fredag — mens minerydning af Hormuz fortsætter.","art10_date":"15. juni 2026","art9_cat":"Strategiske Anliggender","art9_title":"To Hangarskibe, Én Blokade, Ét Våbenstilstandsvindue: Amerikas Navale Holdning mens Genève Nærmer Sig","art9_desc":"Den amerikanske flådeblokade af Iran er stadig fuldt i kraft den 15. juni — to hangarskibsstrikegrupperne og 20+ krigsskibe afventer underskriften i Genève på fredag.","art9_date":"15. juni 2026","art4_cat":"Strategiske Anliggender","art4_title":"Tømmer Ruslands industrielle base: Ukraine rammer sprængstofffabrik og brændstofdepot","art4_desc":"Natligt droneangreb rammer kemifabrikken «Azot» i Tula og olielagre i Jaroslavl — 700+ km inde. Zelenskyj bekræfter. Tredje store dybdeangreb denne uge.","art4_date":"14. juni 2026","art0_cat":"Strategiske Anliggender","art0_title":"Iran-USA-sammenstød når det værste punkt siden aprilvåbenstilstanden, derefter et pludseligt diplomatisk gennembrud","art0_desc":"Hormuzstrædet blev kortvarigt erklæret lukket efter CENTCOM-angreb og iransk gengældelse i tre lande, før Washington og Teheran signalerede en 14-punkts ramme.","art0_date":"11. juni 2026"},
+  "sv":{"lsub":"Geopolitisk · Militär · Ekonomisk","nav_strategic":"Strategiska Frågor","nav_easternmed":"Östra Medelhavet","nav_defence":"Försvarspolitik","nav_geoeconomics":"Geoekonomi","foot_copy":"© 2026 · Oberoende analys","dlabel":"Strategiska Frågor","dintro":"Strategisk doktrin, avskräckning, stormaktsrivalitet och konfliktens former.","art34_cat":"Strategiska Frågor","art34_title":"En Dusör på 250 000 € för att Sätta Ryska Flygplan på Marken: Nato och Ukraina Ber Startups Stänga Flygbaserna","art34_desc":"Natos ACT och Nato-Ukraina-centret JATEC öppnar en tävling på 250 000 € — autonoma, störningståliga, GPS-oberoende system (drönare, kringströvande robotar, svärmar) för att varaktigt neka Ryssland användningen av sina flygbaser. Sista dag 20 juli; pitchdag 3 sept i Polen.","art34_date":"23 juni 2026","art33_cat":"Strategiska Frågor","art33_title":"Kina Visar Korten: DF-17, ”Hangarfartygsdödaren”, Kliver Fram som ett Budskab till Väst","art33_desc":"För första gången visar kinesiska CCTV den hypersoniska DF-17 i aktion under PLA-övningar i Gobi — ett DF-ZF-glidvapen på Mach 5+, ~2 500 km, som manövrerar för att undvika försvar. Setts offentligt bara 2019 och 2025; debuten precis efter G7 läses som en signal till Washington.","art33_date":"22 juni 2026","art23_cat":"Strategiska Frågor","art23_title":"Skyfall Lämnar ett Radioaktivt Spår: MIT Knäcker Koden för Rysslands Nukleära Kryssningsrobot","art23_desc":"Nukleär direktcykelturbofläkt · 4,3 MWth · >5 TBq radioaktiv avgaser per MW-timme · obegränsad räckvidd.","art23_date":"19 juni 2026","art22_cat":"Strategiska Frågor","art22_title":"Lyman Faller: Ryssland Kontrollerar Alla Stadsdelar, Sista Försörjningsled Avskuret","art22_desc":"25:e armén i alla stadsdelar. FAB-3000 förstörde sista bryggan. Garnison i 3 fickor. Slavjansk härnäst.","art22_date":"20 juni 2026","art21_cat":"Strategiska Frågor","art21_title":"Trump: Ryssland Begick Sitt Största Misstag 2022 — Kunde Ha Tagit Kyiv på Fyra Timmar","art21_desc":"En general i leran kostade Ryssland kriget, säger Trump. Analytiker kallar det fiktion.","art21_date":"20 juni 2026","art20_cat":"Strategiska Frågor","art20_title":"BALTOPS 2026: Hälften av Skeppen, Fullt Budskap","art20_desc":"~20 fartyg från 15 nationer — hälften av 2025. Fartyg vid Hormuz, Arktis, US-minskningar. Haisch: Ryssland under Artikel 5.","art20_date":"2 juni 2026","art18_cat":"Strategiska Frågor","art18_title":"Ukraina Slår mot Moskvas Raffinaderi: Största Drönareattacken mot den Ryska Huvudstaden Sedan Krigets Start","art18_desc":"600+ drönare, Gazprom Neft träffat andra gången på en vecka — 14 km från Kreml. Lavrov hotar med massiva vedergällningar.","art18_date":"18 juni 2026","art16_cat":"Strategiska Frågor","art16_title":"NATO 3.0: Washington Skär i Sina Bidrag — Europa Har Till Ankara","art16_desc":"Stridsflygplan skurna en tredjedel, hangarfartygsgrupper halverade, noll ubåtar. Europa har till 7-8 juli.","art16_date":"18 juni 2026","art14_cat":"Strategiska Frågor","art14_title":"FCAS Slut: Hur Europas Mest Ambitiösa Stridsflygprogram Kollapsade","art14_desc":"Nio år, 3,2 miljarder euro, noll flygplan. Nu är Team Gen 6, GCAP eller F-35 Berlins tre vägar — och europeisk luftmakts framtid hänger på valet.","art14_date":"18 juni 2026","art10_cat":"Strategiska Frågor","art10_title":"Blockaden Håller Till Fredag: Amerikansk Sjöblockad Av Iran Hävs Bara Vid MoU-Undertecknande i Genève","art10_desc":"Trots vapenstillståndsavtalet hävs den amerikanska sjöblockaden inte förrän MoU:t undertecknas i Genève på fredag — medan minröjning av Hormuz pågår.","art10_date":"15 juni 2026","art9_cat":"Strategiska Frågor","art9_title":"Två Hangarfartyg, En Blockad, Ett Vapenstilleståndsfönster: USA:s Marinpostur när Genève Närmar Sig","art9_desc":"Den amerikanska sjöblockaden av Iran är fortfarande fullt i kraft den 15 juni — två hangarfartygsstridsgrupper och 20+ örlogsfartyg inväntar undertecknandet i Genève på fredag.","art9_date":"15 juni 2026","art4_cat":"Strategiska Frågor","art4_title":"Tömmer Rysslands industriella bas: Ukraina anfaller sprängämnesfabrik och bränsledepåer","art4_desc":"Nattligt drönarregn mot kemifabriken «Azot» i Tula och oljelager i Jaroslavl — 700+ km djupt. Zelenskyj bekräftar. Tredje stora djupanfallet denna vecka.","art4_date":"14 juni 2026","art0_cat":"Strategiska Frågor","art0_title":"Iran-USA-sammandrabbningar når den värsta punkten sedan aprilvapenvilan, sedan ett plötsligt diplomatiskt genombrott","art0_desc":"Hormuzsundet förklarades kortvarigt stängt efter CENTCOM-attacker och iranska repressalier i tre länder, innan Washington och Teheran signalerade en 14-punktsram.","art0_date":"11 juni 2026"}
+};
+function setLang(lang, btn){document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const t=translations[lang];document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});document.documentElement.lang=lang;localStorage.setItem('preferred-lang',lang);}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
