@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ukraine's Fire Point Moves Into Ballistic-Missile Defence (Freyja) — Frontline Brief</title>
+<meta name="description" content="Fire Point, the maker behind most of Ukraine's deep strikes, is building Freyja — a sub-$1M ballistic-missile interceptor — with Hensoldt and other European firms.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--cold);line-height:1.1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="defence.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Defence Policy</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Defence Policy</span>
+    <span class="tag" data-i18n="a_tag">🛡️ Missile Defence</span>
+    <span class="sep">·</span><span data-i18n="a_date">25 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">3 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">From spear to shield: Ukraine's top strike-drone maker moves into <em>ballistic-missile defence</em></h1>
+  <p class="standfirst" data-i18n="a_stand">Fire Point, the firm behind most of the long-range drones now hitting Russian refineries, is building a low-cost ballistic-missile interceptor with European partners. If it can stop a missile for under a million dollars a shot, it would put Ukraine at both ends of the deep-strike war — and reset the economics of air defence.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/fire-point-freyja-en.jpg" alt="From spear to shield — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/fire-point-freyja-el.jpg" alt="From spear to shield — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/fire-point-freyja-fr.jpg" alt="From spear to shield — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/fire-point-freyja-da.jpg" alt="From spear to shield — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/fire-point-freyja-sv.jpg" alt="From spear to shield — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">The pivot · Fire Point's Freyja</div><h3 data-i18n="p1_h">Spear-maker turns shield-maker</h3><p data-i18n="p1_p">Fire Point — maker of the FP-1 and FP-2 deep-strike drones and the FP-5 Flamingo cruise missile, behind roughly 60% of Ukraine's strikes inside Russia — has signed a deal with Germany's Hensoldt to build a ballistic-missile defence system called Freyja, around its FP-7.X interceptor.</p></div><div class="stat"><b>Freyja</b><small>FP-7.X interceptor</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The economics · Under $1M a shot</div><h3 data-i18n="p2_h">A fraction of a Patriot</h3><p data-i18n="p2_p">The FP-7.X is designed to kill a ballistic missile at around 15 miles altitude for roughly $700,000 a shot, against about $3.8M for a Patriot PAC-3. Fire Point aims to mass-produce three a day from August and to intercept its first missile by the end of 2027.</p></div><div class="stat"><b>$700k</b><small>vs ~$3.8M</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The coalition · A European stack</div><h3 data-i18n="p3_h">Made with Europe</h3><p data-i18n="p3_p">Freyja would wrap the interceptor in a European sensor and command layer: Hensoldt radar, with talks reported with Thales on radar, Leonardo on tracking and Kongsberg on command and control. Ukraine casts itself as a provider of security, not just a recipient of aid.</p></div><div class="stat"><b>4 firms</b><small>EU stack</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <h2>From spear to shield</h2>
+    <p>The company that supplies much of Ukraine's offensive reach is now turning to its defence. <strong>Fire Point</strong>, whose drones fly a large share of the long-range strikes that set Russian refineries alight, has signed an agreement with the German radar maker <strong>Hensoldt</strong> to build a ballistic-missile defence system called <strong>Freyja</strong>, built around a new interceptor known as the FP-7.X. The move places one firm at both ends of the deep-strike war — forging the spear and, now, the shield.</p>
+    <h2>The maker of the long-range war</h2>
+    <p>Fire Point sits at the heart of Kyiv's campaign of what President Zelensky calls "long-range sanctions": drones and missiles sent hundreds of miles into Russia to burn the refineries, fuel depots and arms plants that sustain Moscow's war. Its FP-1 and FP-2 strike drones and FP-5 Flamingo cruise missile account, the company says, for around 60% of Ukraine's strikes inside Russia. By Kyiv's account the reach keeps growing — a June strike hit a refinery in the Tyumen region well over a thousand miles from the border, and modernised drones are said to range out to 3,000 kilometres.</p>
+    <h2>A cheaper way to stop a ballistic missile</h2>
+    <p>The economics are the heart of the pitch. The FP-7.X is designed to intercept a ballistic missile at roughly 15 miles altitude for about $700,000 a shot — against something like $3.8 million for a Patriot PAC-3, before counting that Patriot often expends two or three interceptors per target. Fire Point wants to mass-produce the round at three a day from August and to make its first interception by the end of 2027; it flight-tested the FP-7.X in early June in what one co-founder described as a fully controlled manoeuvring flight.</p>
+    <p class="pull">If a country that builds the spear can also build the shield for a fraction of a Patriot's price, the economics of air defence start to look very different.</p>
+    <h2>A European coalition</h2>
+    <p>Freyja is not meant to be a purely Ukrainian system. The plan is to wrap the interceptor in a stack of European sensors and command systems: radar from Hensoldt, with reported talks with Thales on radar, Leonardo on tracking and Kongsberg on command and control. Fire Point frames the project as evidence that Ukraine has crossed a threshold — from a consumer of Western aid to a supplier of security solutions for the wider continent, with interceptors, in one co-founder's words, soon in the skies of all of Europe.</p>
+    <h2>The shadow over the story</h2>
+    <p>The rise has drawn scrutiny as well as partners. Fire Point did not exist before Russia's 2022 invasion — it began as a film and television casting agency — and is now one of Ukraine's largest defence contractors, holding more than a billion dollars in state contracts this year. It has been named in connection with a sweeping energy-corruption case tied to a businessman close to the president, and is under investigation by Ukraine's national anti-corruption bureau. Fire Point denies that the businessman holds any stake, says it belongs only to its co-founders, and notes that no charges have been filed against it; it has also moved to court Western backing. The investigation runs alongside, rather than over, a programme that allies will judge above all on whether it can actually knock missiles down at the price advertised.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <h2>Από το δόρυ στην ασπίδα</h2>
+    <p>Η εταιρεία που τροφοδοτεί μεγάλο μέρος της επιθετικής εμβέλειας της Ουκρανίας στρέφεται τώρα στην άμυνά της. Η <strong>Fire Point</strong>, της οποίας τα drones εκτελούν μεγάλο μερίδιο των πληγμάτων μεγάλου βεληνεκούς που βάζουν φωτιά στα ρωσικά διυλιστήρια, υπέγραψε συμφωνία με τη γερμανική κατασκευάστρια ραντάρ <strong>Hensoldt</strong> για ένα σύστημα αντιβαλλιστικής άμυνας με την ονομασία <strong>Freyja</strong>, χτισμένο γύρω από έναν νέο αναχαιτιστή, τον FP-7.X. Η κίνηση τοποθετεί μία εταιρεία και στα δύο άκρα του πολέμου βαθιάς κρούσης — σφυρηλατώντας το δόρυ και, τώρα, την ασπίδα.</p>
+    <h2>Ο κατασκευαστής του πολέμου μεγάλου βεληνεκούς</h2>
+    <p>Η Fire Point βρίσκεται στην καρδιά της εκστρατείας που ο πρόεδρος Ζελένσκι αποκαλεί «κυρώσεις μεγάλου βεληνεκούς»: drones και πύραυλοι που στέλνονται εκατοντάδες χιλιόμετρα μέσα στη Ρωσία για να κάψουν τα διυλιστήρια, τις αποθήκες καυσίμων και τα εργοστάσια όπλων που συντηρούν τον πόλεμο της Μόσχας. Τα drones FP-1 και FP-2 και ο πύραυλος cruise FP-5 Flamingo ευθύνονται, κατά την εταιρεία, για περίπου το 60% των ουκρανικών πληγμάτων εντός Ρωσίας. Σύμφωνα με το Κίεβο, η εμβέλεια ολοένα μεγαλώνει — πλήγμα τον Ιούνιο χτύπησε διυλιστήριο στην περιοχή Τιουμέν, πολύ πάνω από χίλια μίλια από τα σύνορα, ενώ τα εκσυγχρονισμένα drones λέγεται ότι φτάνουν τα 3.000 χιλιόμετρα.</p>
+    <h2>Ένας φθηνότερος τρόπος να σταματάς έναν βαλλιστικό</h2>
+    <p>Τα οικονομικά είναι ο πυρήνας του επιχειρήματος. Ο FP-7.X σχεδιάζεται να αναχαιτίζει βαλλιστικό πύραυλο σε ύψος περίπου 24 χιλιομέτρων με κόστος γύρω στα 700.000 δολάρια ανά βολή — έναντι περίπου 3,8 εκατομμυρίων για ένα Patriot PAC-3, και πριν καν μετρήσει κανείς ότι το Patriot συχνά καταναλώνει δύο ή τρεις αναχαιτιστές ανά στόχο. Η Fire Point θέλει να παράγει μαζικά τρεις την ημέρα από τον Αύγουστο και να πετύχει την πρώτη αναχαίτιση έως το τέλος του 2027· δοκίμασε σε πτήση τον FP-7.X στις αρχές Ιουνίου, σε αυτό που μια συνιδρύτρια περιέγραψε ως πλήρως ελεγχόμενη ελιγμική πτήση.</p>
+    <p class="pull">Αν μια χώρα που φτιάχνει το δόρυ μπορεί να φτιάξει και την ασπίδα σε κλάσμα της τιμής ενός Patriot, τα οικονομικά της αεράμυνας αρχίζουν να φαίνονται πολύ διαφορετικά.</p>
+    <h2>Ένας ευρωπαϊκός συνασπισμός</h2>
+    <p>Το Freyja δεν προορίζεται να είναι καθαρά ουκρανικό σύστημα. Το σχέδιο είναι να «τυλιχτεί» ο αναχαιτιστής σε μια στοίβα ευρωπαϊκών αισθητήρων και συστημάτων διοίκησης: ραντάρ από τη Hensoldt, με αναφορές για συνομιλίες με τη Thales για ραντάρ, τη Leonardo για παρακολούθηση και την Kongsberg για διοίκηση και έλεγχο. Η Fire Point παρουσιάζει το έργο ως απόδειξη ότι η Ουκρανία πέρασε ένα κατώφλι — από καταναλωτής δυτικής βοήθειας σε προμηθευτή λύσεων ασφάλειας για την ευρύτερη ήπειρο, με αναχαιτιστές, όπως είπε συνιδρυτής, σύντομα στους ουρανούς όλης της Ευρώπης.</p>
+    <h2>Η σκιά πάνω από την ιστορία</h2>
+    <p>Η άνοδος προσέλκυσε εξονυχιστικό έλεγχο, όχι μόνο εταίρους. Η Fire Point δεν υπήρχε πριν από τη ρωσική εισβολή του 2022 — ξεκίνησε ως γραφείο κάστινγκ για κινηματογράφο και τηλεόραση — και είναι σήμερα ένας από τους μεγαλύτερους αμυντικούς αναδόχους της Ουκρανίας, με κρατικά συμβόλαια άνω του ενός δισεκατομμυρίου δολαρίων φέτος. Έχει αναφερθεί σε σχέση με μια ευρεία υπόθεση διαφθοράς στον ενεργειακό τομέα που συνδέεται με επιχειρηματία κοντινό στον πρόεδρο, και τελεί υπό έρευνα από το εθνικό γραφείο κατά της διαφθοράς της Ουκρανίας. Η Fire Point αρνείται ότι ο επιχειρηματίας κατέχει μερίδιο, λέει ότι ανήκει μόνο στους συνιδρυτές της και σημειώνει ότι δεν έχει απαγγελθεί καμία κατηγορία εναντίον της· έχει επίσης επιδιώξει δυτική στήριξη. Η έρευνα τρέχει παράλληλα — όχι πάνω από — ένα πρόγραμμα που οι σύμμαχοι θα κρίνουν κυρίως από το αν μπορεί όντως να ρίχνει πυραύλους στην τιμή που διαφημίζεται.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <h2>De la lance au bouclier</h2>
+    <p>L'entreprise qui fournit une grande part de l'allonge offensive ukrainienne se tourne désormais vers sa défense. <strong>Fire Point</strong>, dont les drones réalisent une large part des frappes longue portée qui embrasent les raffineries russes, a signé un accord avec le fabricant de radars allemand <strong>Hensoldt</strong> pour bâtir un système de défense antibalistique baptisé <strong>Freyja</strong>, articulé autour d'un nouvel intercepteur, le FP-7.X. La manœuvre place une même firme aux deux bouts de la guerre de frappe en profondeur — forgeant la lance et, désormais, le bouclier.</p>
+    <h2>Le fabricant de la guerre longue portée</h2>
+    <p>Fire Point est au cœur de la campagne de ce que le président Zelensky appelle les « sanctions longue portée » : drones et missiles expédiés à des centaines de kilomètres en Russie pour brûler les raffineries, dépôts de carburant et usines d'armement qui soutiennent la guerre de Moscou. Ses drones FP-1 et FP-2 et son missile de croisière FP-5 Flamingo représenteraient, selon l'entreprise, environ 60 % des frappes ukrainiennes en Russie. Selon Kyiv, l'allonge ne cesse de croître — une frappe de juin a touché une raffinerie dans la région de Tioumen, à bien plus de mille milles de la frontière, et les drones modernisés porteraient jusqu'à 3 000 kilomètres.</p>
+    <h2>Un moyen moins cher d'arrêter un missile balistique</h2>
+    <p>L'économie est le cœur de l'argument. Le FP-7.X est conçu pour intercepter un missile balistique à environ 24 kilomètres d'altitude pour quelque 700 000 dollars le tir — contre près de 3,8 millions pour un Patriot PAC-3, sans même compter que le Patriot consomme souvent deux ou trois intercepteurs par cible. Fire Point veut en produire en masse trois par jour dès août et réussir sa première interception d'ici fin 2027 ; l'entreprise a effectué un essai en vol du FP-7.X début juin, décrit par une cofondatrice comme un vol manœuvrant pleinement contrôlé.</p>
+    <p class="pull">Si un pays capable de forger la lance sait aussi forger le bouclier pour une fraction du prix d'un Patriot, l'économie de la défense aérienne change de visage.</p>
+    <h2>Une coalition européenne</h2>
+    <p>Freyja n'est pas censé être un système purement ukrainien. Le plan est d'envelopper l'intercepteur dans une pile de capteurs et de systèmes de commandement européens : radar de Hensoldt, avec des discussions rapportées avec Thales sur le radar, Leonardo sur le pistage et Kongsberg sur le commandement et le contrôle. Fire Point présente le projet comme la preuve que l'Ukraine a franchi un seuil — de consommatrice d'aide occidentale à fournisseuse de solutions de sécurité pour le continent, avec des intercepteurs, selon un cofondateur, bientôt dans le ciel de toute l'Europe.</p>
+    <h2>L'ombre au tableau</h2>
+    <p>Cette ascension a attiré les soupçons autant que les partenaires. Fire Point n'existait pas avant l'invasion russe de 2022 — elle débuta comme agence de casting pour le cinéma et la télévision — et figure aujourd'hui parmi les plus gros contractants de défense ukrainiens, avec plus d'un milliard de dollars de contrats publics cette année. Elle a été citée en lien avec une vaste affaire de corruption énergétique impliquant un homme d'affaires proche du président, et fait l'objet d'une enquête du bureau national anticorruption ukrainien. Fire Point nie que cet homme d'affaires détienne la moindre part, affirme n'appartenir qu'à ses cofondateurs et souligne qu'aucune charge n'a été retenue contre elle ; elle a aussi cherché des soutiens occidentaux. L'enquête se déroule en parallèle — et non au-dessus — d'un programme que les alliés jugeront surtout à sa capacité réelle à abattre des missiles au prix annoncé.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <h2>Fra spyd til skjold</h2>
+    <p>Virksomheden, der leverer en stor del af Ukraines offensive rækkevidde, vender sig nu mod forsvaret. <strong>Fire Point</strong>, hvis droner flyver en stor andel af de langtrækkende angreb, der sætter russiske raffinaderier i brand, har indgået en aftale med den tyske radarproducent <strong>Hensoldt</strong> om at bygge et ballistisk missilforsvar ved navn <strong>Freyja</strong> omkring en ny interceptor, FP-7.X. Trækket placerer ét firma i begge ender af dybdeangrebskrigen — det smeder spyddet og nu skjoldet.</p>
+    <h2>Producenten af den langtrækkende krig</h2>
+    <p>Fire Point er i hjertet af det, præsident Zelenskyj kalder «langtrækkende sanktioner»: droner og missiler sendt hundreder af kilometer ind i Rusland for at brænde de raffinaderier, brændstofdepoter og våbenfabrikker, der opretholder Moskvas krig. Dens FP-1- og FP-2-droner og FP-5 Flamingo-krydsermissil står ifølge firmaet for omkring 60% af Ukraines angreb i Rusland. Ifølge Kyiv vokser rækkevidden fortsat — et angreb i juni ramte et raffinaderi i Tjumen-regionen langt over tusind miles fra grænsen, og moderniserede droner siges at nå 3.000 kilometer.</p>
+    <h2>En billigere måde at stoppe et ballistisk missil</h2>
+    <p>Økonomien er kernen i salgstalen. FP-7.X er designet til at opfange et ballistisk missil i omkring 24 kilometers højde for cirka 700.000 dollars pr. skud — mod omkring 3,8 millioner for en Patriot PAC-3, før man tæller, at Patriot ofte bruger to-tre interceptorer pr. mål. Fire Point vil masseproducere tre om dagen fra august og opnå sin første opfangning inden udgangen af 2027; firmaet flyveafprøvede FP-7.X i begyndelsen af juni i, hvad en medstifter kaldte en fuldt kontrolleret manøvrerende flyvning.</p>
+    <p class="pull">Hvis et land, der bygger spyddet, også kan bygge skjoldet for en brøkdel af en Patriots pris, ser luftforsvarets økonomi pludselig meget anderledes ud.</p>
+    <h2>En europæisk koalition</h2>
+    <p>Freyja er ikke tænkt som et rent ukrainsk system. Planen er at pakke interceptoren ind i et lag af europæiske sensorer og kommandosystemer: radar fra Hensoldt, med rapporterede drøftelser med Thales om radar, Leonardo om sporing og Kongsberg om kommando og kontrol. Fire Point fremstiller projektet som bevis på, at Ukraine har krydset en tærskel — fra forbruger af vestlig hjælp til leverandør af sikkerhedsløsninger for kontinentet, med interceptorer, med en medstifters ord, snart på himlen over hele Europa.</p>
+    <h2>Skyggen over historien</h2>
+    <p>Fremgangen har tiltrukket både partnere og granskning. Fire Point eksisterede ikke før Ruslands invasion i 2022 — det begyndte som et casting-bureau for film og tv — og er i dag en af Ukraines største forsvarsleverandører med statskontrakter for over en milliard dollars i år. Det er blevet nævnt i forbindelse med en omfattende energikorruptionssag knyttet til en forretningsmand tæt på præsidenten og efterforskes af Ukraines nationale antikorruptionsbureau. Fire Point afviser, at forretningsmanden ejer nogen andel, siger, at det kun tilhører dets medstiftere, og bemærker, at der ikke er rejst tiltale mod det; det har også søgt vestlig opbakning. Efterforskningen kører ved siden af — ikke over — et program, som allierede frem for alt vil bedømme på, om det faktisk kan skyde missiler ned til den annoncerede pris.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <h2>Från spjut till sköld</h2>
+    <p>Företaget som levererar en stor del av Ukrainas offensiva räckvidd vänder sig nu mot försvaret. <strong>Fire Point</strong>, vars drönare flyger en stor andel av de långräckviddiga slag som sätter ryska raffinaderier i brand, har tecknat ett avtal med den tyska radartillverkaren <strong>Hensoldt</strong> om att bygga ett ballistiskt robotförsvar kallat <strong>Freyja</strong>, byggt kring en ny interceptor, FP-7.X. Draget placerar ett och samma företag i båda ändar av djupslagskriget — det smider spjutet och nu skölden.</p>
+    <h2>Tillverkaren av det långräckviddiga kriget</h2>
+    <p>Fire Point står i hjärtat av det president Zelenskyj kallar «långräckviddiga sanktioner»: drönare och robotar som sänds hundratals kilometer in i Ryssland för att bränna de raffinaderier, bränsledepåer och vapenfabriker som håller Moskvas krig igång. Dess FP-1- och FP-2-drönare och kryssningsroboten FP-5 Flamingo står enligt företaget för omkring 60% av Ukrainas slag i Ryssland. Enligt Kyiv växer räckvidden alltjämt — ett slag i juni träffade ett raffinaderi i Tjumenregionen långt över tusen miles från gränsen, och moderniserade drönare sägs nå 3 000 kilometer.</p>
+    <h2>Ett billigare sätt att stoppa en ballistisk robot</h2>
+    <p>Ekonomin är kärnan i argumentet. FP-7.X är konstruerad för att bekämpa en ballistisk robot på cirka 24 kilometers höjd för ungefär 700 000 dollar per skott — mot omkring 3,8 miljoner för en Patriot PAC-3, innan man ens räknar att Patriot ofta förbrukar två eller tre interceptorer per mål. Fire Point vill massproducera tre om dagen från augusti och göra sin första bekämpning före utgången av 2027; företaget provflög FP-7.X i början av juni i vad en medgrundare beskrev som en helt kontrollerad manövrerande flygning.</p>
+    <p class="pull">Om ett land som bygger spjutet också kan bygga skölden för en bråkdel av en Patriots pris, börjar luftförsvarets ekonomi se mycket annorlunda ut.</p>
+    <h2>En europeisk koalition</h2>
+    <p>Freyja är inte tänkt att vara ett renodlat ukrainskt system. Planen är att svepa in interceptorn i ett lager av europeiska sensorer och ledningssystem: radar från Hensoldt, med rapporterade samtal med Thales om radar, Leonardo om spårning och Kongsberg om ledning och kontroll. Fire Point framställer projektet som bevis på att Ukraina passerat en tröskel — från konsument av västligt bistånd till leverantör av säkerhetslösningar för kontinenten, med interceptorer, enligt en medgrundare, snart på himlen över hela Europa.</p>
+    <h2>Skuggan över historien</h2>
+    <p>Uppgången har dragit till sig både partner och granskning. Fire Point fanns inte före Rysslands invasion 2022 — det började som en castingbyrå för film och tv — och är i dag en av Ukrainas största försvarsleverantörer med statliga kontrakt på över en miljard dollar i år. Det har nämnts i samband med en omfattande energikorruptionshärva kopplad till en affärsman nära presidenten och utreds av Ukrainas nationella antikorruptionsbyrå. Fire Point förnekar att affärsmannen äger någon andel, säger att det bara tillhör dess medgrundare och påpekar att inga åtal har väckts mot det; det har också sökt västligt stöd. Utredningen löper parallellt med — inte över — ett program som allierade framför allt kommer att bedöma efter om det faktiskt kan skjuta ner robotar till det annonserade priset.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>Defense News — Ukraine's top strike-drone maker moves into ballistic missile defense (Katie Livingstone, 25 June 2026)</li>
+      <li>Fire Point statements at Eurosatory 2026; Reuters / Military Times on FP-7.X cost and timeline; ISW on Russian oil-infrastructure strikes</li>
+      <li>Kyiv Independent / New York Times — Fire Point's scale and the anti-corruption investigation (company denies any stake by the named businessman; no charges filed)</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Defence Policy",a_cat:"Defence Policy",a_tag:"🛡️ Missile Defence",a_date:"25 June 2026",a_read:"3 min read",a_title:"From spear to shield: Ukraine's top strike-drone maker moves into <em>ballistic-missile defence</em>",a_stand:"Fire Point, the firm behind most of the long-range drones now hitting Russian refineries, is building a low-cost ballistic-missile interceptor with European partners. If it can stop a missile for under a million dollars a shot, it would put Ukraine at both ends of the deep-strike war — and reset the economics of air defence.",p1_h:"Spear-maker turns shield-maker",p1_p:"Fire Point — maker of the FP-1 and FP-2 deep-strike drones and the FP-5 Flamingo cruise missile, behind roughly 60% of Ukraine's strikes inside Russia — has signed a deal with Germany's Hensoldt to build a ballistic-missile defence system called Freyja, around its FP-7.X interceptor.",p2_h:"A fraction of a Patriot",p2_p:"The FP-7.X is designed to kill a ballistic missile at around 15 miles altitude for roughly $700,000 a shot, against about $3.8M for a Patriot PAC-3. Fire Point aims to mass-produce three a day from August and to intercept its first missile by the end of 2027.",p3_h:"Made with Europe",p3_p:"Freyja would wrap the interceptor in a European sensor and command layer: Hensoldt radar, with talks reported with Thales on radar, Leonardo on tracking and Kongsberg on command and control. Ukraine casts itself as a provider of security, not just a recipient of aid.",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στην Αμυντική Πολιτική",a_cat:"Αμυντική Πολιτική",a_tag:"🛡️ Αντιπυραυλική Άμυνα",a_date:"25 Ιουνίου 2026",a_read:"3' ανάγνωση",a_title:"Από το δόρυ στην ασπίδα: ο κορυφαίος Ουκρανός κατασκευαστής drones μπαίνει στην <em>αντιβαλλιστική άμυνα</em>",a_stand:"Η Fire Point, η εταιρεία πίσω από τα περισσότερα drones μεγάλου βεληνεκούς που χτυπούν ρωσικά διυλιστήρια, φτιάχνει φθηνό αναχαιτιστικό βαλλιστικών με Ευρωπαίους εταίρους. Αν ρίχνει πύραυλο για κάτω από ένα εκατομμύριο δολάρια τη βολή, θα βάλει την Ουκρανία και στα δύο άκρα του πολέμου βαθιάς κρούσης — και θα αλλάξει τα οικονομικά της αεράμυνας.",p1_h:"Από το δόρυ στην ασπίδα",p1_p:"Η Fire Point — κατασκευαστής των drones FP-1 και FP-2 και του πυραύλου cruise FP-5 Flamingo, πίσω από περίπου το 60% των ουκρανικών πληγμάτων στη Ρωσία — υπέγραψε συμφωνία με τη γερμανική Hensoldt για το αντιβαλλιστικό σύστημα Freyja, γύρω από τον αναχαιτιστή FP-7.X.",p2_h:"Κλάσμα ενός Patriot",p2_p:"Ο FP-7.X σχεδιάζεται να ρίχνει βαλλιστικό σε ύψος ~24 χλμ. με περίπου 700.000 δολάρια τη βολή, έναντι ~3,8 εκατ. για ένα Patriot PAC-3. Η Fire Point στοχεύει σε μαζική παραγωγή τριών την ημέρα από τον Αύγουστο και πρώτη αναχαίτιση έως το τέλος του 2027.",p3_h:"Φτιαγμένο με την Ευρώπη",p3_p:"Το Freyja θα «τυλίγει» τον αναχαιτιστή σε ευρωπαϊκό στρώμα αισθητήρων και διοίκησης: ραντάρ Hensoldt, με αναφορές για συνομιλίες με Thales (ραντάρ), Leonardo (παρακολούθηση) και Kongsberg (διοίκηση). Η Ουκρανία παρουσιάζεται ως προμηθευτής ασφάλειας, όχι μόνο αποδέκτης.",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Politique de Défense",a_cat:"Politique de Défense",a_tag:"🛡️ Défense Antimissile",a_date:"25 juin 2026",a_read:"3 min de lecture",a_title:"De la lance au bouclier : le premier fabricant ukrainien de drones d'attaque entre dans la <em>défense antibalistique</em>",a_stand:"Fire Point, la firme derrière la plupart des drones longue portée qui frappent les raffineries russes, construit un intercepteur balistique à bas coût avec des partenaires européens. S'il arrête un missile pour moins d'un million de dollars le tir, l'Ukraine se retrouverait aux deux bouts de la guerre de frappe — et l'économie de la défense aérienne changerait.",p1_h:"De la lance au bouclier",p1_p:"Fire Point — fabricant des drones FP-1 et FP-2 et du missile de croisière FP-5 Flamingo, derrière environ 60 % des frappes ukrainiennes en Russie — a signé un accord avec l'allemand Hensoldt pour le système antibalistique Freyja, autour de son intercepteur FP-7.X.",p2_h:"Une fraction d'un Patriot",p2_p:"Le FP-7.X vise à abattre un missile balistique à ~24 km d'altitude pour environ 700 000 dollars le tir, contre ~3,8 M pour un Patriot PAC-3. Fire Point veut en produire trois par jour dès août et réussir sa première interception d'ici fin 2027.",p3_h:"Fait avec l'Europe",p3_p:"Freyja envelopperait l'intercepteur dans une couche européenne de capteurs et de commandement : radar Hensoldt, avec des discussions rapportées avec Thales (radar), Leonardo (pistage) et Kongsberg (commandement). L'Ukraine se pose en fournisseur de sécurité, pas seulement en bénéficiaire.",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Forsvarspolitik",a_cat:"Forsvarspolitik",a_tag:"🛡️ Missilforsvar",a_date:"25. juni 2026",a_read:"3 min. læsning",a_title:"Fra spyd til skjold: Ukraines førende angrebsdroneproducent går ind i <em>ballistisk missilforsvar</em>",a_stand:"Fire Point, firmaet bag de fleste langtrækkende droner, der nu rammer russiske raffinaderier, bygger en billig ballistisk interceptor med europæiske partnere. Kan det stoppe et missil for under en million dollars pr. skud, vil det placere Ukraine i begge ender af dybdeangrebskrigen — og ændre luftforsvarets økonomi.",p1_h:"Fra spyd til skjold",p1_p:"Fire Point — producent af FP-1- og FP-2-dronerne og FP-5 Flamingo-krydsermissilet, bag omkring 60% af Ukraines angreb i Rusland — har indgået en aftale med tyske Hensoldt om missilforsvarssystemet Freyja omkring sin FP-7.X-interceptor.",p2_h:"En brøkdel af en Patriot",p2_p:"FP-7.X er designet til at nedkæmpe et ballistisk missil i ~24 km højde for cirka 700.000 dollars pr. skud, mod ~3,8 mio. for en Patriot PAC-3. Fire Point vil masseproducere tre om dagen fra august og opnå første opfangning inden udgangen af 2027.",p3_h:"Bygget med Europa",p3_p:"Freyja ville pakke interceptoren ind i et europæisk sensor- og kommandolag: Hensoldt-radar, med rapporterede drøftelser med Thales (radar), Leonardo (sporing) og Kongsberg (kommando). Ukraine fremstiller sig som leverandør af sikkerhed, ikke kun modtager.",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Försvarspolitik",a_cat:"Försvarspolitik",a_tag:"🛡️ Robotförsvar",a_date:"25 juni 2026",a_read:"3 min läsning",a_title:"Från spjut till sköld: Ukrainas främsta angreppsdrönartillverkare går in i <em>ballistiskt robotförsvar</em>",a_stand:"Fire Point, företaget bakom de flesta långräckviddiga drönare som nu träffar ryska raffinaderier, bygger en billig ballistisk interceptor med europeiska partner. Om det kan stoppa en robot för under en miljon dollar per skott placeras Ukraina i båda ändar av djupslagskriget — och luftförsvarets ekonomi ändras.",p1_h:"Från spjut till sköld",p1_p:"Fire Point — tillverkare av FP-1- och FP-2-drönarna och kryssningsroboten FP-5 Flamingo, bakom omkring 60% av Ukrainas slag i Ryssland — har tecknat ett avtal med tyska Hensoldt om robotförsvarssystemet Freyja kring sin FP-7.X-interceptor.",p2_h:"En bråkdel av en Patriot",p2_p:"FP-7.X är konstruerad för att bekämpa en ballistisk robot på ~24 km höjd för ungefär 700 000 dollar per skott, mot ~3,8 milj. för en Patriot PAC-3. Fire Point siktar på massproduktion av tre om dagen från augusti och första bekämpning före slutet av 2027.",p3_h:"Byggt med Europa",p3_p:"Freyja skulle svepa in interceptorn i ett europeiskt sensor- och ledningslager: Hensoldt-radar, med rapporterade samtal med Thales (radar), Leonardo (spårning) och Kongsberg (ledning). Ukraina framställer sig som leverantör av säkerhet, inte bara mottagare.",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s&&translations[s]){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
