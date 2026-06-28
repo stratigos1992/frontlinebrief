@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USAF Wants a 1,000-Mile Air-to-Air Missile (AFLRW) — Frontline Brief</title>
+<meta name="description" content="The USAF wants the Air Force Long Range Weapon (AFLRW): an air-to-air missile reaching 1,000 nautical miles to kill AWACS and tankers and pierce China's A2/AD bubble.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--cold);line-height:1.1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="strategic-affairs.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Strategic Affairs</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Strategic Affairs</span>
+    <span class="tag" data-i18n="a_tag">🎯 Counter-air</span>
+    <span class="sep">·</span><span data-i18n="a_date">25 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">3 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">The thousand-mile kill: the USAF wants an <em>air-to-air missile that can reach 1,000 miles</em></h1>
+  <p class="standfirst" data-i18n="a_stand">The US Air Force has asked industry for a new air-to-air missile able to strike targets at least 1,000 nautical miles away — roughly ten times the reach of today's best AMRAAM. The point is to kill the enemy's AWACS, tankers and other rear-area aircraft from outside their world, and to pierce the air-defence bubbles that China is building.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/usaf-aflrw-1000mile-en.jpg" alt="The thousand-mile kill — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/usaf-aflrw-1000mile-el.jpg" alt="The thousand-mile kill — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/usaf-aflrw-1000mile-fr.jpg" alt="The thousand-mile kill — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/usaf-aflrw-1000mile-da.jpg" alt="The thousand-mile kill — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/usaf-aflrw-1000mile-sv.jpg" alt="The thousand-mile kill — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">The requirement · AFLRW</div><h3 data-i18n="p1_h">Ten times the reach</h3><p data-i18n="p1_p">The Air Force Long Range Weapon would come in air-to-air and air-to-surface forms, each with a threshold range of at least 1,000 nautical miles — about ten times the latest AMRAAM. A classified industry day is set for Eglin AFB on 25–26 August.</p></div><div class="stat"><b>1,000 nm</b><small>~10× AMRAAM</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The target · The 'AWACS killer'</div><h3 data-i18n="p2_h">Hitting the high-value few</h3><p data-i18n="p2_p">The weapon is built to down the aircraft that make modern air war work: AWACS and other radar planes, tankers, ISR and even bombers, often before they know they are being shot at. The Air Force wants modular, open-architecture designs and a single 'Master Integrator'.</p></div><div class="stat"><b>AWACS</b><small>killer</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The context · Piercing the bubble</div><h3 data-i18n="p3_h">Aimed at China's A2/AD</h3><p data-i18n="p3_p">From the East or South China Sea, an AFLRW-armed aircraft could in theory hold targets deep inside China at risk — with the right data. That is the catch: the missile only works inside a space-enabled 'kill web'.</p></div><div class="stat"><b>A2/AD</b><small>kill web</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <h2>Ten times the reach</h2>
+    <p>The US Air Force is preparing to brief defence contractors, behind closed doors, on a requirement that would redraw the rules of air combat: a new air-to-air missile able to engage targets at least 1,000 nautical miles away. That is roughly ten times the reach credited to the latest AIM-120 AMRAAM, the workhorse missile of Western air forces. The programme, dubbed the <strong>Air Force Long Range Weapon</strong> (AFLRW), would also have an air-to-surface variant at the same extreme distance. A classified industry day is scheduled at the Guided Weapons Evaluation Facility on Eglin Air Force Base in Florida on 25 and 26 August.</p>
+    <h2>The 'AWACS killer'</h2>
+    <p>A missile of this reach is not really meant for dogfights. Its value lies in killing the aircraft that hold a modern air campaign together: airborne early warning and control planes, aerial tankers, intelligence and surveillance platforms, even bombers. These high-value assets normally orbit far behind the front, beyond the reach of fighters; a thousand-mile weapon puts them at risk where they thought they were safe, often without warning until it is too late to react. The Air Force is asking for modular, open-architecture designs and a single 'Master Integrator' to assemble the finished round.</p>
+    <p class="pull">An air-to-air missile that reaches a thousand miles only works if a 'kill web' can see the target — which is why this is as much about satellites as missiles.</p>
+    <h2>Why now: China and the A2/AD problem</h2>
+    <p>The driver is the maturing Chinese anti-access and area-denial system. Beijing has invested heavily in radar planes, electronic-warfare aircraft and its own ever-longer-ranged air-to-air missiles, some already out-reaching their American counterparts. The Pacific makes the geometry vivid: the gap between Guam and Taiwan is about 1,500 nautical miles, while Okinawa sits roughly 390 away. An aircraft cruising over the East or South China Sea with a 1,000-mile missile could, in principle, threaten targets well inside the Chinese mainland — provided the targeting data exists.</p>
+    <h2>The hard part: targeting at 1,000 miles</h2>
+    <p>That proviso is the whole challenge. A missile fired this far cannot rely on its launch aircraft's own radar. It has to be plugged into a deeply networked 'kill web' that stitches together sensors across air, land, sea, space and cyberspace, drawn from every service. Above all it depends on a space-based aircraft-tracking layer, which is exactly why the Pentagon is racing to field new satellite constellations for persistent moving-target indication. Without that web, a thousand-mile shot is blind.</p>
+    <h2>What could carry it</h2>
+    <p>The physics are demanding too. Covering such distances quickly enough to catch fleeting targets may require a multi-stage design, an air-launched ballistic approach, or something more exotic. The carriers are a question in their own right: the Air Force has openly mused about the B-21 Raider acting as an air-to-air 'weapons truck', and a heavy bomber is a natural home for a missile this large. For now the requirement is a statement of intent — but it points squarely at a future in which the kill web, not the fighter, is king.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <h2>Δεκαπλάσιο βεληνεκές</h2>
+    <p>Η Πολεμική Αεροπορία των ΗΠΑ ετοιμάζεται να ενημερώσει, κεκλεισμένων των θυρών, αμυντικές εταιρείες για μια απαίτηση που θα ξαναγράψει τους κανόνες του αερομαχικού πολέμου: έναν νέο πύραυλο αέρος-αέρος ικανό να προσβάλλει στόχους σε απόσταση τουλάχιστον 1.000 ναυτικών μιλίων. Πρόκειται για περίπου δεκαπλάσιο βεληνεκές από αυτό που αποδίδεται στις τελευταίες εκδόσεις του AIM-120 AMRAAM, του «αλόγου εργασίας» των δυτικών αεροποριών. Το πρόγραμμα, με την ονομασία <strong>Air Force Long Range Weapon</strong> (AFLRW), θα έχει και παραλλαγή αέρος-εδάφους στην ίδια ακραία απόσταση. Μια διαβαθμισμένη «ημέρα βιομηχανίας» έχει προγραμματιστεί στη βάση Eglin της Φλόριντα στις 25 και 26 Αυγούστου.</p>
+    <h2>Ο «φονιάς των AWACS»</h2>
+    <p>Ένας πύραυλος τέτοιου βεληνεκούς δεν προορίζεται πραγματικά για κοντινές αερομαχίες. Η αξία του βρίσκεται στην εξουδετέρωση των αεροσκαφών που κρατούν όρθια μια σύγχρονη αεροπορική εκστρατεία: αεροσκάφη έγκαιρης προειδοποίησης και ελέγχου, ιπτάμενα τάνκερ, μέσα επιτήρησης και αναγνώρισης, ακόμη και βομβαρδιστικά. Αυτά τα υψηλής αξίας αεροσκάφη συνήθως περιπολούν βαθιά στα μετόπισθεν, εκτός εμβέλειας των μαχητικών· ένα όπλο χιλίων μιλίων τα θέτει σε κίνδυνο εκεί που νόμιζαν ότι ήταν ασφαλή, συχνά χωρίς προειδοποίηση μέχρι να είναι πολύ αργά. Η USAF ζητά αρθρωτούς, ανοιχτής αρχιτεκτονικής σχεδιασμούς και έναν ενιαίο «Κύριο Ολοκληρωτή» που θα συναρμολογεί τον τελικό πύραυλο.</p>
+    <p class="pull">Ένας πύραυλος αέρος-αέρος που φτάνει τα χίλια μίλια λειτουργεί μόνο αν ένα «δίχτυ θανάτου» βλέπει τον στόχο — γι' αυτό το θέμα αφορά εξίσου δορυφόρους και πυραύλους.</p>
+    <h2>Γιατί τώρα: η Κίνα και το πρόβλημα A2/AD</h2>
+    <p>Η κινητήρια δύναμη είναι το ωριμάζον κινεζικό σύστημα άρνησης πρόσβασης και απαγόρευσης περιοχής (A2/AD). Το Πεκίνο έχει επενδύσει βαριά σε αεροσκάφη ραντάρ, σε αεροσκάφη ηλεκτρονικού πολέμου και στους δικούς του, ολοένα μεγαλύτερου βεληνεκούς, πυραύλους αέρος-αέρος — μερικοί από τους οποίους ήδη υπερτερούν των αμερικανικών. Ο Ειρηνικός κάνει τη γεωμετρία εύγλωττη: η απόσταση Γκουάμ–Ταϊβάν είναι περίπου 1.500 ναυτικά μίλια, ενώ η Οκινάουα απέχει περίπου 390. Ένα αεροσκάφος που πετά πάνω από την Ανατολική ή τη Νότια Σινική Θάλασσα με πύραυλο 1.000 μιλίων θα μπορούσε, θεωρητικά, να απειλήσει στόχους βαθιά στην κινεζική ενδοχώρα — εφόσον υπάρχουν τα δεδομένα στόχευσης.</p>
+    <h2>Το δύσκολο κομμάτι: η στόχευση στα 1.000 μίλια</h2>
+    <p>Αυτή ακριβώς η προϋπόθεση είναι όλη η πρόκληση. Ένας πύραυλος που εκτοξεύεται τόσο μακριά δεν μπορεί να βασιστεί στο ραντάρ του αεροσκάφους που τον εκτόξευσε. Πρέπει να συνδεθεί σε ένα βαθιά δικτυωμένο «δίχτυ θανάτου» που ράβει μαζί αισθητήρες σε αέρα, ξηρά, θάλασσα, διάστημα και κυβερνοχώρο, από όλους τους κλάδους. Πάνω απ' όλα εξαρτάται από ένα διαστημικό στρώμα παρακολούθησης αεροσκαφών — γι' αυτό και το Πεντάγωνο τρέχει να αναπτύξει νέους σχηματισμούς δορυφόρων για μόνιμη ανίχνευση κινούμενων στόχων. Χωρίς αυτό το δίχτυ, μια βολή χιλίων μιλίων είναι τυφλή.</p>
+    <h2>Τι θα μπορούσε να τον μεταφέρει</h2>
+    <p>Και η φυσική είναι απαιτητική. Η κάλυψη τέτοιων αποστάσεων αρκετά γρήγορα ώστε να προλαβαίνει φευγαλέους στόχους ίσως απαιτεί σχεδιασμό πολλαπλών σταδίων, μια προσέγγιση τύπου αεροεκτοξευόμενου βαλλιστικού, ή κάτι πιο εξωτικό. Οι φορείς είναι ζήτημα από μόνοι τους: η Αεροπορία έχει μιλήσει ανοιχτά για τον ρόλο του βομβαρδιστικού B-21 Raider ως ιπτάμενου «φορτηγού όπλων» αέρος-αέρος, και ένα βαρύ βομβαρδιστικό είναι φυσική στέγη για έναν τόσο μεγάλο πύραυλο. Προς το παρόν η απαίτηση είναι μια δήλωση πρόθεσης — δείχνει όμως ευθέως προς ένα μέλλον όπου βασιλιάς είναι το δίχτυ θανάτου, όχι το μαχητικό.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <h2>Dix fois la portée</h2>
+    <p>L'US Air Force s'apprête à présenter aux industriels de la défense, à huis clos, une exigence qui redessinerait les règles du combat aérien : un nouveau missile air-air capable d'atteindre des cibles à au moins 1 000 milles nautiques. Soit environ dix fois la portée attribuée aux dernières versions de l'AIM-120 AMRAAM, le missile de référence des aviations occidentales. Le programme, baptisé <strong>Air Force Long Range Weapon</strong> (AFLRW), comporterait aussi une version air-sol à la même distance extrême. Une journée industrielle classifiée est prévue sur la base d'Eglin, en Floride, les 25 et 26 août.</p>
+    <h2>Le « tueur d'AWACS »</h2>
+    <p>Un missile d'une telle portée n'est pas vraiment fait pour le combat tournoyant. Sa valeur tient à la neutralisation des avions qui font tenir une campagne aérienne moderne : avions de guet et de contrôle, ravitailleurs, plateformes de renseignement et de surveillance, voire bombardiers. Ces appareils de grande valeur évoluent d'ordinaire loin derrière le front, hors de portée des chasseurs ; une arme de mille milles les met en danger là où ils se croyaient à l'abri, souvent sans alerte jusqu'à ce qu'il soit trop tard. L'Air Force réclame des conceptions modulaires, à architecture ouverte, et un unique « maître intégrateur » pour assembler le missile complet.</p>
+    <p class="pull">Un missile air-air qui porte à mille milles ne fonctionne que si une « toile de mise à mort » voit la cible — d'où un sujet autant satellitaire que balistique.</p>
+    <h2>Pourquoi maintenant : la Chine et le défi A2/AD</h2>
+    <p>Le moteur, c'est la montée en puissance du dispositif chinois de déni d'accès et d'interdiction de zone (A2/AD). Pékin a massivement investi dans les avions radar, les avions de guerre électronique et ses propres missiles air-air de portée toujours plus grande — dont certains surclassent déjà leurs homologues américains. Le Pacifique rend la géométrie parlante : la distance entre Guam et Taïwan avoisine 1 500 milles nautiques, tandis qu'Okinawa n'en est qu'à environ 390. Un appareil patrouillant au-dessus de la mer de Chine orientale ou méridionale avec un missile de 1 000 milles pourrait, en théorie, menacer des cibles loin à l'intérieur du territoire chinois — à condition de disposer des données de ciblage.</p>
+    <h2>Le plus dur : viser à 1 000 milles</h2>
+    <p>Cette condition résume tout le défi. Un missile tiré à une telle distance ne peut compter sur le radar de son porteur. Il doit s'insérer dans une « toile de mise à mort » profondément maillée, reliant des capteurs dans l'air, sur terre, en mer, dans l'espace et le cyberespace, issus de toutes les armées. Il dépend surtout d'une couche spatiale de pistage des aéronefs — c'est précisément pourquoi le Pentagone se hâte de déployer de nouvelles constellations de satellites pour une détection permanente des cibles mobiles. Sans cette toile, un tir de mille milles est aveugle.</p>
+    <h2>Ce qui pourrait l'emporter</h2>
+    <p>La physique est exigeante elle aussi. Couvrir de telles distances assez vite pour frapper des cibles fugaces pourrait imposer une architecture multi-étages, une approche de type balistique air-lancé, ou quelque chose de plus exotique. Les porteurs sont une question en soi : l'Air Force a évoqué ouvertement le rôle du bombardier B-21 Raider en « camion à missiles » air-air, et un bombardier lourd est un foyer naturel pour un missile aussi grand. Pour l'heure, l'exigence est une déclaration d'intention — mais elle pointe droit vers un avenir où le roi est la toile de mise à mort, et non le chasseur.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <h2>Ti gange rækkevidden</h2>
+    <p>Det amerikanske flyvevåben forbereder sig på at orientere forsvarsindustrien bag lukkede døre om et krav, der ville tegne luftkampens regler om: et nyt luft-til-luft-missil, der kan ramme mål mindst 1.000 sømil væk. Det er omkring ti gange den rækkevidde, der tilskrives de nyeste udgaver af AIM-120 AMRAAM, de vestlige flyvevåbens arbejdshest. Programmet, kaldet <strong>Air Force Long Range Weapon</strong> (AFLRW), ville også få en luft-til-overflade-variant på samme ekstreme afstand. En klassificeret industridag er planlagt på Eglin-basen i Florida den 25.–26. august.</p>
+    <h2>«AWACS-dræberen»</h2>
+    <p>Et missil med denne rækkevidde er ikke rigtig til kurvekamp. Dets værdi ligger i at nedkæmpe de fly, der holder en moderne luftkampagne sammen: varslings- og kontrolfly, tankfly, efterretnings- og overvågningsplatforme, ja selv bombefly. Disse højværdifly kredser normalt langt bag fronten, uden for jagerflyenes rækkevidde; et tusind-mils-våben sætter dem i fare dér, hvor de troede sig sikre, ofte uden varsel, før det er for sent. Flyvevåbnet beder om modulære, åben-arkitektur-designs og én samlet «Master Integrator», der samler det færdige missil.</p>
+    <p class="pull">Et luft-til-luft-missil, der når tusind mil, virker kun, hvis et «dræbernet» kan se målet — derfor handler det lige så meget om satellitter som om missiler.</p>
+    <h2>Hvorfor nu: Kina og A2/AD-problemet</h2>
+    <p>Drivkraften er det modnende kinesiske system til adgangsnægtelse og områdenægtelse (A2/AD). Beijing har investeret massivt i radarfly, elektronisk krigsførelsesfly og egne luft-til-luft-missiler med stadig længere rækkevidde — nogle overgår allerede deres amerikanske modstykker. Stillehavet gør geometrien tydelig: afstanden mellem Guam og Taiwan er omkring 1.500 sømil, mens Okinawa ligger cirka 390 væk. Et fly, der patruljerer over Det Østkinesiske eller Sydkinesiske Hav med et 1.000-mils-missil, kunne i princippet true mål langt inde i det kinesiske fastland — forudsat at måldata findes.</p>
+    <h2>Det svære: at ramme på 1.000 mil</h2>
+    <p>Netop det forbehold er hele udfordringen. Et missil, der affyres så langt, kan ikke stole på sit bærefly's egen radar. Det skal kobles ind i et dybt netværksbaseret «dræbernet», der syr sensorer sammen i luft, på land, til søs, i rummet og i cyberspace, hentet fra alle værn. Frem for alt afhænger det af et rumbaseret lag til sporing af fly — netop derfor haster Pentagon med at indsætte nye satellitkonstellationer til vedvarende sporing af bevægelige mål. Uden det net er et tusind-mils-skud blindt.</p>
+    <h2>Hvad der kunne bære det</h2>
+    <p>Fysikken er også krævende. At dække så store afstande hurtigt nok til at fange flygtige mål kan kræve et flertrins-design, en luftaffyret ballistisk tilgang eller noget mere eksotisk. Bærerne er et spørgsmål for sig: flyvevåbnet har åbent luftet B-21 Raider-bombeflyet som et luft-til-luft-«våbenlastbil», og et tungt bombefly er et naturligt hjem for et så stort missil. For nu er kravet en hensigtserklæring — men det peger lige mod en fremtid, hvor dræbernettet, ikke jagerflyet, er konge.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <h2>Tio gånger räckvidden</h2>
+    <p>Det amerikanska flygvapnet förbereder sig på att informera försvarsindustrin bakom stängda dörrar om ett krav som skulle rita om luftstridens regler: en ny jaktrobot som kan träffa mål minst 1 000 sjömil bort. Det är ungefär tio gånger den räckvidd som tillskrivs de senaste versionerna av AIM-120 AMRAAM, de västliga flygvapnens arbetshäst. Programmet, kallat <strong>Air Force Long Range Weapon</strong> (AFLRW), skulle också få en variant mot markmål på samma extrema avstånd. En hemligstämplad industridag är planerad på Eglin-basen i Florida den 25–26 augusti.</p>
+    <h2>«AWACS-dödaren»</h2>
+    <p>En robot med denna räckvidd är egentligen inte gjord för kurvstrid. Dess värde ligger i att slå ut de flygplan som håller ihop en modern luftkampanj: varnings- och stridsledningsflyg, tankflygplan, spanings- och övervakningsplattformar, till och med bombflyg. Dessa högvärdesflygplan kretsar normalt långt bakom fronten, utom räckhåll för jaktplan; ett tusenmilsvapen sätter dem i fara där de trodde sig säkra, ofta utan förvarning tills det är för sent. Flygvapnet efterfrågar modulära konstruktioner med öppen arkitektur och en enda «huvudintegratör» som sätter samman den färdiga roboten.</p>
+    <p class="pull">En jaktrobot som når tusen mil fungerar bara om ett «dödarnät» kan se målet — därför handlar det lika mycket om satelliter som om robotar.</p>
+    <h2>Varför nu: Kina och A2/AD-problemet</h2>
+    <p>Drivkraften är det mognande kinesiska systemet för tillträdes- och områdesnekande (A2/AD). Peking har investerat tungt i radarflygplan, flygplan för elektronisk krigföring och egna jaktrobotar med allt längre räckvidd — somliga överträffar redan sina amerikanska motsvarigheter. Stilla havet gör geometrin tydlig: avståndet mellan Guam och Taiwan är omkring 1 500 sjömil, medan Okinawa ligger ungefär 390 bort. Ett flygplan som patrullerar över Öst- eller Sydkinesiska havet med en robot på 1 000 mil skulle i teorin kunna hota mål långt inne på det kinesiska fastlandet — förutsatt att måldata finns.</p>
+    <h2>Det svåra: att rikta på 1 000 mil</h2>
+    <p>Just det förbehållet är hela utmaningen. En robot som avfyras så långt kan inte förlita sig på bärflygplanets egen radar. Den måste kopplas in i ett djupt nätverkat «dödarnät» som syr ihop sensorer i luft, på land, till sjöss, i rymden och i cyberrymden, från alla försvarsgrenar. Framför allt är den beroende av ett rymdbaserat lager för flygplansspårning — just därför skyndar sig Pentagon att fältsätta nya satellitkonstellationer för ihållande spårning av rörliga mål. Utan det nätet är ett tusenmilsskott blint.</p>
+    <h2>Vad som skulle kunna bära den</h2>
+    <p>Fysiken är också krävande. Att täcka sådana avstånd snabbt nog för att hinna ikapp flyktiga mål kan kräva en flerstegskonstruktion, en luftavfyrad ballistisk lösning eller något mer exotiskt. Bärarna är en fråga i sig: flygvapnet har öppet talat om bombflyget B-21 Raider som en luftburen «vapenlastbil» för jaktrobotar, och ett tungt bombflyg är ett naturligt hem för en så stor robot. För närvarande är kravet en avsiktsförklaring — men det pekar rakt mot en framtid där dödarnätet, inte jaktplanet, är kung.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>TWZ (The War Zone) — USAF Wants Air-To-Air Missile With A Whopping 1,000-Mile Range (Joseph Trevithick, 25 June 2026)</li>
+      <li>AFLCMC Armament Directorate — AFLRW industry-day notice (Eglin AFB, 25–26 August 2026)</li>
+      <li>Frontline Brief background — AIM-120 AMRAAM, AIM-260 JATM, AIM-174B and China's PL-17 / AEW&C fleet</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Strategic Affairs",a_cat:"Strategic Affairs",a_tag:"🎯 Counter-air",a_date:"25 June 2026",a_read:"3 min read",a_title:"The thousand-mile kill: the USAF wants an <em>air-to-air missile that can reach 1,000 miles</em>",a_stand:"The US Air Force has asked industry for a new air-to-air missile able to strike targets at least 1,000 nautical miles away — roughly ten times the reach of today's best AMRAAM. The point is to kill the enemy's AWACS, tankers and other rear-area aircraft from outside their world, and to pierce the air-defence bubbles that China is building.",p1_h:"Ten times the reach",p1_p:"The Air Force Long Range Weapon would come in air-to-air and air-to-surface forms, each with a threshold range of at least 1,000 nautical miles — about ten times the latest AMRAAM. A classified industry day is set for Eglin AFB on 25–26 August.",p2_h:"Hitting the high-value few",p2_p:"The weapon is built to down the aircraft that make modern air war work: AWACS and other radar planes, tankers, ISR and even bombers, often before they know they are being shot at. The Air Force wants modular, open-architecture designs and a single 'Master Integrator'.",p3_h:"Aimed at China's A2/AD",p3_p:"From the East or South China Sea, an AFLRW-armed aircraft could in theory hold targets deep inside China at risk — with the right data. That is the catch: the missile only works inside a space-enabled 'kill web'.",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στις Στρατηγικές Υποθέσεις",a_cat:"Στρατηγικές Υποθέσεις",a_tag:"🎯 Αερομαχία",a_date:"25 Ιουνίου 2026",a_read:"3' ανάγνωση",a_title:"Το πλήγμα των χιλίων μιλίων: η USAF θέλει <em>πύραυλο αέρος-αέρος βεληνεκούς 1.000 μιλίων</em>",a_stand:"Η Πολεμική Αεροπορία των ΗΠΑ ζήτησε από τη βιομηχανία νέο πύραυλο αέρος-αέρος ικανό να πλήττει στόχους σε απόσταση τουλάχιστον 1.000 ναυτικών μιλίων — περίπου δεκαπλάσιο βεληνεκές από το καλύτερο σημερινό AMRAAM. Στόχος: να καταρρίπτει AWACS, τάνκερ και άλλα αεροσκάφη των μετόπισθεν, και να διαπερνά τις «φούσκες» αεράμυνας που χτίζει η Κίνα.",p1_h:"Δεκαπλάσιο βεληνεκές",p1_p:"Το Air Force Long Range Weapon θα έχει εκδόσεις αέρος-αέρος και αέρος-εδάφους, με ελάχιστο βεληνεκές 1.000 ναυτικών μιλίων — περίπου δεκαπλάσιο του τελευταίου AMRAAM. Διαβαθμισμένη «ημέρα βιομηχανίας» στις 25–26 Αυγούστου στη βάση Eglin.",p2_h:"Χτυπώντας τους λίγους υψηλής αξίας",p2_p:"Το όπλο φτιάχνεται για να ρίχνει τα αεροσκάφη που κρατούν όρθιο τον αεροπορικό πόλεμο: AWACS, τάνκερ, μέσα ISR, ακόμη και βομβαρδιστικά — συχνά πριν καν το αντιληφθούν. Η USAF ζητά αρθρωτούς, ανοιχτής αρχιτεκτονικής σχεδιασμούς κι έναν «Κύριο Ολοκληρωτή».",p3_h:"Στόχος το A2/AD της Κίνας",p3_p:"Από την Ανατολική ή Νότια Σινική Θάλασσα, ένα αεροσκάφος με AFLRW θα μπορούσε θεωρητικά να απειλεί στόχους βαθιά στην Κίνα — με τα σωστά δεδομένα. Εκεί είναι η παγίδα: ο πύραυλος δουλεύει μόνο μέσα σε ένα διαστημικό «δίχτυ θανάτου».",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Affaires Stratégiques",a_cat:"Affaires Stratégiques",a_tag:"🎯 Combat aérien",a_date:"25 juin 2026",a_read:"3 min de lecture",a_title:"Le tir à mille milles : l'USAF veut un <em>missile air-air d'une portée de 1 000 milles</em>",a_stand:"L'US Air Force a demandé à l'industrie un nouveau missile air-air capable d'atteindre des cibles à au moins 1 000 milles nautiques — environ dix fois la portée du meilleur AMRAAM actuel. L'objectif : abattre AWACS, ravitailleurs et autres appareils de l'arrière, et percer les bulles de défense aérienne que bâtit la Chine.",p1_h:"Dix fois la portée",p1_p:"L'Air Force Long Range Weapon existerait en versions air-air et air-sol, chacune d'une portée minimale de 1 000 milles nautiques — environ dix fois le dernier AMRAAM. Une journée industrielle classifiée est prévue les 25–26 août sur la base d'Eglin.",p2_h:"Frapper les rares cibles de grande valeur",p2_p:"L'arme vise à abattre les appareils qui font tenir la guerre aérienne : AWACS, ravitailleurs, plateformes ISR, voire bombardiers — souvent avant qu'ils ne le sachent. L'Air Force veut des conceptions modulaires, à architecture ouverte, et un « maître intégrateur ».",p3_h:"Visant l'A2/AD chinois",p3_p:"Depuis la mer de Chine orientale ou méridionale, un appareil porteur d'AFLRW pourrait en théorie menacer des cibles loin en Chine — avec les bonnes données. C'est le piège : le missile ne fonctionne qu'au sein d'une « toile de mise à mort » spatiale.",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Strategiske Forhold",a_cat:"Strategiske Forhold",a_tag:"🎯 Luftkamp",a_date:"25. juni 2026",a_read:"3 min. læsning",a_title:"Tusind-mils-drabet: USAF vil have et <em>luft-til-luft-missil med 1.000 miles rækkevidde</em>",a_stand:"Det amerikanske flyvevåben har bedt industrien om et nyt luft-til-luft-missil, der kan ramme mål mindst 1.000 sømil væk — omkring ti gange rækkevidden af det bedste nuværende AMRAAM. Formålet: at nedskyde AWACS, tankfly og andre baglandsfly, og at gennembryde de luftforsvarsbobler, Kina bygger.",p1_h:"Ti gange rækkevidden",p1_p:"Air Force Long Range Weapon ville komme i luft-til-luft- og luft-til-overflade-udgaver, hver med en mindste rækkevidde på 1.000 sømil — cirka ti gange det nyeste AMRAAM. En klassificeret industridag holdes 25.–26. august på Eglin-basen.",p2_h:"At ramme de få højværdimål",p2_p:"Våbnet skal nedkæmpe de fly, der holder luftkrigen sammen: AWACS, tankfly, ISR-platforme, ja selv bombefly — ofte før de ved det. Flyvevåbnet ønsker modulære, åben-arkitektur-designs og én «Master Integrator».",p3_h:"Rettet mod Kinas A2/AD",p3_p:"Fra Det Østkinesiske eller Sydkinesiske Hav kunne et AFLRW-bevæbnet fly i teorien true mål dybt i Kina — med de rette data. Det er hagen: missilet virker kun i et rumbaseret «dræbernet».",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Strategiska Frågor",a_cat:"Strategiska Frågor",a_tag:"🎯 Luftstrid",a_date:"25 juni 2026",a_read:"3 min läsning",a_title:"Tusenmilsträffen: USAF vill ha en <em>jaktrobot med 1 000 mils räckvidd</em>",a_stand:"Det amerikanska flygvapnet har bett industrin om en ny jaktrobot som kan träffa mål minst 1 000 sjömil bort — ungefär tio gånger räckvidden hos dagens bästa AMRAAM. Syftet: att skjuta ner AWACS, tankflygplan och andra bakre flygplan, och att tränga igenom de luftförsvarsbubblor som Kina bygger.",p1_h:"Tio gånger räckvidden",p1_p:"Air Force Long Range Weapon skulle finnas i versioner mot luft- och markmål, var och en med en lägsta räckvidd på 1 000 sjömil — cirka tio gånger senaste AMRAAM. En hemligstämplad industridag hålls 25–26 augusti på Eglin-basen.",p2_h:"Att träffa de få högvärdesmålen",p2_p:"Vapnet ska slå ut de flygplan som håller ihop luftkriget: AWACS, tankflygplan, ISR-plattformar, till och med bombflyg — ofta innan de vet om det. Flygvapnet vill ha modulära konstruktioner med öppen arkitektur och en enda «huvudintegratör».",p3_h:"Riktat mot Kinas A2/AD",p3_p:"Från Öst- eller Sydkinesiska havet skulle ett AFLRW-beväpnat flygplan i teorin kunna hota mål djupt inne i Kina — med rätt data. Det är haken: roboten fungerar bara i ett rymdbaserat «dödarnät».",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s&&translations[s]){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
