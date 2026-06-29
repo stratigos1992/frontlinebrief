@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meteor on the F-35: a $74m Step Toward Certification — Frontline Brief</title>
+<meta name="description" content="A $74m US contract to integrate British and Italian weapons on the F-35 is widely read as the first real step toward certifying MBDA's Meteor on the stealth jet — with a sharp Greek angle.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--cold);line-height:1.1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="defence.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Defence Policy</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Defence Policy</span>
+    <span class="tag" data-i18n="a_tag">🚀 BVR Missile</span>
+    <span class="sep">·</span><span data-i18n="a_date">29 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">3 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">Meteor meets the F-35: a <em>$74m step toward the West's most lethal air-to-air pairing</em></h1>
+  <p class="standfirst" data-i18n="a_stand">A new US contract to put British and Italian weapons on the F-35 is being read across Europe as the first real move to certify MBDA's Meteor on the stealth fighter. If it works, it marries the jet's unmatched sensors to a missile that keeps thrust almost to impact — and for Greece, which already fields Meteor on its Rafales, the prize is a common long-range weapon across its two best platforms.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/meteor-f35-en.jpg" alt="Meteor meets the F-35 — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/meteor-f35-el.jpg" alt="Meteor meets the F-35 — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/meteor-f35-fr.jpg" alt="Meteor meets the F-35 — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/meteor-f35-da.jpg" alt="Meteor meets the F-35 — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/meteor-f35-sv.jpg" alt="Meteor meets the F-35 — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">The contract · $74m, through 2032</div><h3 data-i18n="p1_h">The first real step</h3><p data-i18n="p1_p">A US Defense Department contract to Lockheed Martin covers integrating British and Italian "unique weapon systems" on the F-35A and F-35B. It does not name Meteor, but with both nations making it their top requirement, analysts read it as the start of certification — with development, test and certification work running to the end of 2032.</p></div><div class="stat"><b>$74m</b><small>work to 2032</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The weapon · Meteor's edge</div><h3 data-i18n="p2_h">A ramjet that never quits</h3><p data-i18n="p2_p">MBDA's Meteor is a ramjet-powered air-to-air missile with an estimated range beyond 200 km. Unlike solid-rocket missiles that bleed energy in flight, it keeps producing thrust almost to impact, giving a "No Escape Zone" many times larger than its rivals. It already arms Rafale, Gripen and Eurofighter.</p></div><div class="stat"><b>200+ km</b><small>ramjet NEZ</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The Greek angle · Meteor + AIM-120D</div><h3 data-i18n="p3_h">A weapon on both jets</h3><p data-i18n="p3_p">The Hellenic Air Force already fields Meteor via its Rafales and wants it certified on its F-35s too. It has also asked Washington to release the latest AIM-120D AMRAAM — so its F-35 could carry the best European or the best American beyond-visual-range weapon, mission by mission.</p></div><div class="stat"><b>HAF</b><small>both BVR</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <h2>The contract that unlocks it</h2>
+    <p>One of the longest-standing gaps in the F-35's armoury is starting to close. A new contract from the US Defense Department to <strong>Lockheed Martin</strong>, worth about $74 million, covers the integration of British and Italian "unique weapon systems" onto the F-35A and F-35B. The text does not name the missile — but since both London and Rome have made integrating the <strong>Meteor</strong> their single highest priority, analysts read the award almost unanimously as the first substantive step toward certifying the European missile on the stealth jet. The work, spanning development, testing and certification, runs through the end of 2032.</p>
+    <h2>Why Meteor is special</h2>
+    <p>Built by MBDA, Meteor was designed to dominate beyond-visual-range combat, and it already arms the Rafale, Gripen and Eurofighter. What sets it apart is its propulsion: a variable-thrust <strong>ramjet</strong>. Most air-to-air missiles use a solid-fuel rocket motor and coast — bleeding energy — through the long middle of their flight. Meteor instead keeps producing thrust almost to the terminal phase, so even at very long range it arrives fast and full of kinetic energy. The practical result is a "No Escape Zone" — the band inside which a target cannot outrun the missile even with violent manoeuvring — several times larger than that of comparable weapons.</p>
+    <p class="pull">Pair the F-35's sensors with a missile that still has thrust at impact, and the 'no-escape zone' stops being a metaphor.</p>
+    <h2>Why the F-35 changes the equation</h2>
+    <p>The jet brings the other half of the equation. Its APG-81 AESA radar, distributed-aperture system, electro-optical targeting and sensor fusion build a tactical picture no earlier generation could match. Until now, though, the aircraft could not actually fire a Meteor. Certification unites the F-35's ability to find and track a target without being seen with the reach and lethality of Europe's top air-to-air missile — in effect, bolting two of the most powerful systems in Western air combat together.</p>
+    <h2>Britain and Italy in the driving seat</h2>
+    <p>The push is European. The United Kingdom is the prime mover: the RAF has invested heavily in Meteor through the Typhoon and regards it as essential that the same weapon arm its F-35Bs. Italy, which flies both Eurofighter and F-35, wants the same commonality of armament. That is why the new contract is confined specifically to British and Italian weapons — the two nations most determined to see Meteor cleared for the jet.</p>
+    <h2>What it means for Greece and the Aegean</h2>
+    <p>For Athens the development lands close to home. The Hellenic Air Force already operates Meteor on its Rafales, and its air staff has asked that the same missile be certified on the Greek F-35s, to give one long-range weapon across both top platforms — with common training, support and mission planning, and lower overall costs. In parallel, Greece has requested the release of the most advanced AIM-120D AMRAAM, so its F-35 could draw on either the leading European or the leading American option. None of this is settled: the contract starts a multi-year process, not a finished capability. But a stealth aircraft that can detect without revealing itself, share tracks across a network and launch a no-escape shot at long range would meaningfully strengthen Greek deterrence over the Aegean — which is precisely why the file now sits under the close attention of the air staff.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <h2>Η σύμβαση που το ξεκλειδώνει</h2>
+    <p>Ένα από τα πιο μακροχρόνια κενά στο οπλοστάσιο του F-35 αρχίζει να κλείνει. Νέα σύμβαση του αμερικανικού Υπουργείου Άμυνας προς τη <strong>Lockheed Martin</strong>, ύψους περίπου 74 εκατ. δολαρίων, αφορά την ενσωμάτωση βρετανικών και ιταλικών «μοναδικών οπλικών συστημάτων» στα F-35A και F-35B. Το κείμενο δεν κατονομάζει τον πύραυλο — όμως, καθώς Λονδίνο και Ρώμη έχουν θέσει ως κορυφαία προτεραιότητά τους την ενσωμάτωση του <strong>Meteor</strong>, οι αναλυτές διαβάζουν σχεδόν ομόφωνα την ανάθεση ως το πρώτο ουσιαστικό βήμα προς την πιστοποίηση του ευρωπαϊκού πυραύλου στο stealth μαχητικό. Οι εργασίες — ανάπτυξη, δοκιμές και πιστοποίηση — εκτείνονται έως το τέλος του 2032.</p>
+    <h2>Γιατί ο Meteor είναι ξεχωριστός</h2>
+    <p>Κατασκευασμένος από την MBDA, ο Meteor σχεδιάστηκε για να κυριαρχεί στις εμπλοκές πέραν του οπτικού ορίζοντα, και ήδη εξοπλίζει Rafale, Gripen και Eurofighter. Αυτό που τον ξεχωρίζει είναι η πρόωσή του: ένας <strong>ramjet</strong> μεταβλητής ώσης. Οι περισσότεροι πύραυλοι αέρος-αέρος χρησιμοποιούν πυραυλοκινητήρα στερεού καυσίμου και «αδρανοπορούν», χάνοντας ενέργεια, στο μεγάλο μεσαίο τμήμα της πτήσης. Ο Meteor αντίθετα συνεχίζει να παράγει ώση σχεδόν μέχρι την τελική φάση, ώστε ακόμη και σε πολύ μεγάλες αποστάσεις φτάνει γρήγορος και γεμάτος κινητική ενέργεια. Το πρακτικό αποτέλεσμα είναι μια «No Escape Zone» — η ζώνη μέσα στην οποία ο στόχος δεν μπορεί να ξεφύγει ακόμη και με ακραίους ελιγμούς — πολλαπλάσια από εκείνη αντίστοιχων όπλων.</p>
+    <p class="pull">Συνδύασε τους αισθητήρες του F-35 με έναν πύραυλο που έχει ακόμη ώση τη στιγμή της προσβολής, και η «ζώνη μη διαφυγής» παύει να είναι μεταφορά.</p>
+    <h2>Γιατί το F-35 αλλάζει την εξίσωση</h2>
+    <p>Το μαχητικό φέρνει το άλλο μισό της εξίσωσης. Το ραντάρ AESA APG-81, το σύστημα κατανεμημένης απεικόνισης (DAS), το ηλεκτρο-οπτικό σύστημα στόχευσης (EOTS) και η σύντηξη αισθητήρων χτίζουν μια τακτική εικόνα που καμία προηγούμενη γενιά δεν μπορούσε να προσφέρει. Ωστόσο, μέχρι σήμερα, το αεροσκάφος δεν μπορούσε στην πράξη να εκτοξεύσει Meteor. Η πιστοποίηση ενώνει την ικανότητα του F-35 να εντοπίζει και να παρακολουθεί στόχο χωρίς να αποκαλύπτεται με την εμβέλεια και τη θανατηφόρα ισχύ του κορυφαίου ευρωπαϊκού πυραύλου αέρος-αέρος — ουσιαστικά συνδέει δύο από τα ισχυρότερα συστήματα του δυτικού αεροπορικού πολέμου.</p>
+    <h2>Βρετανία και Ιταλία στο τιμόνι</h2>
+    <p>Η ώθηση είναι ευρωπαϊκή. Το Ηνωμένο Βασίλειο είναι ο βασικός κινητήριος μοχλός: η RAF έχει επενδύσει σημαντικά στον Meteor μέσω του Typhoon και θεωρεί απαραίτητο το ίδιο όπλο να εξοπλίζει και τα F-35B της. Η Ιταλία, που επιχειρεί τόσο με Eurofighter όσο και με F-35, επιδιώκει την ίδια κοινή φιλοσοφία οπλισμού. Γι' αυτό και η νέα σύμβαση περιορίζεται ειδικά σε βρετανικά και ιταλικά όπλα — τα δύο έθνη που πιέζουν περισσότερο για να πιστοποιηθεί ο Meteor στο μαχητικό.</p>
+    <h2>Τι σημαίνει για την Ελλάδα και το Αιγαίο</h2>
+    <p>Για την Αθήνα η εξέλιξη πέφτει κοντά στο σπίτι. Η Πολεμική Αεροπορία διαθέτει ήδη Meteor στα Rafale, και το Αεροπορικό Επιτελείο έχει ζητήσει ο ίδιος πύραυλος να πιστοποιηθεί και στα ελληνικά F-35, ώστε να υπάρχει ένα κοινό όπλο μεγάλης εμβέλειας και στις δύο κορυφαίες πλατφόρμες — με κοινή εκπαίδευση, υποστήριξη και σχεδιασμό αποστολών, και μικρότερο συνολικό κόστος. Παράλληλα, η Ελλάδα έχει ζητήσει την αποδέσμευση της πλέον προηγμένης έκδοσης AIM-120D AMRAAM, ώστε το F-35 της να μπορεί να αξιοποιεί είτε την κορυφαία ευρωπαϊκή είτε την κορυφαία αμερικανική επιλογή. Τίποτε από αυτά δεν είναι τετελεσμένο: η σύμβαση ξεκινά μια πολυετή διαδικασία, όχι μια ολοκληρωμένη δυνατότητα. Όμως ένα stealth αεροσκάφος που εντοπίζει χωρίς να αποκαλύπτεται, μοιράζεται στοιχεία μέσω δικτύου και εκτοξεύει βολή «χωρίς διαφυγή» σε μεγάλη απόσταση θα ενίσχυε ουσιαστικά την ελληνική αποτροπή πάνω από το Αιγαίο — γι' αυτόν ακριβώς τον λόγο ο φάκελος βρίσκεται τώρα υπό τη στενή παρακολούθηση του Αεροπορικού Επιτελείου.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <h2>Le contrat qui débloque tout</h2>
+    <p>L'une des plus anciennes lacunes de l'arsenal du F-35 commence à se combler. Un nouveau contrat du département de la Défense américain à <strong>Lockheed Martin</strong>, d'environ 74 millions de dollars, porte sur l'intégration de « systèmes d'armes uniques » britanniques et italiens sur les F-35A et F-35B. Le texte ne nomme pas le missile — mais Londres et Rome ayant fait de l'intégration du <strong>Meteor</strong> leur toute première priorité, les analystes lisent presque unanimement cette attribution comme le premier pas concret vers la certification du missile européen sur l'appareil furtif. Les travaux — développement, essais et certification — courent jusqu'à fin 2032.</p>
+    <h2>Pourquoi le Meteor est à part</h2>
+    <p>Conçu par MBDA, le Meteor a été pensé pour dominer le combat au-delà de la portée visuelle, et il arme déjà le Rafale, le Gripen et l'Eurofighter. Ce qui le distingue, c'est sa propulsion : un <strong>statoréacteur</strong> à poussée variable. La plupart des missiles air-air utilisent un moteur-fusée à propergol solide et planent — en perdant de l'énergie — sur la longue phase médiane. Le Meteor, lui, continue de produire de la poussée presque jusqu'à la phase terminale : même à très longue distance, il arrive vite et plein d'énergie cinétique. Résultat concret : une « No Escape Zone » — la zone dans laquelle la cible ne peut échapper au missile même par des manœuvres extrêmes — plusieurs fois plus vaste que celle d'armes comparables.</p>
+    <p class="pull">Associez les capteurs du F-35 à un missile qui a encore de la poussée à l'impact, et la « zone sans échappatoire » cesse d'être une métaphore.</p>
+    <h2>Pourquoi le F-35 change l'équation</h2>
+    <p>L'appareil apporte l'autre moitié de l'équation. Son radar AESA APG-81, son système à ouverture distribuée, son optronique de ciblage et sa fusion de capteurs construisent une image tactique inégalée par les générations précédentes. Mais jusqu'ici, l'avion ne pouvait pas tirer de Meteor. La certification unit la capacité du F-35 à détecter et suivre une cible sans être vu à la portée et la létalité du meilleur missile air-air européen — en somme, elle accouple deux des systèmes les plus puissants du combat aérien occidental.</p>
+    <h2>Le Royaume-Uni et l'Italie aux commandes</h2>
+    <p>L'impulsion est européenne. Le Royaume-Uni est le moteur principal : la RAF a beaucoup investi dans le Meteor via le Typhoon et juge essentiel que la même arme équipe ses F-35B. L'Italie, qui aligne Eurofighter et F-35, vise la même communalité d'armement. C'est pourquoi le nouveau contrat se limite précisément aux armes britanniques et italiennes — les deux nations les plus déterminées à voir le Meteor homologué sur l'appareil.</p>
+    <h2>Ce que cela signifie pour la Grèce et la mer Égée</h2>
+    <p>Pour Athènes, l'évolution touche de près. L'armée de l'air hellénique met déjà en œuvre le Meteor sur ses Rafale, et son état-major a demandé que le même missile soit certifié sur les F-35 grecs, afin de disposer d'une arme de longue portée commune aux deux plateformes — avec entraînement, soutien et planification de mission communs, et des coûts globaux moindres. En parallèle, la Grèce a demandé la libération de la version la plus avancée de l'AIM-120D AMRAAM, pour que son F-35 puisse recourir à la meilleure option européenne ou américaine. Rien n'est acquis : le contrat lance un processus pluriannuel, non une capacité achevée. Mais un avion furtif capable de détecter sans se dévoiler, de partager des pistes en réseau et de tirer à longue distance un coup « sans échappatoire » renforcerait nettement la dissuasion grecque au-dessus de la mer Égée — d'où l'attention soutenue que l'état-major porte désormais à ce dossier.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <h2>Kontrakten, der låser det op</h2>
+    <p>Et af de mest langvarige huller i F-35'ens våbenarsenal er ved at lukke. En ny kontrakt fra det amerikanske forsvarsministerium til <strong>Lockheed Martin</strong> på omkring 74 millioner dollars dækker integration af britiske og italienske «unikke våbensystemer» på F-35A og F-35B. Teksten nævner ikke missilet — men da både London og Rom har gjort integration af <strong>Meteor</strong> til deres højeste prioritet, læser analytikere næsten enstemmigt tildelingen som det første reelle skridt mod certificering af det europæiske missil på det snigfly. Arbejdet — udvikling, test og certificering — løber til udgangen af 2032.</p>
+    <h2>Hvorfor Meteor er noget særligt</h2>
+    <p>Bygget af MBDA blev Meteor designet til at dominere kamp uden for synsvidde, og det bevæbner allerede Rafale, Gripen og Eurofighter. Det, der adskiller det, er fremdriften: en <strong>ramjet</strong> med variabel ydelse. De fleste luft-til-luft-missiler bruger en raketmotor med fast brændstof og glider — mens de mister energi — gennem den lange mellemfase. Meteor bliver derimod ved med at producere fremdrift næsten til terminalfasen, så det selv på meget lang afstand ankommer hurtigt og fuldt af kinetisk energi. Det praktiske resultat er en «No Escape Zone» — det bånd, hvor målet ikke kan undslippe missilet selv med voldsomme manøvrer — flere gange større end hos sammenlignelige våben.</p>
+    <p class="pull">Par F-35'ens sensorer med et missil, der stadig har fremdrift ved nedslag, og «no-escape-zonen» holder op med at være en metafor.</p>
+    <h2>Hvorfor F-35 ændrer ligningen</h2>
+    <p>Flyet leverer den anden halvdel af ligningen. Dets APG-81 AESA-radar, distributed-aperture-system, elektro-optiske målsøgning og sensorfusion bygger et taktisk billede, ingen tidligere generation kunne matche. Men hidtil kunne flyet ikke faktisk affyre et Meteor. Certificeringen forener F-35'ens evne til at finde og spore et mål uden at blive set med rækkevidden og dødeligheden hos Europas bedste luft-til-luft-missil — i praksis kobler den to af de mest magtfulde systemer i vestlig luftkamp sammen.</p>
+    <h2>Storbritannien og Italien ved roret</h2>
+    <p>Skubbet er europæisk. Storbritannien er den primære drivkraft: RAF har investeret tungt i Meteor via Typhoon og anser det for afgørende, at samme våben bevæbner dets F-35B. Italien, der flyver både Eurofighter og F-35, ønsker samme våbenfællesskab. Derfor er den nye kontrakt netop begrænset til britiske og italienske våben — de to nationer, der mest beslutsomt vil have Meteor godkendt til flyet.</p>
+    <h2>Hvad det betyder for Grækenland og Det Ægæiske Hav</h2>
+    <p>For Athen rammer udviklingen tæt på. Det græske flyvevåben anvender allerede Meteor på sine Rafale, og dets luftstab har bedt om, at samme missil certificeres på de græske F-35, så der er ét langtrækkende våben på begge topplatforme — med fælles træning, støtte og missionsplanlægning og lavere samlede omkostninger. Sideløbende har Grækenland anmodet om frigivelse af den mest avancerede AIM-120D AMRAAM, så dets F-35 kan trække på enten den førende europæiske eller amerikanske mulighed. Intet af dette er afgjort: kontrakten starter en flerårig proces, ikke en færdig kapacitet. Men et snigfly, der kan opdage uden at afsløre sig, dele spor over et netværk og affyre et «no-escape»-skud på lang afstand, ville markant styrke græsk afskrækkelse over Det Ægæiske Hav — netop derfor ligger sagen nu under luftstabens tætte opmærksomhed.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <h2>Kontraktet som låser upp det</h2>
+    <p>En av de mest långvariga luckorna i F-35:ans vapenarsenal börjar slutas. Ett nytt kontrakt från det amerikanska försvarsdepartementet till <strong>Lockheed Martin</strong> på omkring 74 miljoner dollar omfattar integration av brittiska och italienska «unika vapensystem» på F-35A och F-35B. Texten nämner inte roboten — men då både London och Rom gjort integrationen av <strong>Meteor</strong> till sin högsta prioritet läser analytiker nästan enhälligt tilldelningen som det första reella steget mot certifiering av den europeiska roboten på smygplanet. Arbetet — utveckling, test och certifiering — löper till slutet av 2032.</p>
+    <h2>Varför Meteor är speciell</h2>
+    <p>Byggd av MBDA konstruerades Meteor för att dominera strid bortom synhåll, och den beväpnar redan Rafale, Gripen och Eurofighter. Det som skiljer den åt är framdrivningen: en <strong>ramjet</strong> med variabel dragkraft. De flesta jaktrobotar använder en raketmotor med fast bränsle och glider — medan de tappar energi — genom den långa mellanfasen. Meteor fortsätter i stället att producera dragkraft nästan till slutfasen, så att den även på mycket långt avstånd anländer snabbt och full av rörelseenergi. Det praktiska resultatet är en «No Escape Zone» — det band inom vilket målet inte kan undkomma roboten ens med våldsamma manövrar — flera gånger större än hos jämförbara vapen.</p>
+    <p class="pull">Para ihop F-35:ans sensorer med en robot som fortfarande har dragkraft vid träff, och «no escape-zonen» upphör att vara en metafor.</p>
+    <h2>Varför F-35 ändrar ekvationen</h2>
+    <p>Planet bidrar med den andra halvan av ekvationen. Dess APG-81 AESA-radar, distributed-aperture-system, elektrooptiska målsökning och sensorfusion bygger en taktisk bild som ingen tidigare generation kunde matcha. Men hittills kunde planet inte faktiskt avfyra en Meteor. Certifieringen förenar F-35:ans förmåga att hitta och följa ett mål utan att synas med räckvidden och dödligheten hos Europas främsta jaktrobot — i praktiken kopplar den ihop två av de mäktigaste systemen i västlig luftstrid.</p>
+    <h2>Storbritannien och Italien vid rodret</h2>
+    <p>Drivkraften är europeisk. Storbritannien är den främsta motorn: RAF har investerat tungt i Meteor via Typhoon och anser det avgörande att samma vapen beväpnar dess F-35B. Italien, som flyger både Eurofighter och F-35, vill ha samma vapengemenskap. Därför är det nya kontraktet just begränsat till brittiska och italienska vapen — de två nationer som mest beslutsamt vill se Meteor godkänd för planet.</p>
+    <h2>Vad det betyder för Grekland och Egeiska havet</h2>
+    <p>För Aten landar utvecklingen nära hemmet. Det grekiska flygvapnet använder redan Meteor på sina Rafale, och dess flygstab har begärt att samma robot certifieras på de grekiska F-35, så att det finns ett gemensamt långräckviddigt vapen på båda topplattformarna — med gemensam träning, stöd och uppdragsplanering och lägre totalkostnader. Parallellt har Grekland begärt frisläppande av den mest avancerade AIM-120D AMRAAM, så att dess F-35 kan dra nytta av antingen det ledande europeiska eller amerikanska alternativet. Inget av detta är avgjort: kontraktet inleder en flerårig process, inte en färdig förmåga. Men ett smygplan som kan upptäcka utan att avslöja sig, dela spår över ett nätverk och avfyra ett «no escape»-skott på långt avstånd skulle påtagligt stärka grekisk avskräckning över Egeiska havet — just därför ligger ärendet nu under flygstabens nära uppmärksamhet.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>OnAlert.gr — Meteor για τα F-35: Ανοίγει ο δρόμος για την πιστοποίηση του πανίσχυρου πυραύλου στα stealth μαχητικά (Κώστας Σαρικάς, 29 June 2026)</li>
+      <li>US DoD / Lockheed Martin contract for UK & Italian weapon-system integration on F-35A/B (work through end-2032)</li>
+      <li>Frontline Brief background — MBDA Meteor (ramjet, No Escape Zone), AIM-120D AMRAAM, and HAF Rafale/F-35 armament requirements</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Defence Policy",a_cat:"Defence Policy",a_tag:"🚀 BVR Missile",a_date:"29 June 2026",a_read:"3 min read",a_title:"Meteor meets the F-35: a <em>$74m step toward the West's most lethal air-to-air pairing</em>",a_stand:"A new US contract to put British and Italian weapons on the F-35 is being read across Europe as the first real move to certify MBDA's Meteor on the stealth fighter. If it works, it marries the jet's unmatched sensors to a missile that keeps thrust almost to impact — and for Greece, which already fields Meteor on its Rafales, the prize is a common long-range weapon across its two best platforms.",p1_h:"The first real step",p1_p:"A US Defense Department contract to Lockheed Martin covers integrating British and Italian \u201cunique weapon systems\u201d on the F-35A and F-35B. It does not name Meteor, but with both nations making it their top requirement, analysts read it as the start of certification — with development, test and certification work running to the end of 2032.",p2_h:"A ramjet that never quits",p2_p:"MBDA's Meteor is a ramjet-powered air-to-air missile with an estimated range beyond 200 km. Unlike solid-rocket missiles that bleed energy in flight, it keeps producing thrust almost to impact, giving a \u201cNo Escape Zone\u201d many times larger than its rivals. It already arms Rafale, Gripen and Eurofighter.",p3_h:"A weapon on both jets",p3_p:"The Hellenic Air Force already fields Meteor via its Rafales and wants it certified on its F-35s too. It has also asked Washington to release the latest AIM-120D AMRAAM — so its F-35 could carry the best European or the best American beyond-visual-range weapon, mission by mission.",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στην Αμυντική Πολιτική",a_cat:"Αμυντική Πολιτική",a_tag:"🚀 Πύραυλος BVR",a_date:"29 Ιουνίου 2026",a_read:"3' ανάγνωση",a_title:"Ο Meteor συναντά το F-35: ένα <em>βήμα 74 εκατ. $ προς το πιο θανατηφόρο δίδυμο αέρος-αέρος της Δύσης</em>",a_stand:"Νέα αμερικανική σύμβαση για βρετανικά και ιταλικά όπλα στο F-35 διαβάζεται σε όλη την Ευρώπη ως η πρώτη ουσιαστική κίνηση για την πιστοποίηση του Meteor της MBDA στο stealth μαχητικό. Αν πετύχει, παντρεύει τους ασύγκριτους αισθητήρες του αεροσκάφους με έναν πύραυλο που διατηρεί ώση σχεδόν μέχρι την προσβολή — και για την Ελλάδα, που ήδη διαθέτει Meteor στα Rafale, το έπαθλο είναι ένα κοινό όπλο μεγάλης εμβέλειας στις δύο κορυφαίες πλατφόρμες της.",p1_h:"Το πρώτο ουσιαστικό βήμα",p1_p:"Σύμβαση του αμερικανικού Υπουργείου Άμυνας προς τη Lockheed Martin αφορά την ενσωμάτωση βρετανικών και ιταλικών «μοναδικών οπλικών συστημάτων» στα F-35A/B. Δεν κατονομάζει τον Meteor, αλλά καθώς και οι δύο χώρες τον έχουν ως κορυφαία απαίτηση, διαβάζεται ως η αρχή της πιστοποίησης — με εργασίες έως το τέλος του 2032.",p2_h:"Ένας ramjet που δεν σταματά",p2_p:"Ο Meteor της MBDA είναι πύραυλος αέρος-αέρος με ramjet και εκτιμώμενη εμβέλεια άνω των 200 χλμ. Σε αντίθεση με τους πυραύλους στερεού καυσίμου που χάνουν ενέργεια, διατηρεί ώση σχεδόν μέχρι την προσβολή, δίνοντας «No Escape Zone» πολλαπλάσια των ανταγωνιστών. Ήδη εξοπλίζει Rafale, Gripen και Eurofighter.",p3_h:"Ένα όπλο και στα δύο μαχητικά",p3_p:"Η Πολεμική Αεροπορία διαθέτει ήδη Meteor μέσω των Rafale και τον θέλει πιστοποιημένο και στα F-35. Έχει ζητήσει επίσης την αποδέσμευση του AIM-120D AMRAAM — ώστε το F-35 της να φέρει είτε το κορυφαίο ευρωπαϊκό είτε το κορυφαίο αμερικανικό όπλο BVR, ανά αποστολή.",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Politique de Défense",a_cat:"Politique de Défense",a_tag:"🚀 Missile BVR",a_date:"29 juin 2026",a_read:"3 min de lecture",a_title:"Le Meteor rencontre le F-35 : un <em>pas de 74 M$ vers le duo air-air le plus létal de l'Occident</em>",a_stand:"Un nouveau contrat américain pour intégrer des armes britanniques et italiennes sur le F-35 est lu dans toute l'Europe comme le premier vrai mouvement vers la certification du Meteor de MBDA sur le chasseur furtif. S'il aboutit, il marie les capteurs inégalés de l'appareil à un missile qui garde sa poussée presque jusqu'à l'impact — et pour la Grèce, qui aligne déjà le Meteor sur ses Rafale, l'enjeu est une arme longue portée commune à ses deux meilleures plateformes.",p1_h:"Le premier vrai pas",p1_p:"Un contrat du département de la Défense à Lockheed Martin porte sur l'intégration de « systèmes d'armes uniques » britanniques et italiens sur les F-35A/B. Il ne nomme pas le Meteor, mais les deux nations en faisant leur priorité, il est lu comme le début de la certification — travaux jusqu'à fin 2032.",p2_h:"Un statoréacteur qui n'abandonne jamais",p2_p:"Le Meteor de MBDA est un missile air-air à statoréacteur, d'une portée estimée au-delà de 200 km. Contrairement aux missiles à propergol solide qui perdent de l'énergie, il garde sa poussée presque jusqu'à l'impact, offrant une « No Escape Zone » bien plus vaste que ses rivaux. Il arme déjà Rafale, Gripen et Eurofighter.",p3_h:"Une arme sur les deux chasseurs",p3_p:"L'armée de l'air hellénique aligne déjà le Meteor via ses Rafale et le veut certifié sur ses F-35. Elle a aussi demandé la libération de l'AIM-120D AMRAAM le plus récent — pour que son F-35 puisse porter la meilleure option BVR européenne ou américaine, selon la mission.",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Forsvarspolitik",a_cat:"Forsvarspolitik",a_tag:"🚀 BVR-missil",a_date:"29. juni 2026",a_read:"3 min. læsning",a_title:"Meteor møder F-35: et <em>skridt på 74 mio. $ mod Vestens mest dødbringende luft-til-luft-par</em>",a_stand:"En ny amerikansk kontrakt om at sætte britiske og italienske våben på F-35 læses i hele Europa som det første reelle skridt mod at certificere MBDA's Meteor på snigflyet. Lykkes det, gifter det flyets uovertrufne sensorer med et missil, der bevarer fremdrift næsten til nedslag — og for Grækenland, der allerede har Meteor på sine Rafale, er gevinsten ét langtrækkende våben på begge dets bedste platforme.",p1_h:"Det første reelle skridt",p1_p:"En kontrakt fra forsvarsministeriet til Lockheed Martin dækker integration af britiske og italienske «unikke våbensystemer» på F-35A/B. Den nævner ikke Meteor, men da begge lande har gjort det til topprioritet, læses den som starten på certificering — arbejde til udgangen af 2032.",p2_h:"En ramjet, der aldrig giver op",p2_p:"MBDA's Meteor er et ramjet-drevet luft-til-luft-missil med en anslået rækkevidde over 200 km. I modsætning til faststofmissiler, der mister energi, bevarer det fremdrift næsten til nedslag og giver en «No Escape Zone» mange gange større end rivalerne. Det bevæbner allerede Rafale, Gripen og Eurofighter.",p3_h:"Et våben på begge fly",p3_p:"Det græske flyvevåben har allerede Meteor via sine Rafale og vil have det certificeret på sine F-35. Det har også bedt om frigivelse af den nyeste AIM-120D AMRAAM — så dets F-35 kan bære det bedste europæiske eller amerikanske BVR-våben, fra mission til mission.",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Försvarspolitik",a_cat:"Försvarspolitik",a_tag:"🚀 BVR-robot",a_date:"29 juni 2026",a_read:"3 min läsning",a_title:"Meteor möter F-35: ett <em>steg på 74 milj. $ mot Västs mest dödliga jaktrobotpar</em>",a_stand:"Ett nytt amerikanskt kontrakt om att sätta brittiska och italienska vapen på F-35 läses i hela Europa som det första reella steget mot att certifiera MBDA:s Meteor på smygplanet. Lyckas det förenar det planets oöverträffade sensorer med en robot som behåller dragkraft nästan till träff — och för Grekland, som redan har Meteor på sina Rafale, är vinsten ett gemensamt långräckviddigt vapen på dess två bästa plattformar.",p1_h:"Det första reella steget",p1_p:"Ett kontrakt från försvarsdepartementet till Lockheed Martin omfattar integration av brittiska och italienska «unika vapensystem» på F-35A/B. Det nämner inte Meteor, men då båda länderna gjort det till högsta prioritet läses det som början på certifiering — arbete till slutet av 2032.",p2_h:"En ramjet som aldrig ger upp",p2_p:"MBDA:s Meteor är en ramjet-driven jaktrobot med en uppskattad räckvidd över 200 km. Till skillnad från fastbränslerobotar som tappar energi behåller den dragkraft nästan till träff och ger en «No Escape Zone» många gånger större än rivalerna. Den beväpnar redan Rafale, Gripen och Eurofighter.",p3_h:"Ett vapen på båda planen",p3_p:"Det grekiska flygvapnet har redan Meteor via sina Rafale och vill ha den certifierad på sina F-35. Det har också begärt frisläppande av den senaste AIM-120D AMRAAM — så att dess F-35 kan bära det bästa europeiska eller amerikanska BVR-vapnet, uppdrag för uppdrag.",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s&&translations[s]){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
