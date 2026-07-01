@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anti-Drone Warfare: The Missing Tier in Maritime Defence — Frontline Brief</title>
+<meta name="description" content="An argument gaining ground in naval circles: cheap one-way attack drones form a middle tier between air defence and C-UAS, and the sea, not the shore, is where they must be met — with unmanned ships pushed forward.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--cold);line-height:1.1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.note{background:rgba(30,58,95,.18);border:.5px solid var(--border);border-radius:8px;padding:14px 18px;font-size:13px;color:var(--muted);line-height:1.7;margin:8px 0 30px;}
+.note b{color:var(--cold);font-weight:600;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="defence.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Defence Policy</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Defence Policy</span>
+    <span class="tag" data-i18n="a_tag">🛸 Counter-Drone · Analysis</span>
+    <span class="sep">·</span><span data-i18n="a_date">30 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">3 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">The missing tier: <em>why one argument says navies need a dedicated layer for drone defence at sea</em></h1>
+  <p class="standfirst" data-i18n="a_stand">Cheap one-way attack drones now sit in a gap between conventional air defence and counter-UAS — too big for one, too many for the other. A widely shared argument holds that this middle tier deserves its own domain, and that at sea it can only be filled by pushing unmanned ships forward. It is a compelling case; it also comes from an author with a stake in the answer.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/adw-usv-en.jpg" alt="The missing tier — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/adw-usv-el.jpg" alt="The missing tier — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/adw-usv-fr.jpg" alt="The missing tier — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/adw-usv-da.jpg" alt="The missing tier — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/adw-usv-sv.jpg" alt="The missing tier — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">The gap · A middle tier</div><h3 data-i18n="p1_h">Between the boxes</h3><p data-i18n="p1_p">Autonomous one-way attack drones carry a 40–100 kg warhead across hundreds or thousands of kilometres, resist satellite-navigation jamming, and arrive in salvos of tens to hundreds at roughly $20,000–$50,000 each — too capable for counter-UAS, too numerous for high-end air defence.</p></div><div class="stat"><b>$20-50k</b><small>per OWA drone</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The economics · Cost-exchange</div><h3 data-i18n="p2_h">Losing by winning</h3><p data-i18n="p2_p">Meeting cheap drones with million-dollar interceptors drains a defender's budget and political will faster than it drains the attacker's production. Studies cited put cost-per-engagement across systems at more than five orders of magnitude apart.</p></div><div class="stat"><b>5+</b><small>orders of magnitude</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The fix · Ships pushed forward</div><h3 data-i18n="p3_h">The sea as the shield</h3><p data-i18n="p3_p">An unmanned surface vessel with an air-search radar 30 km forward buys about ten extra minutes against a 185 km/h drone, three against a jet-powered one — and can reposition, concentrate and escort in ways a fixed shore site cannot.</p></div><div class="stat"><b>30km</b><small>forward warning</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <p class="note"><b>Note.</b> This piece summarises an analysis published by Naval News and written by Hasan Özyurt, a retired rear admiral who works at ULAQ Global, a maker of armed unmanned surface vessels. The framework is widely discussed on its own merits; readers should nonetheless weigh the author's commercial interest in the unmanned-ship solution he advocates.</p>
+    <h2>A threat that doesn't fit the boxes</h2>
+    <p>Defence planners, the argument runs, have sorted the aerial threat into two familiar boxes: conventional air defence for aircraft, cruise missiles and large drones, and counter-UAS for small commercial quadcopters. Between them a middle tier has grown up almost unnoticed — the autonomous one-way attack (OWA) drone. It carries a substantial warhead over long range, shrugs off satellite-navigation jamming, and comes in saturating salvos at a unit price a fraction of the weapons fired to stop it. Recent wars, from Nagorno-Karabakh to Ukraine to the Red Sea, are read here as evidence that treating this as either "air defence" or "counter-drone" is a category error.</p>
+    <h2>The economics of exhaustion</h2>
+    <p>The sharpest point in the case is financial. If a defender answers a $30,000 drone with an interceptor costing tens of times more, it wins each engagement and loses the campaign — running out of money, magazines and political patience long before the attacker runs out of drones. The author cites analyses putting cost-per-engagement across counter-drone systems more than five orders of magnitude apart, and lessons from Ukraine and the Red Sea that point the same way: high-volume threats need cheaper, purpose-matched effectors — radar-guided guns and compact precision rounds — not the expensive missiles reserved for aircraft and ballistic threats.</p>
+    <h2>Why the shore isn't enough</h2>
+    <p>Shore-based counter-drone systems work well, the piece concedes — against small, short-range quadcopters approaching fixed sites over land. At sea the argument turns. Low-observable OWA drones can be detected only in the low tens of kilometres over water; at a conservative 10 km, a drone at 200 km/h gives under three and a half minutes to react, and a jet-powered variant leaves seconds. Worse, the shore is geometrically fixed at the very point where engagement depth has already run out. It cannot move up-threat, reposition along a coastline, or escort a ship under way. In the author's words, the shore is <em>"the last line, and often the only one."</em></p>
+    <p class="pull">The sea itself is the defensive space — and not using it, the author argues, is the strategic gap.</p>
+    <h2>The unmanned ship as the answer</h2>
+    <p>His proposed fix is the unmanned surface vessel. Push a USV carrying an AESA radar 30 km up the threat axis and it meets the drones earlier — roughly ten extra minutes against a slow drone, three against a fast one — not because its sensor is better, but because it is closer to the problem. A screen of such craft can shift to where intelligence expects the attack, or escort convoys at sea. Being small, a 10–15 metre USV is also hard to see and cheap to lose, and a purpose-built hull can carry the whole kill chain: a radar tuned for low-signature targets, an electro-optical director, and a low-cost precision effector.</p>
+    <h2>Doctrine, not just hardware — and a caveat</h2>
+    <p>Hardware alone, the analysis stresses, is not enough: a saturation attack of dozens of drones across a wide front demands automated target allocation and command-and-control at the force level, echoing US Navy lessons from the Red Sea about magazine depth and integrated C2. The logic is coherent and increasingly mainstream. Two caveats are worth keeping in view. The author works for a company that builds exactly the armed USVs he recommends, so the conclusion aligns with a commercial interest. And unmanned screens raise their own questions — communications resilience, rules of engagement, and the risk of losing forward sensors to the very salvos they are meant to blunt. The framework is a useful way to think about a real and growing gap; it is not the only way to close it.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <p class="note"><b>Σημείωση.</b> Το κείμενο συνοψίζει ανάλυση που δημοσιεύθηκε στο Naval News και υπογράφει ο Χασάν Οζγιούρτ, απόστρατος υποναύαρχος που εργάζεται στην ULAQ Global, κατασκευάστρια οπλισμένων μη επανδρωμένων επιφανείας σκαφών (USV). Το πλαίσιο συζητείται ευρέως αυτοτελώς· ο αναγνώστης ωστόσο οφείλει να σταθμίσει το εμπορικό συμφέρον του συγγραφέα στη λύση που προτείνει.</p>
+    <h2>Μια απειλή που δεν χωρά στα κουτιά</h2>
+    <p>Οι σχεδιαστές άμυνας, λέει το επιχείρημα, έχουν ταξινομήσει την εναέρια απειλή σε δύο γνώριμα κουτιά: συμβατική αεράμυνα για αεροσκάφη, πυραύλους cruise και μεγάλα drones, και C-UAS για μικρά εμπορικά quadcopters. Ανάμεσά τους μεγάλωσε σχεδόν απαρατήρητο ένα ενδιάμεσο επίπεδο — το αυτόνομο επιθετικό drone μιας κατεύθυνσης (OWA). Φέρει σημαντική κεφαλή σε μεγάλη απόσταση, αγνοεί την παρεμβολή δορυφορικής πλοήγησης, και έρχεται σε κορεστικά κύματα με τιμή μονάδας κλάσμα των όπλων που εκτοξεύονται για να το σταματήσουν. Πρόσφατοι πόλεμοι, από το Ναγκόρνο-Καραμπάχ ως την Ουκρανία και την Ερυθρά Θάλασσα, διαβάζονται εδώ ως απόδειξη ότι το να το αντιμετωπίζεις είτε ως «αεράμυνα» είτε ως «αντι-drone» είναι σφάλμα κατηγοριοποίησης.</p>
+    <h2>Η οικονομία της εξάντλησης</h2>
+    <p>Το πιο αιχμηρό σημείο είναι οικονομικό. Αν ο αμυνόμενος απαντά σε ένα drone 30.000 δολαρίων με αναχαιτιστικό που κοστίζει δεκάδες φορές περισσότερο, κερδίζει κάθε εμπλοκή και χάνει την εκστρατεία — ξεμένει από χρήμα, πυρομαχικά και πολιτική υπομονή πολύ πριν ξεμείνει από drones ο επιτιθέμενος. Ο συγγραφέας παραθέτει αναλύσεις που τοποθετούν το κόστος ανά εμπλοκή σε πάνω από πέντε τάξεις μεγέθους διαφορά, και μαθήματα από Ουκρανία και Ερυθρά Θάλασσα που δείχνουν το ίδιο: οι απειλές μεγάλου όγκου χρειάζονται φθηνότερα, ειδικά προσαρμοσμένα μέσα — πυροβόλα καθοδηγούμενα από ραντάρ και συμπαγή βλήματα ακριβείας — όχι τους ακριβούς πυραύλους που φυλάσσονται για αεροσκάφη και βαλλιστικές απειλές.</p>
+    <h2>Γιατί η ακτή δεν αρκεί</h2>
+    <p>Τα χερσαία αντι-drone συστήματα δουλεύουν καλά, παραδέχεται το κείμενο — κόντρα σε μικρά, μικρής εμβέλειας quadcopters που πλησιάζουν σταθερές εγκαταστάσεις πάνω από ξηρά. Στη θάλασσα το επιχείρημα αλλάζει. Τα δυσδιάκριτα OWA drones εντοπίζονται μόνο σε λίγες δεκάδες χιλιόμετρα πάνω από νερό· με συντηρητικά 10 χλμ., ένα drone στα 200 χλμ./ώρα δίνει κάτω από τρεισήμισι λεπτά για αντίδραση, και μια εκδοχή με κινητήρα τζετ αφήνει δευτερόλεπτα. Χειρότερα, η ακτή είναι γεωμετρικά καθηλωμένη ακριβώς εκεί όπου το βάθος εμπλοκής έχει ήδη εξαντληθεί. Δεν μπορεί να κινηθεί προς την απειλή, να επανατοποθετηθεί κατά μήκος ακτογραμμής, ή να συνοδεύσει πλοίο εν πλω. Με τα λόγια του συγγραφέα, η ακτή είναι <em>«η τελευταία γραμμή, και συχνά η μόνη»</em>.</p>
+    <p class="pull">Η ίδια η θάλασσα είναι ο αμυντικός χώρος — και το να μην τον αξιοποιείς, υποστηρίζει ο συγγραφέας, είναι το στρατηγικό κενό.</p>
+    <h2>Το μη επανδρωμένο σκάφος ως απάντηση</h2>
+    <p>Η προτεινόμενη λύση του είναι το μη επανδρωμένο σκάφος επιφανείας. Προώθησε ένα USV με ραντάρ AESA 30 χλμ. κατά μήκος του άξονα της απειλής και συναντά τα drones νωρίτερα — περίπου δέκα επιπλέον λεπτά κόντρα σε αργό drone, τρία κόντρα σε γρήγορο — όχι επειδή ο αισθητήρας του είναι καλύτερος, αλλά επειδή είναι πιο κοντά στο πρόβλημα. Ένα «πέτασμα» τέτοιων σκαφών μπορεί να μετακινηθεί εκεί όπου οι πληροφορίες αναμένουν την επίθεση, ή να συνοδεύσει νηοπομπές στη θάλασσα. Όντας μικρό, ένα USV 10-15 μέτρων είναι επίσης δυσδιάκριτο και φθηνό να χαθεί, και ένα ειδικά σχεδιασμένο σκαρί μπορεί να φέρει ολόκληρη την αλυσίδα προσβολής: ραντάρ ρυθμισμένο για στόχους χαμηλής υπογραφής, ηλεκτρο-οπτικό σύστημα και ένα φθηνό μέσο ακριβείας.</p>
+    <h2>Δόγμα, όχι μόνο υλικό — και μια επιφύλαξη</h2>
+    <p>Το υλικό από μόνο του, τονίζει η ανάλυση, δεν αρκεί: μια κορεστική επίθεση δεκάδων drones σε ευρύ μέτωπο απαιτεί αυτοματοποιημένη κατανομή στόχων και διοίκηση-έλεγχο σε επίπεδο δύναμης, απηχώντας τα μαθήματα του Αμερικανικού Ναυτικού από την Ερυθρά Θάλασσα για το βάθος πυρομαχικών και το ολοκληρωμένο C2. Η λογική είναι συνεκτική και ολοένα πιο κυρίαρχη. Δύο επιφυλάξεις αξίζει να μένουν υπόψη. Ο συγγραφέας εργάζεται σε εταιρεία που κατασκευάζει ακριβώς τα οπλισμένα USV που συνιστά, οπότε το συμπέρασμα ευθυγραμμίζεται με εμπορικό συμφέρον. Και τα μη επανδρωμένα «πετάσματα» εγείρουν δικά τους ερωτήματα — ανθεκτικότητα επικοινωνιών, κανόνες εμπλοκής, και τον κίνδυνο να χαθούν οι προωθημένοι αισθητήρες από τα ίδια τα κύματα που υποτίθεται ότι αμβλύνουν. Το πλαίσιο είναι ένας χρήσιμος τρόπος να σκεφτείς ένα υπαρκτό και διευρυνόμενο κενό· δεν είναι ο μόνος τρόπος να το κλείσεις.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <p class="note"><b>Note.</b> Cet article résume une analyse publiée par Naval News et signée par Hasan Özyurt, contre-amiral en retraite employé par ULAQ Global, fabricant de navires de surface sans équipage armés (USV). Le cadre est largement débattu pour ses mérites propres ; le lecteur doit néanmoins peser l'intérêt commercial de l'auteur dans la solution qu'il défend.</p>
+    <h2>Une menace qui n'entre pas dans les cases</h2>
+    <p>Les planificateurs, dit l'argument, ont rangé la menace aérienne en deux cases familières : défense aérienne classique pour les avions, missiles de croisière et grands drones, et lutte anti-UAS pour les petits quadricoptères commerciaux. Entre les deux a grandi, presque inaperçu, un maillon intermédiaire — le drone kamikaze autonome (OWA). Il emporte une charge importante sur longue distance, ignore le brouillage de la navigation satellitaire, et arrive en salves saturantes à un prix unitaire dérisoire face aux armes tirées pour l'arrêter. Les guerres récentes, du Haut-Karabakh à l'Ukraine et à la mer Rouge, sont lues ici comme la preuve que le traiter en « défense aérienne » ou en « anti-drone » est une erreur de catégorie.</p>
+    <h2>L'économie de l'épuisement</h2>
+    <p>Le point le plus tranchant est financier. Si un défenseur répond à un drone de 30 000 dollars par un intercepteur coûtant des dizaines de fois plus, il gagne chaque engagement et perd la campagne — à court d'argent, de munitions et de patience politique bien avant que l'attaquant ne manque de drones. L'auteur cite des analyses situant le coût par engagement à plus de cinq ordres de grandeur d'écart, et des leçons d'Ukraine et de mer Rouge convergentes : les menaces de masse exigent des effecteurs moins chers et adaptés — canons guidés par radar et munitions de précision compactes — non les missiles coûteux réservés aux avions et menaces balistiques.</p>
+    <h2>Pourquoi la côte ne suffit pas</h2>
+    <p>Les systèmes anti-drones côtiers fonctionnent bien, concède le texte — contre de petits quadricoptères de courte portée approchant des sites fixes au-dessus des terres. En mer, l'argument bascule. Les drones OWA furtifs ne sont détectés qu'à quelques dizaines de kilomètres au-dessus de l'eau ; à 10 km prudents, un drone à 200 km/h laisse moins de trois minutes et demie, et une variante à réaction, des secondes. Pire, la côte est géométriquement figée là même où la profondeur d'engagement est déjà épuisée. Elle ne peut remonter vers la menace, se repositionner le long d'un littoral, ni escorter un navire en route. Selon l'auteur, la côte est <em>« la dernière ligne, et souvent la seule »</em>.</p>
+    <p class="pull">La mer elle-même est l'espace défensif — et ne pas l'utiliser, soutient l'auteur, est la faille stratégique.</p>
+    <h2>Le navire sans équipage comme réponse</h2>
+    <p>Sa solution est le navire de surface sans équipage. Poussez un USV doté d'un radar AESA à 30 km sur l'axe de la menace et il rencontre les drones plus tôt — environ dix minutes de plus contre un drone lent, trois contre un rapide — non parce que son capteur est meilleur, mais parce qu'il est plus près du problème. Un écran de tels engins peut se porter là où le renseignement attend l'attaque, ou escorter des convois en mer. Petit, un USV de 10-15 mètres est aussi difficile à voir et peu coûteux à perdre, et une coque dédiée peut emporter toute la chaîne d'engagement : radar réglé pour cibles à faible signature, directeur électro-optique et effecteur de précision bon marché.</p>
+    <h2>Doctrine, pas seulement matériel — et une réserve</h2>
+    <p>Le matériel seul, insiste l'analyse, ne suffit pas : une attaque saturante de dizaines de drones sur un large front exige une allocation automatisée des cibles et un commandement au niveau de la force, en écho aux leçons de l'US Navy en mer Rouge sur la profondeur des soutes et le C2 intégré. La logique est cohérente et de plus en plus dominante. Deux réserves méritent d'être gardées à l'esprit. L'auteur travaille pour une entreprise qui construit précisément les USV armés qu'il recommande ; sa conclusion épouse donc un intérêt commercial. Et les écrans sans équipage soulèvent leurs propres questions — résilience des communications, règles d'engagement, et le risque de perdre les capteurs avancés face aux salves mêmes qu'ils doivent émousser. Le cadre est une manière utile de penser une faille réelle et croissante ; ce n'est pas la seule manière de la combler.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <p class="note"><b>Bemærk.</b> Denne artikel opsummerer en analyse offentliggjort af Naval News og skrevet af Hasan Özyurt, en pensioneret kontreadmiral, der arbejder hos ULAQ Global, en producent af bevæbnede ubemandede overfladefartøjer (USV). Rammen debatteres bredt på egne præmisser; læseren bør ikke desto mindre veje forfatterens kommercielle interesse i den løsning, han anbefaler.</p>
+    <h2>En trussel, der ikke passer i kasserne</h2>
+    <p>Forsvarsplanlæggere har, lyder argumentet, sorteret lufttruslen i to velkendte kasser: konventionelt luftforsvar til fly, krydsermissiler og store droner, og C-UAS til små kommercielle quadcoptere. Mellem dem er et mellemlag vokset frem næsten ubemærket — den autonome envejs-angrebsdrone (OWA). Den bærer en betydelig sprænghoved over lang afstand, ignorerer satellitnavigationsstøj og ankommer i mættende salver til en stykpris, der er en brøkdel af de våben, der affyres for at stoppe den. Nylige krige, fra Nagorno-Karabakh til Ukraine og Det Røde Hav, læses her som bevis på, at det er en kategorifejl at behandle den som enten «luftforsvar» eller «anti-drone».</p>
+    <h2>Udmattelsens økonomi</h2>
+    <p>Det skarpeste punkt er økonomisk. Hvis en forsvarer svarer på en drone til 30.000 dollars med en interceptor, der koster titusindvis gange mere, vinder han hver træfning og taber kampagnen — løber tør for penge, magasiner og politisk tålmodighed længe før angriberen løber tør for droner. Forfatteren citerer analyser, der sætter omkostningen pr. træfning mere end fem størrelsesordener fra hinanden, og lektioner fra Ukraine og Det Røde Hav, der peger samme vej: højvolumentrusler kræver billigere, formålsbestemte effektorer — radarstyrede kanoner og kompakte præcisionsprojektiler — ikke de dyre missiler forbeholdt fly og ballistiske trusler.</p>
+    <h2>Hvorfor kysten ikke er nok</h2>
+    <p>Kystbaserede anti-dronesystemer virker godt, medgiver teksten — mod små quadcoptere med kort rækkevidde, der nærmer sig faste anlæg over land. Til søs vender argumentet. Lavsignatur-OWA-droner kan kun opdages i de lave titusinder af kilometer over vand; ved forsigtige 10 km giver en drone ved 200 km/t under tre et halvt minut, og en jetdrevet variant efterlader sekunder. Værre er kysten geometrisk fastlåst netop dér, hvor engagementsdybden allerede er opbrugt. Den kan ikke rykke mod truslen, omplacere sig langs en kystlinje eller eskortere et skib undervejs. Med forfatterens ord er kysten <em>«den sidste linje, og ofte den eneste»</em>.</p>
+    <p class="pull">Havet selv er det defensive rum — og ikke at bruge det er, hævder forfatteren, det strategiske hul.</p>
+    <h2>Det ubemandede skib som svar</h2>
+    <p>Hans foreslåede løsning er det ubemandede overfladefartøj. Skub et USV med en AESA-radar 30 km op ad trusselsaksen, og det møder dronerne tidligere — omkring ti ekstra minutter mod en langsom drone, tre mod en hurtig — ikke fordi dets sensor er bedre, men fordi det er tættere på problemet. En skærm af sådanne fartøjer kan flytte sig derhen, hvor efterretninger venter angrebet, eller eskortere konvojer til søs. Lille som det er, er et 10-15 meter USV også svært at se og billigt at miste, og et formålsbygget skrog kan bære hele dræberkæden: en radar indstillet til lavsignaturmål, en elektrooptisk styring og en billig præcisionseffektor.</p>
+    <h2>Doktrin, ikke kun hardware — og et forbehold</h2>
+    <p>Hardware alene, understreger analysen, er ikke nok: et mætningsangreb med dusinvis af droner over en bred front kræver automatiseret målfordeling og kommando-og-kontrol på styrkeniveau, i genklang af US Navys lektioner fra Det Røde Hav om magasindybde og integreret C2. Logikken er sammenhængende og stadig mere fremherskende. To forbehold er værd at holde sig for øje. Forfatteren arbejder for et firma, der bygger netop de bevæbnede USV'er, han anbefaler, så konklusionen flugter med en kommerciel interesse. Og ubemandede skærme rejser deres egne spørgsmål — kommunikationsrobusthed, engagementsregler og risikoen for at miste de fremskudte sensorer til netop de salver, de skal sløve. Rammen er en nyttig måde at tænke et reelt og voksende hul på; det er ikke den eneste måde at lukke det på.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <p class="note"><b>Notering.</b> Denna artikel sammanfattar en analys publicerad av Naval News och skriven av Hasan Özyurt, en pensionerad konteramiral som arbetar hos ULAQ Global, en tillverkare av beväpnade obemannade ytfartyg (USV). Ramverket diskuteras brett i sak; läsaren bör ändå väga författarens kommersiella intresse i den lösning han förordar.</p>
+    <h2>Ett hot som inte passar i lådorna</h2>
+    <p>Försvarsplanerare har, enligt argumentet, sorterat lufthotet i två välbekanta lådor: konventionellt luftförsvar för flygplan, kryssningsrobotar och stora drönare, och C-UAS för små kommersiella quadcoptrar. Mellan dem har ett mellanskikt vuxit fram nästan obemärkt — den autonoma envägs-attackdrönaren (OWA). Den bär en betydande stridsspets över långt avstånd, struntar i satellitnavigeringsstörning och kommer i mättande salvor till ett styckpris som är en bråkdel av de vapen som avfyras för att stoppa den. Nyliga krig, från Nagorno-Karabach till Ukraina och Röda havet, läses här som bevis på att det är ett kategorifel att behandla den som antingen «luftförsvar» eller «anti-drönare».</p>
+    <h2>Utmattningens ekonomi</h2>
+    <p>Den skarpaste punkten är ekonomisk. Om en försvarare svarar på en drönare för 30 000 dollar med en interceptor som kostar tiotals gånger mer, vinner han varje drabbning och förlorar kampanjen — får slut på pengar, magasin och politiskt tålamod långt innan angriparen får slut på drönare. Författaren citerar analyser som sätter kostnaden per drabbning mer än fem storleksordningar isär, och lärdomar från Ukraina och Röda havet som pekar åt samma håll: högvolymshot kräver billigare, ändamålsanpassade verkansmedel — radarstyrda kanoner och kompakta precisionsprojektiler — inte de dyra robotar som reserveras för flygplan och ballistiska hot.</p>
+    <h2>Varför kusten inte räcker</h2>
+    <p>Kustbaserade anti-drönarsystem fungerar väl, medger texten — mot små, kortdistans-quadcoptrar som närmar sig fasta anläggningar över land. Till sjöss vänder argumentet. Lågsignatur-OWA-drönare kan bara upptäckas på de låga tiotals kilometrarna över vatten; vid försiktiga 10 km ger en drönare i 200 km/h under tre och en halv minut, och en jetdriven variant lämnar sekunder. Värre är kusten geometriskt fastlåst just där engagemangsdjupet redan är förbrukat. Den kan inte flytta mot hotet, omplacera sig längs en kustlinje eller eskortera ett fartyg under gång. Med författarens ord är kusten <em>«den sista linjen, och ofta den enda»</em>.</p>
+    <p class="pull">Havet självt är det defensiva rummet — och att inte använda det är, hävdar författaren, det strategiska gapet.</p>
+    <h2>Det obemannade fartyget som svar</h2>
+    <p>Hans föreslagna lösning är det obemannade ytfartyget. Skjut fram ett USV med en AESA-radar 30 km längs hotaxeln och det möter drönarna tidigare — omkring tio extra minuter mot en långsam drönare, tre mot en snabb — inte för att dess sensor är bättre, utan för att det är närmare problemet. En skärm av sådana farkoster kan förflytta sig dit underrättelser väntar attacken, eller eskortera konvojer till sjöss. Litet som det är, är ett 10-15 meters USV också svårt att se och billigt att förlora, och ett ändamålsbyggt skrov kan bära hela verkanskedjan: en radar inställd för lågsignaturmål, en elektrooptisk styrning och ett billigt precisionsverkansmedel.</p>
+    <h2>Doktrin, inte bara hårdvara — och en reservation</h2>
+    <p>Hårdvara ensam, betonar analysen, räcker inte: en mättnadsattack med dussintals drönare över en bred front kräver automatiserad måltilldelning och ledning på styrkenivå, i genklang av US Navys lärdomar från Röda havet om magasindjup och integrerat C2. Logiken är sammanhängande och alltmer förhärskande. Två reservationer är värda att hålla i minnet. Författaren arbetar för ett företag som bygger just de beväpnade USV han rekommenderar, så slutsatsen sammanfaller med ett kommersiellt intresse. Och obemannade skärmar väcker sina egna frågor — kommunikationsmotståndskraft, engagemangsregler och risken att förlora de framskjutna sensorerna till just de salvor de ska trubba av. Ramverket är ett användbart sätt att tänka kring ett verkligt och växande gap; det är inte det enda sättet att sluta det.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>Naval News — Anti-Drone Warfare: The Missing Tier in Maritime Defence Architecture (Hasan Özyurt, (R) Rear Admiral, ULAQ Global; 30 June 2026)</li>
+      <li>Cited within: UK Government maritime counter-drone guidance; US DoD unmanned-systems threat assessments; cost-effectiveness analyses 2022–2026; Ukraine and Red Sea operational lessons</li>
+      <li>Frontline Brief note — the author's employer, ULAQ Global, manufactures armed unmanned surface vessels; readers should weigh that commercial interest</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Defence Policy",a_cat:"Defence Policy",a_tag:"🛸 Counter-Drone · Analysis",a_date:"30 June 2026",a_read:"3 min read",a_title:"The missing tier: <em>why one argument says navies need a dedicated layer for drone defence at sea</em>",a_stand:"Cheap one-way attack drones now sit in a gap between conventional air defence and counter-UAS — too big for one, too many for the other. A widely shared argument holds that this middle tier deserves its own domain, and that at sea it can only be filled by pushing unmanned ships forward. It is a compelling case; it also comes from an author with a stake in the answer.",p1_h:"Between the boxes",p1_p:"Autonomous one-way attack drones carry a 40–100 kg warhead across hundreds or thousands of kilometres, resist satellite-navigation jamming, and arrive in salvos of tens to hundreds at roughly $20,000–$50,000 each — too capable for counter-UAS, too numerous for high-end air defence.",p2_h:"Losing by winning",p2_p:"Meeting cheap drones with million-dollar interceptors drains a defender's budget and political will faster than it drains the attacker's production. Studies cited put cost-per-engagement across systems at more than five orders of magnitude apart.",p3_h:"The sea as the shield",p3_p:"An unmanned surface vessel with an air-search radar 30 km forward buys about ten extra minutes against a 185 km/h drone, three against a jet-powered one — and can reposition, concentrate and escort in ways a fixed shore site cannot.",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στην Αμυντική Πολιτική",a_cat:"Αμυντική Πολιτική",a_tag:"🛸 Αντι-Drone · Ανάλυση",a_date:"30 Ιουνίου 2026",a_read:"3' ανάγνωση",a_title:"Το κενό επίπεδο: <em>γιατί, κατά μία άποψη, τα ναυτικά χρειάζονται ειδικό επίπεδο άμυνας κατά drones στη θάλασσα</em>",a_stand:"Τα φθηνά επιθετικά drones μιας κατεύθυνσης βρίσκονται πλέον σε ένα κενό ανάμεσα στη συμβατική αεράμυνα και τα C-UAS — πολύ μεγάλα για το ένα, πάρα πολλά για το άλλο. Μια ευρέως διαδεδομένη άποψη υποστηρίζει ότι αυτό το ενδιάμεσο επίπεδο αξίζει δικό του πεδίο, και ότι στη θάλασσα καλύπτεται μόνο με προωθημένα μη επανδρωμένα σκάφη. Είναι πειστικό επιχείρημα· προέρχεται όμως από συγγραφέα με συμφέρον στην απάντηση.",p1_h:"Ανάμεσα στα κουτιά",p1_p:"Τα αυτόνομα επιθετικά drones μιας κατεύθυνσης φέρουν κεφαλή 40–100 κιλών σε εκατοντάδες ή χιλιάδες χιλιόμετρα, αντιστέκονται στην παρεμβολή δορυφορικής πλοήγησης, και έρχονται σε κύματα δεκάδων ή εκατοντάδων με ~20.000–50.000 δολ. το καθένα — πολύ ικανά για C-UAS, πάρα πολλά για αεράμυνα υψηλού άκρου.",p2_h:"Χάνεις κερδίζοντας",p2_p:"Το να αντιμετωπίζεις φθηνά drones με αναχαιτιστικά εκατομμυρίων στραγγίζει τον προϋπολογισμό και την πολιτική βούληση του αμυνόμενου ταχύτερα απ' ό,τι την παραγωγή του επιτιθέμενου. Μελέτες τοποθετούν το κόστος ανά εμπλοκή σε πάνω από πέντε τάξεις μεγέθους διαφορά.",p3_h:"Η θάλασσα ως ασπίδα",p3_p:"Ένα μη επανδρωμένο σκάφος με ραντάρ 30 χλμ. μπροστά κερδίζει περίπου δέκα επιπλέον λεπτά κόντρα σε drone 185 χλμ./ώρα, τρία κόντρα σε αεριωθούμενο — και μπορεί να επανατοποθετηθεί, να συγκεντρωθεί και να συνοδεύσει όπως δεν μπορεί μια σταθερή ακτή.",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Politique de Défense",a_cat:"Politique de Défense",a_tag:"🛸 Anti-Drone · Analyse",a_date:"30 juin 2026",a_read:"3 min de lecture",a_title:"Le maillon manquant : <em>pourquoi, selon une thèse, les marines ont besoin d'un niveau dédié contre les drones en mer</em>",a_stand:"Les drones kamikazes bon marché occupent désormais un vide entre la défense aérienne classique et la lutte anti-UAS — trop gros pour l'une, trop nombreux pour l'autre. Une thèse largement partagée veut que ce maillon intermédiaire mérite son propre domaine, et qu'en mer il ne puisse être comblé qu'en déployant des navires sans équipage en avant. L'argument est convaincant ; il émane aussi d'un auteur ayant un intérêt dans la réponse.",p1_h:"Entre les cases",p1_p:"Les drones kamikazes autonomes emportent une charge de 40–100 kg sur des centaines ou milliers de kilomètres, résistent au brouillage de la navigation satellitaire et arrivent en salves de dizaines à centaines à environ 20 000–50 000 $ pièce — trop capables pour l'anti-UAS, trop nombreux pour la défense aérienne haut de gamme.",p2_h:"Perdre en gagnant",p2_p:"Répondre à des drones bon marché par des intercepteurs à un million de dollars épuise le budget et la volonté politique du défenseur plus vite que la production de l'attaquant. Les études citées situent le coût par engagement à plus de cinq ordres de grandeur d'écart.",p3_h:"La mer comme bouclier",p3_p:"Un navire sans équipage doté d'un radar de veille à 30 km en avant gagne environ dix minutes contre un drone à 185 km/h, trois contre un engin à réaction — et peut se repositionner, se concentrer et escorter comme un site côtier fixe ne le peut pas.",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Forsvarspolitik",a_cat:"Forsvarspolitik",a_tag:"🛸 Anti-Drone · Analyse",a_date:"30. juni 2026",a_read:"3 min. læsning",a_title:"Det manglende lag: <em>hvorfor ét argument siger, at flåder har brug for et dedikeret lag mod droner til søs</em>",a_stand:"Billige envejs-angrebsdroner sidder nu i et hul mellem konventionelt luftforsvar og C-UAS — for store til det ene, for mange til det andet. Et bredt delt argument hævder, at dette mellemlag fortjener sit eget domæne, og at det til søs kun kan udfyldes ved at skubbe ubemandede skibe frem. Det er et overbevisende argument; det kommer også fra en forfatter med en interesse i svaret.",p1_h:"Mellem kasserne",p1_p:"Autonome envejs-angrebsdroner bærer et sprænghoved på 40–100 kg over hundreder eller tusinder af kilometer, modstår satellitnavigationsstøj og ankommer i salver af titals til hundreder til omkring 20.000–50.000 $ stykket — for kapable til C-UAS, for mange til luftforsvar i topklasse.",p2_h:"At tabe ved at vinde",p2_p:"At møde billige droner med millioninterceptorer dræner forsvarerens budget og politiske vilje hurtigere end angriberens produktion. De citerede studier sætter omkostningen pr. træfning mere end fem størrelsesordener fra hinanden.",p3_h:"Havet som skjold",p3_p:"Et ubemandet overfladefartøj med en luftsøgeradar 30 km fremme køber omkring ti ekstra minutter mod en drone på 185 km/t, tre mod en jetdrevet — og kan omplacere, koncentrere og eskortere, som et fast kystanlæg ikke kan.",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Försvarspolitik",a_cat:"Försvarspolitik",a_tag:"🛸 Anti-Drönare · Analys",a_date:"30 juni 2026",a_read:"3 min läsning",a_title:"Det saknade skiktet: <em>varför ett argument säger att flottor behöver ett dedikerat lager mot drönare till sjöss</em>",a_stand:"Billiga envägs-attackdrönare sitter nu i ett gap mellan konventionellt luftförsvar och C-UAS — för stora för det ena, för många för det andra. Ett brett delat argument hävdar att detta mellanskikt förtjänar sitt eget område, och att det till sjöss bara kan fyllas genom att skjuta fram obemannade fartyg. Det är ett övertygande argument; det kommer också från en författare med ett intresse i svaret.",p1_h:"Mellan lådorna",p1_p:"Autonoma envägs-attackdrönare bär en stridsspets på 40–100 kg över hundratals eller tusentals kilometer, motstår satellitnavigeringsstörning och kommer i salvor om tiotals till hundratals till omkring 20 000–50 000 $ styck — för kapabla för C-UAS, för många för luftförsvar i toppklass.",p2_h:"Att förlora genom att vinna",p2_p:"Att möta billiga drönare med miljoninterceptorer tömmer försvararens budget och politiska vilja snabbare än angriparens produktion. De citerade studierna sätter kostnaden per drabbning mer än fem storleksordningar isär.",p3_h:"Havet som sköld",p3_p:"Ett obemannat ytfartyg med en luftspaningsradar 30 km fram köper omkring tio extra minuter mot en drönare i 185 km/h, tre mot en jetdriven — och kan omplacera, koncentrera och eskortera på sätt som en fast kustplats inte kan.",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s&&translations[s]){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
