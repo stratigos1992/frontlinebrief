@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F-35s Are Now Being Delivered Without Radars — Frontline Brief</title>
+<meta name="description" content="The US has confirmed accepting at least six F-35s with no radar fitted, as delays to the new AN/APG-85 tangle with the troubled Block 4 upgrade and sliding readiness rates.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.25);}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);gap:12px;}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:30px;height:30px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:30px;height:30px;animation-delay:0s;}
+.rring:nth-child(2){width:48px;height:48px;animation-delay:.8s;}
+.rring:nth-child(3){width:66px;height:66px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:9px;font-weight:400;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.navlinks{display:flex;gap:22px;list-style:none;}
+.navlinks li a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
+.navlinks li a:hover{color:var(--cold);}
+.langbar{display:flex;gap:3px;}
+.lb{font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.08em;transition:all .18s;}
+.lb:hover{color:var(--cold);border-color:rgba(138,155,176,.5);}
+.lb.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.art{max-width:760px;margin:0 auto;padding:40px 48px 56px;}
+.backcat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:26px;}
+.backcat:hover{color:var(--amber);}
+.ameta-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-bottom:18px;letter-spacing:.04em;}
+.ameta-top .cat{color:var(--amber);font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+.ameta-top .tag{color:var(--cold);}
+.ameta-top .sep{opacity:.5;}
+h1.title{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:22px;}
+h1.title em{font-style:italic;color:var(--amber);}
+.standfirst{font-size:18px;font-weight:300;color:var(--cold);line-height:1.7;margin-bottom:28px;}
+.byline{display:flex;align-items:center;gap:13px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:34px;}
+.byline .av{width:42px;height:42px;border-radius:50%;background:var(--steel);border:.5px solid rgba(232,160,32,.4);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--amber);font-size:15px;}
+.byline b{font-size:13px;color:var(--cold);font-weight:600;}
+.byline small{display:block;font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em;}
+.langimg{margin:0 0 34px;border:.5px solid var(--border);border-radius:8px;overflow:hidden;}
+.langimg img{display:block;width:100%;height:auto;}
+.langimg[data-lang]{display:none;}
+.langimg.show{display:block;}
+.panels{display:grid;gap:14px;margin:6px 0 38px;}
+.panel{background:rgba(30,58,95,.2);border:.5px solid var(--border);border-left:2px solid var(--amber);border-radius:8px;padding:20px 22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.panel .pb{flex:1;min-width:240px;}
+.panel .pk{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:7px;}
+.panel h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--cold);margin-bottom:7px;}
+.panel p{font-size:12px;color:var(--muted);line-height:1.7;}
+.panel .stat{text-align:center;min-width:120px;}
+.panel .stat b{display:block;font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--cold);line-height:1.1;}
+.panel .stat small{font-size:10px;color:var(--muted);letter-spacing:.04em;}
+.bodybar{margin:0 0 22px;}
+.lang-block{display:none;}
+.lang-block.show{display:block;}
+.lang-block h2{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;color:var(--cold);margin:32px 0 12px;}
+.lang-block p{font-size:16px;font-weight:300;color:var(--cold);line-height:1.85;margin-bottom:18px;}
+.lang-block p strong{font-weight:600;}
+.pull{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--amber);border-left:2px solid var(--amber);padding-left:18px;margin:26px 0;line-height:1.45;}
+.sources{margin-top:44px;border-top:.5px solid var(--border);padding-top:22px;}
+.sources h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.sources li{font-size:12px;color:var(--muted);margin-bottom:9px;list-style:none;padding-left:14px;position:relative;line-height:1.6;}
+.sources li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;background:var(--amber);border-radius:50%;}
+footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footl{display:flex;flex-direction:column;gap:4px;}
+.footbrand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foottxt{font-size:10px;color:var(--muted);}
+.footlocs{display:flex;gap:14px;flex-wrap:wrap;}
+.floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
+.floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
+@media(max-width:768px){nav{padding:14px 20px;}.navlinks{display:none;}.art{padding:32px 20px 44px;}h1.title{font-size:30px;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub" data-i18n="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <ul class="navlinks">
+    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+  </ul>
+  <div class="langbar">
+    <button class="lb active" onclick="setLang('en',this)">EN</button>
+    <button class="lb" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lb" onclick="setLang('fr',this)">FR</button>
+    <button class="lb" onclick="setLang('da',this)">DA</button>
+    <button class="lb" onclick="setLang('sv',this)">SV</button>
+  </div>
+</nav>
+
+<article class="art">
+  <a class="backcat" href="defence.html"><i class="ti ti-arrow-left"></i> <span data-i18n="back">Back to Defence Policy</span></a>
+  <div class="ameta-top">
+    <span class="cat" data-i18n="a_cat">Defence Policy</span>
+    <span class="tag" data-i18n="a_tag">✈️ F-35 Programme</span>
+    <span class="sep">·</span><span data-i18n="a_date">26 June 2026</span>
+    <span class="sep">·</span><span data-i18n="a_read">3 min read</span>
+  </div>
+  <h1 class="title" data-i18n="a_title">Stealth fighters, no radar: the <em>US is accepting F-35s without their main sensor</em></h1>
+  <p class="standfirst" data-i18n="a_stand">The head of the F-35 programme has confirmed that the US Marine Corps has taken delivery of at least six Joint Strike Fighters with no radar fitted, because the new AN/APG-85 is running years late. It is a small number with an outsized meaning — a stealth jet built around sensor fusion, handed over missing the sensor that anchors it.</p>
+  <div class="byline">
+    <div class="av">FB</div>
+    <div><b>Frontline Brief Editorial</b><small>Athens · Brussels · Copenhagen · Nicosia · Malmö</small></div>
+  </div>
+
+  <figure class="langimg show" data-lang="en"><img src="assets/f35-radarless-en.jpg" alt="Stealth jets, no radar — English"></figure>
+  <figure class="langimg" data-lang="el"><img src="assets/f35-radarless-el.jpg" alt="Stealth jets, no radar — Ελληνικά"></figure>
+  <figure class="langimg" data-lang="fr"><img src="assets/f35-radarless-fr.jpg" alt="Stealth jets, no radar — Français"></figure>
+  <figure class="langimg" data-lang="da"><img src="assets/f35-radarless-da.jpg" alt="Stealth jets, no radar — Dansk"></figure>
+  <figure class="langimg" data-lang="sv"><img src="assets/f35-radarless-sv.jpg" alt="Stealth jets, no radar — Svenska"></figure>
+
+  <div class="panels">
+    <div class="panel"><div class="pb"><div class="pk">The admission · Senate hearing</div><h3 data-i18n="p1_h">Six jets, no radar</h3><p data-i18n="p1_p">F-35 Joint Program Office chief Lt. Gen. Gregory Masiello told the Senate Armed Services Committee the Marine Corps had accepted six aircraft "that do not have a radar installed," for want of the new APG-85 — and said he would not count them as fully mission capable.</p></div><div class="stat"><b>6</b><small>radarless F-35s</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The cause · APG-85 delays</div><h3 data-i18n="p2_h">The radar isn't ready</h3><p data-i18n="p2_p">The AN/APG-85, built by Northrop Grumman as the centrepiece of the delayed Block 4 upgrade, is not due in production until around April 2028, at nearly $9m a unit. Its mounting hardware is not backwards-compatible with today's APG-81.</p></div><div class="stat"><b>2028</b><small>first radars</small></div></div>
+    <div class="panel"><div class="pb"><div class="pk">The backdrop · Readiness</div><h3 data-i18n="p3_h">A fleet running colder</h3><p data-i18n="p3_p">A GAO report says the average full-mission-capable rate across all F-35 variants fell from 38 to 25 percent between 2020 and 2025; the programme office claims higher but disputes the method. Cooling limits, spares shortages and a $2.1tn lifetime bill compound it.</p></div><div class="stat"><b>25%</b><small>GAO FMC rate</small></div></div>
+  </div>
+
+  <div class="langbar bodybar">
+    <button class="lb active" onclick="setLang('en',this)">English</button>
+    <button class="lb" onclick="setLang('el',this)">Ελληνικά</button>
+    <button class="lb" onclick="setLang('fr',this)">Français</button>
+    <button class="lb" onclick="setLang('da',this)">Dansk</button>
+    <button class="lb" onclick="setLang('sv',this)">Svenska</button>
+  </div>
+
+  <div class="lang-block show" data-lang="en">
+    <h2>Six jets, no radar</h2>
+    <p>It is now official. The US military has confirmed accepting at least six F-35 Joint Strike Fighters for the Marine Corps with no radar installed. The head of the F-35 Joint Program Office, Lt. Gen. <strong>Gregory Masiello</strong>, disclosed the figure at a Senate Armed Services Committee hearing, in an exchange with Senator Mark Kelly of Arizona over the fleet's long-troubled readiness. Asked to confirm the Marines had taken jets with no radar, Masiello said six aircraft <em>"that do not have a radar installed"</em> had indeed been accepted, for want of the new sensor — and, pressed on whether such jets could be counted as fully mission capable, said he would not count them so.</p>
+    <h2>Why the radar isn't ready</h2>
+    <p>The gap is the delay in the <strong>AN/APG-85</strong>, the advanced active electronically scanned array being developed by Northrop Grumman as a centrepiece of the F-35's Block 4 upgrade. First production radars are not now expected before around April 2028, at a unit cost of nearly $9 million — and even that is an improvement on a previously worse schedule. A compounding problem is that the hardware used to mount the APG-85 is not backwards-compatible with the current AN/APG-81; a common mount has been floated, but not before Lot 20 jets arrive, around 2027 to 2028. So aircraft are rolling off the line built to accept a radar that has not yet turned up.</p>
+    <p class="pull">A stealth jet built around sensor fusion is being handed over missing the sensor that anchors it.</p>
+    <h2>What a radarless F-35 can, and can't, do</h2>
+    <p>Such a jet is not useless. Through the F-35's Multifunction Advanced Data Link, one aircraft without a radar can draw on the radar picture of another flying nearby, and its passive sensors and Link 16 feeds still give it situational awareness. But the limits are real. It cannot replace what the radar does, its survivability drops, and it leans heavily on radar-equipped wingmen who must then emit more — itself a vulnerability. Crucially, the radar is a major part of the jet's electronic-warfare suite: its ability to project narrow, powerful beams underpins electronic attack and self-defence, so a jet without one is diminished in the electromagnetic fight as well.</p>
+    <h2>The readiness numbers behind it</h2>
+    <p>The radar story sits inside a wider strain. A recent GAO report found the average full-mission-capable rate across all F-35 variants had fallen from 38 to 25 percent between 2020 and 2025; the programme office claims a higher figure and disputes the watchdog's methodology, but not the direction of travel. Thermal management is a persistent limiter: Block 4 needs about 32 kilowatts of cooling and the full APG-85 far more — Masiello put the forward requirement at 62 to 80 kilowatts against roughly 30 available today, conceding there is "no margin," with an engine-core upgrade not fielded until 2031. Spare-parts shortages and a headline lifetime programme cost of about $2.1 trillion round out the picture.</p>
+    <h2>What it means for buyers like Greece</h2>
+    <p>For now, the radarless jets are a US Marine Corps problem. Reports indicate foreign customers are not expected to be affected in the near term, because none are yet in line for APG-85-equipped aircraft; export F-35s, including those bound for Greece later this decade, are set to arrive with the mature APG-81. That is reassuring for Athens in the short run. But the deeper lessons travel: the Block 4 upgrade that every operator is counting on for future capability is years behind, cooling and power remain unresolved, and readiness is under scrutiny. For a first-time F-35 buyer, the value is real — but so is the reminder that this is a programme still working through significant growing pains.</p>
+  </div>
+
+  <div class="lang-block" data-lang="el">
+    <h2>Έξι μαχητικά, χωρίς ραντάρ</h2>
+    <p>Είναι πλέον επίσημο. Ο αμερικανικός στρατός επιβεβαίωσε την παραλαβή τουλάχιστον έξι F-35 για το Σώμα Πεζοναυτών χωρίς εγκατεστημένο ραντάρ. Ο επικεφαλής του Κοινού Γραφείου Προγράμματος του F-35, αντιστράτηγος <strong>Γκρέγκορι Μαζιέλο</strong>, αποκάλυψε τον αριθμό σε ακρόαση της Επιτροπής Ενόπλων Δυνάμεων της Γερουσίας, σε διάλογο με τον γερουσιαστή Μαρκ Κέλι της Αριζόνα για τη χρονίως προβληματική ετοιμότητα του στόλου. Ερωτηθείς αν οι Πεζοναύτες παρέλαβαν μαχητικά χωρίς ραντάρ, ο Μαζιέλο είπε ότι έξι αεροσκάφη <em>«που δεν έχουν εγκατεστημένο ραντάρ»</em> όντως έγιναν δεκτά, ελλείψει του νέου αισθητήρα — και, πιεσμένος για το αν τέτοια μαχητικά μπορούν να θεωρηθούν πλήρως επιχειρησιακά, απάντησε ότι δεν θα τα θεωρούσε.</p>
+    <h2>Γιατί το ραντάρ δεν είναι έτοιμο</h2>
+    <p>Το κενό είναι η καθυστέρηση του <strong>AN/APG-85</strong>, του προηγμένου ραντάρ AESA που αναπτύσσει η Northrop Grumman ως κεντρικό στοιχείο της αναβάθμισης Block 4 του F-35. Τα πρώτα ραντάρ παραγωγής δεν αναμένονται πλέον πριν από τον Απρίλιο του 2028 περίπου, με κόστος μονάδας κοντά στα 9 εκατ. δολάρια — και ακόμη κι αυτό είναι βελτίωση ενός χειρότερου προηγούμενου χρονοδιαγράμματος. Επιπλέον, το υλικό στήριξης του APG-85 δεν είναι συμβατό προς τα πίσω με το σημερινό AN/APG-81· έχει προταθεί κοινή βάση, αλλά όχι πριν φτάσουν τα αεροσκάφη Lot 20, γύρω στο 2027–2028. Έτσι, τα αεροσκάφη βγαίνουν από τη γραμμή παραγωγής φτιαγμένα να δεχθούν ένα ραντάρ που δεν έχει ακόμη εμφανιστεί.</p>
+    <p class="pull">Ένα stealth μαχητικό χτισμένο γύρω από τη σύντηξη αισθητήρων παραδίδεται χωρίς τον αισθητήρα που το θεμελιώνει.</p>
+    <h2>Τι μπορεί, και τι δεν μπορεί, ένα F-35 χωρίς ραντάρ</h2>
+    <p>Ένα τέτοιο μαχητικό δεν είναι άχρηστο. Μέσω του Multifunction Advanced Data Link του F-35, ένα αεροσκάφος χωρίς ραντάρ μπορεί να αξιοποιήσει την εικόνα ραντάρ ενός άλλου που πετά κοντά, ενώ οι παθητικοί αισθητήρες και τα δεδομένα Link 16 του δίνουν ακόμη επίγνωση του πεδίου. Όμως τα όρια είναι υπαρκτά. Δεν αντικαθιστά όσα κάνει το ραντάρ, η επιβιωσιμότητά του μειώνεται, και στηρίζεται σε συμβατά μαχητικά που πρέπει τότε να εκπέμπουν περισσότερο — κάτι που είναι από μόνο του τρωτότητα. Κυρίως, το ραντάρ είναι σημαντικό μέρος της σουίτας ηλεκτρονικού πολέμου: η ικανότητά του να εκπέμπει στενές, ισχυρές δέσμες στηρίζει την ηλεκτρονική επίθεση και την αυτοπροστασία, οπότε ένα μαχητικό χωρίς αυτό υστερεί και στη μάχη του ηλεκτρομαγνητικού φάσματος.</p>
+    <h2>Οι αριθμοί ετοιμότητας από πίσω</h2>
+    <p>Η ιστορία του ραντάρ εντάσσεται σε μια ευρύτερη πίεση. Πρόσφατη έκθεση του GAO διαπίστωσε ότι ο μέσος δείκτης πλήρους επιχειρησιακής ετοιμότητας σε όλες τις εκδόσεις του F-35 έπεσε από 38 σε 25 τοις εκατό μεταξύ 2020 και 2025· το γραφείο του προγράμματος προβάλλει υψηλότερο νούμερο και αμφισβητεί τη μεθοδολογία, όχι όμως την κατεύθυνση. Η θερμική διαχείριση είναι επίμονος περιοριστικός παράγοντας: το Block 4 χρειάζεται περίπου 32 κιλοβάτ ψύξης και το πλήρες APG-85 πολύ περισσότερα — ο Μαζιέλο έθεσε τη μελλοντική απαίτηση στα 62 έως 80 κιλοβάτ έναντι περίπου 30 διαθέσιμων σήμερα, παραδεχόμενος ότι δεν υπάρχει «περιθώριο», με αναβάθμιση πυρήνα κινητήρα να μην τοποθετείται πριν το 2031. Ελλείψεις ανταλλακτικών κι ένα συνολικό κόστος ζωής προγράμματος περίπου 2,1 τρισ. δολαρίων συμπληρώνουν την εικόνα.</p>
+    <h2>Τι σημαίνει για αγοραστές όπως η Ελλάδα</h2>
+    <p>Προς το παρόν, τα μαχητικά χωρίς ραντάρ είναι πρόβλημα του αμερικανικού Σώματος Πεζοναυτών. Αναφορές δείχνουν ότι οι ξένοι πελάτες δεν αναμένεται να επηρεαστούν βραχυπρόθεσμα, καθώς κανείς δεν βρίσκεται ακόμη στη σειρά για αεροσκάφη με APG-85· τα εξαγωγικά F-35, μαζί κι εκείνα που προορίζονται για την Ελλάδα αργότερα στη δεκαετία, αναμένεται να φτάσουν με το ώριμο APG-81. Αυτό είναι καθησυχαστικό για την Αθήνα βραχυπρόθεσμα. Όμως τα βαθύτερα διδάγματα ταξιδεύουν: η αναβάθμιση Block 4 στην οποία στηρίζεται κάθε χρήστης για μελλοντικές δυνατότητες είναι χρόνια πίσω, η ψύξη και η ισχύς παραμένουν άλυτες, και η ετοιμότητα βρίσκεται υπό εξέταση. Για έναν πρωτοεμφανιζόμενο αγοραστή του F-35, η αξία είναι πραγματική — όπως και η υπενθύμιση ότι πρόκειται για πρόγραμμα που ακόμη παλεύει με σημαντικά προβλήματα ανάπτυξης.</p>
+  </div>
+
+  <div class="lang-block" data-lang="fr">
+    <h2>Six avions, sans radar</h2>
+    <p>C'est désormais officiel. L'armée américaine a confirmé avoir accepté au moins six F-35 pour le Corps des Marines sans radar installé. Le chef du bureau de programme du F-35, le général <strong>Gregory Masiello</strong>, a révélé le chiffre lors d'une audition de la commission des forces armées du Sénat, dans un échange avec le sénateur Mark Kelly, de l'Arizona, sur la disponibilité de longue date problématique de la flotte. Interrogé pour confirmer que les Marines avaient pris des avions sans radar, Masiello a dit que six appareils <em>« qui n'ont pas de radar installé »</em> avaient bien été acceptés, faute du nouveau capteur — et, pressé sur la question de savoir si de tels avions pouvaient être jugés pleinement aptes à la mission, a répondu qu'il ne les compterait pas ainsi.</p>
+    <h2>Pourquoi le radar n'est pas prêt</h2>
+    <p>Le vide, c'est le retard de l'<strong>AN/APG-85</strong>, le radar AESA avancé développé par Northrop Grumman comme pièce maîtresse de la mise à niveau Block 4 du F-35. Les premiers radars de série ne sont désormais pas attendus avant avril 2028 environ, à un coût unitaire proche de 9 millions de dollars — et c'est encore une amélioration par rapport à un calendrier antérieur pire. Autre difficulté : le matériel servant à monter l'APG-85 n'est pas rétrocompatible avec l'actuel AN/APG-81 ; un support commun a été évoqué, mais pas avant l'arrivée des avions du Lot 20, vers 2027-2028. Les appareils sortent donc de la chaîne conçus pour recevoir un radar qui n'est pas encore là.</p>
+    <p class="pull">Un chasseur furtif bâti autour de la fusion de capteurs est livré sans le capteur qui l'ancre.</p>
+    <h2>Ce qu'un F-35 sans radar peut, et ne peut pas, faire</h2>
+    <p>Un tel avion n'est pas inutile. Grâce au Multifunction Advanced Data Link du F-35, un appareil sans radar peut exploiter l'image radar d'un autre volant à proximité, tandis que ses capteurs passifs et ses données Link 16 lui donnent encore une conscience de la situation. Mais les limites sont réelles. Il ne remplace pas ce que fait le radar, sa survivabilité baisse, et il s'appuie fortement sur des équipiers dotés de radar qui doivent alors émettre davantage — une vulnérabilité en soi. Surtout, le radar est une part majeure de la suite de guerre électronique : sa capacité à projeter des faisceaux étroits et puissants soutient l'attaque électronique et l'autodéfense, si bien qu'un avion sans radar est également diminué dans le combat électromagnétique.</p>
+    <h2>Les chiffres de disponibilité derrière tout cela</h2>
+    <p>L'affaire du radar s'inscrit dans une tension plus large. Un récent rapport du GAO a constaté que le taux moyen de pleine aptitude à la mission, toutes versions du F-35 confondues, était tombé de 38 à 25 % entre 2020 et 2025 ; le bureau de programme avance un chiffre supérieur et conteste la méthode, mais pas la tendance. La gestion thermique est un facteur limitant persistant : le Block 4 requiert environ 32 kilowatts de refroidissement et l'APG-85 complet bien plus — Masiello a chiffré le besoin futur à 62 à 80 kilowatts contre environ 30 disponibles aujourd'hui, admettant qu'il n'y a « aucune marge », une mise à niveau du cœur moteur n'arrivant qu'en 2031. Les pénuries de pièces et un coût de programme sur la durée de vie d'environ 2 100 milliards de dollars complètent le tableau.</p>
+    <h2>Ce que cela signifie pour des clients comme la Grèce</h2>
+    <p>Pour l'heure, les avions sans radar sont un problème du Corps des Marines. Des rapports indiquent que les clients étrangers ne devraient pas être touchés à court terme, car aucun n'est encore en file pour des appareils équipés de l'APG-85 ; les F-35 à l'export, dont ceux destinés à la Grèce plus tard dans la décennie, devraient arriver avec l'APG-81 mature. C'est rassurant pour Athènes à court terme. Mais les leçons de fond voyagent : la mise à niveau Block 4 sur laquelle chaque utilisateur compte pour ses capacités futures a des années de retard, le refroidissement et la puissance restent non résolus, et la disponibilité est scrutée. Pour un primo-acquéreur du F-35, la valeur est réelle — tout comme le rappel qu'il s'agit d'un programme encore aux prises avec d'importantes difficultés de croissance.</p>
+  </div>
+
+  <div class="lang-block" data-lang="da">
+    <h2>Seks fly, ingen radar</h2>
+    <p>Det er nu officielt. Det amerikanske militær har bekræftet at have modtaget mindst seks F-35 til Marinekorpset uden radar installeret. Chefen for F-35-programkontoret, generalløjtnant <strong>Gregory Masiello</strong>, afslørede tallet ved en høring i Senatets forsvarsudvalg, i en udveksling med senator Mark Kelly fra Arizona om flådens længe problematiske readiness. Adspurgt om at bekræfte, at Marinekorpset havde taget fly uden radar, sagde Masiello, at seks fly <em>«der ikke har en radar installeret»</em> faktisk var blevet accepteret, i mangel af den nye sensor — og, presset på om sådanne fly kunne regnes for fuldt missionsdygtige, sagde han, at det ville han ikke.</p>
+    <h2>Hvorfor radaren ikke er klar</h2>
+    <p>Hullet er forsinkelsen af <strong>AN/APG-85</strong>, den avancerede AESA-radar, som Northrop Grumman udvikler som omdrejningspunkt i F-35'ens Block 4-opgradering. De første serieradarer ventes nu ikke før omkring april 2028, til en stykpris på næsten 9 millioner dollars — og selv det er en forbedring af en tidligere værre tidsplan. En yderligere komplikation er, at beslaget til APG-85 ikke er bagudkompatibelt med den nuværende AN/APG-81; et fælles beslag er nævnt, men ikke før Lot 20-fly ankommer, omkring 2027-2028. Fly ruller altså af samlebåndet bygget til at modtage en radar, der endnu ikke er dukket op.</p>
+    <p class="pull">Et snigfly bygget op om sensorfusion afleveres uden den sensor, der forankrer det.</p>
+    <h2>Hvad et radarløst F-35 kan, og ikke kan</h2>
+    <p>Et sådant fly er ikke ubrugeligt. Via F-35'ens Multifunction Advanced Data Link kan et fly uden radar trække på radarbilledet fra et andet, der flyver i nærheden, mens dets passive sensorer og Link 16-data stadig giver det situationsbevidsthed. Men grænserne er reelle. Det erstatter ikke det, radaren gør, dets overlevelsesevne falder, og det læner sig tungt op ad radarudstyrede kammerater, der så må sende mere — i sig selv en sårbarhed. Afgørende er, at radaren er en stor del af flyets elektroniske krigsførelsessuite: dens evne til at udsende smalle, kraftige stråler understøtter elektronisk angreb og selvforsvar, så et fly uden den er også svækket i den elektromagnetiske kamp.</p>
+    <h2>Readiness-tallene bag</h2>
+    <p>Radarhistorien ligger inde i en bredere belastning. En nylig GAO-rapport fandt, at den gennemsnitlige fuldt-missionsdygtige rate på tværs af alle F-35-varianter var faldet fra 38 til 25 procent mellem 2020 og 2025; programkontoret hævder et højere tal og bestrider metoden, men ikke retningen. Termisk styring er en vedvarende begrænsning: Block 4 kræver omkring 32 kilowatt køling og det fulde APG-85 langt mere — Masiello satte det fremtidige krav til 62 til 80 kilowatt mod omkring 30 tilgængelige i dag og medgav, at der «ingen margin» er, med en motorkerneopgradering, der først kommer i 2031. Reservedelsmangel og en samlet levetidsomkostning for programmet på omkring 2,1 billioner dollars fuldender billedet.</p>
+    <h2>Hvad det betyder for købere som Grækenland</h2>
+    <p>For nu er de radarløse fly et problem for det amerikanske Marinekorps. Rapporter angiver, at udenlandske kunder ikke ventes at blive berørt på kort sigt, da ingen endnu står i kø til APG-85-udstyrede fly; eksport-F-35, herunder dem bestemt for Grækenland senere i årtiet, ventes at ankomme med den modne APG-81. Det er betryggende for Athen på kort sigt. Men de dybere lektioner rejser med: Block 4-opgraderingen, som hver bruger regner med til fremtidig kapacitet, er år bagud, køling og strøm er uløste, og readiness er under lup. For en førstegangskøber af F-35 er værdien reel — men det samme er påmindelsen om, at dette er et program, der stadig kæmper med betydelige vokseværk.</p>
+  </div>
+
+  <div class="lang-block" data-lang="sv">
+    <h2>Sex plan, ingen radar</h2>
+    <p>Det är nu officiellt. Den amerikanska militären har bekräftat att den tagit emot minst sex F-35 till marinkåren utan radar installerad. Chefen för F-35-programkontoret, generallöjtnant <strong>Gregory Masiello</strong>, avslöjade siffran vid en utfrågning i senatens försvarsutskott, i ett utbyte med senator Mark Kelly från Arizona om flottans länge problematiska tillgänglighet. Tillfrågad om att bekräfta att marinkåren tagit plan utan radar sade Masiello att sex flygplan <em>«som inte har en radar installerad»</em> faktiskt hade accepterats, i brist på den nya sensorn — och, pressad på om sådana plan kunde räknas som fullt uppdragsdugliga, svarade att det skulle han inte.</p>
+    <h2>Varför radarn inte är klar</h2>
+    <p>Gapet är förseningen av <strong>AN/APG-85</strong>, den avancerade AESA-radar som Northrop Grumman utvecklar som mittpunkt i F-35:ans Block 4-uppgradering. De första serieradarerna väntas nu inte före omkring april 2028, till ett styckpris på nästan 9 miljoner dollar — och även det är en förbättring av ett tidigare sämre schema. En försvårande faktor är att fästet för APG-85 inte är bakåtkompatibelt med dagens AN/APG-81; ett gemensamt fäste har föreslagits, men inte före att Lot 20-plan anländer, omkring 2027-2028. Plan rullar alltså av bandet byggda för att ta emot en radar som ännu inte dykt upp.</p>
+    <p class="pull">Ett smygplan byggt kring sensorfusion lämnas över utan sensorn som förankrar det.</p>
+    <h2>Vad ett radarlöst F-35 kan, och inte kan</h2>
+    <p>Ett sådant plan är inte oanvändbart. Via F-35:ans Multifunction Advanced Data Link kan ett plan utan radar dra nytta av radarbilden från ett annat som flyger nära, medan dess passiva sensorer och Link 16-data ändå ger det situationsmedvetenhet. Men gränserna är verkliga. Det ersätter inte vad radarn gör, dess överlevnadsförmåga sjunker, och det lutar sig tungt mot radarutrustade kamrater som då måste sända mer — i sig en sårbarhet. Framför allt är radarn en stor del av planets svit för elektronisk krigföring: dess förmåga att sända smala, kraftfulla strålar underbygger elektronisk attack och självförsvar, så ett plan utan den är försvagat även i den elektromagnetiska striden.</p>
+    <h2>Tillgänglighetssiffrorna bakom</h2>
+    <p>Radarhistorien ligger inuti en bredare påfrestning. En färsk GAO-rapport fann att den genomsnittliga fullt-uppdragsdugliga graden över alla F-35-varianter fallit från 38 till 25 procent mellan 2020 och 2025; programkontoret hävdar en högre siffra och bestrider metoden, men inte riktningen. Termisk styrning är en ihållande begränsning: Block 4 kräver omkring 32 kilowatt kylning och den fulla APG-85 långt mer — Masiello satte det framtida kravet till 62 till 80 kilowatt mot omkring 30 tillgängliga i dag och medgav att det «inte finns någon marginal», med en motorkärneuppgradering som kommer först 2031. Reservdelsbrist och en total livstidskostnad för programmet på omkring 2,1 biljoner dollar fullbordar bilden.</p>
+    <h2>Vad det betyder för köpare som Grekland</h2>
+    <p>För tillfället är de radarlösa planen ett problem för den amerikanska marinkåren. Rapporter anger att utländska kunder inte väntas påverkas på kort sikt, eftersom ingen ännu står i kö för APG-85-utrustade plan; export-F-35, inklusive de avsedda för Grekland senare under decenniet, väntas anlända med den mogna APG-81. Det är lugnande för Aten på kort sikt. Men de djupare lärdomarna reser med: Block 4-uppgraderingen som varje användare räknar med för framtida förmåga är år försenad, kylning och kraft är olösta, och tillgängligheten granskas. För en förstagångsköpare av F-35 är värdet verkligt — men det är också påminnelsen om att detta är ett program som fortfarande brottas med betydande växtvärk.</p>
+  </div>
+
+  <div class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li>The War Zone (TWZ) — It's Official: F-35s Are Now Being Delivered Without Radars (Joseph Trevithick, 26 June 2026)</li>
+      <li>Senate Armed Services Committee hearing (Lt. Gen. Gregory Masiello, Sen. Mark Kelly); GAO report GAO-26-108113; F-35 JPO and USMC statements</li>
+      <li>Frontline Brief background — AN/APG-81 vs AN/APG-85, the Block 4 upgrade, MADL, and F-35 thermal-management issues</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="footl"><span class="footbrand">Frontline Brief</span><span class="foottxt" data-i18n="foot_copy">© 2026 · Independent analysis · Not affiliated with any government or institution</span></div>
+  <div class="footlocs"><span class="floc">Athens</span><span class="floc">Brussels</span><span class="floc">Copenhagen</span><span class="floc">Nicosia</span><span class="floc">Malmö</span></div>
+</footer>
+
+<script>
+const translations = {
+  en:{lsub:"Geopolitical · Military · Economic",nav_strategic:"Strategic Affairs",nav_easternmed:"Eastern Mediterranean",nav_defence:"Defence Policy",nav_geoeconomics:"Geo-economics",back:"Back to Defence Policy",a_cat:"Defence Policy",a_tag:"✈️ F-35 Programme",a_date:"26 June 2026",a_read:"3 min read",a_title:"Stealth fighters, no radar: the <em>US is accepting F-35s without their main sensor</em>",a_stand:"The head of the F-35 programme has confirmed that the US Marine Corps has taken delivery of at least six Joint Strike Fighters with no radar fitted, because the new AN/APG-85 is running years late. It is a small number with an outsized meaning — a stealth jet built around sensor fusion, handed over missing the sensor that anchors it.",p1_h:"Six jets, no radar",p1_p:"F-35 Joint Program Office chief Lt. Gen. Gregory Masiello told the Senate Armed Services Committee the Marine Corps had accepted six aircraft \u201cthat do not have a radar installed,\u201d for want of the new APG-85 — and said he would not count them as fully mission capable.",p2_h:"The radar isn't ready",p2_p:"The AN/APG-85, built by Northrop Grumman as the centrepiece of the delayed Block 4 upgrade, is not due in production until around April 2028, at nearly $9m a unit. Its mounting hardware is not backwards-compatible with today's APG-81.",p3_h:"A fleet running colder",p3_p:"A GAO report says the average full-mission-capable rate across all F-35 variants fell from 38 to 25 percent between 2020 and 2025; the programme office claims higher but disputes the method. Cooling limits, spares shortages and a $2.1tn lifetime bill compound it.",foot_copy:"© 2026 · Independent analysis · Not affiliated with any government or institution"},
+  el:{lsub:"Γεωπολιτική · Στρατιωτικά · Οικονομία",nav_strategic:"Στρατηγικές Υποθέσεις",nav_easternmed:"Ανατολική Μεσόγειος",nav_defence:"Αμυντική Πολιτική",nav_geoeconomics:"Γεωοικονομία",back:"Πίσω στην Αμυντική Πολιτική",a_cat:"Αμυντική Πολιτική",a_tag:"✈️ Πρόγραμμα F-35",a_date:"26 Ιουνίου 2026",a_read:"3' ανάγνωση",a_title:"Stealth μαχητικά, χωρίς ραντάρ: οι <em>ΗΠΑ παραλαμβάνουν F-35 χωρίς τον κύριο αισθητήρα τους</em>",a_stand:"Ο επικεφαλής του προγράμματος F-35 επιβεβαίωσε ότι το αμερικανικό Σώμα Πεζοναυτών παρέλαβε τουλάχιστον έξι μαχητικά χωρίς εγκατεστημένο ραντάρ, επειδή το νέο AN/APG-85 καθυστερεί χρόνια. Μικρός αριθμός με δυσανάλογη σημασία — ένα stealth μαχητικό χτισμένο γύρω από τη σύντηξη αισθητήρων, που παραδίδεται χωρίς τον αισθητήρα που το θεμελιώνει.",p1_h:"Έξι μαχητικά, χωρίς ραντάρ",p1_p:"Ο επικεφαλής του Γραφείου Προγράμματος F-35, αντιστράτηγος Γκρέγκορι Μαζιέλο, είπε στη Γερουσία ότι οι Πεζοναύτες παρέλαβαν έξι αεροσκάφη «που δεν έχουν εγκατεστημένο ραντάρ», ελλείψει του νέου APG-85 — και ότι δεν θα τα θεωρούσε πλήρως επιχειρησιακά.",p2_h:"Το ραντάρ δεν είναι έτοιμο",p2_p:"Το AN/APG-85 της Northrop Grumman, κεντρικό στοιχείο της καθυστερημένης αναβάθμισης Block 4, δεν αναμένεται σε παραγωγή πριν τον Απρίλιο του 2028 περίπου, με κόστος κοντά στα 9 εκατ. δολ. ανά μονάδα. Η βάση στήριξής του δεν είναι συμβατή προς τα πίσω με το σημερινό APG-81.",p3_h:"Ένας στόλος που κρυώνει",p3_p:"Έκθεση του GAO λέει ότι ο μέσος δείκτης πλήρους επιχειρησιακής ετοιμότητας σε όλες τις εκδόσεις του F-35 έπεσε από 38 σε 25 τοις εκατό (2020-2025)· το γραφείο προβάλλει υψηλότερο αλλά αμφισβητεί τη μέθοδο. Όρια ψύξης, ελλείψεις ανταλλακτικών κι ένα κόστος ζωής 2,1 τρισ. δολ. το επιβαρύνουν.",foot_copy:"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κρατική ή θεσμική σχέση"},
+  fr:{lsub:"Géopolitique · Militaire · Économie",nav_strategic:"Affaires Stratégiques",nav_easternmed:"Méditerranée Orientale",nav_defence:"Politique de Défense",nav_geoeconomics:"Géo-économie",back:"Retour à Politique de Défense",a_cat:"Politique de Défense",a_tag:"✈️ Programme F-35",a_date:"26 juin 2026",a_read:"3 min de lecture",a_title:"Furtifs sans radar : les <em>États-Unis acceptent des F-35 sans leur capteur principal</em>",a_stand:"Le chef du programme F-35 a confirmé que le Corps des Marines a pris livraison d'au moins six chasseurs sans radar installé, le nouvel AN/APG-85 accusant des années de retard. Un petit nombre au sens démesuré — un chasseur furtif bâti autour de la fusion de capteurs, livré sans le capteur qui l'ancre.",p1_h:"Six avions, sans radar",p1_p:"Le chef du bureau de programme F-35, le général Gregory Masiello, a dit au Sénat que les Marines avaient accepté six appareils « qui n'ont pas de radar installé », faute du nouvel APG-85 — et qu'il ne les compterait pas comme pleinement aptes à la mission.",p2_h:"Le radar n'est pas prêt",p2_p:"L'AN/APG-85 de Northrop Grumman, pièce maîtresse de la mise à niveau Block 4 retardée, n'est pas attendu en série avant avril 2028 environ, à près de 9 M$ l'unité. Son support n'est pas rétrocompatible avec l'actuel APG-81.",p3_h:"Une flotte qui refroidit",p3_p:"Un rapport du GAO indique que le taux moyen de pleine aptitude, toutes versions du F-35, est tombé de 38 à 25 % (2020-2025) ; le bureau de programme avance plus haut mais conteste la méthode. Refroidissement, pénuries de pièces et un coût de vie de 2 100 Md$ aggravent la situation.",foot_copy:"© 2026 · Analyse indépendante · Sans affiliation gouvernementale ou institutionnelle"},
+  da:{lsub:"Geopolitik · Militær · Økonomi",nav_strategic:"Strategiske Forhold",nav_easternmed:"Østlige Middelhav",nav_defence:"Forsvarspolitik",nav_geoeconomics:"Geoøkonomi",back:"Tilbage til Forsvarspolitik",a_cat:"Forsvarspolitik",a_tag:"✈️ F-35-program",a_date:"26. juni 2026",a_read:"3 min. læsning",a_title:"Snigfly uden radar: <em>USA modtager F-35 uden deres hovedsensor</em>",a_stand:"Chefen for F-35-programmet har bekræftet, at det amerikanske Marinekorps har modtaget mindst seks fly uden radar installeret, fordi den nye AN/APG-85 er år forsinket. Et lille tal med en uforholdsmæssig betydning — et snigfly bygget op om sensorfusion, afleveret uden den sensor, der forankrer det.",p1_h:"Seks fly, ingen radar",p1_p:"Chefen for F-35-programkontoret, generalløjtnant Gregory Masiello, sagde til Senatet, at Marinekorpset havde accepteret seks fly «der ikke har en radar installeret», i mangel af den nye APG-85 — og at han ikke ville regne dem for fuldt missionsdygtige.",p2_h:"Radaren er ikke klar",p2_p:"AN/APG-85 fra Northrop Grumman, omdrejningspunkt i den forsinkede Block 4-opgradering, ventes ikke i serie før omkring april 2028, til næsten 9 mio. dollars pr. styk. Beslaget er ikke bagudkompatibelt med den nuværende APG-81.",p3_h:"En flåde, der køler af",p3_p:"En GAO-rapport siger, at den gennemsnitlige fuldt-missionsdygtige rate på tværs af alle F-35-varianter faldt fra 38 til 25 procent (2020-2025); programkontoret hævder højere, men bestrider metoden. Køling, reservedelsmangel og en levetidsregning på 2,1 billioner dollars forværrer det.",foot_copy:"© 2026 · Uafhængig analyse · Uden tilknytning til regering eller institution"},
+  sv:{lsub:"Geopolitik · Militärt · Ekonomi",nav_strategic:"Strategiska Frågor",nav_easternmed:"Östra Medelhavet",nav_defence:"Försvarspolitik",nav_geoeconomics:"Geoekonomi",back:"Tillbaka till Försvarspolitik",a_cat:"Försvarspolitik",a_tag:"✈️ F-35-program",a_date:"26 juni 2026",a_read:"3 min läsning",a_title:"Smygplan utan radar: <em>USA tar emot F-35 utan sin huvudsensor</em>",a_stand:"Chefen för F-35-programmet har bekräftat att den amerikanska marinkåren tagit emot minst sex plan utan radar installerad, eftersom nya AN/APG-85 är åratal försenad. Ett litet antal med oproportionerlig betydelse — ett smygplan byggt kring sensorfusion, överlämnat utan sensorn som förankrar det.",p1_h:"Sex plan, ingen radar",p1_p:"Chefen för F-35-programkontoret, generallöjtnant Gregory Masiello, sade till senaten att marinkåren accepterat sex flygplan «som inte har en radar installerad», i brist på nya APG-85 — och att han inte skulle räkna dem som fullt uppdragsdugliga.",p2_h:"Radarn är inte klar",p2_p:"AN/APG-85 från Northrop Grumman, mittpunkt i den försenade Block 4-uppgraderingen, väntas inte i serie före omkring april 2028, till nästan 9 miljoner dollar per styck. Dess fäste är inte bakåtkompatibelt med dagens APG-81.",p3_h:"En flotta som kyls av",p3_p:"En GAO-rapport säger att den genomsnittliga fullt-uppdragsdugliga graden över alla F-35-varianter föll från 38 till 25 procent (2020-2025); programkontoret hävdar högre men bestrider metoden. Kylning, reservdelsbrist och en livstidsnota på 2,1 biljoner dollar förvärrar det.",foot_copy:"© 2026 · Oberoende analys · Utan koppling till regering eller institution"}
+};
+function setLang(lang, btn){
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll(`.lb[onclick="setLang('${lang}',this)"]`).forEach(b=>b.classList.add('active'));
+  const t=translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k];});
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.toggle('show',b.dataset.lang===lang));
+  document.querySelectorAll('.langimg').forEach(f=>f.classList.toggle('show',f.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('preferred-lang',lang);
+}
+window.onload=function(){const s=localStorage.getItem('preferred-lang');if(s&&translations[s]){const b=document.querySelector(`.lb[onclick="setLang('${s}',this)"]`);if(b)setLang(s,b);}};
+</script>
+</body>
+</html>
