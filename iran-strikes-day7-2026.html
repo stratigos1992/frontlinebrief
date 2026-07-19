@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iran Under Fire for Seventh Consecutive Day — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;--purple:#9F7AEA;--red:#E84040;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero{padding:64px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,64,64,.12);color:var(--red);border:.5px solid rgba(232,64,64,.3);}
+.meta-sub{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,64,64,.1);color:var(--red);border:.5px solid rgba(232,64,64,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--red);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--red);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.carousel{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.carousel-wrap{width:100%;max-width:480px;margin:0 auto;}
+.carousel-frame{position:relative;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);width:100%;}
+.carousel-track{display:flex;flex-wrap:nowrap;width:500%;transition:transform .4s ease;will-change:transform;}
+.cslide{width:20%;flex-shrink:0;}
+.cslide img{width:100%;height:auto;display:block;}
+.carousel-nav{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:background .2s;}
+.cdot.active{background:var(--red);}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,27,42,.55);border:.5px solid var(--border);color:var(--cold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;}
+.carousel-arrow.prev{left:10px;}
+.carousel-arrow.next{right:10px;}
+.data-grid{max-width:860px;margin:0 auto;padding:0 48px 40px;display:flex;flex-direction:column;gap:12px;}
+.data-row{background:rgba(30,58,95,.35);border-radius:10px;padding:20px 24px;border:.5px solid rgba(138,155,176,.12);display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;position:relative;}
+.data-row::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:4px 0 0 4px;background:var(--red);}
+.data-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:4px;}
+.data-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--cold);margin-bottom:4px;}
+.data-detail{font-size:13px;color:var(--muted);}
+.data-val{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--red);text-align:right;line-height:1;}
+.data-unit{font-size:11px;color:var(--muted);text-align:right;margin-top:4px;}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--red);color:#fff;border-color:var(--red);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+.pull-quote{border-left:3px solid var(--red);padding:16px 24px;margin:32px 0;background:rgba(232,64,64,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.data-grid,.article-body,.sources,.carousel{padding-left:20px;padding-right:20px;}.article-title{font-size:30px;}.data-row{grid-template-columns:1fr;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <a class="nav-back" href="strategic-affairs.html"><i class="ti ti-arrow-left"></i> Back to Strategic Affairs</a>
+</nav>
+
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag">⚡ Breaking</span>
+    <span class="meta-sub">Strategic Affairs</span>
+    <span class="meta-date">18 July 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> 6 min read</span>
+  </div>
+  <h1 class="article-title">Iran under fire for seventh consecutive day: <em>US strikes hit weapons depots and military bases</em> as Tehran threatens broad retaliation</h1>
+  <p class="article-subtitle">CENTCOM confirmed a new wave of strikes targeting surveillance facilities, underground weapons depots and naval capabilities across southern and central Iran. Tehran has retaliated against US bases in Kuwait and Jordan, while the IRGC claims tankers struck mines in the Strait of Hormuz — a claim CENTCOM has denied. Oil prices surging past $88/barrel.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">FB</div>
+    <div><div class="byline-name">Frontline Brief Editorial</div><div class="byline-role">Athens · Brussels · Copenhagen · Nicosia · Malmö</div></div>
+  </div>
+</section>
+
+<div class="carousel">
+  <div class="carousel-wrap">
+  <div class="carousel-frame">
+    <div class="carousel-track" id="ctrack">
+      <div class="cslide"><img src="assets/iran-strikes-day7-en.jpg" alt="Iran Strikes Day 7 — English"></div>
+      <div class="cslide"><img src="assets/iran-strikes-day7-el.jpg" alt="Iran Strikes Day 7 — Ελληνικά"></div>
+      <div class="cslide"><img src="assets/iran-strikes-day7-fr.jpg" alt="Iran Strikes Day 7 — Français"></div>
+      <div class="cslide"><img src="assets/iran-strikes-day7-da.jpg" alt="Iran Strikes Day 7 — Dansk"></div>
+      <div class="cslide"><img src="assets/iran-strikes-day7-sv.jpg" alt="Iran Strikes Day 7 — Svenska"></div>
+    </div>
+    <button class="carousel-arrow prev" onclick="cmove(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="carousel-arrow next" onclick="cmove(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  </div>
+  <div class="carousel-nav">
+    <button class="cdot active" onclick="cgo(0)"></button>
+    <button class="cdot" onclick="cgo(1)"></button>
+    <button class="cdot" onclick="cgo(2)"></button>
+    <button class="cdot" onclick="cgo(3)"></button>
+    <button class="cdot" onclick="cgo(4)"></button>
+  </div>
+</div>
+
+<div class="data-grid">
+  <div class="data-row">
+    <div><div class="data-label">Campaign Duration</div><div class="data-name">Day 7 — Continuous US Strikes</div><div class="data-detail">Hostilities resumed 7 July 2026 after attacks on commercial vessels in the Gulf</div></div>
+    <div><div class="data-val">7</div><div class="data-unit">consecutive days</div></div>
+  </div>
+  <div class="data-row">
+    <div><div class="data-label">Iranian Retaliation</div><div class="data-name">Strikes on Kuwait & Jordan</div><div class="data-detail">Al Udeid, Ali Al Salem (Kuwait) and Al Azraq (Jordan) air bases targeted</div></div>
+    <div><div class="data-val">3</div><div class="data-unit">bases struck</div></div>
+  </div>
+  <div class="data-row">
+    <div><div class="data-label">Strait of Hormuz</div><div class="data-name">IRGC Claims Tankers Hit Mines</div><div class="data-detail">Two oil tankers allegedly exploded — CENTCOM denies the claim as false</div></div>
+    <div><div class="data-val">$88</div><div class="data-unit">Brent $/barrel</div></div>
+  </div>
+  <div class="data-row">
+    <div><div class="data-label">Tehran's Warning</div><div class="data-name">Mohsen Rezaei Threatens Escalation</div><div class="data-detail">Senior military adviser warns of broad-scale attacks if strikes continue 2–3 more days</div></div>
+    <div><div class="data-val">+4.6%</div><div class="data-unit">oil price surge</div></div>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+
+  <div id="lang-en" class="lang-section active">
+    <h2>Seventh day of US strikes</h2>
+    <p>The United States military campaign against Iran entered its seventh consecutive day on 18 July 2026, with CENTCOM confirming a fresh wave of precision strikes across the country's southern and central regions. The latest targets included surveillance facilities, military logistics infrastructure, underground weapons depots and naval capabilities — a broadening of the target set that underscores Washington's intent to degrade Iran's military posture systematically rather than deliver isolated punitive blows.</p>
+    <p>In Hormozgan province, along Iran's southern coast overlooking the Strait of Hormuz, authorities reported at least three people killed and eight wounded. Separately, the state news agency IRNA confirmed at least five explosions in the central city of Yazd, while the MEHR agency reported blasts across several southern provinces. Iranian authorities also reported damage to the electrical grid in the south, urging residents to reduce power consumption, alongside strikes on bridges, a port facility, an airport, telecommunications infrastructure and a railway station.</p>
+    <div class="pull-quote"><p>Iran will no longer confine itself to retaliatory strikes. No border will be safe. — Mohsen Rezaei, military adviser to Supreme Leader Khamenei</p></div>
+    <h2>Iranian retaliation across the Gulf</h2>
+    <p>Tehran responded by striking US military targets in two neighbouring states. The Iranian armed forces announced they had targeted the Al Udeid military base and Ali Al Salem air base in Kuwait, as well as Al Azraq air base in eastern Jordan. In Kuwait, an Iranian strike hit a power and desalination plant, prompting authorities to urge citizens to ration electricity during a heatwave with temperatures reaching 48°C. A second Kuwaiti power station was subsequently struck.</p>
+    <p>The Islamic Revolutionary Guard Corps added a maritime dimension by claiming that two oil tankers had exploded after hitting mines in the southern section of the Strait of Hormuz. CENTCOM categorically denied this claim, labelling it false. The IRGC warned its strikes would continue until calm was restored along Iran's southern coast and in the strait — a formulation that effectively conditions any ceasefire on a halt to US operations.</p>
+    <h2>Escalation risks and oil markets</h2>
+    <p>Mohsen Rezaei, military adviser to Supreme Leader Mojtaba Khamenei and former IRGC commander-in-chief, warned that Tehran is prepared to launch broad-scale attacks if US strikes continue for two to three more days. His statement — broadcast on Iranian state television — declared that Iran would no longer limit itself to proportional retaliatory strikes and that no border would be considered safe. This represents a significant rhetorical escalation from Tehran's previous messaging, which had maintained the fiction of measured, proportional response.</p>
+    <p>The conflict, which began on 28 February 2026 with joint US-Israeli strikes on Iran, has claimed thousands of lives — predominantly in Iran and Lebanon — and has sent oil markets into turbulence. Brent crude for September delivery closed at $88.10 per barrel, up 4.60%, while WTI for August delivery reached $82.49, up 4.48%. The Strait of Hormuz, through which roughly one-fifth of global oil transits, is increasingly becoming a flashpoint that could trigger a broader regional war and further economic disruption.</p>
+  </div>
+
+  <div id="lang-el" class="lang-section">
+    <h2>Έβδομη ημέρα αμερικανικών πληγμάτων</h2>
+    <p>Η στρατιωτική επιχείρηση των ΗΠΑ κατά του Ιράν μπήκε στην έβδομη συνεχόμενη ημέρα στις 18 Ιουλίου 2026, με τη CENTCOM να επιβεβαιώνει νέο κύμα πληγμάτων ακριβείας σε νότιες και κεντρικές περιοχές της χώρας. Οι τελευταίοι στόχοι περιλάμβαναν εγκαταστάσεις επιτήρησης, υποδομές στρατιωτικής εφοδιαστικής, υπόγειες αποθήκες όπλων και ναυτικές δυνατότητες — μια διεύρυνση του καταλόγου στόχων που αποτυπώνει την πρόθεση της Ουάσιγκτον να αποδυναμώσει συστηματικά τη στρατιωτική ετοιμότητα του Ιράν.</p>
+    <p>Στην επαρχία Χορμοζγκάν, κατά μήκος της νότιας ακτής με θέα τα Στενά του Ορμούζ, οι αρχές ανέφεραν τουλάχιστον τρεις νεκρούς και οκτώ τραυματίες. Παράλληλα, το κρατικό πρακτορείο IRNA επιβεβαίωσε τουλάχιστον πέντε εκρήξεις στην κεντρική πόλη Γιαζντ, ενώ το πρακτορείο MEHR ανέφερε εκρήξεις σε πολλές νότιες επαρχίες. Οι ιρανικές αρχές κατήγγειλαν επίσης ζημιές στο δίκτυο ηλεκτροδότησης και πλήγματα σε γέφυρες, λιμάνι, αεροδρόμιο, τηλεπικοινωνιακές υποδομές και σιδηροδρομικό σταθμό.</p>
+    <div class="pull-quote"><p>Το Ιράν δεν θα αρκεστεί πλέον σε ανταποδοτικά πλήγματα. Κανένα σύνορο δεν θα είναι ασφαλές. — Μοχσέν Ρεζαΐ, στρατιωτικός σύμβουλος του Ανώτατου Ηγέτη Χαμενεΐ</p></div>
+    <h2>Ιρανικά αντίποινα στον Κόλπο</h2>
+    <p>Η Τεχεράνη απάντησε χτυπώντας αμερικανικούς στρατιωτικούς στόχους σε δύο γειτονικά κράτη. Οι ιρανικές ένοπλες δυνάμεις ανακοίνωσαν ότι έπληξαν τη στρατιωτική βάση Αλ Ουντίρι και τη βάση Αλί Ας Σαλέμ στο Κουβέιτ, καθώς και τη βάση Αλ Αζράκ στην ανατολική Ιορδανία. Στο Κουβέιτ, ιρανικό πλήγμα έπληξε σταθμό ηλεκτροπαραγωγής και αφαλάτωσης, αναγκάζοντας τις αρχές να ζητήσουν εξοικονόμηση ρεύματος εν μέσω καύσωνα με θερμοκρασίες 48°C.</p>
+    <p>Οι Φρουροί της Επανάστασης πρόσθεσαν ναυτική διάσταση, ισχυριζόμενοι ότι δύο δεξαμενόπλοια εξερράγησαν αφού προσέκρουσαν σε νάρκες στο νότιο τμήμα των Στενών του Ορμούζ — ισχυρισμό που η CENTCOM διέψευσε κατηγορηματικά. Ο Μοχσέν Ρεζαΐ, στρατιωτικός σύμβουλος του Ανώτατου Ηγέτη Μοτζταμπά Χαμενεΐ, προειδοποίησε ότι η Τεχεράνη είναι έτοιμη για επιθέσεις ευρείας κλίμακας αν τα αμερικανικά πλήγματα συνεχιστούν δύο-τρεις ακόμη ημέρες. Το πετρέλαιο Brent έκλεισε στα 88,10 δολάρια (+4,60%), ενώ τα Στενά — από τα οποία διέρχεται το ένα πέμπτο του παγκόσμιου πετρελαίου — μετατρέπονται σε σημείο ανάφλεξης ικανό να πυροδοτήσει ευρύτερη περιφερειακή σύρραξη.</p>
+  </div>
+
+  <div id="lang-fr" class="lang-section">
+    <h2>Septième jour de frappes américaines</h2>
+    <p>La campagne militaire américaine contre l'Iran est entrée dans son septième jour consécutif le 18 juillet 2026. Le CENTCOM a confirmé une nouvelle vague de frappes de précision dans le sud et le centre du pays, visant des installations de surveillance, des infrastructures logistiques militaires, des dépôts souterrains d'armement et des capacités navales. Dans la province du Hormozgan, les autorités ont fait état d'au moins trois morts et huit blessés. L'agence IRNA a confirmé au moins cinq explosions à Yazd, tandis que l'agence MEHR a rapporté des déflagrations dans plusieurs provinces méridionales. Les autorités iraniennes ont également signalé des dégâts sur le réseau électrique, des ponts, un port, un aéroport, des infrastructures de télécommunications et une gare ferroviaire.</p>
+    <div class="pull-quote"><p>L'Iran ne se contentera plus de frappes de représailles. Aucune frontière ne sera en sécurité. — Mohsen Rezaei, conseiller militaire du Guide suprême Khamenei</p></div>
+    <h2>Représailles iraniennes dans le Golfe</h2>
+    <p>Téhéran a riposté en frappant des cibles militaires américaines au Koweït — les bases d'Al Udeid et d'Ali Al Salem — ainsi que la base aérienne d'Al Azraq en Jordanie orientale. Au Koweït, une centrale électrique et de dessalement a été touchée, alors que les températures atteignent 48 °C. Les Gardiens de la Révolution ont ajouté une dimension maritime en affirmant que deux pétroliers avaient explosé après avoir heurté des mines dans le sud du détroit d'Ormuz — une affirmation catégoriquement démentie par le CENTCOM.</p>
+    <p>Mohsen Rezaei, conseiller militaire du Guide suprême Mojtaba Khamenei, a prévenu que l'Iran est prêt à lancer des attaques à grande échelle si les frappes américaines se poursuivent deux à trois jours de plus. Le baril de Brent a clôturé à 88,10 dollars (+4,60 %). Le détroit d'Ormuz, par lequel transite environ un cinquième du pétrole mondial, se transforme progressivement en piège pour les deux belligérants, avec un risque croissant de conflit régional élargi.</p>
+  </div>
+
+  <div id="lang-da" class="lang-section">
+    <h2>Syvende dag med amerikanske angreb</h2>
+    <p>Den amerikanske militærkampagne mod Iran gik ind i sin syvende sammenhængende dag den 18. juli 2026. CENTCOM bekræftede en ny bølge af præcisionsangreb i landets sydlige og centrale regioner rettet mod overvågningsfaciliteter, militær logistisk infrastruktur, underjordiske våbenlagre og maritime kapaciteter. I provinsen Hormozgan rapporterede myndighederne mindst tre dræbte og otte sårede. Nyhedsbureauet IRNA bekræftede mindst fem eksplosioner i byen Yazd, mens MEHR-bureauet rapporterede om sprængninger i flere sydlige provinser. Iranske myndigheder rapporterede også skader på elnettet, broer, en havn, en lufthavn, telekommunikationsinfrastruktur og en jernbanestation.</p>
+    <div class="pull-quote"><p>Iran vil ikke længere nøjes med gengældelsesangreb. Ingen grænse vil være sikker. — Mohsen Rezaei, militærrådgiver for den øverste leder Khamenei</p></div>
+    <h2>Iranske gengældelsesangreb i Golfen</h2>
+    <p>Teheran svarede igen ved at angribe amerikanske militære mål i Kuwait — baserne Al Udeid og Ali Al Salem — samt Al Azraq-luftbasen i det østlige Jordan. I Kuwait blev et el- og afsaltningsværk ramt, mens temperaturerne når op på 48 °C. Revolutionsgarden hævdede desuden, at to olietankere eksploderede efter at have ramt miner i den sydlige del af Hormuzstrædet — en påstand, som CENTCOM kategorisk afviste.</p>
+    <p>Mohsen Rezaei, militærrådgiver for den øverste leder Mojtaba Khamenei, advarede om, at Teheran er klar til at iværksætte storskalaangreb, hvis de amerikanske angreb fortsætter i yderligere to til tre dage. Brent-råolie lukkede i 88,10 dollar pr. tønde (+4,60 %). Hormuzstrædet, som ca. en femtedel af verdens olie passerer igennem, er i stigende grad ved at blive et arnested, der kan udløse en bredere regional konflikt og yderligere økonomisk disruption.</p>
+  </div>
+
+  <div id="lang-sv" class="lang-section">
+    <h2>Sjunde dagen med amerikanska angrepp</h2>
+    <p>Den amerikanska militärkampanjen mot Iran gick in i sin sjunde sammanhängande dag den 18 juli 2026. CENTCOM bekräftade en ny våg av precisionsangrepp i landets södra och centrala regioner riktade mot övervakningsanläggningar, militär logistikinfrastruktur, underjordiska vapenlager och marina kapaciteter. I provinsen Hormozgan rapporterade myndigheterna minst tre döda och åtta skadade. Nyhetsbyrån IRNA bekräftade minst fem explosioner i staden Yazd, medan MEHR-byrån rapporterade om detonationer i flera sydliga provinser. Iranska myndigheter rapporterade även skador på elnätet, broar, en hamn, en flygplats, telekommunikationsinfrastruktur och en järnvägsstation.</p>
+    <div class="pull-quote"><p>Iran kommer inte längre att nöja sig med vedergällningsangrepp. Ingen gräns kommer att vara säker. — Mohsen Rezaei, militärrådgivare till Högste ledaren Khamenei</p></div>
+    <h2>Iranska vedergällningsattacker i Gulfen</h2>
+    <p>Teheran svarade genom att slå mot amerikanska militära mål i Kuwait — baserna Al Udeid och Ali Al Salem — samt flygbasen Al Azraq i östra Jordanien. I Kuwait träffades ett el- och avsaltningsverk, medan temperaturerna når 48 °C. Revolutionsgardet hävdade att två oljetankfartyg exploderade efter att ha träffat minor i den södra delen av Hormuzsundet — ett påstående som CENTCOM kategoriskt förnekade.</p>
+    <p>Mohsen Rezaei, militärrådgivare till Högste ledaren Mojtaba Khamenei, varnade för att Teheran är redo att genomföra storskaliga attacker om de amerikanska angreppen fortsätter ytterligare två till tre dagar. Brent-råolja stängde på 88,10 dollar per fat (+4,60 %). Hormuzsundet, genom vilket ungefär en femtedel av världens olja passerar, håller alltmer på att bli en krutdurk som kan utlösa en bredare regional konflikt och ytterligare ekonomiska störningar.</p>
+  </div>
+</div>
+
+<div class="sources">
+  <div class="sources-title">Sources</div>
+  <p>OnAlert.gr — Στις φλόγες το Ιράν για 7η συνεχόμενη μέρα (Άρης Δημητράτος, 18 July 2026)</p>
+  <p>U.S. Central Command (CENTCOM) — Official statement via X, 18 July 2026</p>
+  <p>IRNA — Iran state news agency reporting via Telegram</p>
+  <p>MEHR News Agency — Southern provinces explosions reporting</p>
+  <p>Iranian State Television — Armed forces retaliation announcement</p>
+</div>
+
+<footer>
+  <div><div class="foot-brand">Frontline Brief</div><div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div></div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+
+<script>
+function setLang(lang,btn){document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));document.getElementById('lang-'+lang).classList.add('active');btn.classList.add('active');}
+let cIndex=0;
+function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*20)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
+function cmove(dir){cIndex=(cIndex+dir+5)%5;cgo(cIndex);}
+</script>
+</body>
+</html>
