@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ο πόλεμος του μέλλοντος έχει ήδη ξεκινήσει — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;--purple:#9F7AEA;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero{padding:64px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.meta-sub{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(79,209,197,.1);color:var(--teal);border:.5px solid rgba(79,209,197,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--amber);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.poster-wrap{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.poster-frame{width:100%;max-width:480px;margin:0 auto;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);}
+.poster-frame img{width:100%;height:auto;display:block;}
+.specs-grid{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.spec-card{background:rgba(30,58,95,.35);border-radius:10px;padding:20px;border:.5px solid rgba(138,155,176,.12);text-align:center;}
+.spec-label{font-size:10px;color:var(--amber);letter-spacing:.14em;font-weight:600;text-transform:uppercase;margin-bottom:8px;}
+.spec-val{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--cold);line-height:1.1;}
+.spec-note{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.4;}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+.pull-quote{border-left:3px solid var(--amber);padding:16px 24px;margin:32px 0;background:rgba(232,160,32,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.specs-grid,.article-body,.sources,.poster-wrap{padding-left:20px;padding-right:20px;}.article-title{font-size:30px;}.specs-grid{grid-template-columns:1fr;}footer{padding:20px;}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <a class="nav-back" href="index.html"><i class="ti ti-arrow-left"></i> Πίσω στα Άρθρα</a>
+</nav>
+
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag">Στρατηγικές Υποθέσεις</span>
+    <span class="meta-sub">Κυβερνοασφάλεια · Υβριδικές Απειλές</span>
+    <span class="meta-date">17 Νοεμβρίου 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> 8 λεπτά</span>
+  </div>
+  <h1 class="article-title">Ο πόλεμος του μέλλοντος <em>έχει ήδη ξεκινήσει</em></h1>
+  <p class="article-subtitle">Από τις τράπεζες αίματος της Αθήνας μέχρι τα ενεργειακά δίκτυα της Ουκρανίας, οι κυβερνοεπιθέσεις δεν αποτελούν πλέον τεχνικό πρόβλημα — αποτελούν στρατηγική απειλή. Η Ελλάδα, με 1.390 επιθέσεις ανά οργανισμό την εβδομάδα, πρέπει να προσαρμοστεί.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">NX</div>
+    <div><div class="byline-name">Νικόλαος Χουρίδης</div><div class="byline-role">Frontline Brief · Αθήνα</div></div>
+  </div>
+</section>
+
+<div class="poster-wrap">
+  <div class="poster-frame">
+    <img src="assets/cyber-threats-el.jpg" alt="Κυβερνοεπιθέσεις, υβριδικές απειλές — Frontline Brief">
+  </div>
+</div>
+
+<div class="specs-grid">
+  <div class="spec-card"><div class="spec-label">Επιθέσεις / Εβδομάδα</div><div class="spec-val">1.390</div><div class="spec-note">ανά οργανισμό στην Ελλάδα (Μάρ. 2026)</div></div>
+  <div class="spec-card"><div class="spec-label">ENISA 2025</div><div class="spec-val">4.875</div><div class="spec-note">καταγεγραμμένα περιστατικά στην Ευρώπη</div></div>
+  <div class="spec-card"><div class="spec-label">DDoS</div><div class="spec-val">77%</div><div class="spec-note">του συνόλου των επιθέσεων</div></div>
+  <div class="spec-card"><div class="spec-label">NIS2 Ενσωμάτωση</div><div class="spec-val">Ν. 5160</div><div class="spec-note">ΦΕΚ Α' 195 — 27 Νοέμ. 2024</div></div>
+  <div class="spec-card"><div class="spec-label">NATO Cyber</div><div class="spec-val">2016</div><div class="spec-note">αναγνώριση κυβερνοχώρου ως πεδίο επιχ.</div></div>
+  <div class="spec-card"><div class="spec-label">Ουκρανία 2015</div><div class="spec-val">230K</div><div class="spec-note">κάτοικοι χωρίς ρεύμα — Sandworm/GRU</div></div>
+</div>
+
+<div class="article-body">
+
+  <p>Ο Νοέμβριος του 2026 δεν είχε καλά ξεκινήσει για την ευρωπαϊκή κυβερνοασφάλεια. Ένα κύμα επιθέσεων σε ψυκτικούς θαλάμους σούπερ μάρκετ εξαπλώθηκε σε τουλάχιστον έντεκα χώρες. Οι δράστες χρησιμοποίησαν εργοστασιακούς κωδικούς πρόσβασης για να χειραγωγήσουν απομακρυσμένα ελεγκτές θερμοκρασίας — προκαλώντας αλλοίωση ευπαθών τροφίμων, και στην Ελλάδα στοχεύοντας ακόμη και τράπεζες αίματος νοσοκομείων. Πάνω από 300 ελεγκτές ψύξης βρέθηκαν εκτεθειμένοι στο ελληνικό διαδίκτυο με εργοστασιακά credentials.</p>
+
+  <p>Αυτό δεν ήταν μια εξελιγμένη επίθεση κρατικού φορέα. Ήταν, κατά πάσα πιθανότητα, έργο ερασιτεχνών. Και ακριβώς αυτό την κάνει πιο ανησυχητική.</p>
+
+  <div class="pull-quote"><p>Η σύγχρονη αντιπαράθεση δεν περιορίζεται πλέον στα πεδία των μαχών. Κράτη, οργανισμοί και κρίσιμες υποδομές βρίσκονται αντιμέτωποι με ένα περιβάλλον διαρκών ψηφιακών απειλών.</p></div>
+
+  <h2>Η νέα πραγματικότητα της ασφάλειας</h2>
+
+  <p>Για πολλές δεκαετίες, η έννοια της εθνικής ασφάλειας ήταν συνδεδεμένη κυρίως με τις Ένοπλες Δυνάμεις, τα οπλικά συστήματα και την προστασία των συνόρων. Σήμερα, αυτή η προσέγγιση δεν επαρκεί.</p>
+
+  <p>Μια χώρα μπορεί να διαθέτει ισχυρές στρατιωτικές δυνάμεις και ταυτόχρονα να παραμένει ευάλωτη σε επιθέσεις εναντίον των τηλεπικοινωνιών, των ενεργειακών δικτύων, των μεταφορών και των δημόσιων υπηρεσιών της.</p>
+
+  <p>Οι κυβερνοεπιθέσεις δεν αποτελούν πλέον αποκλειστικά τεχνικό πρόβλημα. Μπορούν να επηρεάσουν την οικονομική δραστηριότητα, τη λειτουργία του κράτους, την εμπιστοσύνη των πολιτών και, σε ορισμένες περιπτώσεις, την επιχειρησιακή ετοιμότητα των Ενόπλων Δυνάμεων.</p>
+
+  <p>Αυτό ακριβώς είναι το χαρακτηριστικό του σύγχρονου περιβάλλοντος ασφαλείας: οι απειλές δεν εμφανίζονται πάντοτε με τη μορφή μιας συμβατικής στρατιωτικής επίθεσης.</p>
+
+  <h2>Κυβερνοεπιθέσεις και υβριδικός πόλεμος</h2>
+
+  <p>Ο όρος «υβριδικές απειλές» περιγράφει τον συνδυασμό διαφορετικών μέσων πίεσης, στρατιωτικών και μη στρατιωτικών, με στόχο την αποσταθεροποίηση ενός αντιπάλου.</p>
+
+  <p>Στο πλαίσιο αυτό μπορούν να χρησιμοποιηθούν κυβερνοεπιθέσεις, παραπληροφόρηση, οικονομική πίεση, επιχειρήσεις επιρροής και άλλες ενέργειες που δυσκολεύουν την αναγνώριση και την αντιμετώπιση της απειλής.</p>
+
+  <p>Τα πραγματικά παραδείγματα μιλούν από μόνα τους.</p>
+
+  <p>Τον Απρίλιο του 2007, η Εσθονία δέχθηκε μαζικές κυβερνοεπιθέσεις DDoS εναντίον κυβερνητικών ιστοσελίδων, τραπεζών, μέσων ενημέρωσης και κοινοβουλευτικών συστημάτων. Η επίθεση συνέπεσε με πολιτική κρίση σχετικά με τη μετακίνηση σοβιετικού μνημείου στο Ταλίν. Για εβδομάδες, ψηφιακές υπηρεσίες τέθηκαν εκτός λειτουργίας σε μία από τις πιο ψηφιοποιημένες χώρες του κόσμου. Η Εσθονία κατηγόρησε τη Ρωσία — αλλά η απόδοση ευθυνών παρέμεινε δύσκολη, ακριβώς όπως σχεδιάζεται στον υβριδικό πόλεμο.</p>
+
+  <p>Χειρότερα ακόμη, τον Δεκέμβριο του 2015, η ομάδα Sandworm (που αργότερα ταυτοποιήθηκε ως μονάδα της ρωσικής GRU) κατάφερε να θέσει εκτός λειτουργίας τμήμα του ενεργειακού δικτύου της Ουκρανίας, αφήνοντας 230.000 κατοίκους χωρίς ηλεκτρικό ρεύμα στο μέσο του χειμώνα. Ήταν η πρώτη επιβεβαιωμένη κυβερνοεπίθεση που προκάλεσε blackout σε ενεργειακό δίκτυο.</p>
+
+  <div class="pull-quote"><p>Η δυσκολία βρίσκεται στην αναγνώριση του υπευθύνου, στην κατανόηση των πραγματικών του επιδιώξεων και στην επιλογή της κατάλληλης αντίδρασης.</p></div>
+
+  <p>Αυτά δεν είναι θεωρητικά σενάρια. Είναι γεγονότα που διαμόρφωσαν τη σύγχρονη κατανόηση του κυβερνοπολέμου. Για τον λόγο αυτό, η κυβερνοασφάλεια συνδέεται πλέον άμεσα με την ανάλυση πληροφοριών, τη στρατηγική εκτίμηση απειλών και τη διαχείριση κρίσεων.</p>
+
+  <h2>Τι δείχνουν τα στοιχεία για την Ευρώπη</h2>
+
+  <p>Η έκθεση ENISA Threat Landscape 2025, η οποία εξέτασε 4.875 περιστατικά από τον Ιούλιο του 2024 έως τον Ιούνιο του 2025, παρουσιάζει μια ιδιαίτερα ανησυχητική εικόνα.</p>
+
+  <p>Οι επιθέσεις Distributed Denial of Service (DDoS), δηλαδή οι επιθέσεις που επιχειρούν να καταστήσουν μια ψηφιακή υπηρεσία μη διαθέσιμη μέσω υπερβολικού φόρτου, αποτέλεσαν το 77% των καταγεγραμμένων περιστατικών.</p>
+
+  <p>Ωστόσο, η συχνότητα μιας επίθεσης δεν ταυτίζεται απαραίτητα με τη σοβαρότητά της. Η ίδια έκθεση αναγνωρίζει το ransomware ως μία από τις απειλές με τις σημαντικότερες επιπτώσεις — κακόβουλο λογισμικό που μπορεί να οδηγήσει σε κρυπτογράφηση δεδομένων, διακοπή λειτουργιών και εκβιασμό.</p>
+
+  <p>Παράλληλα, η ENISA καταγράφει συνεχιζόμενη δραστηριότητα κυβερνοκατασκοπείας από ομάδες που συνδέονται με κρατικά συμφέροντα.</p>
+
+  <p>Τα στοιχεία αναδεικνύουν τρεις διαφορετικές διαστάσεις: τις επιθέσεις διατάραξης υπηρεσιών, το οργανωμένο κυβερνοέγκλημα και τις επιχειρήσεις κατασκοπείας. Δεν έχουν όλες οι κυβερνοεπιθέσεις τον ίδιο σκοπό — και δεν μπορούν να αντιμετωπίζονται με την ίδια στρατηγική.</p>
+
+  <h2>Οι κρίσιμες υποδομές ως στρατηγικός στόχος</h2>
+
+  <p>Ιδιαίτερη σημασία αποκτά η προστασία των κρίσιμων υποδομών. Η ενέργεια, οι μεταφορές, η υγεία, οι τηλεπικοινωνίες και οι ψηφιακές υπηρεσίες αποτελούν βασικούς πυλώνες της λειτουργίας ενός σύγχρονου κράτους. Μια σοβαρή κυβερνοεπίθεση εναντίον ενός οργανισμού που υποστηρίζει τέτοιες υπηρεσίες μπορεί να προκαλέσει αλυσιδωτές συνέπειες.</p>
+
+  <p>Το πρόβλημα γίνεται ακόμη μεγαλύτερο όταν διαφορετικοί οργανισμοί εξαρτώνται από τους ίδιους παρόχους τεχνολογίας. Αυτό σημαίνει ότι η προστασία ενός οργανισμού δεν εξαρτάται μόνο από τα δικά του συστήματα, αλλά και από την ασφάλεια των συνεργατών και προμηθευτών του.</p>
+
+  <p>Η κυβερνοασφάλεια, συνεπώς, δεν αποτελεί αποκλειστική αρμοδιότητα ενός τμήματος πληροφορικής. Αποτελεί ζήτημα συνολικής διοίκησης και επιχειρησιακής συνέχειας.</p>
+
+  <h2>Η στρατηγική του NATO και η ευρωπαϊκή απάντηση</h2>
+
+  <p>Το NATO έχει αναγνωρίσει από το 2016 τον κυβερνοχώρο ως πεδίο επιχειρήσεων, δίπλα στα παραδοσιακά επιχειρησιακά πεδία — ξηρά, θάλασσα και αέρα.</p>
+
+  <p>Η προστασία στρατιωτικών δικτύων, η ασφάλεια των επικοινωνιών και η δυνατότητα διατήρησης επιχειρήσεων υπό συνθήκες κυβερνοαπειλών αποτελούν πλέον αναγκαίες προϋποθέσεις. Το 2024, οι Σύμμαχοι αποφάσισαν τη δημιουργία του NATO Integrated Cyber Defence Centre (NICC), με σκοπό την ενίσχυση της προστασίας δικτύων και της επίγνωσης κατάστασης στον κυβερνοχώρο.</p>
+
+  <p>Από την πλευρά της, η Ευρωπαϊκή Ένωση απαντά μέσω του κανονιστικού πλαισίου. Η οδηγία NIS2 θεσπίζει απαιτήσεις κυβερνοασφάλειας για οργανισμούς σε 18 κρίσιμους τομείς, με έμφαση στη διαχείριση κινδύνων, στην ασφάλεια της εφοδιαστικής αλυσίδας και στην αναφορά σημαντικών περιστατικών.</p>
+
+  <p>Η κοινή λογική είναι σαφής: δεν αρκεί η αντιμετώπιση μιας επίθεσης όταν αυτή εκδηλωθεί. Χρειάζεται προετοιμασία, πρόληψη και δυνατότητα συνέχισης κρίσιμων λειτουργιών.</p>
+
+  <h2>Τι σημαίνουν όλα αυτά για την Ελλάδα</h2>
+
+  <p>Η Ελλάδα βρίσκεται σε μια περιοχή με ιδιαίτερη γεωπολιτική σημασία και τα νούμερα δεν αφήνουν περιθώρια εφησυχασμού.</p>
+
+  <p>Σύμφωνα με στοιχεία της Check Point Research (Μάρτιος 2026), οι ελληνικοί οργανισμοί δέχονται κατά μέσο όρο <strong>1.390 κυβερνοεπιθέσεις ανά εβδομάδα</strong>. Ο αριθμός μειώθηκε κατά 6% σε ετήσια βάση — αλλά παραμένει υψηλός. Οι πιο στοχοποιημένοι τομείς είναι η κυβέρνηση, οι τηλεπικοινωνίες, τα καταναλωτικά αγαθά, οι χρηματοπιστωτικές υπηρεσίες και η αυτοκινητοβιομηχανία.</p>
+
+  <p>Η Ελλάδα μετέφερε την NIS2 στο εθνικό δίκαιο με τον <strong>Νόμο 5160/2024</strong> (ΦΕΚ Α' 195/27.11.2024), λίγο μετά την ευρωπαϊκή προθεσμία. Η εγγραφή των υπόχρεων φορέων στην Εθνική Αρχή Κυβερνοασφάλειας ολοκληρώθηκε στις 30 Σεπτεμβρίου 2025.</p>
+
+  <p>Ωστόσο, η νομοθετική συμμόρφωση δεν ισοδυναμεί με επιχειρησιακή ετοιμότητα. Και η NIS2 αφήνει εκτός τις μικρομεσαίες επιχειρήσεις — ακριβώς αυτές που αποδείχθηκαν πιο ευάλωτες στο πρόσφατο κύμα επιθέσεων σε ψυκτικούς θαλάμους.</p>
+
+  <div class="pull-quote"><p>Δεν είναι δυνατόν να εξαλειφθεί κάθε κυβερνοαπειλή. Είναι όμως δυνατόν να περιοριστούν οι πιθανότητες επιτυχίας μιας επίθεσης και κυρίως οι συνέπειές της.</p></div>
+
+  <p>Κατά την άποψή μου, τρεις προτεραιότητες αποκτούν ιδιαίτερη σημασία:</p>
+
+  <p><strong>Πρώτον,</strong> η ανάπτυξη κουλτούρας κυβερνοασφάλειας σε ολόκληρο τον δημόσιο και ιδιωτικό τομέα. Η ανθρώπινη συμπεριφορά εξακολουθεί να αποτελεί σημαντικό παράγοντα κινδύνου — μόλις 12% των ελληνικών ΜΜΕ χρησιμοποιούν πολυπαραγοντική ταυτοποίηση (MFA).</p>
+
+  <p><strong>Δεύτερον,</strong> η ενίσχυση της συνεργασίας μεταξύ των αρμόδιων κρατικών φορέων, των Ενόπλων Δυνάμεων, της ΕΑΚ και των επιχειρήσεων που διαχειρίζονται κρίσιμες υπηρεσίες, με σαφώς καθορισμένες αρμοδιότητες.</p>
+
+  <p><strong>Τρίτον,</strong> η συστηματική εφαρμογή της διαχείρισης κινδύνων. Κάθε οργανισμός οφείλει να γνωρίζει ποιες λειτουργίες του είναι κρίσιμες, ποιες απειλές αντιμετωπίζει και πώς θα συνεχίσει να λειτουργεί σε περίπτωση σοβαρού περιστατικού.</p>
+
+  <h2>Από την κυβερνοασφάλεια στην κυβερνοανθεκτικότητα</h2>
+
+  <p>Η συζήτηση για την κυβερνοασφάλεια συχνά επικεντρώνεται στα τεχνικά μέσα: firewalls, συστήματα ανίχνευσης, κρυπτογράφηση και έλεγχο πρόσβασης. Όλα αυτά είναι απαραίτητα, αλλά δεν αρκούν.</p>
+
+  <p>Ένας οργανισμός πρέπει να μπορεί να εντοπίσει εγκαίρως μια απειλή, να αντιδράσει αποτελεσματικά, να περιορίσει τις συνέπειες και να αποκαταστήσει τις βασικές λειτουργίες του. Αυτή είναι η ουσία της κυβερνοανθεκτικότητας (Cyber Resilience).</p>
+
+  <p>Στο σημείο αυτό συναντώνται η κυβερνοασφάλεια, η διαχείριση κινδύνων και η επιχειρησιακή διοίκηση. Η τεχνολογία αποτελεί ένα μέρος της λύσης. Εξίσου σημαντικές είναι η εκπαίδευση του προσωπικού, η σαφής κατανομή ευθυνών και η πραγματοποίηση ασκήσεων αντιμετώπισης κρίσεων.</p>
+
+  <h2>Συμπέρασμα</h2>
+
+  <p>Ο πόλεμος του μέλλοντος δεν θα διεξάγεται αποκλειστικά στον κυβερνοχώρο. Οι συμβατικές στρατιωτικές επιχειρήσεις εξακολουθούν να έχουν καθοριστική σημασία.</p>
+
+  <p>Ωστόσο, η σύγχρονη αντιπαράθεση έχει ήδη επεκταθεί σε ένα περιβάλλον όπου η ψηφιακή ασφάλεια, οι πληροφορίες και οι κρίσιμες υποδομές αποτελούν στρατηγικούς παράγοντες.</p>
+
+  <p>Η πραγματική πρόκληση για τα ευρωπαϊκά κράτη δεν είναι μόνο να αποκτήσουν περισσότερα τεχνολογικά μέσα. Είναι να αναπτύξουν την ικανότητα να αναγνωρίζουν εγκαίρως τις απειλές, να συντονίζουν τους αρμόδιους φορείς και να διατηρούν τη λειτουργία τους ακόμη και υπό πίεση.</p>
+
+  <p>Η ασφάλεια ενός κράτους δεν κρίνεται πλέον μόνο από την ικανότητά του να υπερασπίζεται τα σύνορά του, αλλά και από την ικανότητά του να προστατεύει τις κρίσιμες λειτουργίες του.</p>
+
+</div>
+
+<div class="sources">
+  <div class="sources-title">Πηγές</div>
+  <p>1. ENISA, <em>Threat Landscape 2025</em>, Οκτώβριος 2025.</p>
+  <p>2. CERT-EU, <em>Threat Landscape Report 2025: A Year in Review</em>, Απρίλιος 2026.</p>
+  <p>3. NATO, <em>Cyber Defence</em>, επίσημη θεματική παρουσίαση.</p>
+  <p>4. NATO, <em>Countering Hybrid Threats</em>, Ιανουάριος 2026.</p>
+  <p>5. European Commission, <em>NIS2 Directive</em> (Directive (EU) 2022/2555).</p>
+  <p>6. Check Point Research, <em>Cyber Attack Trends — March 2026</em>.</p>
+  <p>7. Ν. 5160/2024 (ΦΕΚ Α' 195/27.11.2024), Ενσωμάτωση Οδηγίας NIS2.</p>
+  <p>8. NATO CCDCOE, <em>2007 Cyberattacks on Estonia</em>.</p>
+  <p>9. ICS-CERT/DHS, <em>Ukraine Power Grid Attack Analysis</em>, Δεκέμβριος 2015.</p>
+</div>
+
+<footer>
+  <span class="foot-brand">Frontline Brief</span>
+  <span class="foot-txt">© 2026 Frontline Brief — All rights reserved</span>
+</footer>
+
+</body>
+</html>
