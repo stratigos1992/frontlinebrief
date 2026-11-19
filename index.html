@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
 <style>
-:root{--navy:#FFFFFF;--steel:#F5F5F5;--cold:#1A1A1A;--amber:#B8860B;--muted:#6B6B6B;--border:rgba(0,0,0,0.08);--cat-defence:#3BB8A8;--cat-strategic:#D4940A;--cat-eastern:#5B8FE6;--cat-geo:#8B6CE0;color-scheme:light;}
+:root{--navy:#FFFFFF;--steel:#F5F5F5;--cold:#1A1A1A;--amber:#B8860B;--muted:#6B6B6B;--border:rgba(0,0,0,0.08);--cat-defence:#3BB8A8;--cat-strategic:#D4940A;--cat-eastern:#5B8FE6;--cat-geo:#8B6CE0;--cat-cyber:#E05555;color-scheme:light;}
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);}
@@ -66,6 +66,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 4
 .filter-tab[data-filter="strategic-affairs"].active{background:var(--cat-strategic);border-color:var(--cat-strategic);}
 .filter-tab[data-filter="eastern-mediterranean"].active{background:var(--cat-eastern);border-color:var(--cat-eastern);}
 .filter-tab[data-filter="geo-economics"].active{background:var(--cat-geo);border-color:var(--cat-geo);}
+.filter-tab[data-filter="cybersecurity"].active{background:var(--cat-cyber);border-color:var(--cat-cyber);}
 
 /* LATEST ARTICLES */
 .articles{padding:44px 48px;max-width:1100px;margin:0 auto;}
@@ -79,12 +80,14 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 4
 .acat-overlay[data-cat="strategic-affairs"]{background:var(--cat-strategic);}
 .acat-overlay[data-cat="eastern-mediterranean"]{background:var(--cat-eastern);}
 .acat-overlay[data-cat="geo-economics"]{background:var(--cat-geo);}
+.acat-overlay[data-cat="cybersecurity"]{background:var(--cat-cyber);}
 .acat-overlay[data-cat="other"]{background:#888;}
 .acat{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;display:inline-block;padding:4px 10px;border-radius:3px;}
 .acat[data-cat="defence-policy"]{background:var(--cat-defence);color:#fff;}
 .acat[data-cat="strategic-affairs"]{background:var(--cat-strategic);color:#fff;}
 .acat[data-cat="eastern-mediterranean"]{background:var(--cat-eastern);color:#fff;}
 .acat[data-cat="geo-economics"]{background:var(--cat-geo);color:#fff;}
+.acat[data-cat="cybersecurity"]{background:var(--cat-cyber);color:#fff;}
 .acat[data-cat="other"]{background:#888;color:#fff;}
 .atitle{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--cold);line-height:1.35;margin-bottom:10px;}
 .adesc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:14px;}
@@ -164,10 +167,11 @@ footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justif
     </div>
   </a>
   <ul class="navlinks">
-    <li><a href="strategic-affairs.html" data-i18n="nav_strategic">Strategic Affairs</a></li>
-    <li><a href="eastern-med.html" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
-    <li><a href="defence.html" data-i18n="nav_defence">Defence Policy</a></li>
-    <li><a href="geoeconomics.html" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+    <li><a href="#" data-nav-filter="strategic-affairs" data-i18n="nav_strategic">Strategic Affairs</a></li>
+    <li><a href="#" data-nav-filter="eastern-mediterranean" data-i18n="nav_easternmed">Eastern Mediterranean</a></li>
+    <li><a href="#" data-nav-filter="defence-policy" data-i18n="nav_defence">Defence Policy</a></li>
+    <li><a href="#" data-nav-filter="geo-economics" data-i18n="nav_geoeconomics">Geo-economics</a></li>
+    <li><a href="#" data-nav-filter="cybersecurity" data-i18n="nav_cyber">Cybersecurity</a></li>
   </ul>
   <div class="langbar">
     <button class="lb active" onclick="setLang('en',this)">EN</button>
@@ -202,12 +206,13 @@ footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justif
     <button class="filter-tab" data-filter="strategic-affairs" data-i18n="filter_strategic">Strategic Affairs</button>
     <button class="filter-tab" data-filter="eastern-mediterranean" data-i18n="filter_eastern">Eastern Mediterranean</button>
     <button class="filter-tab" data-filter="geo-economics" data-i18n="filter_geo">Geo-economics</button>
+    <button class="filter-tab" data-filter="cybersecurity" data-i18n="filter_cyber">Cybersecurity</button>
   </div>
   <div class="articles-grid">
-    <a href="cyber-threats-hybrid-warfare-european-security-2026.html" class="acard acard-featured">
+    <a href="cyber-threats-hybrid-warfare-european-security-2026.html" class="acard acard-featured" data-category="cybersecurity">
       <div class="aimg-wrap">
         <img src="assets/cyber-threats-hero.png" alt="" loading="lazy">
-        <div class="acat-overlay" data-cat="strategic-affairs">Strategic Affairs</div>
+        <div class="acat-overlay" data-cat="cybersecurity">Cybersecurity</div>
       </div>
       <div class="atitle" data-i18n="art82_title">Ο πόλεμος του μέλλοντος έχει ήδη ξεκινήσει</div>
       <div class="adesc" data-i18n="art82_desc">Από τις τράπεζες αίματος της Αθήνας μέχρι τα ενεργειακά δίκτυα της Ουκρανίας — οι κυβερνοεπιθέσεις αποτελούν στρατηγική απειλή. Η Ελλάδα δέχεται 1.390 επιθέσεις ανά οργανισμό την εβδομάδα.</div>
@@ -222,10 +227,10 @@ footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justif
       <div class="adesc" data-i18n="art42_desc">After three days of renewed fighting with the US, Iran’s FM Abbas Araghchi says Tehran alone manages the Strait of Hormuz — under a memorandum giving it total oversight for 30 days, with full capacity restored once obstacles clear. The IRGC warns ships breaking the rules will face increased severity; Iran backs a region-only security order and is weighing transit fees. About a fifth of the world’s seaborne oil passes through.</div>
       <div class="ameta"><i class="ti ti-calendar"></i> <span data-i18n="art42_date">June 28, 2026</span> · Tehran · Baghdad</div>
     </a>
-    <a href="europe-freezer-war-cold-chain-cyberattack-2026.html" class="acard" data-category="strategic-affairs">
+    <a href="europe-freezer-war-cold-chain-cyberattack-2026.html" class="acard" data-category="cybersecurity">
       <div class="aimg-wrap">
         <img src="assets/freezer-war-hero.png" alt="" loading="lazy">
-        <div class="acat-overlay" data-cat="strategic-affairs">Strategic Affairs</div>
+        <div class="acat-overlay" data-cat="cybersecurity">Cybersecurity</div>
       </div>
       <div class="atitle" data-i18n="art81_title">Europe's Freezer War: Hackers Hit the Cold Chain — and Greece Is Exposed</div>
       <div class="adesc" data-i18n="art81_desc">A wave of cyberattacks on supermarket refrigeration has spread to at least eleven European countries. No one has claimed it, and the culprits may well be amateurs. That is precisely the problem. Greece has 300+ exposed controllers.</div>
@@ -974,7 +979,8 @@ footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justif
 const translations = {
   "en": {
     "nav_analysis":"Analysis","nav_geopolitics":"Geopolitics","nav_defence":"Defence","nav_about":"About",
-    "filter_all":"All","filter_defence":"Defence Policy","filter_strategic":"Strategic Affairs","filter_eastern":"Eastern Mediterranean","filter_geo":"Geo-economics",
+    "nav_strategic":"Strategic Affairs","nav_easternmed":"Eastern Mediterranean","nav_defence":"Defence Policy","nav_geoeconomics":"Geo-economics","nav_cyber":"Cybersecurity",
+    "filter_all":"All","filter_defence":"Defence Policy","filter_strategic":"Strategic Affairs","filter_eastern":"Eastern Mediterranean","filter_geo":"Geo-economics","filter_cyber":"Cybersecurity",
     "lsub":"Geopolitical · Military · Economic",
     "ticker":"NATO Eastern Flank reinforcement · EU defence spending debate · Eastern Med energy tensions · Scandinavian security posture",
     "eyebrow":"Independent Analysis · 5 Capitals",
@@ -1035,7 +1041,8 @@ const translations = {
   },
   "el": {
     "nav_analysis":"Ανάλυση","nav_geopolitics":"Γεωπολιτική","nav_defence":"Άμυνα","nav_about":"Σχετικά",
-    "filter_all":"Όλα","filter_defence":"Αμυντική Πολιτική","filter_strategic":"Στρατηγικές Υποθέσεις","filter_eastern":"Ανατολική Μεσόγειος","filter_geo":"Γεω-οικονομία",
+    "nav_strategic":"Στρατηγικές Υποθέσεις","nav_easternmed":"Ανατολική Μεσόγειος","nav_defence":"Αμυντική Πολιτική","nav_geoeconomics":"Γεω-οικονομία","nav_cyber":"Κυβερνοασφάλεια",
+    "filter_all":"Όλα","filter_defence":"Αμυντική Πολιτική","filter_strategic":"Στρατηγικές Υποθέσεις","filter_eastern":"Ανατολική Μεσόγειος","filter_geo":"Γεω-οικονομία","filter_cyber":"Κυβερνοασφάλεια",
     "lsub":"Γεωπολιτική · Στρατιωτική · Οικονομία",
     "ticker":"Ενίσχυση Ανατολικής Πτέρυγας ΝΑΤΟ · Συζήτηση για αμυντικές δαπάνες ΕΕ · Ενεργειακές τάσεις Ανατ. Μεσογείου",
     "eyebrow":"Ανεξάρτητη Ανάλυση · 5 Πρωτεύουσες",
@@ -1095,7 +1102,8 @@ const translations = {
     "foot_copy":"© 2026 · Ανεξάρτητη ανάλυση · Χωρίς κυβερνητικές συνδέσεις"
   },
   "fr": {
-    "nav_analysis":"Analyse","nav_geopolitics":"Géopolitique","nav_defence":"Défense","nav_about":"À propos",
+    "nav_analysis":"Analyse","nav_geopolitics":"Géopolitique","nav_defence":"Défense","nav_about":"À propos","nav_strategic":"Affaires stratégiques","nav_easternmed":"Méditerranée orientale","nav_geoeconomics":"Géo-économie","nav_cyber":"Cybersécurité",
+    "filter_all":"Tous","filter_defence":"Politique de défense","filter_strategic":"Affaires stratégiques","filter_eastern":"Méditerranée orientale","filter_geo":"Géo-économie","filter_cyber":"Cybersécurité",
     "lsub":"Géopolitique · Militaire · Économique",
     "ticker":"Renforcement du flanc est de l'OTAN · Débat sur les dépenses de défense de l'UE · Tensions énergétiques en Méditerranée orientale",
     "eyebrow":"Analyse indépendante · 5 capitales",
@@ -1155,7 +1163,8 @@ const translations = {
     "foot_copy":"© 2026 · Analyse indépendante · Sans affiliation gouvernementale"
   },
   "da": {
-    "nav_analysis":"Analyse","nav_geopolitics":"Geopolitik","nav_defence":"Forsvar","nav_about":"Om os",
+    "nav_analysis":"Analyse","nav_geopolitics":"Geopolitik","nav_defence":"Forsvar","nav_about":"Om os","nav_strategic":"Strategiske anliggender","nav_easternmed":"Østlige Middelhav","nav_geoeconomics":"Geoøkonomi","nav_cyber":"Cybersikkerhed",
+    "filter_all":"Alle","filter_defence":"Forsvarspolitik","filter_strategic":"Strategiske anliggender","filter_eastern":"Østlige Middelhav","filter_geo":"Geoøkonomi","filter_cyber":"Cybersikkerhed",
     "lsub":"Geopolitisk · Militær · Økonomisk",
     "ticker":"NATO's østlige flanke styrkes · EU's forsvarsbudget til debat · Energispændinger i det østlige Middelhav",
     "eyebrow":"Uafhængig analyse · 5 hovedstæder",
@@ -1215,7 +1224,8 @@ const translations = {
     "foot_copy":"© 2026 · Uafhængig analyse · Ikke tilknyttet nogen regering"
   },
   "sv": {
-    "nav_analysis":"Analys","nav_geopolitics":"Geopolitik","nav_defence":"Försvar","nav_about":"Om oss",
+    "nav_analysis":"Analys","nav_geopolitics":"Geopolitik","nav_defence":"Försvar","nav_about":"Om oss","nav_strategic":"Strategiska frågor","nav_easternmed":"Östra Medelhavet","nav_geoeconomics":"Geoekonomi","nav_cyber":"Cybersäkerhet",
+    "filter_all":"Alla","filter_defence":"Försvarspolitik","filter_strategic":"Strategiska frågor","filter_eastern":"Östra Medelhavet","filter_geo":"Geoekonomi","filter_cyber":"Cybersäkerhet",
     "lsub":"Geopolitisk · Militär · Ekonomisk",
     "ticker":"NATO:s östflank förstärks · EU:s försvarsbudget debatteras · Energispänningar i östra Medelhavet",
     "eyebrow":"Oberoende analys · 5 huvudstäder",
@@ -1296,16 +1306,26 @@ window.onload = function() {
 };
 
 /* Category filter */
+function activateFilter(filter) {
+  document.querySelectorAll('.filter-tab').forEach(function(t){ t.classList.remove('active'); });
+  var matchTab = document.querySelector('.filter-tab[data-filter="'+filter+'"]');
+  if (matchTab) matchTab.classList.add('active');
+  document.querySelectorAll('.acard').forEach(function(card) {
+    if (card.classList.contains('acard-featured')) { card.style.display = ''; return; }
+    if (filter === 'all') { card.style.display = ''; }
+    else { card.style.display = card.getAttribute('data-category') === filter ? '' : 'none'; }
+  });
+  var grid = document.querySelector('.articles-grid');
+  if (grid) grid.scrollIntoView({behavior:'smooth', block:'start'});
+}
 document.querySelectorAll('.filter-tab').forEach(function(tab) {
-  tab.addEventListener('click', function() {
-    document.querySelectorAll('.filter-tab').forEach(function(t){ t.classList.remove('active'); });
-    tab.classList.add('active');
-    var filter = tab.getAttribute('data-filter');
-    document.querySelectorAll('.acard').forEach(function(card) {
-      if (card.classList.contains('acard-featured')) { card.style.display = ''; return; }
-      if (filter === 'all') { card.style.display = ''; }
-      else { card.style.display = card.getAttribute('data-category') === filter ? '' : 'none'; }
-    });
+  tab.addEventListener('click', function() { activateFilter(tab.getAttribute('data-filter')); });
+});
+/* Nav links trigger filters */
+document.querySelectorAll('[data-nav-filter]').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    activateFilter(link.getAttribute('data-nav-filter'));
   });
 });
 </script>
