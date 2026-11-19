@@ -88,13 +88,13 @@ footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justif
 <div class="hero-img"><img src="assets/freezer-war-hero.png" alt="Cyberattack on European supermarket cold chain refrigeration systems"></div>
 <section class="hero">
   <div class="article-meta">
-    <span class="meta-tag">Strategic Affairs</span>
+    <span class="meta-tag" id="h81-cat">Cybersecurity</span>
     <span class="meta-sub">Cybersecurity · Cold Chain</span>
-    <span class="meta-date">15 November 2026</span>
+    <span class="meta-date" id="h81-date">15 November 2026</span>
     <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> 6 min read</span>
   </div>
-  <h1 class="article-title">Europe's Freezer War: <em>Hackers hit the cold chain</em> — and Greece is exposed</h1>
-  <p class="article-subtitle">A wave of cyberattacks on supermarket refrigeration has spread to at least eleven European countries. No one has claimed it, and the culprits may well be amateurs. That is precisely the problem.</p>
+  <h1 class="article-title" id="h81-title">Europe's Freezer War: <em>Hackers hit the cold chain</em> — and Greece is exposed</h1>
+  <p class="article-subtitle" id="h81-sub">A wave of cyberattacks on supermarket refrigeration has spread to at least eleven European countries. No one has claimed it, and the culprits may well be amateurs. That is precisely the problem.</p>
   <div class="article-byline">
     <div class="byline-avatar">FB</div>
     <div><div class="byline-name">Frontline Brief Editorial</div><div class="byline-role">Athens · Brussels · Copenhagen · Nicosia · Malmö</div></div>
@@ -155,6 +155,9 @@ footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justif
   <div class="lang-toggle">
     <button class="lt active" onclick="setLang('en',this)">EN</button>
     <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
   </div>
 
   <div id="lang-en" class="lang-section active">
@@ -230,6 +233,114 @@ footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justif
     <h2>Το συμπέρασμα</h2>
     <p>Ο «πόλεμος των ψυγείων» δεν είναι, από μόνος του, στρατηγική καταστροφή. Είναι μια προειδοποίηση που ήρθε φθηνά. Ο επόμενος που θα εκμεταλλευτεί τις ίδιες αδυναμίες ίσως να μην είναι καθόλου ερασιτέχνης — και ίσως διαλέξει τη στιγμή που η ζημιά θα πονέσει περισσότερο. Η Ελλάδα έχει τα δεδομένα για να κινηθεί πριν φτάσουμε εκεί. Οφείλει να το κάνει.</p>
   </div>
+  <div id="lang-fr" class="lang-section" lang="fr">
+    <p>Tout a commencé en France à la mi-octobre, lorsque des centaines de supermarchés ont découvert que leurs réfrigérateurs et congélateurs avaient été manipulés à distance. Températures et cycles de dégivrage poussés à des valeurs absurdes : certaines chambres froides ont atteint 50 °C, des tonnes de marchandises ont été perdues et plusieurs magasins ont signalé des départs de feu. Une seconde vague a frappé dans la nuit du 1er au 2 novembre des enseignes en Belgique, en Suède, aux Pays-Bas, en Irlande, en Italie, au Luxembourg, en Finlande, en Estonie et au Portugal, avant que l'Allemagne, la Roumanie et le Royaume-Uni ne rapportent à leur tour des incidents. En France, les installations frigorifiques d'au moins trois établissements de transfusion sanguine ont également été visées.</p>
+    <p>Bruxelles affirme que ces attaques ne sont pas isolées et promet une réponse collective. Ce qu'elle n'a pas fait, c'est désigner un coupable — et personne d'autre ne l'a fait non plus.</p>
+
+    <div class="pull-quote"><p>Aucune faille inédite n'a été nécessaire. Le point faible, ce sont des milliers d'appareils oubliés que personne ne jugeait sensibles, parce qu'un frigo n'est pas un serveur.</p></div>
+
+    <h2>Une attaque rudimentaire, une cible de grande valeur</h2>
+    <p>La méthode n'avait rien de sophistiqué. Les assaillants ont visé les régulateurs de froid — ces petits boîtiers qui permettent aux techniciens de surveiller et de régler les équipements à distance — de fabricants comme Danfoss, Copeland/Dixell ou Carel. Beaucoup étaient accessibles depuis l'internet public, souvent protégés par des mots de passe par défaut ou trop faibles, avec un micrologiciel obsolète ou des modems mobiles vieillissants. En Suède, l'enseigne Coop a remonté la piste jusqu'à d'anciennes connexions 4G.</p>
+    <p>C'est la leçon qui dérange. Aucune faille « zero-day » n'a été nécessaire. Le point faible, ce sont des milliers d'appareils oubliés que personne ne considérait comme un enjeu de sécurité, parce qu'un frigo n'est pas un serveur.</p>
+
+    <h2>État, criminels ou vandales ?</h2>
+    <p>L'attribution reste ouverte. Le patron de la cybersécurité roumaine a qualifié la campagne de « semi-amateur » et écarté la piste étatique, tout en relevant qu'aucune autre infrastructure n'avait été compromise. D'autres y voient la marque des pressions hybrides que la Russie exerce sur l'Europe, et soulignent le calendrier.</p>
+    <p>D'un point de vue stratégique, la réponse importe moins qu'il n'y paraît. Quel que soit l'auteur, il a démontré trois choses : qu'on peut causer des dégâts physiques à l'échelle d'un continent pour un coût quasi nul ; que les équipements industriels des commerces ordinaires sont grands ouverts ; et que le passage des supermarchés aux banques de sang — du désagrément à la santé publique — est très court. Un acteur étatique qui observe cette campagne vient de recevoir gratuitement un rapport de reconnaissance sur la résilience européenne.</p>
+
+    <div class="pull-quote"><p>Un acteur étatique qui observe cette campagne vient de recevoir gratuitement un rapport de reconnaissance sur la résilience européenne.</p></div>
+
+    <h2>L'exposition de la Grèce</h2>
+    <p>La Grèce n'est pas épargnée. L'Autorité nationale de cybersécurité (EAK) a alerté sur les vulnérabilités des régulateurs frigorifiques dès le 14 octobre, deux jours après les attaques françaises. Elle a depuis recensé plus de 300 de ces appareils exposés sur internet dans le pays. Ce chiffre mesure une exposition, non des attaques avérées : au 5 novembre, aucun incident n'avait été formellement déclaré à l'Autorité. Des techniciens de maintenance font toutefois état de modifications non autorisées des réglages dans des commerces alimentaires, surtout des boucheries.</p>
+    <p>Les recommandations de l'Autorité sont pertinentes : retirer les régulateurs de l'internet public, passer par un VPN lorsque l'accès à distance est indispensable, changer les mots de passe par défaut, activer l'authentification multifacteur, mettre à jour ou remplacer le matériel non supporté et vérifier quels techniciens externes disposent d'un accès.</p>
+
+    <h2>La brèche que NIS2 ne comble pas</h2>
+    <p>C'est là que se situe le problème de fond. La directive européenne NIS2 a relevé les exigences pour les grands opérateurs de l'énergie, des transports, de la santé et de la distribution alimentaire. Mais la plupart des quelque 300 systèmes exposés appartiennent vraisemblablement à des PME — le boucher du quartier, le supermarché de l'île — dont beaucoup se situent sous les seuils de NIS2. Elles n'ont pas d'équipe de sécurité, dépendent de prestataires extérieurs et ignorent souvent que leur matériel est connecté.</p>
+    <p>Dans un pays où l'approvisionnement des îles repose sur des chaînes du froid longues et fragiles, et où la chaleur estivale transforme une panne de réfrigération en risque sanitaire en quelques heures, la question n'a rien de marginal.</p>
+
+    <h2>Ce que la Grèce doit faire maintenant</h2>
+    <ul class="policy-list">
+      <li><strong>Identifier et prévenir.</strong> L'EAK sait déjà où se trouvent les régulateurs exposés. Il faut désormais en avertir directement les propriétaires, via les chambres de commerce et les sociétés de maintenance, et pas seulement par des avis publics.</li>
+      <li><strong>Responsabiliser fabricants et installateurs.</strong> Fournisseurs et mainteneurs doivent livrer des équipements sécurisés par défaut, sans exposition publique ni identifiants d'usine.</li>
+      <li><strong>Intégrer les systèmes industriels aux audits NIS2.</strong> Pour les entités déjà concernées, froid, climatisation et gestion technique des bâtiments doivent être audités au même titre que l'informatique.</li>
+      <li><strong>Protéger d'abord la santé.</strong> Les incidents dans les banques de sang françaises justifient un examen immédiat des chaînes du froid des hôpitaux grecs, des services de transfusion et de la distribution pharmaceutique.</li>
+      <li><strong>Exercer le scénario.</strong> Une perturbation coordonnée de la chaîne du froid en pleine canicule doit figurer dans les exercices nationaux de crise.</li>
+    </ul>
+
+    <h2>En résumé</h2>
+    <p>La « guerre des congélateurs » n'est pas, en soi, une catastrophe stratégique. C'est un avertissement à peu de frais. Le prochain acteur à exploiter les mêmes failles sera peut-être bien moins amateur — et choisira le moment où les dégâts feront le plus mal. La Grèce dispose des données pour agir avant. Elle doit le faire.</p>
+  </div>
+  <div id="lang-da" class="lang-section" lang="da">
+    <p>Det begyndte i Frankrig i midten af oktober, da hundredvis af supermarkeder opdagede, at nogen havde pillet ved deres køle- og frysediske på afstand. Temperatur- og afrimningsindstillinger var skruet op til absurde niveauer; nogle kølerum nåede 50 °C, varer for tonsvis gik tabt, og flere butikker meldte om brand. En ny bølge fulgte natten mellem 1. og 2. november og ramte kæder i Belgien, Sverige, Holland, Irland, Italien, Luxembourg, Finland, Estland og Portugal, før Tyskland, Rumænien og Storbritannien meldte om egne hændelser. I Frankrig blev kølelagrene hos mindst tre blodbanker også ramt.</p>
+    <p>Bruxelles har slået fast, at angrebene ikke er isolerede, og lovet et fælles svar. Hvad EU ikke har gjort, er at pege på en gerningsmand – og det har ingen andre heller.</p>
+
+    <div class="pull-quote"><p>Der skulle ingen ukendt sårbarhed til. Svagheden var tusindvis af glemte enheder, som ingen anså for sikkerhedsrelevante – for et køleskab er jo ikke en server.</p></div>
+
+    <h2>Et simpelt angreb på et værdifuldt mål</h2>
+    <p>Metoden var ikke avanceret. Angriberne gik efter kølestyringer – små enheder, som teknikere bruger til at overvåge og justere udstyret på afstand – fra producenter som Danfoss, Copeland/Dixell og Carel. Mange af dem lå åbent på internettet, ofte beskyttet af standard- eller svage adgangskoder, forældet firmware eller aldrende mobilmodemmer. I Sverige sporede Coop de ramte enheder tilbage til gamle 4G-forbindelser.</p>
+    <p>Det er den ubehagelige lære. Der skulle ingen zero-day-sårbarhed til. Svagheden lå i tusindvis af glemte enheder, som ingen opfattede som en sikkerhedssag – for et køleskab er jo ikke en server.</p>
+
+    <h2>Stat, kriminelle eller hærværk?</h2>
+    <p>Hvem der står bag, er stadig uafklaret. Rumæniens cybersikkerhedschef kaldte kampagnen "semi-amatøragtig" og afviste, at en statslig aktør stod bag, men bemærkede samtidig, at ingen anden infrastruktur var kompromitteret. Andre peger på det bredere mønster af russisk hybridpres mod Europa og på tidspunktet.</p>
+    <p>Strategisk set betyder svaret mindre, end man skulle tro. Uanset hvem der står bag, er tre ting nu demonstreret: at man kan forvolde fysisk skade på tværs af et helt kontinent næsten gratis; at driftsteknologien i helt almindelige virksomheder står vidt åben; og at skridtet fra supermarkeder til blodbanker – fra gene til folkesundhed – er kort. En statslig aktør, der følger med, har netop fået en gratis rekognosceringsrapport om Europas robusthed.</p>
+
+    <div class="pull-quote"><p>En statslig aktør, der følger med, har netop fået en gratis rekognosceringsrapport om Europas robusthed.</p></div>
+
+    <h2>Grækenlands sårbarhed</h2>
+    <p>Grækenland er ikke gået fri. Den nationale cybersikkerhedsmyndighed (EAK) advarede om sårbarheder i kommercielle kølestyringer allerede den 14. oktober, to dage efter angrebene i Frankrig. Siden har myndigheden fundet over 300 af den slags styringer i landet, som er eksponeret mod internettet. Tallet viser eksponering, ikke bekræftede angreb, og pr. 5. november var ingen hændelse formelt indberettet. Servicemontører har dog meldt om uautoriserede ændringer af køleindstillinger i fødevarebutikker, især slagterforretninger.</p>
+    <p>Myndighedens råd er fornuftige: Tag styringerne af det offentlige internet, brug VPN hvor fjernadgang ikke kan undgås, skift standardadgangskoder, slå flerfaktorgodkendelse til, opdater eller udskift udstyr uden support, og tjek hvilke eksterne teknikere der har adgang.</p>
+
+    <h2>Hullet NIS2 ikke lukker</h2>
+    <p>Her ligger det strukturelle problem. EU's NIS2-direktiv har hævet kravene til de store aktører inden for energi, transport, sundhed og fødevaredistribution. Men de fleste af de over 300 eksponerede systemer tilhører formentlig små og mellemstore virksomheder – slagteren på hjørnet, supermarkedet på øen – og mange af dem ligger under direktivets tærskler. De har intet sikkerhedsteam, er afhængige af eksterne teknikere og ved ofte ikke engang, at deres udstyr er online.</p>
+    <p>I et land, hvor øernes fødevareforsyning hviler på lange og skrøbelige kølekæder, og hvor sommervarmen kan gøre et kølenedbrud til en sundhedsrisiko på få timer, er det ikke et randproblem.</p>
+
+    <h2>Hvad Grækenland bør gøre nu</h2>
+    <ul class="policy-list">
+      <li><strong>Find og varsl.</strong> EAK ved allerede, hvor de eksponerede styringer står. Næste skridt er at kontakte ejerne direkte via handelskamre og servicefirmaer – ikke kun via offentlige advarsler.</li>
+      <li><strong>Stil krav til leverandører og installatører.</strong> Udstyr skal leveres sikret fra start, uden offentlig eksponering og uden standardadgangskoder.</li>
+      <li><strong>Tag driftsteknologien med i NIS2-tilsynet.</strong> Hos virksomheder, der allerede er omfattet, bør køling, ventilation og bygningsstyring revideres på linje med it.</li>
+      <li><strong>Beskyt sundhedssektoren først.</strong> Hændelserne i de franske blodbanker bør føre til et øjeblikkeligt eftersyn af kølelagre på græske hospitaler, i blodbanker og i lægemiddeldistributionen.</li>
+      <li><strong>Øv scenariet.</strong> Et koordineret angreb på kølekæden under en hedebølge hører hjemme i de nationale kriseøvelser.</li>
+    </ul>
+
+    <h2>Konklusion</h2>
+    <p>Europas "fryserkrig" er ikke i sig selv en strategisk katastrofe. Det er en billig advarsel. Den næste aktør, der udnytter de samme svagheder, kan være langt mindre amatøragtig – og kan vælge et tidspunkt, hvor skaden gør mest ondt. Grækenland har tallene til at handle, før det sker. Det bør landet gøre.</p>
+  </div>
+  <div id="lang-sv" class="lang-section" lang="sv">
+    <p>Det började i Frankrike i mitten av oktober, när hundratals livsmedelsbutiker upptäckte att någon på distans hade manipulerat deras kyl- och frysdiskar. Temperatur- och avfrostningsinställningar hade drivits upp till absurda nivåer; vissa kylrum nådde 50 °C, varor för tonvis förstördes och flera butiker rapporterade bränder. En andra våg följde natten mellan den 1 och 2 november och slog mot kedjor i Belgien, Sverige, Nederländerna, Irland, Italien, Luxemburg, Finland, Estland och Portugal, innan Tyskland, Rumänien och Storbritannien rapporterade egna incidenter. I Frankrike drabbades även kylförvaringen hos minst tre blodbanker.</p>
+    <p>Bryssel har konstaterat att attackerna inte är isolerade och utlovat ett gemensamt svar. Vad EU inte har gjort är att peka ut en skyldig – och det har ingen annan heller.</p>
+
+    <div class="pull-quote"><p>Det krävdes ingen okänd sårbarhet. Svagheten var tusentals bortglömda enheter som ingen såg som säkerhetsrelevanta – ett kylskåp är ju ingen server.</p></div>
+
+    <h2>Enkel attack, värdefullt mål</h2>
+    <p>Metoden var inte avancerad. Angriparna gick på kylstyrningar – små enheter som tekniker använder för att övervaka och justera utrustningen på distans – från tillverkare som Danfoss, Copeland/Dixell och Carel. Många låg öppet på internet, ofta skyddade av standardlösenord eller svaga lösenord, föråldrad firmware eller gamla mobilmodem. I Sverige kunde Coop spåra de drabbade enheterna till gamla 4G-uppkopplingar.</p>
+    <p>Det är den obekväma lärdomen. Det krävdes ingen zero-day-sårbarhet. Svagheten låg i tusentals bortglömda enheter som ingen betraktade som en säkerhetsfråga – ett kylskåp är ju ingen server.</p>
+
+    <h2>Stat, kriminella eller vandaler?</h2>
+    <p>Frågan om vem som ligger bakom är fortfarande öppen. Rumäniens cybersäkerhetschef beskrev kampanjen som "halvamatörmässig" och uteslöt en statlig aktör, men noterade samtidigt att ingen annan infrastruktur hade komprometterats. Andra pekar på det bredare mönstret av ryska hybridpåtryckningar mot Europa och på tidpunkten.</p>
+    <p>Strategiskt spelar svaret mindre roll än man kan tro. Vem som än ligger bakom har visat tre saker: att fysisk skada kan orsakas över en hel kontinent nästan gratis; att driftteknik i helt vanliga företag står vidöppen; och att steget från livsmedelsbutiker till blodbanker – från olägenhet till folkhälsa – är kort. En statlig aktör som följer kampanjen har just fått en gratis spaningsrapport om Europas motståndskraft.</p>
+
+    <div class="pull-quote"><p>En statlig aktör som följer kampanjen har just fått en gratis spaningsrapport om Europas motståndskraft.</p></div>
+
+    <h2>Greklands exponering</h2>
+    <p>Grekland har inte klarat sig. Den nationella cybersäkerhetsmyndigheten (EAK) varnade för sårbarheter i kommersiella kylstyrningar redan den 14 oktober, två dagar efter attackerna i Frankrike. Sedan dess har myndigheten identifierat över 300 sådana styrningar i landet som är exponerade mot internet. Siffran visar exponering, inte bekräftade attacker, och den 5 november hade ingen incident formellt anmälts. Servicetekniker har dock rapporterat obehöriga ändringar av kylinställningar i livsmedelsbutiker, främst slakterier.</p>
+    <p>Myndighetens råd är kloka: koppla bort styrningarna från det öppna internet, använd VPN där fjärråtkomst inte går att undvika, byt standardlösenord, aktivera flerfaktorsautentisering, uppdatera eller byt ut utrustning som saknar support och kontrollera vilka externa tekniker som har åtkomst.</p>
+
+    <h2>Luckan som NIS2 inte täpper till</h2>
+    <p>Här finns det strukturella problemet. EU:s NIS2-direktiv har höjt kraven på stora aktörer inom energi, transport, vård och livsmedelsdistribution. Men de flesta av de drygt 300 exponerade systemen tillhör sannolikt små och medelstora företag – kvartersslaktaren, ö-butiken – och många av dem ligger under direktivets trösklar. De saknar säkerhetsteam, är beroende av externa tekniker och vet ofta inte ens att utrustningen är uppkopplad.</p>
+    <p>I ett land där öarnas livsmedelsförsörjning vilar på långa och sköra kylkedjor, och där sommarvärmen kan göra ett kylhaveri till en hälsorisk på några timmar, är detta ingen marginell fråga.</p>
+
+    <h2>Vad Grekland bör göra nu</h2>
+    <ul class="policy-list">
+      <li><strong>Hitta och varna.</strong> EAK vet redan var de exponerade styrningarna finns. Nästa steg är att kontakta ägarna direkt, via handelskammare och serviceföretag – inte bara genom offentliga varningar.</li>
+      <li><strong>Ställ krav på leverantörer och installatörer.</strong> Utrustning ska levereras säkrad från början, utan exponering mot internet och utan standardlösenord.</li>
+      <li><strong>Ta med driftteknik i NIS2-tillsynen.</strong> Hos verksamheter som redan omfattas bör kyla, ventilation och fastighetsautomation granskas på samma sätt som it.</li>
+      <li><strong>Skydda vården först.</strong> Incidenterna i de franska blodbankerna bör leda till en omedelbar genomgång av kylförvaringen på grekiska sjukhus, i blodverksamheten och i läkemedelsdistributionen.</li>
+      <li><strong>Öva scenariot.</strong> En samordnad störning av kylkedjan mitt i en värmebölja hör hemma i de nationella krisövningarna.</li>
+    </ul>
+
+    <h2>Slutsats</h2>
+    <p>Europas "frysarkrig" är inte i sig en strategisk katastrof. Det är en billig varning. Nästa aktör som utnyttjar samma svagheter kan vara långt mindre amatörmässig – och välja ett ögonblick då skadan gör mest ont. Grekland har underlaget för att agera innan dess. Det bör landet göra.</p>
+  </div>
 </div>
 
 <div class="sources">
@@ -251,6 +362,12 @@ function setLang(lang,btn){document.querySelectorAll('.lang-section').forEach(s=
 let cIndex=0;
 function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*50)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
 function cmove(dir){cIndex=(cIndex+dir+2)%2;cgo(cIndex);}
+</script>
+<script>
+const H81={"en": {"title": "Europe's Freezer War: Hackers Hit the Cold Chain — and Greece Is Exposed", "sub": "A wave of cyberattacks on supermarket refrigeration has spread to at least eleven European countries. No one has claimed it, and the culprits may well be amateurs. That is precisely the problem. Greece has 300+ exposed controllers.", "date": "15 November 2026", "cat": "Cybersecurity"}, "el": {"title": "Ο «πόλεμος των ψυγείων» στην Ευρώπη: οι χάκερ χτυπούν την αλυσίδα ψύξης — και η Ελλάδα είναι εκτεθειμένη", "sub": "Το κύμα κυβερνοεπιθέσεων σε ψυκτικούς θαλάμους σούπερ μάρκετ έχει αγγίξει τουλάχιστον έντεκα ευρωπαϊκές χώρες. Κανείς δεν το έχει αναλάβει και οι δράστες ίσως είναι ερασιτέχνες. Η Ελλάδα έχει 300+ εκτεθειμένους ελεγκτές.", "date": "15 Νοεμβρίου 2026", "cat": "Κυβερνοασφάλεια"}, "fr": {"title": "La « guerre des congélateurs » en Europe : des pirates frappent la chaîne du froid — et la Grèce est exposée", "sub": "Une vague de cyberattaques contre la réfrigération des supermarchés a touché au moins onze pays européens. Personne ne l'a revendiquée, et les auteurs sont peut-être des amateurs. C'est justement le problème. Plus de 300 régulateurs exposés en Grèce.", "date": "15 novembre 2026", "cat": "Cybersécurité"}, "da": {"title": "Europas fryserkrig: Hackere rammer kølekæden – og Grækenland er udsat", "sub": "En bølge af cyberangreb på supermarkeders køling har ramt mindst elleve europæiske lande. Ingen har taget ansvaret, og gerningsmændene kan være amatører. Det er netop problemet. Over 300 eksponerede styringer i Grækenland.", "date": "15. november 2026", "cat": "Cybersikkerhed"}, "sv": {"title": "Europas frysarkrig: Hackare slår mot kylkedjan – och Grekland är exponerat", "sub": "En våg av cyberattacker mot butikers kylsystem har nått minst elva europeiska länder. Ingen har tagit på sig ansvaret, och förövarna kan vara amatörer. Det är just det som är problemet. Över 300 exponerade styrningar i Grekland.", "date": "15 november 2026", "cat": "Cybersäkerhet"}};const H81EN={title:document.getElementById('h81-title').innerHTML,sub:document.getElementById('h81-sub').textContent};
+document.querySelectorAll('.lt').forEach(b=>b.addEventListener('click',()=>{const l=b.getAttribute('onclick').match(/'(\w+)'/)[1];const h=H81[l];
+document.getElementById('h81-title').innerHTML=l==='en'?H81EN.title:h.title;document.getElementById('h81-sub').textContent=l==='en'?H81EN.sub:h.sub;
+document.getElementById('h81-date').textContent=h.date;document.getElementById('h81-cat').textContent=h.cat;}));
 </script>
 </body>
 </html>
