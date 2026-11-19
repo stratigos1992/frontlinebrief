@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Risk Management: Why Protecting Critical Infrastructure Is a Leadership Responsibility — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<meta name="description" content="IT can recommend controls, but only leadership can decide what risk is acceptable and what gets restored first. With NIS2 making boards accountable, cyber risk is now a governance question.">
+<meta property="og:title" content="Cyber Risk Management: Why Protecting Critical Infrastructure Is a Leadership Responsibility">
+<meta property="og:description" content="IT can recommend controls, but only leadership can decide what risk is acceptable and what gets restored first. With NIS2 making boards accountable, cyber risk is now a governance question.">
+<meta property="og:image" content="https://frontlinebrief.org/assets/cyber-risk-board-hero.jpg">
+<meta property="og:url" content="https://frontlinebrief.org/cyber-risk-management-board-responsibility-2026.html">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;--purple:#9F7AEA;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero-img{width:100%;max-width:860px;margin:0 auto;display:block;padding:32px 48px 0;}.hero-img img{width:100%;border-radius:10px;border:.5px solid var(--border);}
+.hero{padding:40px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.meta-sub{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(79,209,197,.1);color:var(--teal);border:.5px solid rgba(79,209,197,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--amber);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.carousel{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.carousel-wrap{width:100%;max-width:480px;margin:0 auto;}
+.carousel-frame{position:relative;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);width:100%;}
+.carousel-track{display:flex;flex-wrap:nowrap;width:500%;transition:transform .4s ease;will-change:transform;}
+.cslide{width:20%;flex-shrink:0;}
+.cslide img{width:100%;height:auto;display:block;}
+.carousel-nav{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:background .2s;}
+.cdot.active{background:var(--amber);}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,27,42,.55);border:.5px solid var(--border);color:var(--cold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;}
+.carousel-arrow.prev{left:10px;}
+.carousel-arrow.next{right:10px;}
+.specs-grid{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.spec-card{background:rgba(30,58,95,.35);border-radius:10px;padding:20px;border:.5px solid rgba(138,155,176,.12);text-align:center;}
+.spec-label{font-size:10px;color:var(--amber);letter-spacing:.14em;font-weight:600;text-transform:uppercase;margin-bottom:8px;}
+.spec-val{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--cold);line-height:1.1;}
+.spec-note{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.4;}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+ul.policy-list{list-style:none;padding:0;margin:0 0 20px 0;}
+ul.policy-list li{font-size:16px;color:rgba(240,244,248,.85);line-height:1.85;margin-bottom:14px;padding-left:24px;position:relative;}
+ul.policy-list li::before{content:'—';position:absolute;left:0;color:var(--amber);font-weight:700;}
+ul.policy-list li strong{color:var(--cold);font-weight:600;}
+.pull-quote{border-left:3px solid var(--amber);padding:16px 24px;margin:32px 0;background:rgba(232,160,32,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.specs-grid,.article-body,.sources,.carousel,.hero-img{padding-left:20px;padding-right:20px;}.article-title{font-size:30px;}.specs-grid{grid-template-columns:1fr;}footer{padding:20px;}}
+</style>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <a class="nav-back" href="index.html"><i class="ti ti-arrow-left"></i> <span id="h-back">Back to All Articles</span></a>
+</nav>
+<div class="hero-img"><img src="assets/cyber-risk-board-hero.jpg" alt="Power substation with cyber-threat and defence overlays"></div>
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag" id="h-cat">Cybersecurity</span>
+    <span class="meta-sub" id="h-sub">Risk Management · Governance</span>
+    <span class="meta-date" id="h-date">19 November 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> <span id="h-read">6 min read</span></span>
+  </div>
+  <h1 class="article-title" id="h-title">Cyber risk management: why protecting critical infrastructure is a <em>leadership responsibility</em></h1>
+  <p class="article-subtitle" id="h-subtitle">Cybersecurity cannot be left to the IT department alone. Protecting critical functions requires strategic decisions, disciplined risk management and the active involvement of those at the top.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">NC</div>
+    <div><div class="byline-name" id="h-byname">Nikolaos Chouridis</div><div class="byline-role" id="h-byrole">Frontline Brief · Athens</div></div>
+  </div>
+</section>
+
+<div class="carousel">
+  <div class="carousel-wrap">
+  <div class="carousel-frame">
+    <div class="carousel-track" id="ctrack">
+      <div class="cslide"><img src="assets/cyber-risk-board-poster-en.jpg" alt="Cyber Risk Management: Why Protecting Critical Infrastructure Is a Leadership Responsibility — English"></div>
+      <div class="cslide"><img src="assets/cyber-risk-board-poster-el.jpg" alt="Cyber Risk Management: Γιατί η προστασία των κρίσιμων υποδομών είναι ευθύνη της διοίκησης — Ελληνικά"></div>
+      <div class="cslide"><img src="assets/cyber-risk-board-poster-fr.jpg" alt="Gestion du risque cyber : pourquoi protéger les infrastructures critiques relève de la direction — Français"></div>
+      <div class="cslide"><img src="assets/cyber-risk-board-poster-da.jpg" alt="Cyberrisikostyring: Derfor er beskyttelsen af kritisk infrastruktur ledelsens ansvar — Dansk"></div>
+      <div class="cslide"><img src="assets/cyber-risk-board-poster-sv.jpg" alt="Cyberriskhantering: Därför är skyddet av kritisk infrastruktur ledningens ansvar — Svenska"></div>
+    </div>
+    <button class="carousel-arrow prev" onclick="cmove(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="carousel-arrow next" onclick="cmove(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  </div>
+  <div class="carousel-nav">
+    <button class="cdot active" onclick="cgo(0)"></button>
+    <button class="cdot" onclick="cgo(1)"></button>
+    <button class="cdot" onclick="cgo(2)"></button>
+    <button class="cdot" onclick="cgo(3)"></button>
+    <button class="cdot" onclick="cgo(4)"></button>
+  </div>
+</div>
+
+<div class="specs-grid" id="h-specs">
+  <div class="spec-card"><div class="spec-label">NIS2 scope</div><div class="spec-val">18</div><div class="spec-note">sectors · energy, transport, health, digital infrastructure</div></div>
+  <div class="spec-card"><div class="spec-label">NIS2 Article 20</div><div class="spec-val">Boards</div><div class="spec-note">approve risk measures, oversee them and can be held liable</div></div>
+  <div class="spec-card"><div class="spec-label">NIS2 penalties</div><div class="spec-val">€10M / 2%</div><div class="spec-note">maximum for essential entities · of global turnover</div></div>
+  <div class="spec-card"><div class="spec-label">NIST CSF 2.0</div><div class="spec-val">6</div><div class="spec-note">functions · Govern added in February 2024</div></div>
+  <div class="spec-card"><div class="spec-label">ISO 31000</div><div class="spec-val">2018</div><div class="spec-note">risk management principles for any type of risk</div></div>
+  <div class="spec-card"><div class="spec-label">ISO/IEC 27001</div><div class="spec-val">2022</div><div class="spec-note">requirements for an information security management system</div></div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+  <div id="lang-en" class="lang-section active" lang="en">
+<p>For years, cybersecurity was treated mainly as a technical matter. Responsibility for protecting information systems was handed to network administrators and the IT department. That remains necessary at the technical level, but it is not enough to protect an organisation as a whole.</p>
+<p>A technical team can recommend protective systems, manage vulnerabilities and put security procedures in place. What it cannot decide on its own is how much operational risk is acceptable, which services must be restored first, or how many resources the organisation will commit to resilience. Those are leadership decisions.</p>
+<div class="pull-quote"><p>IT can recommend the controls. Only leadership can decide which risk is acceptable and what gets restored first.</p></div>
+<h2>What is cyber risk management?</h2>
+<p>Cyber risk management is the systematic process of identifying, analysing, evaluating and treating the risks linked to information systems, data and digital services.</p>
+<p>Take a hypothetical electricity utility. It relies on digital systems for administration, for communicating with partners and for supporting operational processes. A cyberattack could cut off access to information, interrupt services or disrupt critical procedures.</p>
+<p>Assessing that risk is not just a question of how likely an attack is. It means looking at the scale of the consequences, the fallback options available, the dependence on third parties and the capacity to recover. That is why cyber risk management belongs inside enterprise risk management, not alongside it.</p>
+<h2>ISO 31000 and ISO 27001: two complementary approaches</h2>
+<p>ISO 31000 sets out general principles and guidelines for managing risk in any organisation. It applies to many types of risk, from operational and financial to security.</p>
+<p>ISO/IEC 27001, for its part, defines the requirements for establishing, implementing, maintaining and continually improving an information security management system (ISMS).</p>
+<p>Used together, the two are particularly effective. ISO 31000 provides the overall logic of risk management, while ISO 27001 brings structure to the management of information security. An organisation that applies both does not stop at isolated technical measures. It builds processes, responsibilities, controls and mechanisms for continuous review.</p>
+<h2>NIS2: cybersecurity becomes a governance and regulatory issue</h2>
+<p>The EU's NIS2 Directive is the clearest sign of how the approach to cybersecurity is changing. It creates a common set of requirements for organisations in 18 critical sectors, including energy, transport, health and digital infrastructure.</p>
+<p>The key provision is Article 20. The management bodies of covered entities must approve the cybersecurity risk-management measures, oversee their implementation and can be held liable for failures. Board members are also expected to undergo training so that they can identify risks and judge the measures put in front of them. Behind this sit significant penalties: for essential entities, fines of up to €10 million or 2 per cent of global annual turnover, whichever is higher.</p>
+<p>Leadership can no longer assume that handing cybersecurity to an outside provider or an internal technical team is enough. It must understand the main threats, allocate resources and monitor whether protection actually works. How these obligations apply in practice depends on the type and size of the entity and on national law — in Greece, Law 5160/2024.</p>
+<div class="pull-quote"><p>Under NIS2, the board cannot outsource accountability. It can delegate the work — not the responsibility.</p></div>
+<h2>From identifying risk to making decisions</h2>
+<p>An effective cyber risk management programme has to answer a small number of essential questions:</p>
+<ul class="policy-list">
+  <li>Which services are absolutely critical to the organisation's mission?</li>
+  <li>Which information systems and external providers support those services?</li>
+  <li>Which threats could cause a serious outage?</li>
+  <li>Which safeguards are in place, and what risk remains once they are applied?</li>
+  <li>Who is responsible for accepting that residual risk or treating it further?</li>
+</ul>
+<p>The answers must be captured in documented procedures, risk registers and concrete treatment plans. Leadership also needs measurable indicators: the time needed to restore critical services, progress in fixing serious vulnerabilities and the readiness of fallback procedures.</p>
+<h2>Why business continuity matters</h2>
+<p>Cyber resilience is closely tied to the ability to keep core functions running. An organisation that has protective technology in place but has never tested restoring its systems may discover its weaknesses only when a real crisis hits.</p>
+<p>That is why incident-response exercises, tested business continuity plans and close cooperation between leadership, technical teams and operational managers are essential. The NIST Cybersecurity Framework 2.0, published in 2024, reflects this broader approach through six functions: Govern, Identify, Protect, Detect, Respond and Recover. The addition of Govern underlines the importance of organisational governance and of linking cybersecurity to overall risk management.</p>
+<h2>Bottom line</h2>
+<p>Cybersecurity is no longer purely a technology question. It is a matter of strategic leadership, risk management and protecting the organisation's mission.</p>
+<p>Operators of critical infrastructure need both technical expertise and leaders able to understand the threats and take informed decisions. Cybersecurity can be delivered by specialists, but responsibility for managing organisational risk belongs to leadership. That is the principle on which modern cyber resilience must rest.</p>
+  </div>
+  <div id="lang-el" class="lang-section" lang="el">
+<p>Για πολλά χρόνια, η κυβερνοασφάλεια αντιμετωπιζόταν κυρίως ως τεχνικό ζήτημα. Η ευθύνη για την προστασία των πληροφοριακών συστημάτων ανατιθέταν συχνά στους διαχειριστές δικτύων και στα τμήματα πληροφορικής. Η προσέγγιση αυτή παραμένει αναγκαία στο τεχνικό επίπεδο, αλλά δεν επαρκεί για τη συνολική προστασία ενός οργανισμού.</p>
+<p>Ένα τεχνικό τμήμα μπορεί να εισηγηθεί την εγκατάσταση συστημάτων προστασίας, τη διαχείριση ευπαθειών και την εφαρμογή διαδικασιών ασφαλείας. Δεν μπορεί όμως να αποφασίζει μόνο του ποιο επίπεδο επιχειρησιακού κινδύνου είναι αποδεκτό, ποιες υπηρεσίες πρέπει να αποκατασταθούν πρώτες ή πόσους πόρους θα διαθέσει ένας οργανισμός στην ανθεκτικότητα. Αυτές είναι αποφάσεις διοίκησης.</p>
+<div class="pull-quote"><p>Το τμήμα πληροφορικής εισηγείται τα μέτρα. Μόνο η διοίκηση μπορεί να αποφασίσει ποιος κίνδυνος είναι αποδεκτός και τι αποκαθίσταται πρώτο.</p></div>
+<h2>Τι είναι το Cyber Risk Management;</h2>
+<p>Η διαχείριση κυβερνοκινδύνων είναι η συστηματική διαδικασία αναγνώρισης, ανάλυσης, αξιολόγησης και αντιμετώπισης κινδύνων που σχετίζονται με πληροφοριακά συστήματα, δεδομένα και ψηφιακές υπηρεσίες.</p>
+<p>Για να κατανοήσουμε την έννοια, ας εξετάσουμε έναν υποθετικό οργανισμό παροχής ηλεκτρικής ενέργειας. Ο οργανισμός χρησιμοποιεί ψηφιακά συστήματα για τη διοικητική του λειτουργία, την επικοινωνία με συνεργάτες και την υποστήριξη επιχειρησιακών διαδικασιών. Μια κυβερνοεπίθεση θα μπορούσε να προκαλέσει απώλεια πρόσβασης σε πληροφορίες, διακοπή υπηρεσιών ή δυσλειτουργία κρίσιμων διαδικασιών.</p>
+<p>Η αξιολόγηση του κινδύνου δεν περιορίζεται στην πιθανότητα εκδήλωσης μιας επίθεσης. Πρέπει να εξετάζει την έκταση των συνεπειών, τις διαθέσιμες εναλλακτικές λειτουργίες, τις εξαρτήσεις από τρίτους και την ικανότητα αποκατάστασης. Αυτός είναι ο λόγος που το Cyber Risk Management συνδέεται άμεσα με το Enterprise Risk Management.</p>
+<h2>ISO 31000 και ISO 27001: δύο συμπληρωματικές προσεγγίσεις</h2>
+<p>Το ISO 31000 παρέχει γενικές αρχές και κατευθυντήριες γραμμές για τη διαχείριση κινδύνων σε οργανισμούς. Μπορεί να εφαρμοστεί σε διαφορετικούς τύπους κινδύνων, από επιχειρησιακούς και οικονομικούς μέχρι κινδύνους ασφάλειας.</p>
+<p>Αντίστοιχα, το ISO/IEC 27001 καθορίζει απαιτήσεις για τη δημιουργία, εφαρμογή, συντήρηση και συνεχή βελτίωση ενός Συστήματος Διαχείρισης Ασφάλειας Πληροφοριών (ISMS).</p>
+<p>Η σύνδεση των δύο προτύπων είναι ιδιαίτερα χρήσιμη. Το ISO 31000 προσφέρει τη γενικότερη λογική διαχείρισης κινδύνων, ενώ το ISO 27001 υποστηρίζει τη συστηματική διαχείριση της ασφάλειας πληροφοριών. Ένας οργανισμός που εφαρμόζει αποτελεσματικά τις αρχές αυτές δεν περιορίζεται σε μεμονωμένα τεχνικά μέτρα. Αναπτύσσει διαδικασίες, ευθύνες, ελέγχους και μηχανισμούς συνεχούς αξιολόγησης.</p>
+<h2>NIS2: η κυβερνοασφάλεια αποκτά διοικητική και κανονιστική διάσταση</h2>
+<p>Η ευρωπαϊκή οδηγία NIS2 αποτελεί χαρακτηριστικό παράδειγμα της μεταβολής που συντελείται στην προσέγγιση της κυβερνοασφάλειας. Δημιουργεί ένα κοινό πλαίσιο απαιτήσεων για οργανισμούς σε 18 κρίσιμους τομείς, μεταξύ των οποίων η ενέργεια, οι μεταφορές, η υγεία και οι ψηφιακές υποδομές.</p>
+<p>Κομβικό σημείο είναι το άρθρο 20. Τα διοικητικά όργανα των οντοτήτων οφείλουν να εγκρίνουν τα μέτρα διαχείρισης κυβερνοκινδύνων, να εποπτεύουν την εφαρμογή τους και μπορούν να λογοδοτήσουν για παραλείψεις. Τα μέλη της διοίκησης καλούνται επίσης να εκπαιδεύονται, ώστε να μπορούν να αναγνωρίζουν τους κινδύνους και να αξιολογούν τα μέτρα που τους προτείνονται. Πίσω από αυτά υπάρχουν σημαντικές κυρώσεις: για τις βασικές οντότητες, πρόστιμα έως 10 εκατ. ευρώ ή 2% του παγκόσμιου ετήσιου κύκλου εργασιών, όποιο είναι υψηλότερο.</p>
+<p>Η διοίκηση δεν μπορεί πλέον να θεωρεί ότι αρκεί να αναθέσει την κυβερνοασφάλεια σε έναν εξωτερικό πάροχο ή σε ένα εσωτερικό τεχνικό τμήμα. Οφείλει να κατανοεί τις βασικές απειλές, να διαθέτει πόρους και να παρακολουθεί την αποτελεσματικότητα της προστασίας. Η ακριβής εφαρμογή των υποχρεώσεων εξαρτάται από το είδος και το μέγεθος της οντότητας, καθώς και από το εθνικό πλαίσιο — στην Ελλάδα, τον Ν. 5160/2024.</p>
+<div class="pull-quote"><p>Με τη NIS2, η διοίκηση μπορεί να αναθέσει τη δουλειά. Όχι όμως την ευθύνη.</p></div>
+<h2>Από την αναγνώριση του κινδύνου στη λήψη αποφάσεων</h2>
+<p>Ένα αποτελεσματικό πρόγραμμα Cyber Risk Management πρέπει να απαντά σε ορισμένα ουσιαστικά ερωτήματα:</p>
+<ul class="policy-list">
+  <li>Ποιες υπηρεσίες είναι απολύτως κρίσιμες για την αποστολή του οργανισμού;</li>
+  <li>Ποια πληροφοριακά συστήματα και ποιοι εξωτερικοί πάροχοι υποστηρίζουν αυτές τις υπηρεσίες;</li>
+  <li>Ποιες απειλές μπορούν να προκαλέσουν σοβαρή διακοπή λειτουργίας;</li>
+  <li>Ποιες δικλίδες ασφαλείας υπάρχουν και ποιοι κίνδυνοι παραμένουν μετά την εφαρμογή τους;</li>
+  <li>Ποιος είναι υπεύθυνος για την αποδοχή ή την περαιτέρω αντιμετώπιση αυτών των κινδύνων;</li>
+</ul>
+<p>Οι απαντήσεις πρέπει να αποτυπώνονται σε τεκμηριωμένες διαδικασίες, σε μητρώα κινδύνων και σε συγκεκριμένα σχέδια αντιμετώπισης. Η διοίκηση χρειάζεται επίσης μετρήσιμους δείκτες, όπως ο χρόνος αποκατάστασης κρίσιμων υπηρεσιών, η πρόοδος αντιμετώπισης σοβαρών ευπαθειών και η ετοιμότητα εναλλακτικών διαδικασιών.</p>
+<h2>Η σημασία της επιχειρησιακής συνέχειας</h2>
+<p>Η κυβερνοανθεκτικότητα συνδέεται στενά με τη δυνατότητα συνέχισης των βασικών λειτουργιών. Ένας οργανισμός που διαθέτει τεχνικά μέτρα προστασίας, αλλά δεν έχει δοκιμάσει ποτέ την αποκατάσταση των συστημάτων του, ενδέχεται να διαπιστώσει τις αδυναμίες του μόνο όταν εκδηλωθεί μια πραγματική κρίση.</p>
+<p>Γι' αυτό είναι αναγκαίες οι ασκήσεις αντιμετώπισης περιστατικών, η δοκιμή σχεδίων επιχειρησιακής συνέχειας και η συνεργασία μεταξύ διοίκησης, τεχνικών υπηρεσιών και επιχειρησιακών στελεχών. Το NIST Cybersecurity Framework 2.0, που δημοσιεύθηκε το 2024, αναδεικνύει αυτή τη συνολική προσέγγιση μέσα από έξι λειτουργίες: Govern, Identify, Protect, Detect, Respond και Recover. Η ένταξη της λειτουργίας Govern υπογραμμίζει τη σημασία της οργανωτικής διακυβέρνησης και της σύνδεσης της κυβερνοασφάλειας με τη συνολική διαχείριση κινδύνων.</p>
+<h2>Συμπέρασμα</h2>
+<p>Η κυβερνοασφάλεια δεν αποτελεί πλέον αποκλειστικά ζήτημα τεχνολογίας. Αποτελεί ζήτημα στρατηγικής διοίκησης, διαχείρισης κινδύνων και προστασίας της επιχειρησιακής αποστολής.</p>
+<p>Οι οργανισμοί που διαχειρίζονται κρίσιμες υποδομές χρειάζονται τόσο τεχνική επάρκεια όσο και διοικήσεις ικανές να κατανοούν τις απειλές και να λαμβάνουν τεκμηριωμένες αποφάσεις. <strong>Η κυβερνοασφάλεια μπορεί να υλοποιείται από εξειδικευμένους επαγγελματίες, αλλά η ευθύνη για τη διαχείριση του οργανωτικού κινδύνου ανήκει στη διοίκηση.</strong> Αυτή είναι η βασική αρχή πάνω στην οποία πρέπει να στηρίζεται η σύγχρονη κυβερνοανθεκτικότητα.</p>
+  </div>
+  <div id="lang-fr" class="lang-section" lang="fr">
+<p>Pendant longtemps, la cybersécurité a été traitée avant tout comme une question technique. La protection des systèmes d'information revenait aux administrateurs réseau et à la direction informatique. Cette approche reste indispensable sur le plan technique, mais elle ne suffit pas à protéger une organisation dans son ensemble.</p>
+<p>Une équipe technique peut recommander des dispositifs de protection, gérer les vulnérabilités et mettre en place des procédures de sécurité. Elle ne peut pas décider seule du niveau de risque opérationnel acceptable, des services à rétablir en priorité ni des moyens que l'organisation consacrera à sa résilience. Ce sont des décisions de direction.</p>
+<div class="pull-quote"><p>La DSI recommande les mesures. Seule la direction peut décider du risque acceptable et de ce qui doit être rétabli en premier.</p></div>
+<h2>Qu'est-ce que la gestion du risque cyber ?</h2>
+<p>La gestion du risque cyber est le processus systématique d'identification, d'analyse, d'évaluation et de traitement des risques liés aux systèmes d'information, aux données et aux services numériques.</p>
+<p>Prenons un fournisseur d'électricité fictif. Il s'appuie sur des systèmes numériques pour son administration, ses échanges avec ses partenaires et ses processus opérationnels. Une cyberattaque pourrait le priver de l'accès à ses informations, interrompre ses services ou désorganiser des procédures critiques.</p>
+<p>Évaluer ce risque ne se résume pas à estimer la probabilité d'une attaque. Il faut mesurer l'ampleur des conséquences, les solutions de repli disponibles, la dépendance envers des tiers et la capacité de rétablissement. C'est pourquoi la gestion du risque cyber doit s'inscrire dans la gestion globale des risques de l'entreprise, et non à côté.</p>
+<h2>ISO 31000 et ISO 27001 : deux approches complémentaires</h2>
+<p>La norme ISO 31000 énonce des principes et des lignes directrices générales pour le management du risque dans toute organisation. Elle s'applique à de nombreux types de risques, opérationnels, financiers ou de sécurité.</p>
+<p>La norme ISO/IEC 27001 définit quant à elle les exigences pour établir, mettre en œuvre, tenir à jour et améliorer en continu un système de management de la sécurité de l'information (SMSI).</p>
+<p>Combinées, elles sont particulièrement efficaces. ISO 31000 apporte la logique d'ensemble du management du risque ; ISO 27001 structure la gestion de la sécurité de l'information. Une organisation qui applique les deux ne se limite pas à des mesures techniques isolées : elle se dote de processus, de responsabilités, de contrôles et de mécanismes d'évaluation continue.</p>
+<h2>NIS2 : la cybersécurité devient une affaire de gouvernance et de conformité</h2>
+<p>La directive européenne NIS2 illustre parfaitement ce changement d'approche. Elle crée un socle commun d'exigences pour les organisations de 18 secteurs critiques, dont l'énergie, les transports, la santé et les infrastructures numériques.</p>
+<p>Sa disposition centrale est l'article 20. Les organes de direction des entités concernées doivent approuver les mesures de gestion des risques cyber, superviser leur mise en œuvre, et leur responsabilité peut être engagée en cas de manquement. Leurs membres sont en outre tenus de se former, afin de savoir identifier les risques et apprécier les mesures qui leur sont soumises. Les sanctions sont lourdes : pour les entités essentielles, jusqu'à 10 millions d'euros ou 2 % du chiffre d'affaires mondial annuel, le montant le plus élevé étant retenu.</p>
+<p>La direction ne peut plus considérer qu'il suffit de confier la cybersécurité à un prestataire extérieur ou à une équipe technique interne. Elle doit comprendre les principales menaces, allouer des moyens et vérifier que la protection fonctionne réellement. L'application précise de ces obligations dépend du type et de la taille de l'entité ainsi que du droit national — en Grèce, la loi 5160/2024.</p>
+<div class="pull-quote"><p>Avec NIS2, la direction peut déléguer le travail. Pas la responsabilité.</p></div>
+<h2>De l'identification du risque à la décision</h2>
+<p>Un programme efficace de gestion du risque cyber doit répondre à quelques questions essentielles :</p>
+<ul class="policy-list">
+  <li>Quels services sont absolument critiques pour la mission de l'organisation ?</li>
+  <li>Quels systèmes d'information et quels prestataires extérieurs les soutiennent ?</li>
+  <li>Quelles menaces pourraient provoquer une interruption grave ?</li>
+  <li>Quelles mesures de sécurité sont en place, et quel risque subsiste après leur application ?</li>
+  <li>Qui est responsable d'accepter ce risque résiduel ou de le traiter davantage ?</li>
+</ul>
+<p>Les réponses doivent être formalisées dans des procédures documentées, des registres des risques et des plans de traitement concrets. La direction a aussi besoin d'indicateurs mesurables : délai de rétablissement des services critiques, avancement du traitement des vulnérabilités graves, état de préparation des modes dégradés.</p>
+<h2>L'enjeu de la continuité d'activité</h2>
+<p>La cyberrésilience est étroitement liée à la capacité de maintenir les fonctions essentielles. Une organisation dotée d'outils de protection mais qui n'a jamais testé la restauration de ses systèmes risque de ne découvrir ses failles qu'au cœur d'une vraie crise.</p>
+<p>D'où l'importance des exercices de gestion d'incident, des tests de plans de continuité et d'une collaboration étroite entre direction, équipes techniques et responsables opérationnels. Le NIST Cybersecurity Framework 2.0, publié en 2024, traduit cette approche globale à travers six fonctions : Govern, Identify, Protect, Detect, Respond et Recover. L'ajout de la fonction Govern souligne l'importance de la gouvernance et du lien entre cybersécurité et gestion globale des risques.</p>
+<h2>En conclusion</h2>
+<p>La cybersécurité n'est plus seulement une affaire de technologie. C'est une question de direction stratégique, de gestion des risques et de protection de la mission.</p>
+<p>Les opérateurs d'infrastructures critiques ont besoin à la fois de compétences techniques et de dirigeants capables de comprendre les menaces et de décider en connaissance de cause. La cybersécurité peut être mise en œuvre par des spécialistes, mais la responsabilité de la gestion du risque organisationnel appartient à la direction. C'est sur ce principe que doit reposer la cyberrésilience moderne.</p>
+  </div>
+  <div id="lang-da" class="lang-section" lang="da">
+<p>I mange år blev cybersikkerhed først og fremmest betragtet som et teknisk anliggende. Ansvaret for at beskytte it-systemerne lå hos netværksadministratorerne og it-afdelingen. Det er fortsat nødvendigt på det tekniske plan, men det er ikke nok til at beskytte en organisation som helhed.</p>
+<p>Et teknisk team kan anbefale beskyttelsessystemer, håndtere sårbarheder og indføre sikkerhedsprocedurer. Men det kan ikke på egen hånd afgøre, hvor stor en driftsrisiko der er acceptabel, hvilke tjenester der skal genetableres først, eller hvor mange ressourcer organisationen vil bruge på robusthed. Det er ledelsesbeslutninger.</p>
+<div class="pull-quote"><p>It-afdelingen anbefaler tiltagene. Kun ledelsen kan afgøre, hvilken risiko der er acceptabel, og hvad der skal genetableres først.</p></div>
+<h2>Hvad er cyberrisikostyring?</h2>
+<p>Cyberrisikostyring er den systematiske proces med at identificere, analysere, vurdere og håndtere de risici, der knytter sig til it-systemer, data og digitale tjenester.</p>
+<p>Tag et tænkt elselskab. Det bruger digitale systemer til administration, til kommunikation med samarbejdspartnere og til at understøtte driften. Et cyberangreb kan afskære adgangen til information, afbryde forsyningen eller lamme kritiske arbejdsgange.</p>
+<p>At vurdere risikoen handler ikke kun om, hvor sandsynligt et angreb er. Man skal se på omfanget af konsekvenserne, de alternative driftsformer, afhængigheden af tredjeparter og evnen til at genoprette driften. Derfor hører cyberrisikostyring hjemme i virksomhedens samlede risikostyring – ikke ved siden af den.</p>
+<h2>ISO 31000 og ISO 27001: to tilgange, der supplerer hinanden</h2>
+<p>ISO 31000 fastlægger generelle principper og retningslinjer for risikostyring i enhver organisation. Standarden kan bruges på mange typer risiko, fra drift og økonomi til sikkerhed.</p>
+<p>ISO/IEC 27001 fastsætter kravene til at etablere, implementere, vedligeholde og løbende forbedre et ledelsessystem for informationssikkerhed (ISMS).</p>
+<p>Sammen er de særligt stærke. ISO 31000 giver den overordnede logik for risikostyring, mens ISO 27001 skaber struktur i arbejdet med informationssikkerhed. En organisation, der anvender begge, nøjes ikke med enkeltstående tekniske tiltag. Den opbygger processer, ansvarsfordeling, kontroller og løbende evaluering.</p>
+<h2>NIS2: Cybersikkerhed bliver et spørgsmål om ledelse og regulering</h2>
+<p>EU's NIS2-direktiv er det tydeligste tegn på, at tilgangen til cybersikkerhed er ved at ændre sig. Det fastlægger fælles krav til organisationer i 18 kritiske sektorer, herunder energi, transport, sundhed og digital infrastruktur.</p>
+<p>Den centrale bestemmelse er artikel 20. Ledelsesorganerne i de omfattede virksomheder skal godkende foranstaltningerne til styring af cyberrisici, føre tilsyn med gennemførelsen og kan drages til ansvar for svigt. Ledelsens medlemmer skal desuden gennemgå uddannelse, så de kan identificere risici og vurdere de tiltag, der lægges frem for dem. Bag ved ligger betydelige sanktioner: For væsentlige enheder bøder på op til 10 mio. euro eller 2 procent af den globale årsomsætning, alt efter hvad der er højest.</p>
+<p>Ledelsen kan ikke længere gå ud fra, at det er nok at overlade cybersikkerheden til en ekstern leverandør eller et internt teknisk team. Den skal forstå de væsentligste trusler, afsætte ressourcer og følge med i, om beskyttelsen rent faktisk virker. Hvordan forpligtelserne konkret gælder, afhænger af enhedens type og størrelse og af national lovgivning – i Grækenland lov 5160/2024.</p>
+<div class="pull-quote"><p>Med NIS2 kan ledelsen uddelegere arbejdet. Ikke ansvaret.</p></div>
+<h2>Fra risikoidentifikation til beslutning</h2>
+<p>Et effektivt program for cyberrisikostyring skal kunne svare på en håndfuld afgørende spørgsmål:</p>
+<ul class="policy-list">
+  <li>Hvilke tjenester er helt kritiske for organisationens opgave?</li>
+  <li>Hvilke it-systemer og eksterne leverandører understøtter dem?</li>
+  <li>Hvilke trusler kan forårsage et alvorligt nedbrud?</li>
+  <li>Hvilke sikringsforanstaltninger findes, og hvilken risiko er tilbage, når de er på plads?</li>
+  <li>Hvem har ansvaret for at acceptere restrisikoen eller håndtere den yderligere?</li>
+</ul>
+<p>Svarene skal forankres i dokumenterede procedurer, risikoregistre og konkrete handlingsplaner. Ledelsen har også brug for målbare nøgletal: tiden det tager at genetablere kritiske tjenester, fremdriften i lukningen af alvorlige sårbarheder og parathedsgraden af nødprocedurerne.</p>
+<h2>Driftskontinuitetens betydning</h2>
+<p>Cyberrobusthed hænger tæt sammen med evnen til at holde kernefunktionerne kørende. En organisation, der har beskyttelsesteknologien på plads, men aldrig har afprøvet en genetablering af sine systemer, opdager måske først sine svagheder, når krisen er en realitet.</p>
+<p>Derfor er beredskabsøvelser, afprøvede kontinuitetsplaner og tæt samarbejde mellem ledelse, tekniske funktioner og driftsledere afgørende. NIST Cybersecurity Framework 2.0 fra 2024 afspejler denne helhedstilgang gennem seks funktioner: Govern, Identify, Protect, Detect, Respond og Recover. At Govern er kommet med, understreger betydningen af god ledelse og af at koble cybersikkerheden til den samlede risikostyring.</p>
+<h2>Konklusion</h2>
+<p>Cybersikkerhed er ikke længere kun et teknologispørgsmål. Det er et spørgsmål om strategisk ledelse, risikostyring og beskyttelse af organisationens opgave.</p>
+<p>De, der driver kritisk infrastruktur, har brug for både teknisk kompetence og ledere, der forstår truslerne og kan træffe velbegrundede beslutninger. Cybersikkerhed kan udføres af specialister, men ansvaret for at styre organisationens risiko ligger hos ledelsen. Det er det princip, moderne cyberrobusthed skal bygge på.</p>
+  </div>
+  <div id="lang-sv" class="lang-section" lang="sv">
+<p>Under många år betraktades cybersäkerhet främst som en teknisk fråga. Ansvaret för att skydda informationssystemen lades på nätverksadministratörerna och it-avdelningen. Det är fortfarande nödvändigt på den tekniska nivån, men det räcker inte för att skydda en organisation som helhet.</p>
+<p>Ett tekniskt team kan föreslå skyddssystem, hantera sårbarheter och införa säkerhetsrutiner. Men det kan inte på egen hand avgöra hur stor verksamhetsrisk som är acceptabel, vilka tjänster som ska återställas först eller hur mycket resurser organisationen ska lägga på motståndskraft. Det är ledningsbeslut.</p>
+<div class="pull-quote"><p>It-avdelningen föreslår åtgärderna. Bara ledningen kan avgöra vilken risk som är acceptabel och vad som ska återställas först.</p></div>
+<h2>Vad är cyberriskhantering?</h2>
+<p>Cyberriskhantering är den systematiska processen att identifiera, analysera, värdera och hantera risker kopplade till informationssystem, data och digitala tjänster.</p>
+<p>Ta ett tänkt elbolag. Det använder digitala system för administration, för kommunikation med samarbetspartner och för att stödja driften. En cyberattack kan stänga av åtkomsten till information, avbryta leveranserna eller slå ut kritiska processer.</p>
+<p>Att bedöma risken handlar inte bara om hur sannolik en attack är. Man måste se till hur stora följderna blir, vilka reservlösningar som finns, beroendet av tredje part och förmågan att återställa verksamheten. Därför hör cyberriskhantering hemma i organisationens samlade riskhantering – inte vid sidan av den.</p>
+<h2>ISO 31000 och ISO 27001: två kompletterande angreppssätt</h2>
+<p>ISO 31000 anger allmänna principer och riktlinjer för riskhantering i alla typer av organisationer. Standarden kan tillämpas på många slags risker, från operativa och ekonomiska till säkerhetsrisker.</p>
+<p>ISO/IEC 27001 anger i sin tur kraven för att upprätta, införa, underhålla och ständigt förbättra ett ledningssystem för informationssäkerhet (LIS).</p>
+<p>Tillsammans är de särskilt användbara. ISO 31000 ger den övergripande logiken för riskhantering, medan ISO 27001 ger struktur åt informationssäkerhetsarbetet. En organisation som tillämpar båda nöjer sig inte med enstaka tekniska åtgärder. Den bygger upp processer, ansvar, kontroller och löpande uppföljning.</p>
+<h2>NIS2: cybersäkerhet blir en fråga om styrning och regelefterlevnad</h2>
+<p>EU:s NIS2-direktiv är det tydligaste tecknet på att synen på cybersäkerhet håller på att förändras. Det inför gemensamma krav för organisationer i 18 kritiska sektorer, bland dem energi, transport, vård och digital infrastruktur.</p>
+<p>Den centrala bestämmelsen är artikel 20. Ledningsorganen i de berörda verksamheterna ska godkänna åtgärderna för hantering av cybersäkerhetsrisker, övervaka genomförandet och kan hållas ansvariga för brister. Ledamöterna förväntas också genomgå utbildning så att de kan identifiera risker och bedöma de åtgärder som läggs fram för dem. Bakom detta finns kännbara sanktioner: för väsentliga entiteter avgifter på upp till 10 miljoner euro eller 2 procent av den globala årsomsättningen, beroende på vilket belopp som är högst.</p>
+<p>Ledningen kan inte längre utgå från att det räcker att överlåta cybersäkerheten åt en extern leverantör eller ett internt tekniskt team. Den måste förstå de viktigaste hoten, avsätta resurser och följa upp att skyddet faktiskt fungerar. Exakt hur skyldigheterna gäller beror på verksamhetens typ och storlek och på nationell lagstiftning – i Grekland lag 5160/2024.</p>
+<div class="pull-quote"><p>Med NIS2 kan ledningen delegera arbetet. Inte ansvaret.</p></div>
+<h2>Från riskidentifiering till beslut</h2>
+<p>Ett effektivt program för cyberriskhantering måste kunna besvara några grundläggande frågor:</p>
+<ul class="policy-list">
+  <li>Vilka tjänster är helt avgörande för organisationens uppdrag?</li>
+  <li>Vilka informationssystem och externa leverantörer bär upp dem?</li>
+  <li>Vilka hot kan orsaka ett allvarligt avbrott?</li>
+  <li>Vilka skyddsåtgärder finns, och vilken risk återstår när de är på plats?</li>
+  <li>Vem ansvarar för att acceptera restrisken eller hantera den vidare?</li>
+</ul>
+<p>Svaren ska dokumenteras i rutiner, riskregister och konkreta åtgärdsplaner. Ledningen behöver också mätbara indikatorer: hur lång tid det tar att återställa kritiska tjänster, hur arbetet med allvarliga sårbarheter fortskrider och hur redo reservrutinerna är.</p>
+<h2>Kontinuitetens betydelse</h2>
+<p>Cyberresiliens hänger nära ihop med förmågan att hålla kärnfunktionerna i gång. En organisation som har skyddstekniken på plats men aldrig har övat på att återställa sina system upptäcker kanske sina brister först när krisen är ett faktum.</p>
+<p>Därför är incidentövningar, testade kontinuitetsplaner och ett nära samarbete mellan ledning, teknisk personal och verksamhetsansvariga avgörande. NIST Cybersecurity Framework 2.0 från 2024 speglar detta helhetsgrepp genom sex funktioner: Govern, Identify, Protect, Detect, Respond och Recover. Att Govern har tillkommit understryker vikten av styrning och av att knyta cybersäkerheten till den samlade riskhanteringen.</p>
+<h2>Slutsats</h2>
+<p>Cybersäkerhet är inte längre enbart en teknikfråga. Det är en fråga om strategisk ledning, riskhantering och skydd av organisationens uppdrag.</p>
+<p>De som driver kritisk infrastruktur behöver både teknisk kompetens och ledare som förstår hoten och kan fatta välgrundade beslut. Cybersäkerhet kan utföras av specialister, men ansvaret för att hantera organisationens risker ligger hos ledningen. Det är den principen som modern cyberresiliens måste vila på.</p>
+  </div>
+</div>
+<div class="sources">
+  <div class="sources-title" id="h-sources">Sources</div>
+  <p>ISO 31000:2018 — Risk management: Guidelines</p>
+  <p>ISO/IEC 27001:2022 — Information security management systems: Requirements</p>
+  <p>Directive (EU) 2022/2555 (NIS2), Articles 20, 21 and 34 · Greek Law 5160/2024</p>
+  <p>NIST — Cybersecurity Framework (CSF) 2.0 (February 2024)</p>
+  <p>ENISA — Threat Landscape 2026 (September 2026)</p>
+</div>
+<footer>
+  <div><div class="foot-brand">Frontline Brief</div><div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div></div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+<script>
+const LANGS=["en", "el", "fr", "da", "sv"];
+const HDR={"en": {"cat": "Cybersecurity", "sub": "Risk Management · Governance", "date": "19 November 2026", "read": "6 min read", "title": "Cyber risk management: why protecting critical infrastructure is a <em>leadership responsibility</em>", "subtitle": "Cybersecurity cannot be left to the IT department alone. Protecting critical functions requires strategic decisions, disciplined risk management and the active involvement of those at the top.", "back": "Back to All Articles", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Athens", "sources": "Sources", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">NIS2 scope</div><div class=\"spec-val\">18</div><div class=\"spec-note\">sectors · energy, transport, health, digital infrastructure</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2 Article 20</div><div class=\"spec-val\">Boards</div><div class=\"spec-note\">approve risk measures, oversee them and can be held liable</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2 penalties</div><div class=\"spec-val\">€10M / 2%</div><div class=\"spec-note\">maximum for essential entities · of global turnover</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIST CSF 2.0</div><div class=\"spec-val\">6</div><div class=\"spec-note\">functions · Govern added in February 2024</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO 31000</div><div class=\"spec-val\">2018</div><div class=\"spec-note\">risk management principles for any type of risk</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO/IEC 27001</div><div class=\"spec-val\">2022</div><div class=\"spec-note\">requirements for an information security management system</div></div>"}, "el": {"cat": "Κυβερνοασφάλεια", "sub": "Διαχείριση Κινδύνων · Διακυβέρνηση", "date": "19 Νοεμβρίου 2026", "read": "6 λεπτά", "title": "Cyber Risk Management: γιατί η προστασία των κρίσιμων υποδομών είναι <em>ευθύνη της διοίκησης</em>", "subtitle": "Η κυβερνοασφάλεια δεν μπορεί να αντιμετωπίζεται αποκλειστικά ως αρμοδιότητα του τμήματος πληροφορικής. Η προστασία των κρίσιμων λειτουργιών απαιτεί στρατηγικές αποφάσεις, διαχείριση κινδύνων και ενεργή συμμετοχή της διοίκησης.", "back": "Πίσω στα Άρθρα", "byname": "Νικόλαος Χουρίδης", "byrole": "Frontline Brief · Αθήνα", "sources": "Πηγές", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">Εύρος NIS2</div><div class=\"spec-val\">18</div><div class=\"spec-note\">τομείς · ενέργεια, μεταφορές, υγεία, ψηφιακές υποδομές</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2 Άρθρο 20</div><div class=\"spec-val\">Διοίκηση</div><div class=\"spec-note\">εγκρίνει τα μέτρα, τα εποπτεύει και μπορεί να λογοδοτήσει</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Κυρώσεις NIS2</div><div class=\"spec-val\">€10 εκ. / 2%</div><div class=\"spec-note\">ανώτατο όριο για βασικές οντότητες · του παγκόσμιου κύκλου εργασιών</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIST CSF 2.0</div><div class=\"spec-val\">6</div><div class=\"spec-note\">λειτουργίες · η Govern προστέθηκε τον Φεβρουάριο 2024</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO 31000</div><div class=\"spec-val\">2018</div><div class=\"spec-note\">αρχές διαχείρισης για κάθε τύπο κινδύνου</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO/IEC 27001</div><div class=\"spec-val\">2022</div><div class=\"spec-note\">απαιτήσεις για Σύστημα Διαχείρισης Ασφάλειας Πληροφοριών</div></div>"}, "fr": {"cat": "Cybersécurité", "sub": "Gestion des risques · Gouvernance", "date": "19 novembre 2026", "read": "6 min de lecture", "title": "Gestion du risque cyber : pourquoi protéger les infrastructures critiques relève de la <em>direction</em>", "subtitle": "La cybersécurité ne peut plus être l'affaire du seul service informatique. Protéger les fonctions vitales exige des choix stratégiques, une gestion rigoureuse des risques et l'implication active de la direction.", "back": "Retour aux articles", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Athènes", "sources": "Sources", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">Champ de NIS2</div><div class=\"spec-val\">18</div><div class=\"spec-note\">secteurs · énergie, transports, santé, infrastructures numériques</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2, article 20</div><div class=\"spec-val\">Direction</div><div class=\"spec-note\">approuve les mesures, les supervise et peut être tenue responsable</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Sanctions NIS2</div><div class=\"spec-val\">10 M€ / 2 %</div><div class=\"spec-note\">plafond pour les entités essentielles · du CA mondial</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIST CSF 2.0</div><div class=\"spec-val\">6</div><div class=\"spec-note\">fonctions · Govern ajoutée en février 2024</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO 31000</div><div class=\"spec-val\">2018</div><div class=\"spec-note\">principes de gestion pour tout type de risque</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO/IEC 27001</div><div class=\"spec-val\">2022</div><div class=\"spec-note\">exigences d'un système de management de la sécurité de l'information</div></div>"}, "da": {"cat": "Cybersikkerhed", "sub": "Risikostyring · Ledelse", "date": "19. november 2026", "read": "6 min. læsning", "title": "Cyberrisikostyring: Derfor er beskyttelsen af kritisk infrastruktur <em>ledelsens ansvar</em>", "subtitle": "Cybersikkerhed kan ikke overlades til it-afdelingen alene. Beskyttelsen af kritiske funktioner kræver strategiske beslutninger, systematisk risikostyring og en ledelse, der er aktivt engageret.", "back": "Tilbage til artikler", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Athen", "sources": "Kilder", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">NIS2-omfang</div><div class=\"spec-val\">18</div><div class=\"spec-note\">sektorer · energi, transport, sundhed, digital infrastruktur</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2 artikel 20</div><div class=\"spec-val\">Ledelsen</div><div class=\"spec-note\">godkender tiltag, fører tilsyn og kan drages til ansvar</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2-bøder</div><div class=\"spec-val\">10 mio. € / 2 %</div><div class=\"spec-note\">maksimum for væsentlige enheder · af global omsætning</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIST CSF 2.0</div><div class=\"spec-val\">6</div><div class=\"spec-note\">funktioner · Govern tilføjet i februar 2024</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO 31000</div><div class=\"spec-val\">2018</div><div class=\"spec-note\">principper for styring af enhver type risiko</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO/IEC 27001</div><div class=\"spec-val\">2022</div><div class=\"spec-note\">krav til et ledelsessystem for informationssikkerhed</div></div>"}, "sv": {"cat": "Cybersäkerhet", "sub": "Riskhantering · Styrning", "date": "19 november 2026", "read": "6 min läsning", "title": "Cyberriskhantering: därför är skyddet av kritisk infrastruktur <em>ledningens ansvar</em>", "subtitle": "Cybersäkerhet kan inte lämnas åt it-avdelningen ensam. Att skydda kritiska funktioner kräver strategiska beslut, systematisk riskhantering och en ledning som är aktivt engagerad.", "back": "Tillbaka till artiklar", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Aten", "sources": "Källor", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">NIS2:s omfattning</div><div class=\"spec-val\">18</div><div class=\"spec-note\">sektorer · energi, transport, vård, digital infrastruktur</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2 artikel 20</div><div class=\"spec-val\">Ledningen</div><div class=\"spec-note\">godkänner åtgärder, övervakar dem och kan hållas ansvarig</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2-sanktioner</div><div class=\"spec-val\">10 mn € / 2 %</div><div class=\"spec-note\">maxbelopp för väsentliga entiteter · av global omsättning</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIST CSF 2.0</div><div class=\"spec-val\">6</div><div class=\"spec-note\">funktioner · Govern tillkom i februari 2024</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO 31000</div><div class=\"spec-val\">2018</div><div class=\"spec-note\">principer för hantering av alla typer av risker</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ISO/IEC 27001</div><div class=\"spec-val\">2022</div><div class=\"spec-note\">krav på ett ledningssystem för informationssäkerhet</div></div>"}};
+function setLang(lang,btn){
+  document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));
+  document.getElementById('lang-'+lang).classList.add('active');
+  if(btn)btn.classList.add('active');
+  const h=HDR[lang];
+  ['cat','sub','date','read','back','byname','byrole','sources'].forEach(k=>{document.getElementById('h-'+k).textContent=h[k];});
+  document.getElementById('h-title').innerHTML=h.title;
+  document.getElementById('h-subtitle').textContent=h.subtitle;
+  document.getElementById('h-specs').innerHTML=h.specs;
+  document.documentElement.lang=lang;
+  cgo(LANGS.indexOf(lang));
+  try{localStorage.setItem('preferred-lang',lang);}catch(e){}
+}
+let cIndex=0;
+function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*20)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
+function cmove(dir){cIndex=(cIndex+dir+5)%5;cgo(cIndex);}
+window.addEventListener('load',function(){let s=null;try{s=localStorage.getItem('preferred-lang');}catch(e){}if(s&&LANGS.includes(s)&&s!=='en'){setLang(s,document.querySelectorAll('.lt')[LANGS.indexOf(s)]);}});
+</script>
+</body>
+</html>
