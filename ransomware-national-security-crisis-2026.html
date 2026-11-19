@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ransomware: When a Cyberattack Becomes a National-Security Crisis — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<meta name="description" content="WannaCry crippled a third of England&#x27;s NHS trusts. Change Healthcare froze a US industry through a single supplier. ENISA&#x27;s 2026 report says Europe faces the same dependency risk. Why cyber resilience is now strategy.">
+<meta property="og:title" content="Ransomware: When a Cyberattack Becomes a National-Security Crisis">
+<meta property="og:description" content="WannaCry crippled a third of England&#x27;s NHS trusts. Change Healthcare froze a US industry through a single supplier. ENISA&#x27;s 2026 report says Europe faces the same dependency risk. Why cyber resilience is now strategy.">
+<meta property="og:image" content="https://frontlinebrief.org/assets/ransomware-crisis-hero.jpg">
+<meta property="og:url" content="https://frontlinebrief.org/ransomware-national-security-crisis-2026.html">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;--purple:#9F7AEA;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero-img{width:100%;max-width:860px;margin:0 auto;display:block;padding:32px 48px 0;}.hero-img img{width:100%;border-radius:10px;border:.5px solid var(--border);}
+.hero{padding:40px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.meta-sub{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(79,209,197,.1);color:var(--teal);border:.5px solid rgba(79,209,197,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--amber);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.carousel{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.carousel-wrap{width:100%;max-width:480px;margin:0 auto;}
+.carousel-frame{position:relative;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);width:100%;}
+.carousel-track{display:flex;flex-wrap:nowrap;width:500%;transition:transform .4s ease;will-change:transform;}
+.cslide{width:20%;flex-shrink:0;}
+.cslide img{width:100%;height:auto;display:block;}
+.carousel-nav{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:background .2s;}
+.cdot.active{background:var(--amber);}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,27,42,.55);border:.5px solid var(--border);color:var(--cold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;}
+.carousel-arrow.prev{left:10px;}
+.carousel-arrow.next{right:10px;}
+.specs-grid{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.spec-card{background:rgba(30,58,95,.35);border-radius:10px;padding:20px;border:.5px solid rgba(138,155,176,.12);text-align:center;}
+.spec-label{font-size:10px;color:var(--amber);letter-spacing:.14em;font-weight:600;text-transform:uppercase;margin-bottom:8px;}
+.spec-val{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--cold);line-height:1.1;}
+.spec-note{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.4;}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+ul.policy-list{list-style:none;padding:0;margin:0 0 20px 0;}
+ul.policy-list li{font-size:16px;color:rgba(240,244,248,.85);line-height:1.85;margin-bottom:14px;padding-left:24px;position:relative;}
+ul.policy-list li::before{content:'—';position:absolute;left:0;color:var(--amber);font-weight:700;}
+ul.policy-list li strong{color:var(--cold);font-weight:600;}
+.pull-quote{border-left:3px solid var(--amber);padding:16px 24px;margin:32px 0;background:rgba(232,160,32,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.specs-grid,.article-body,.sources,.carousel,.hero-img{padding-left:20px;padding-right:20px;}.article-title{font-size:30px;}.specs-grid{grid-template-columns:1fr;}footer{padding:20px;}}
+</style>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <a class="nav-back" href="index.html"><i class="ti ti-arrow-left"></i> <span id="h-back">Back to All Articles</span></a>
+</nav>
+<div class="hero-img"><img src="assets/ransomware-crisis-hero.jpg" alt="Hooded figure in front of a wall of monitors — ransomware threat"></div>
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag" id="h-cat">Cybersecurity</span>
+    <span class="meta-sub" id="h-sub">Ransomware · Critical Infrastructure</span>
+    <span class="meta-date" id="h-date">19 November 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> <span id="h-read">7 min read</span></span>
+  </div>
+  <h1 class="article-title" id="h-title">Ransomware: when a cyberattack becomes a <em>national-security crisis</em></h1>
+  <p class="article-subtitle" id="h-subtitle">From hospitals and public services to critical infrastructure, ransomware has shown that a digital attack can do damage far beyond the IT department. The real test is not whether an attack can be stopped, but whether the mission continues when it succeeds.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">NC</div>
+    <div><div class="byline-name" id="h-byname">Nikolaos Chouridis</div><div class="byline-role" id="h-byrole">Frontline Brief · Athens</div></div>
+  </div>
+</section>
+
+<div class="carousel">
+  <div class="carousel-wrap">
+  <div class="carousel-frame">
+    <div class="carousel-track" id="ctrack">
+      <div class="cslide"><img src="assets/ransomware-crisis-poster-en.jpg" alt="Ransomware: When a Cyberattack Becomes a National-Security Crisis — English"></div>
+      <div class="cslide"><img src="assets/ransomware-crisis-poster-el.jpg" alt="Ransomware: Πώς μια κυβερνοεπίθεση εξελίσσεται σε κρίση εθνικής ασφάλειας — Ελληνικά"></div>
+      <div class="cslide"><img src="assets/ransomware-crisis-poster-fr.jpg" alt="Rançongiciels : quand une cyberattaque devient une crise de sécurité nationale — Français"></div>
+      <div class="cslide"><img src="assets/ransomware-crisis-poster-da.jpg" alt="Ransomware: Når et cyberangreb bliver en national sikkerhedskrise — Dansk"></div>
+      <div class="cslide"><img src="assets/ransomware-crisis-poster-sv.jpg" alt="Ransomware: När en cyberattack blir en kris för den nationella säkerheten — Svenska"></div>
+    </div>
+    <button class="carousel-arrow prev" onclick="cmove(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="carousel-arrow next" onclick="cmove(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  </div>
+  <div class="carousel-nav">
+    <button class="cdot active" onclick="cgo(0)"></button>
+    <button class="cdot" onclick="cgo(1)"></button>
+    <button class="cdot" onclick="cgo(2)"></button>
+    <button class="cdot" onclick="cgo(3)"></button>
+    <button class="cdot" onclick="cgo(4)"></button>
+  </div>
+</div>
+
+<div class="specs-grid" id="h-specs">
+  <div class="spec-card"><div class="spec-label">NHS trusts disrupted</div><div class="spec-val">34%</div><div class="spec-note">WannaCry, May 2017 · National Audit Office</div></div>
+  <div class="spec-card"><div class="spec-label">Appointments cancelled</div><div class="spec-val">19,000+</div><div class="spec-note">NHS England estimate · not all impact recorded</div></div>
+  <div class="spec-card"><div class="spec-label">Change Healthcare</div><div class="spec-val">~190M</div><div class="spec-note">people whose data was affected · Feb 2024 attack</div></div>
+  <div class="spec-card"><div class="spec-label">ENISA 2026</div><div class="spec-val">8,257</div><div class="spec-note">incidents in the EU during 2025 · ransomware most disruptive</div></div>
+  <div class="spec-card"><div class="spec-label">NIS2 reporting</div><div class="spec-val">24 h</div><div class="spec-note">early warning to authorities · full notice within 72 h</div></div>
+  <div class="spec-card"><div class="spec-label">Greece</div><div class="spec-val">Law 5160</div><div class="spec-note">NIS2 transposed · Nov 2024 · health a critical sector</div></div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+  <div id="lang-en" class="lang-section active" lang="en">
+<p>Say "ransomware" and most people picture a locked screen and a demand for payment. Modern attacks are rarely that simple. They typically begin with quiet, unauthorised access to a corporate network, followed by the theft of sensitive data, the encryption of systems and, finally, extortion: pay, or watch the stolen files appear online.</p>
+<p>Yet the technical mechanism is not what matters most. The consequences are. A hospital that cannot reach its clinical systems, a transport operator cut off from core services, a public authority unable to serve citizens — each is no longer dealing with an IT fault. It is managing an operational crisis. The question stops being how quickly the computers can be restored and becomes how the organisation keeps working until they are.</p>
+<div class="pull-quote"><p>The question is not how to restore the computers. It is how the organisation keeps functioning until they are restored.</p></div>
+<h2>WannaCry and the NHS</h2>
+<p>In May 2017 the global WannaCry outbreak hit Britain's National Health Service hard. The National Audit Office found that at least 34 per cent of NHS trusts in England were disrupted. Thousands of appointments and operations were cancelled, and in five areas patients seeking emergency care had to be diverted to other hospitals. NHS England estimated more than 19,000 cancelled appointments — while acknowledging that not every effect was ever recorded.</p>
+<p>The British investigations that followed found outdated or unpatched software and incident-response plans that had never been properly tested. London and Washington later attributed the attack to North Korea, a reminder that a "criminal" tool can carry a state signature. WannaCry was not merely a technical event. It was a stress test of continuity — and much of the health service failed it.</p>
+<h2>Change Healthcare: one supplier, a whole sector</h2>
+<p>The second case came in the United States in February 2024. A ransomware attack on Change Healthcare, a company underpinning core functions of the American health system, disrupted the processing of insurance claims, payments and prescription services across the country. The US Department of Health and Human Services acknowledged that patients' access to care and to prescribed medicines had been affected. The data of roughly 190 million people was eventually caught up in the breach.</p>
+<p>What makes the case instructive is that no hospital needed to be attacked individually. Disrupting a single, central technology provider was enough to send shockwaves through thousands of organisations. That is concentration risk in its purest form: when a large share of services depends on the same supplier, that supplier's failure becomes the sector's failure.</p>
+<h2>Europe is exposed to the same dependencies</h2>
+<p>This is not an American or a British peculiarity. ENISA's Threat Landscape 2026, published in September and covering 8,257 incidents recorded across the EU during 2025, makes the same point. Denial-of-service attacks dominate the incident count, but the agency places the greatest short-term impact on ransomware and on the compromise of suppliers. Its central conclusion is that the defining feature of Europe's threat environment is not a new type of attack, but the web of digital dependencies that lets one breach spread across many organisations.</p>
+<p>The NIS2 Directive is the EU's answer. It classes health care as a sector of high criticality, extends obligations to suppliers and requires significant incidents to be flagged to the authorities within 24 hours, with a full notification within 72. Greece transposed it with Law 5160/2024. The legal framework now exists; the harder task is building the operational capacity behind it.</p>
+<h2>When does a cyberattack become a national-security issue?</h2>
+<p>Not every ransomware incident threatens national security. That threshold is crossed when the consequences reach essential state functions, the safety of citizens, the operation of critical infrastructure, or the state's ability to handle a wider crisis.</p>
+<p>Two variables are decisive: how long the disruption lasts, and whether the affected service can be substituted. A temporary outage at a single organisation can be handled with internal procedures. The loss of a system that supports dozens of hospitals may require coordination between government departments, technical teams and crisis-management bodies. Severity, in other words, is set less by the type of malware than by the dependencies it hits and the real-world effects it produces.</p>
+<div class="pull-quote"><p>Cybersecurity aims to protect systems. Cyber resilience aims to keep the organisation working even when those systems have been breached.</p></div>
+<h2>The lesson that matters: cyber resilience</h2>
+<p>Effective protection against ransomware requires technical, organisational and leadership measures together. Regular patching, strict access management, network segmentation and secure, offline backups are the technical baseline.</p>
+<p>But leadership needs to know something more: which functions are absolutely essential, how long each can be interrupted, and what alternative means of operating exist. That is the difference between cybersecurity and cyber resilience. The first seeks to protect systems. The second seeks to keep the organisation operational even after some of those systems have been compromised.</p>
+<h2>Bottom line</h2>
+<p>WannaCry and Change Healthcare show that cyberattacks have immediate consequences in the physical world. Patients, staff, businesses and public services can all be hit by incidents that begin inside a single information system.</p>
+<p>The real test of security is not only whether an organisation can prevent an attack, but whether it can continue its mission when the attack succeeds. For states and for the operators of critical infrastructure, cyber resilience is no longer an IT matter. It is a necessary part of strategic planning.</p>
+  </div>
+  <div id="lang-el" class="lang-section" lang="el">
+<p>Όταν ακούμε τη λέξη ransomware, συνήθως φανταζόμαστε έναν υπολογιστή που έχει κλειδωθεί και ένα μήνυμα που απαιτεί χρήματα για την αποκατάσταση της πρόσβασης. Στην πραγματικότητα, οι σύγχρονες επιθέσεις ransomware είναι πολύ πιο σύνθετες. Συνήθως περιλαμβάνουν μη εξουσιοδοτημένη πρόσβαση σε εταιρικά δίκτυα, κλοπή ευαίσθητων πληροφοριών, κρυπτογράφηση δεδομένων και εκβιασμό μέσω απειλής δημοσιοποίησής τους.</p>
+<p>Το σημαντικότερο, όμως, δεν είναι ο τεχνικός μηχανισμός της επίθεσης. Είναι οι συνέπειές της. Ένα νοσοκομείο που δεν μπορεί να προσπελάσει κρίσιμα πληροφοριακά συστήματα, ένας φορέας μεταφορών που χάνει την πρόσβαση σε βασικές υπηρεσίες ή μια δημόσια αρχή που αδυνατεί να εξυπηρετήσει τους πολίτες δεν αντιμετωπίζουν πλέον ένα τεχνικό πρόβλημα. Αντιμετωπίζουν επιχειρησιακή κρίση.</p>
+<div class="pull-quote"><p>Το ερώτημα δεν είναι απλώς πώς θα αποκατασταθούν οι υπολογιστές. Είναι πώς θα συνεχιστεί η λειτουργία του οργανισμού μέχρι την αποκατάσταση.</p></div>
+<h2>Το WannaCry και το βρετανικό σύστημα υγείας</h2>
+<p>Τον Μάιο του 2017, η παγκόσμια επίθεση WannaCry έπληξε σοβαρά το βρετανικό Εθνικό Σύστημα Υγείας (NHS). Σύμφωνα με το National Audit Office, διαταράχθηκε η λειτουργία τουλάχιστον του 34% των νοσοκομειακών οργανισμών (NHS trusts) στην Αγγλία. Η επίθεση οδήγησε σε ακυρώσεις χιλιάδων ιατρικών ραντεβού και επεμβάσεων, ενώ σε πέντε περιοχές οι ασθενείς που αναζητούσαν επείγουσα περίθαλψη χρειάστηκε να ανακατευθυνθούν σε άλλα νοσοκομεία. Η εκτίμηση του NHS ξεπερνούσε τα 19.000 ακυρωμένα ραντεβού, χωρίς να έχει καταγραφεί πλήρως κάθε επίπτωση.</p>
+<p>Οι βρετανικές έρευνες διαπίστωσαν προβλήματα με παλαιό ή μη ενημερωμένο λογισμικό και ανεπαρκώς δοκιμασμένα σχέδια αντιμετώπισης κυβερνοπεριστατικών. Λονδίνο και Ουάσιγκτον απέδωσαν αργότερα την επίθεση στη Βόρεια Κορέα, υπενθυμίζοντας ότι ένα «εγκληματικό» εργαλείο μπορεί να φέρει κρατική υπογραφή. Το WannaCry, επομένως, δεν ήταν μόνο ένα τεχνικό συμβάν. Ήταν μια δοκιμασία επιχειρησιακής συνέχειας.</p>
+<h2>Change Healthcare: όταν η επίθεση σε έναν πάροχο επηρεάζει ολόκληρο τον κλάδο</h2>
+<p>Ένα δεύτερο χαρακτηριστικό παράδειγμα καταγράφηκε στις Ηνωμένες Πολιτείες τον Φεβρουάριο του 2024. Η κυβερνοεπίθεση στην Change Healthcare, εταιρεία που υποστήριζε σημαντικές λειτουργίες του αμερικανικού συστήματος υγείας, προκάλεσε σοβαρές διαταραχές στην επεξεργασία ασφαλιστικών απαιτήσεων, στις πληρωμές και στη διάθεση φαρμάκων. Το αμερικανικό Υπουργείο Υγείας αναγνώρισε ότι επηρεάστηκε η πρόσβαση των ασθενών σε υπηρεσίες περίθαλψης και σε συνταγογραφούμενα φάρμακα. Τα δεδομένα περίπου 190 εκατομμυρίων ανθρώπων ενεπλάκησαν τελικά στην παραβίαση.</p>
+<p>Το ιδιαίτερο χαρακτηριστικό αυτής της υπόθεσης είναι ότι δεν χρειάστηκε να δεχθεί επίθεση κάθε νοσοκομείο ξεχωριστά. Η διατάραξη ενός κεντρικού τεχνολογικού παρόχου ήταν αρκετή για να προκαλέσει επιπτώσεις σε χιλιάδες οργανισμούς. Αυτό αποκαλύπτει τον κίνδυνο συγκέντρωσης εξαρτήσεων: όταν μεγάλος αριθμός υπηρεσιών βασίζεται στον ίδιο πάροχο, η αστοχία του μεταφέρεται σε ολόκληρο τον τομέα.</p>
+<h2>Η Ευρώπη έχει τις ίδιες εξαρτήσεις</h2>
+<p>Δεν πρόκειται για αμερικανική ή βρετανική ιδιαιτερότητα. Η έκθεση ENISA Threat Landscape 2026, που δημοσιεύθηκε τον Σεπτέμβριο και εξετάζει 8.257 περιστατικά που καταγράφηκαν στην ΕΕ μέσα στο 2025, καταλήγει στο ίδιο συμπέρασμα. Οι επιθέσεις άρνησης υπηρεσίας (DDoS) κυριαρχούν σε αριθμό, όμως ο Οργανισμός εντοπίζει τον μεγαλύτερο βραχυπρόθεσμο αντίκτυπο στο ransomware και στις παραβιάσεις προμηθευτών. Το κεντρικό του εύρημα είναι ότι το καθοριστικό χαρακτηριστικό του ευρωπαϊκού περιβάλλοντος απειλών δεν είναι κάποιος νέος τύπος επίθεσης, αλλά το πλέγμα ψηφιακών εξαρτήσεων που επιτρέπει σε μία παραβίαση να εξαπλωθεί σε πολλούς οργανισμούς.</p>
+<p>Η ευρωπαϊκή απάντηση είναι η Οδηγία NIS2. Κατατάσσει την υγεία στους τομείς υψηλής κρισιμότητας, επεκτείνει τις υποχρεώσεις στην εφοδιαστική αλυσίδα και επιβάλλει έγκαιρη προειδοποίηση των αρχών για σοβαρά περιστατικά μέσα σε 24 ώρες και πλήρη γνωστοποίηση μέσα σε 72. Η Ελλάδα την ενσωμάτωσε με τον Ν. 5160/2024. Το νομικό πλαίσιο υπάρχει. Το δυσκολότερο είναι να αποκτήσει πίσω του πραγματική επιχειρησιακή ικανότητα.</p>
+<h2>Πότε μια κυβερνοεπίθεση αποκτά διάσταση εθνικής ασφάλειας;</h2>
+<p>Δεν αποτελεί κάθε περιστατικό ransomware απειλή εθνικής ασφάλειας. Η διάσταση αυτή προκύπτει όταν οι συνέπειες αγγίζουν κρίσιμες κρατικές λειτουργίες, την ασφάλεια των πολιτών, τη λειτουργία βασικών υποδομών ή την ικανότητα του κράτους να διαχειριστεί ευρύτερες κρίσεις.</p>
+<p>Δύο στοιχεία είναι καθοριστικά: η διάρκεια της διακοπής και η δυνατότητα υποκατάστασης της υπηρεσίας που επηρεάζεται. Μια προσωρινή δυσλειτουργία σε έναν μεμονωμένο οργανισμό μπορεί να αντιμετωπιστεί με εσωτερικές διαδικασίες. Αντίθετα, η διακοπή ενός συστήματος που υποστηρίζει μεγάλο αριθμό νοσοκομείων ενδέχεται να απαιτήσει συντονισμό μεταξύ δημόσιων αρχών, τεχνικών ομάδων και φορέων διαχείρισης κρίσεων. Η σοβαρότητα, επομένως, δεν καθορίζεται μόνο από το είδος του κακόβουλου λογισμικού, αλλά από τις εξαρτήσεις και τις πραγματικές επιπτώσεις.</p>
+<div class="pull-quote"><p>Η κυβερνοασφάλεια επιδιώκει να προστατεύσει τα συστήματα. Η κυβερνοανθεκτικότητα επιδιώκει να κρατήσει τον οργανισμό λειτουργικό, ακόμη και όταν κάποια συστήματα έχουν παραβιαστεί.</p></div>
+<h2>Το κρίσιμο δίδαγμα: κυβερνοανθεκτικότητα</h2>
+<p>Η αποτελεσματική προστασία απέναντι στο ransomware απαιτεί συνδυασμό τεχνικών, οργανωτικών και διοικητικών μέτρων. Η τακτική ενημέρωση συστημάτων, η διαχείριση πρόσβασης, η τμηματοποίηση δικτύων και η ύπαρξη ασφαλών αντιγράφων δεδομένων αποτελούν τη βασική τεχνική γραμμή άμυνας.</p>
+<p>Ωστόσο, η διοίκηση πρέπει να γνωρίζει και κάτι επιπλέον: ποιες λειτουργίες είναι απολύτως απαραίτητες, για πόσο χρόνο μπορούν να διακοπούν και ποια εναλλακτικά μέσα λειτουργίας υπάρχουν. Εδώ βρίσκεται η διαφορά ανάμεσα στην κυβερνοασφάλεια και την κυβερνοανθεκτικότητα. Η πρώτη επιδιώκει να προστατεύσει τα συστήματα. Η δεύτερη επιδιώκει να διατηρήσει τον οργανισμό λειτουργικό, ακόμη και όταν κάποια συστήματα έχουν παραβιαστεί.</p>
+<h2>Συμπέρασμα</h2>
+<p>Οι περιπτώσεις WannaCry και Change Healthcare δείχνουν ότι οι κυβερνοεπιθέσεις έχουν άμεσες συνέπειες στην πραγματική ζωή. Ασθενείς, εργαζόμενοι, επιχειρήσεις και δημόσιες υπηρεσίες μπορεί να πληγούν από περιστατικά που ξεκινούν μέσα σε ένα πληροφοριακό σύστημα.</p>
+<p>Η πραγματική δοκιμασία της ασφάλειας δεν είναι μόνο αν ένας οργανισμός μπορεί να αποτρέψει μια επίθεση, αλλά αν μπορεί να συνεχίσει να επιτελεί την αποστολή του όταν η επίθεση πετύχει. Για τα κράτη και τους φορείς που διαχειρίζονται κρίσιμες υποδομές, η κυβερνοανθεκτικότητα δεν είναι πια ζήτημα πληροφορικής. Είναι αναγκαίο στοιχείο του στρατηγικού σχεδιασμού.</p>
+  </div>
+  <div id="lang-fr" class="lang-section" lang="fr">
+<p>Le mot « rançongiciel » évoque d'ordinaire un écran bloqué et une demande de paiement. La réalité est désormais bien plus élaborée. Une attaque commence le plus souvent par une intrusion discrète dans le réseau d'une organisation ; viennent ensuite le vol de données sensibles, le chiffrement des systèmes, puis le chantage : payer, ou voir les fichiers dérobés publiés en ligne.</p>
+<p>Le cœur du sujet n'est pourtant pas technique. Ce sont les conséquences qui comptent. Un hôpital privé de ses logiciels cliniques, un opérateur de transport coupé de ses services essentiels, une administration incapable d'accueillir les usagers : aucun d'eux ne gère plus une panne informatique. Ils affrontent une crise opérationnelle. La question n'est plus de savoir quand les serveurs redémarreront, mais comment tenir jusque-là.</p>
+<div class="pull-quote"><p>Il ne s'agit pas seulement de restaurer les ordinateurs. Il s'agit de continuer à fonctionner jusqu'à ce qu'ils le soient.</p></div>
+<h2>WannaCry et le NHS britannique</h2>
+<p>En mai 2017, la vague mondiale WannaCry a frappé de plein fouet le service public de santé britannique. Selon le National Audit Office, au moins 34 % des établissements hospitaliers du NHS en Angleterre ont été perturbés. Des milliers de consultations et d'interventions ont été annulées et, dans cinq zones, des patients ont dû être redirigés vers d'autres services d'urgence. Le NHS a estimé à plus de 19 000 le nombre de rendez-vous annulés, sans que l'ensemble des effets ait pu être recensé.</p>
+<p>Les enquêtes britanniques ont mis en évidence des logiciels obsolètes ou non mis à jour et des plans de réponse aux incidents jamais réellement testés. Londres et Washington ont ensuite attribué l'attaque à la Corée du Nord, preuve qu'un outil « criminel » peut porter une signature étatique. WannaCry n'a pas été un simple incident technique : ce fut un test grandeur nature de continuité d'activité.</p>
+<h2>Change Healthcare : un prestataire, tout un secteur</h2>
+<p>Second cas d'école, aux États-Unis, en février 2024. L'attaque contre Change Healthcare, société au cœur du fonctionnement du système de santé américain, a désorganisé le traitement des remboursements, les paiements et la délivrance de médicaments dans tout le pays. Le ministère fédéral de la Santé a reconnu que l'accès des patients aux soins et aux traitements prescrits avait été affecté. Les données d'environ 190 millions de personnes ont finalement été concernées.</p>
+<p>La leçon tient en une phrase : il n'a pas été nécessaire d'attaquer chaque hôpital. Neutraliser un seul prestataire technologique central a suffi à déstabiliser des milliers d'organisations. C'est le risque de concentration à l'état pur : lorsque tout un secteur repose sur le même fournisseur, la défaillance de l'un devient celle de tous.</p>
+<h2>L'Europe partage les mêmes dépendances</h2>
+<p>Rien de spécifiquement anglo-saxon ici. Le rapport Threat Landscape 2026 de l'ENISA, publié en septembre et portant sur 8 257 incidents recensés dans l'Union en 2025, aboutit au même constat. Les attaques par déni de service dominent en volume, mais c'est au rançongiciel et à la compromission de fournisseurs que l'agence attribue l'impact le plus lourd à court terme. Sa conclusion principale : ce qui caractérise la menace en Europe, ce n'est pas un nouveau type d'attaque, mais le maillage des dépendances numériques qui permet à une seule intrusion de se propager à de nombreuses organisations.</p>
+<p>La directive NIS2 constitue la réponse européenne. Elle range la santé parmi les secteurs hautement critiques, étend les obligations à la chaîne d'approvisionnement et impose une alerte précoce aux autorités dans les 24 heures pour tout incident important, suivie d'une notification complète sous 72 heures. La Grèce l'a transposée par la loi 5160/2024. Le cadre juridique existe ; reste à bâtir la capacité opérationnelle qui doit l'accompagner.</p>
+<h2>Quand une cyberattaque relève-t-elle de la sécurité nationale ?</h2>
+<p>Tout incident de rançongiciel ne menace pas la sécurité nationale. Le seuil est franchi lorsque les conséquences touchent des fonctions régaliennes, la sécurité des citoyens, le fonctionnement d'infrastructures essentielles ou la capacité de l'État à gérer une crise plus large.</p>
+<p>Deux paramètres sont déterminants : la durée de l'interruption et la possibilité de substituer le service touché. Une panne temporaire dans une organisation isolée se traite par des procédures internes. La perte d'un système dont dépendent des dizaines d'hôpitaux exige en revanche une coordination entre administrations, équipes techniques et cellules de crise. La gravité ne dépend donc pas tant du logiciel malveillant que des dépendances qu'il atteint et de ses effets concrets.</p>
+<div class="pull-quote"><p>La cybersécurité protège les systèmes. La cyberrésilience permet à l'organisation de continuer à fonctionner lorsque ces systèmes ont été compromis.</p></div>
+<h2>La vraie leçon : la cyberrésilience</h2>
+<p>Se protéger efficacement exige de combiner mesures techniques, organisationnelles et de gouvernance. Mises à jour régulières, gestion rigoureuse des accès, segmentation des réseaux et sauvegardes sécurisées hors ligne constituent le socle technique.</p>
+<p>Mais la direction doit savoir davantage : quelles fonctions sont absolument vitales, combien de temps chacune peut être interrompue et quels modes de fonctionnement dégradés existent. Toute la différence entre cybersécurité et cyberrésilience est là. La première vise à protéger les systèmes ; la seconde, à maintenir l'organisation en état de marche même lorsque certains d'entre eux ont été compromis.</p>
+<h2>En conclusion</h2>
+<p>WannaCry et Change Healthcare montrent que les cyberattaques ont des effets immédiats dans le monde réel. Patients, personnels, entreprises et services publics peuvent être frappés par des incidents nés à l'intérieur d'un seul système d'information.</p>
+<p>Le véritable test de la sécurité n'est pas seulement de prévenir une attaque, mais de poursuivre sa mission lorsqu'elle réussit. Pour les États et les opérateurs d'infrastructures critiques, la cyberrésilience n'est plus une affaire d'informaticiens : c'est une composante indispensable de la planification stratégique.</p>
+  </div>
+  <div id="lang-da" class="lang-section" lang="da">
+<p>Når man siger "ransomware", tænker de fleste på en låst skærm og et krav om betaling. Virkeligheden er i dag langt mere sammensat. Et angreb begynder typisk med, at nogen i al stilhed skaffer sig adgang til en organisations netværk. Derefter følger tyveri af følsomme data, kryptering af systemerne og til sidst afpresning: Betal, eller se de stjålne filer blive lagt ud på nettet.</p>
+<p>Men det afgørende er ikke teknikken. Det er konsekvenserne. Et hospital, der ikke kan komme ind i sine kliniske systemer, et transportselskab afskåret fra centrale tjenester, en myndighed, der ikke kan betjene borgerne – ingen af dem står længere med et it-problem. De står med en driftskrise. Spørgsmålet er ikke, hvornår computerne kører igen, men hvordan man holder driften kørende indtil da.</p>
+<div class="pull-quote"><p>Spørgsmålet er ikke kun, hvordan computerne genetableres. Det er, hvordan organisationen fortsætter, indtil de er det.</p></div>
+<h2>WannaCry og det britiske sundhedsvæsen</h2>
+<p>I maj 2017 ramte det globale WannaCry-angreb det britiske sundhedsvæsen NHS hårdt. Ifølge den britiske rigsrevision, National Audit Office, blev mindst 34 procent af NHS' hospitalsenheder i England forstyrret. Tusindvis af konsultationer og operationer blev aflyst, og i fem områder måtte patienter, der søgte akut behandling, sendes videre til andre hospitaler. NHS anslog, at over 19.000 aftaler blev aflyst – og erkendte samtidig, at ikke alle følger blev registreret.</p>
+<p>De britiske undersøgelser pegede på forældet eller ikke-opdateret software og beredskabsplaner, der aldrig var blevet ordentligt afprøvet. London og Washington tilskrev senere angrebet Nordkorea – en påmindelse om, at et "kriminelt" værktøj godt kan bære en stats fingeraftryk. WannaCry var ikke blot en teknisk hændelse. Det var en prøve på beredskab og driftskontinuitet.</p>
+<h2>Change Healthcare: én leverandør, en hel sektor</h2>
+<p>Det andet eksempel kom fra USA i februar 2024. Et ransomware-angreb på Change Healthcare, en virksomhed der understøtter centrale funktioner i det amerikanske sundhedssystem, satte behandlingen af forsikringskrav, betalinger og udlevering af medicin over hele landet i stå. Det amerikanske sundhedsministerium anerkendte, at patienters adgang til behandling og receptpligtig medicin blev ramt. Data om omkring 190 millioner mennesker endte med at være berørt.</p>
+<p>Det lærerige ved sagen er, at ingen hospitaler skulle angribes enkeltvis. Det var nok at lamme én central teknologileverandør for at sende chokbølger gennem tusindvis af organisationer. Det er koncentrationsrisiko i sin reneste form: Når en stor del af en sektor hviler på den samme leverandør, bliver leverandørens nedbrud hele sektorens nedbrud.</p>
+<h2>Europa har de samme afhængigheder</h2>
+<p>Der er ikke tale om et særligt britisk eller amerikansk fænomen. ENISA's Threat Landscape 2026, der udkom i september og bygger på 8.257 hændelser registreret i EU i løbet af 2025, når frem til det samme. DDoS-angreb dominerer i antal, men EU's cybersikkerhedsagentur placerer den største kortsigtede skadevirkning hos ransomware og kompromitterede leverandører. Hovedkonklusionen er, at det, der kendetegner trusselsbilledet i Europa, ikke er en ny type angreb, men det net af digitale afhængigheder, som lader ét brud brede sig til mange organisationer.</p>
+<p>EU's svar er NIS2-direktivet. Det placerer sundhed blandt sektorerne med høj kritikalitet, udvider kravene til leverandørkæden og pålægger virksomheder at give myndighederne et tidligt varsel om væsentlige hændelser inden for 24 timer og en fuld underretning inden for 72. Grækenland har gennemført direktivet med lov 5160/2024. Den juridiske ramme er på plads; den sværeste opgave er at opbygge den operative kapacitet bag den.</p>
+<h2>Hvornår bliver et cyberangreb et spørgsmål om national sikkerhed?</h2>
+<p>Ikke enhver ransomware-hændelse truer den nationale sikkerhed. Grænsen krydses, når følgerne rammer statens kernefunktioner, borgernes sikkerhed, driften af kritisk infrastruktur eller statens evne til at håndtere en bredere krise.</p>
+<p>To faktorer er afgørende: hvor længe nedbruddet varer, og om den ramte tjeneste kan erstattes. Et midlertidigt nedbrud i én organisation kan klares med interne procedurer. Bortfaldet af et system, som snesevis af hospitaler er afhængige af, kan derimod kræve koordinering mellem myndigheder, tekniske hold og krisestyringsorganer. Alvoren afgøres altså mindre af typen af skadelig software end af de afhængigheder, den rammer, og de reelle konsekvenser.</p>
+<div class="pull-quote"><p>Cybersikkerhed beskytter systemerne. Cyberrobusthed holder organisationen kørende, også når systemerne er kompromitteret.</p></div>
+<h2>Den vigtigste lære: cyberrobusthed</h2>
+<p>Effektiv beskyttelse mod ransomware kræver tekniske, organisatoriske og ledelsesmæssige tiltag på én gang. Løbende opdateringer, stram adgangsstyring, segmentering af netværk og sikre, frakoblede sikkerhedskopier er det tekniske grundlag.</p>
+<p>Men ledelsen skal vide mere: hvilke funktioner der er helt uundværlige, hvor længe hver af dem kan ligge stille, og hvilke alternative driftsformer der findes. Dér går forskellen mellem cybersikkerhed og cyberrobusthed. Den første søger at beskytte systemerne. Den anden søger at holde organisationen i drift, selv når nogle af systemerne er brudt ned.</p>
+<h2>Konklusion</h2>
+<p>WannaCry og Change Healthcare viser, at cyberangreb har direkte konsekvenser i den fysiske verden. Patienter, ansatte, virksomheder og offentlige tjenester kan blive ramt af hændelser, der begynder inde i ét enkelt it-system.</p>
+<p>Den egentlige prøve på sikkerheden er ikke kun, om en organisation kan forhindre et angreb, men om den kan løse sin opgave, når angrebet lykkes. For stater og for dem, der driver kritisk infrastruktur, er cyberrobusthed ikke længere et it-anliggende. Det er en nødvendig del af den strategiske planlægning.</p>
+  </div>
+  <div id="lang-sv" class="lang-section" lang="sv">
+<p>Säger man "ransomware" tänker de flesta på en låst skärm och ett krav på betalning. I dag är verkligheten betydligt mer komplex. En attack inleds oftast med att någon obemärkt tar sig in i en organisations nätverk. Därefter följer stöld av känsliga uppgifter, kryptering av systemen och slutligen utpressning: betala, eller se de stulna filerna publiceras på nätet.</p>
+<p>Ändå är det inte tekniken som avgör. Det är följderna. Ett sjukhus som inte når sina journalsystem, en transportoperatör som tappar centrala tjänster, en myndighet som inte kan ta emot medborgarna – ingen av dem hanterar längre ett it-fel. De hanterar en verksamhetskris. Frågan är inte när datorerna är i gång igen, utan hur verksamheten ska hållas igång fram till dess.</p>
+<div class="pull-quote"><p>Frågan är inte bara hur datorerna ska återställas. Den är hur verksamheten ska fortsätta tills de är det.</p></div>
+<h2>Wannacry och den brittiska sjukvården</h2>
+<p>I maj 2017 slog den globala Wannacry-attacken hårt mot den brittiska sjukvården NHS. Enligt den brittiska riksrevisionen, National Audit Office, stördes minst 34 procent av NHS sjukhusorganisationer i England. Tusentals besök och operationer ställdes in, och i fem områden fick patienter som sökte akutvård hänvisas till andra sjukhus. NHS uppskattade att över 19 000 besök ställdes in – och medgav att alla följder aldrig registrerades.</p>
+<p>De brittiska utredningarna pekade på föråldrad eller opatchad programvara och incidentplaner som aldrig hade övats ordentligt. London och Washington tillskrev senare attacken Nordkorea – en påminnelse om att ett "kriminellt" verktyg kan bära en stats signatur. Wannacry var inte bara en teknisk händelse. Det var ett skarpt test av kontinuitetsplaneringen.</p>
+<h2>Change Healthcare: en leverantör, en hel sektor</h2>
+<p>Det andra exemplet kom från USA i februari 2024. En ransomwareattack mot Change Healthcare, ett företag som bär upp centrala funktioner i det amerikanska vårdsystemet, slog ut hanteringen av försäkringsärenden, betalningar och läkemedelsexpediering i hela landet. Det amerikanska hälsodepartementet bekräftade att patienternas tillgång till vård och receptbelagda läkemedel påverkades. Uppgifter om omkring 190 miljoner människor berördes till slut av intrånget.</p>
+<p>Det lärorika är att inget sjukhus behövde angripas för sig. Det räckte att slå ut en enda central teknikleverantör för att skicka chockvågor genom tusentals organisationer. Det är koncentrationsrisk i sin renaste form: när en stor del av en sektor vilar på samma leverantör blir leverantörens haveri hela sektorns haveri.</p>
+<h2>Europa bär på samma beroenden</h2>
+<p>Det här är inget särskilt brittiskt eller amerikanskt fenomen. Enisas Threat Landscape 2026, som kom i september och bygger på 8 257 incidenter registrerade i EU under 2025, drar samma slutsats. Överbelastningsattacker dominerar i antal, men EU:s cybersäkerhetsbyrå placerar den största kortsiktiga skadan hos ransomware och komprometterade leverantörer. Huvudslutsatsen är att det som präglar hotbilden i Europa inte är någon ny typ av attack, utan det nät av digitala beroenden som låter ett enda intrång sprida sig till många organisationer.</p>
+<p>EU:s svar är NIS2-direktivet. Det räknar vården till sektorerna med hög kritikalitet, utvidgar kraven till leverantörskedjan och kräver att betydande incidenter rapporteras till myndigheterna med en tidig varning inom 24 timmar och en fullständig anmälan inom 72. Grekland har infört direktivet genom lag 5160/2024. Det rättsliga ramverket finns på plats; det svåra är att bygga upp den operativa förmågan bakom det.</p>
+<h2>När blir en cyberattack en fråga för den nationella säkerheten?</h2>
+<p>Alla ransomwareincidenter hotar inte den nationella säkerheten. Gränsen passeras när följderna når statens kärnfunktioner, medborgarnas säkerhet, driften av samhällsviktig infrastruktur eller statens förmåga att hantera en bredare kris.</p>
+<p>Två faktorer avgör: hur länge avbrottet varar och om den drabbade tjänsten kan ersättas. Ett tillfälligt avbrott i en enskild organisation kan hanteras med interna rutiner. Om ett system som dussintals sjukhus är beroende av faller bort kan det däremot kräva samordning mellan myndigheter, tekniska team och krisledningsorgan. Allvaret avgörs alltså mindre av typen av skadlig kod än av vilka beroenden den träffar och vilka verkliga följder den får.</p>
+<div class="pull-quote"><p>Cybersäkerhet skyddar systemen. Cyberresiliens håller verksamheten i gång även när systemen har komprometterats.</p></div>
+<h2>Den viktigaste lärdomen: cyberresiliens</h2>
+<p>Ett effektivt skydd mot ransomware kräver att tekniska, organisatoriska och ledningsmässiga åtgärder samverkar. Regelbunden patchning, strikt behörighetsstyrning, segmenterade nätverk och säkra, frånkopplade säkerhetskopior utgör den tekniska grunden.</p>
+<p>Men ledningen behöver veta mer än så: vilka funktioner som är helt oumbärliga, hur länge var och en kan stå still och vilka reservrutiner som finns. Där går skillnaden mellan cybersäkerhet och cyberresiliens. Den första syftar till att skydda systemen. Den andra syftar till att hålla verksamheten i gång även när vissa system har brutits.</p>
+<h2>Slutsats</h2>
+<p>Wannacry och Change Healthcare visar att cyberattacker får omedelbara följder i den fysiska världen. Patienter, personal, företag och offentliga tjänster kan drabbas av incidenter som börjar i ett enda informationssystem.</p>
+<p>Det verkliga provet för säkerheten är inte bara om en organisation kan förhindra en attack, utan om den kan fullfölja sitt uppdrag när attacken lyckas. För stater och för dem som driver kritisk infrastruktur är cyberresiliens inte längre en it-fråga. Det är en nödvändig del av den strategiska planeringen.</p>
+  </div>
+</div>
+<div class="sources">
+  <div class="sources-title" id="h-sources">Sources</div>
+  <p>National Audit Office — Investigation: WannaCry cyber attack and the NHS (October 2017)</p>
+  <p>UK Parliament, Public Accounts Committee — Cyber-attack on the NHS (2018)</p>
+  <p>U.S. Department of Health and Human Services — Change Healthcare Cybersecurity Incident (2024)</p>
+  <p>American Hospital Association — Change Healthcare Cyberattack and Cyber Preparedness (2025)</p>
+  <p>ENISA — Threat Landscape 2026 (September 2026)</p>
+  <p>Directive (EU) 2022/2555 (NIS2) · Greek Law 5160/2024</p>
+</div>
+<footer>
+  <div><div class="foot-brand">Frontline Brief</div><div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div></div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+<script>
+const LANGS=["en", "el", "fr", "da", "sv"];
+const HDR={"en": {"cat": "Cybersecurity", "sub": "Ransomware · Critical Infrastructure", "date": "19 November 2026", "read": "7 min read", "title": "Ransomware: when a cyberattack becomes a <em>national-security crisis</em>", "subtitle": "From hospitals and public services to critical infrastructure, ransomware has shown that a digital attack can do damage far beyond the IT department. The real test is not whether an attack can be stopped, but whether the mission continues when it succeeds.", "back": "Back to All Articles", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Athens", "sources": "Sources", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">NHS trusts disrupted</div><div class=\"spec-val\">34%</div><div class=\"spec-note\">WannaCry, May 2017 · National Audit Office</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Appointments cancelled</div><div class=\"spec-val\">19,000+</div><div class=\"spec-note\">NHS England estimate · not all impact recorded</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Change Healthcare</div><div class=\"spec-val\">~190M</div><div class=\"spec-note\">people whose data was affected · Feb 2024 attack</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ENISA 2026</div><div class=\"spec-val\">8,257</div><div class=\"spec-note\">incidents in the EU during 2025 · ransomware most disruptive</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2 reporting</div><div class=\"spec-val\">24 h</div><div class=\"spec-note\">early warning to authorities · full notice within 72 h</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Greece</div><div class=\"spec-val\">Law 5160</div><div class=\"spec-note\">NIS2 transposed · Nov 2024 · health a critical sector</div></div>"}, "el": {"cat": "Κυβερνοασφάλεια", "sub": "Ransomware · Κρίσιμες Υποδομές", "date": "19 Νοεμβρίου 2026", "read": "7 λεπτά", "title": "Ransomware: πώς μια κυβερνοεπίθεση εξελίσσεται σε <em>κρίση εθνικής ασφάλειας</em>", "subtitle": "Από τα νοσοκομεία και τις δημόσιες υπηρεσίες μέχρι τις κρίσιμες υποδομές, το ransomware αποδεικνύει ότι μια ψηφιακή επίθεση μπορεί να προκαλέσει συνέπειες πολύ πέρα από τον χώρο της πληροφορικής.", "back": "Πίσω στα Άρθρα", "byname": "Νικόλαος Χουρίδης", "byrole": "Frontline Brief · Αθήνα", "sources": "Πηγές", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">NHS trusts σε δυσλειτουργία</div><div class=\"spec-val\">34%</div><div class=\"spec-note\">WannaCry, Μάιος 2017 · National Audit Office</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Ακυρωμένα ραντεβού</div><div class=\"spec-val\">19.000+</div><div class=\"spec-note\">εκτίμηση NHS · δεν καταγράφηκαν όλες οι επιπτώσεις</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Change Healthcare</div><div class=\"spec-val\">~190 εκ.</div><div class=\"spec-note\">άτομα με θιγμένα δεδομένα · επίθεση Φεβ. 2024</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ENISA 2026</div><div class=\"spec-val\">8.257</div><div class=\"spec-note\">περιστατικά στην ΕΕ το 2025 · το ransomware το πιο επιζήμιο</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Αναφορά NIS2</div><div class=\"spec-val\">24 ώρες</div><div class=\"spec-note\">έγκαιρη προειδοποίηση · πλήρης γνωστοποίηση σε 72 ώρες</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Ελλάδα</div><div class=\"spec-val\">Ν. 5160</div><div class=\"spec-note\">ενσωμάτωση NIS2 · Νοέμ. 2024 · η υγεία κρίσιμος τομέας</div></div>"}, "fr": {"cat": "Cybersécurité", "sub": "Rançongiciels · Infrastructures critiques", "date": "19 novembre 2026", "read": "7 min de lecture", "title": "Rançongiciels : quand une cyberattaque devient une <em>crise de sécurité nationale</em>", "subtitle": "Hôpitaux, services publics, infrastructures critiques : le rançongiciel a montré qu'une attaque numérique peut produire des effets bien au-delà du service informatique. La vraie question n'est pas de savoir si l'on peut l'empêcher, mais si l'on peut continuer à fonctionner quand elle réussit.", "back": "Retour aux articles", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Athènes", "sources": "Sources", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">Établissements NHS touchés</div><div class=\"spec-val\">34 %</div><div class=\"spec-note\">WannaCry, mai 2017 · National Audit Office</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Rendez-vous annulés</div><div class=\"spec-val\">19 000+</div><div class=\"spec-note\">estimation du NHS · impact non entièrement recensé</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Change Healthcare</div><div class=\"spec-val\">~190 M</div><div class=\"spec-note\">personnes dont les données ont été touchées · fév. 2024</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ENISA 2026</div><div class=\"spec-val\">8 257</div><div class=\"spec-note\">incidents dans l'UE en 2025 · le rançongiciel le plus perturbateur</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Notification NIS2</div><div class=\"spec-val\">24 h</div><div class=\"spec-note\">alerte précoce aux autorités · notification complète sous 72 h</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Grèce</div><div class=\"spec-val\">Loi 5160</div><div class=\"spec-note\">transposition de NIS2 · nov. 2024 · santé secteur critique</div></div>"}, "da": {"cat": "Cybersikkerhed", "sub": "Ransomware · Kritisk infrastruktur", "date": "19. november 2026", "read": "7 min. læsning", "title": "Ransomware: når et cyberangreb bliver en <em>national sikkerhedskrise</em>", "subtitle": "Fra hospitaler og offentlige myndigheder til kritisk infrastruktur har ransomware vist, at et digitalt angreb kan få følger langt uden for it-afdelingen. Den egentlige prøve er ikke, om angrebet kan stoppes – men om opgaven kan løses, når det lykkes.", "back": "Tilbage til artikler", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Athen", "sources": "Kilder", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">NHS-enheder ramt</div><div class=\"spec-val\">34 %</div><div class=\"spec-note\">WannaCry, maj 2017 · National Audit Office</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Aflyste aftaler</div><div class=\"spec-val\">19.000+</div><div class=\"spec-note\">NHS-skøn · ikke alle følger blev registreret</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Change Healthcare</div><div class=\"spec-val\">~190 mio.</div><div class=\"spec-note\">personer med berørte data · angreb feb. 2024</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">ENISA 2026</div><div class=\"spec-val\">8.257</div><div class=\"spec-note\">hændelser i EU i 2025 · ransomware mest forstyrrende</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2-indberetning</div><div class=\"spec-val\">24 timer</div><div class=\"spec-note\">tidlig varsling · fuld underretning inden 72 timer</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Grækenland</div><div class=\"spec-val\">Lov 5160</div><div class=\"spec-note\">NIS2 gennemført · nov. 2024 · sundhed kritisk sektor</div></div>"}, "sv": {"cat": "Cybersäkerhet", "sub": "Ransomware · Kritisk infrastruktur", "date": "19 november 2026", "read": "7 min läsning", "title": "Ransomware: när en cyberattack blir en <em>kris för den nationella säkerheten</em>", "subtitle": "Från sjukhus och myndigheter till kritisk infrastruktur har ransomware visat att en digital attack kan få följder långt utanför it-avdelningen. Det verkliga provet är inte om attacken kan stoppas – utan om verksamheten fortsätter när den lyckas.", "back": "Tillbaka till artiklar", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Aten", "sources": "Källor", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">NHS-enheter drabbade</div><div class=\"spec-val\">34 %</div><div class=\"spec-note\">Wannacry, maj 2017 · National Audit Office</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Inställda besök</div><div class=\"spec-val\">19 000+</div><div class=\"spec-note\">NHS-uppskattning · alla följder registrerades inte</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Change Healthcare</div><div class=\"spec-val\">~190 milj.</div><div class=\"spec-note\">personer vars data berördes · attacken feb. 2024</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Enisa 2026</div><div class=\"spec-val\">8 257</div><div class=\"spec-note\">incidenter i EU under 2025 · ransomware mest störande</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NIS2-rapportering</div><div class=\"spec-val\">24 h</div><div class=\"spec-note\">tidig varning · fullständig anmälan inom 72 h</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Grekland</div><div class=\"spec-val\">Lag 5160</div><div class=\"spec-note\">NIS2 införd · nov. 2024 · vården kritisk sektor</div></div>"}};
+function setLang(lang,btn){
+  document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));
+  document.getElementById('lang-'+lang).classList.add('active');
+  if(btn)btn.classList.add('active');
+  const h=HDR[lang];
+  ['cat','sub','date','read','back','byname','byrole','sources'].forEach(k=>{document.getElementById('h-'+k).textContent=h[k];});
+  document.getElementById('h-title').innerHTML=h.title;
+  document.getElementById('h-subtitle').textContent=h.subtitle;
+  document.getElementById('h-specs').innerHTML=h.specs;
+  document.documentElement.lang=lang;
+  cgo(LANGS.indexOf(lang));
+  try{localStorage.setItem('preferred-lang',lang);}catch(e){}
+}
+let cIndex=0;
+function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*20)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
+function cmove(dir){cIndex=(cIndex+dir+5)%5;cgo(cIndex);}
+window.addEventListener('load',function(){let s=null;try{s=localStorage.getItem('preferred-lang');}catch(e){}if(s&&LANGS.includes(s)&&s!=='en'){setLang(s,document.querySelectorAll('.lt')[LANGS.indexOf(s)]);}});
+</script>
+</body>
+</html>
