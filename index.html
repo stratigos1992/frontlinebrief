@@ -136,6 +136,8 @@ footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justif
 .floc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(138,155,176,.5);display:flex;align-items:center;gap:4px;}
 .floc::before{content:'';width:4px;height:4px;background:var(--amber);border-radius:50%;}
 .briefs{padding:36px 48px 8px;max-width:1100px;margin:0 auto;}.briefs .slabel{margin-bottom:18px;}.briefs-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;}.bcard{display:flex;gap:14px;align-items:center;text-decoration:none;color:inherit;border:.5px solid var(--border);border-radius:8px;padding:10px;transition:border-color .2s;}.bcard:hover{border-color:var(--amber);}.bcard img{width:96px;height:64px;object-fit:cover;border-radius:5px;flex-shrink:0;}.btag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.12em;color:#fff;background:#E05555;padding:2px 7px;border-radius:3px;margin-bottom:5px;}.btitle{font-size:14px;font-weight:600;line-height:1.35;}.bdate{font-size:11px;color:var(--muted);margin-top:4px;}
+.series-strip{max-width:1100px;margin:0 auto;padding:8px 48px 8px;}.sstrip{display:flex;align-items:center;gap:16px;text-decoration:none;color:inherit;border:.5px solid var(--border);border-left:4px solid var(--amber);border-radius:8px;padding:14px 18px;transition:border-color .2s;}.sstrip:hover{border-color:var(--amber);}.sstrip .sl{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);}.sstrip .sn{font-size:16px;font-weight:600;margin-top:3px;}.sstrip .ss{font-size:12px;color:var(--muted);margin-top:3px;}.sstrip i{margin-left:auto;color:var(--amber);font-size:20px;}
+@media(max-width:768px){.series-strip{padding:8px 20px;}}
 @media(max-width:768px){.briefs{padding:28px 20px 4px;}}
 @media(max-width:768px){
   nav{padding:14px 20px;}
@@ -205,6 +207,10 @@ footer{padding:20px 48px;border-top:.5px solid var(--border);display:flex;justif
   <div class="briefs-row">
     <a class="bcard" href="kerch-bridge-strikes-november-2026.html"><img src="assets/kerch-brief-hero.jpg" alt="" loading="lazy"><div><span class="btag">BRIEF</span><div class="btitle" data-i18n="brief1_title">Kerch Bridge: Ukraine cuts Russia&#x27;s road to Crimea</div><div class="bdate" data-i18n="brief1_date">21 November 2026</div></div></a>
   </div>
+</section>
+
+<section class="series-strip">
+  <a class="sstrip" href="series-ukraine-crimea-to-present.html"><div><div class="sl" data-i18n="series_label">Series</div><div class="sn" data-i18n="series_name">Ukraine: From Crimea to the Present</div><div class="ss" data-i18n="series_status">2 of 5 parts published · new part every week</div></div><i class="ti ti-arrow-right"></i></a>
 </section>
 
 <section class="articles">
@@ -1071,6 +1077,7 @@ const translations = {
     "nav_analysis":"Analysis","nav_geopolitics":"Geopolitics","nav_defence":"Defence","nav_about":"About",
     "nav_strategic":"Strategic Affairs","nav_easternmed":"Eastern Mediterranean","nav_defence":"Defence Policy","nav_geoeconomics":"Geo-economics","nav_cyber":"Cybersecurity",
     "filter_all":"All","filter_defence":"Defence Policy","filter_strategic":"Strategic Affairs","filter_eastern":"Eastern Mediterranean","filter_geo":"Geo-economics","filter_cyber":"Cybersecurity",
+    "series_label":"Series","series_name":"Ukraine: From Crimea to the Present","series_status":"2 of 5 parts published · new part every week",
     "art91_title":"Typhoons for Turkey: What Really Changes in the Aegean Skies","art91_desc":"Britain is not just selling Turkey 20 Typhoons; it is building a strategic defence partnership. What changes in the Aegean air balance, when, and what Athens should do.","art91_date":"21 November 2026",
     "briefs_label":"Latest Briefs","brief1_title":"Kerch Bridge: Ukraine cuts Russia's road to Crimea","brief1_date":"21 November 2026",
     "art90_title":"From Crimea to Full-Scale War: How Ukraine Reached February 2022","art90_desc":"The war did not begin in 2022. From Euromaidan and Crimea to Donbas, Minsk and the 2021 escalation: how Ukraine reached 24 February. Part 2 of the series “Ukraine: From Crimea to the Present”.","art90_date":"21 November 2026",
@@ -1143,6 +1150,7 @@ const translations = {
     "nav_analysis":"Ανάλυση","nav_geopolitics":"Γεωπολιτική","nav_defence":"Άμυνα","nav_about":"Σχετικά",
     "nav_strategic":"Στρατηγικές Υποθέσεις","nav_easternmed":"Ανατολική Μεσόγειος","nav_defence":"Αμυντική Πολιτική","nav_geoeconomics":"Γεω-οικονομία","nav_cyber":"Κυβερνοασφάλεια",
     "filter_all":"Όλα","filter_defence":"Αμυντική Πολιτική","filter_strategic":"Στρατηγικές Υποθέσεις","filter_eastern":"Ανατολική Μεσόγειος","filter_geo":"Γεω-οικονομία","filter_cyber":"Κυβερνοασφάλεια",
+    "series_label":"Σειρά","series_name":"Ουκρανία: από την Κριμαία στο σήμερα","series_status":"2 από 5 μέρη · νέο μέρος κάθε εβδομάδα",
     "art91_title":"Typhoon στην Τουρκία: Τι αλλάζει πραγματικά στον αέρα του Αιγαίου","art91_desc":"Η Βρετανία δεν πουλά απλώς 20 Typhoon στην Τουρκία· χτίζει στρατηγική αμυντική σχέση. Τι αλλάζει στην αεροπορική ισορροπία του Αιγαίου, πότε, και τι πρέπει να κάνει η Αθήνα.","art91_date":"21 Νοεμβρίου 2026",
     "briefs_label":"Σύντομα Νέα","brief1_title":"Γέφυρα του Κερτς: η Ουκρανία κόβει τον δρόμο της Ρωσίας προς την Κριμαία","brief1_date":"21 Νοεμβρίου 2026",
     "art90_title":"Από την Κριμαία στον πόλεμο: Πώς η Ουκρανία έφτασε στις 24 Φεβρουαρίου 2022","art90_desc":"Ο πόλεμος δεν ξεκίνησε το 2022. Από το Euromaidan και την Κριμαία μέχρι το Ντονμπάς, το Μινσκ και την κλιμάκωση του 2021. Δεύτερο μέρος της σειράς «Ουκρανία: από την Κριμαία στο σήμερα».","art90_date":"21 Νοεμβρίου 2026",
@@ -1214,6 +1222,7 @@ const translations = {
   "fr": {
     "nav_analysis":"Analyse","nav_geopolitics":"Géopolitique","nav_defence":"Défense","nav_about":"À propos","nav_strategic":"Affaires stratégiques","nav_easternmed":"Méditerranée orientale","nav_geoeconomics":"Géo-économie","nav_cyber":"Cybersécurité",
     "filter_all":"Tous","filter_defence":"Politique de défense","filter_strategic":"Affaires stratégiques","filter_eastern":"Méditerranée orientale","filter_geo":"Géo-économie","filter_cyber":"Cybersécurité",
+    "series_label":"Série","series_name":"Ukraine : de la Crimée à aujourd'hui","series_status":"2 parties sur 5 publiées · une nouvelle chaque semaine",
     "art91_title":"Des Typhoon pour la Turquie : ce qui change vraiment dans le ciel égéen","art91_desc":"Londres ne vend pas seulement 20 Typhoon à la Turquie : il bâtit un partenariat de défense stratégique. Ce qui change dans l'équilibre aérien en mer Égée, quand, et ce qu'Athènes devrait faire.","art91_date":"21 novembre 2026",
     "briefs_label":"Brèves","brief1_title":"Pont de Kertch : l'Ukraine coupe la route russe vers la Crimée","brief1_date":"21 novembre 2026",
     "art90_title":"De la Crimée à la guerre totale : comment l'Ukraine en est arrivée à février 2022","art90_desc":"La guerre n'a pas commencé en 2022. De l'Euromaïdan et la Crimée au Donbass, à Minsk et à l'escalade de 2021 : comment l'Ukraine en est arrivée au 24 février. Partie 2 de la série « Ukraine : de la Crimée à aujourd'hui ».","art90_date":"21 novembre 2026",
@@ -1285,6 +1294,7 @@ const translations = {
   "da": {
     "nav_analysis":"Analyse","nav_geopolitics":"Geopolitik","nav_defence":"Forsvar","nav_about":"Om os","nav_strategic":"Strategiske anliggender","nav_easternmed":"Østlige Middelhav","nav_geoeconomics":"Geoøkonomi","nav_cyber":"Cybersikkerhed",
     "filter_all":"Alle","filter_defence":"Forsvarspolitik","filter_strategic":"Strategiske anliggender","filter_eastern":"Østlige Middelhav","filter_geo":"Geoøkonomi","filter_cyber":"Cybersikkerhed",
+    "series_label":"Serie","series_name":"Ukraine: Fra Krim til i dag","series_status":"2 af 5 dele udgivet · ny del hver uge",
     "art91_title":"Typhoon til Tyrkiet: Hvad ændrer sig reelt i luften over Ægæerhavet","art91_desc":"Storbritannien sælger ikke bare 20 Typhoon til Tyrkiet; det bygger et strategisk forsvarspartnerskab. Hvad ændrer sig i luftbalancen over Ægæerhavet, hvornår, og hvad bør Athen gøre.","art91_date":"21. november 2026",
     "briefs_label":"Seneste briefs","brief1_title":"Kertj-broen: Ukraine skærer Ruslands vej til Krim over","brief1_date":"21. november 2026",
     "art90_title":"Fra Krim til fuldskala krig: Sådan nåede Ukraine februar 2022","art90_desc":"Krigen begyndte ikke i 2022. Fra Euromajdan og Krim til Donbas, Minsk og optrapningen i 2021: sådan nåede Ukraine den 24. februar. Del 2 af serien „Ukraine: Fra Krim til i dag“.","art90_date":"21. november 2026",
@@ -1356,6 +1366,7 @@ const translations = {
   "sv": {
     "nav_analysis":"Analys","nav_geopolitics":"Geopolitik","nav_defence":"Försvar","nav_about":"Om oss","nav_strategic":"Strategiska frågor","nav_easternmed":"Östra Medelhavet","nav_geoeconomics":"Geoekonomi","nav_cyber":"Cybersäkerhet",
     "filter_all":"Alla","filter_defence":"Försvarspolitik","filter_strategic":"Strategiska frågor","filter_eastern":"Östra Medelhavet","filter_geo":"Geoekonomi","filter_cyber":"Cybersäkerhet",
+    "series_label":"Serie","series_name":"Ukraina: Från Krim till i dag","series_status":"2 av 5 delar publicerade · ny del varje vecka",
     "art91_title":"Typhoon till Turkiet: Vad som verkligen förändras i luften över Egeiska havet","art91_desc":"Storbritannien säljer inte bara 20 Typhoon till Turkiet; landet bygger ett strategiskt försvarspartnerskap. Vad förändras i luftbalansen över Egeiska havet, när, och vad bör Aten göra.","art91_date":"21 november 2026",
     "briefs_label":"Senaste briefs","brief1_title":"Kertjbron: Ukraina skär av Rysslands väg till Krim","brief1_date":"21 november 2026",
     "art90_title":"Från Krim till fullskaligt krig: Så nådde Ukraina februari 2022","art90_desc":"Kriget började inte 2022. Från Euromajdan och Krim till Donbas, Minsk och upptrappningen 2021: så nådde Ukraina den 24 februari. Del 2 i serien ”Ukraina: Från Krim till i dag”.","art90_date":"21 november 2026",
