@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What I Wrote in 2023 About the War in Ukraine — and What Actually Happened — Frontline Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<meta name="description" content="In 2023 I wrote my master&#x27;s thesis on Russia, NATO and Ukraine. Almost four years on, a public reality check: the Cold War climate, sanctions, Russia–China, NATO enlargement — where I was right and where I was wrong.">
+<meta property="og:title" content="What I Wrote in 2023 About the War in Ukraine — and What Actually Happened">
+<meta property="og:description" content="In 2023 I wrote my master&#x27;s thesis on Russia, NATO and Ukraine. Almost four years on, a public reality check: the Cold War climate, sanctions, Russia–China, NATO enlargement — where I was right and where I was wrong.">
+<meta property="og:image" content="https://frontlinebrief.org/assets/thesis-check-hero.jpg">
+<meta property="og:url" content="https://frontlinebrief.org/ukraine-war-thesis-2023-reality-check-2026.html">
+<style>
+:root{--navy:#0D1B2A;--steel:#1E3A5F;--cold:#F0F4F8;--amber:#E8A020;--muted:#8A9BB0;--border:rgba(138,155,176,0.2);--teal:#4FD1C5;--purple:#9F7AEA;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--cold);line-height:1.7;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 48px;border-bottom:.5px solid var(--border);position:sticky;top:0;z-index:100;background:var(--navy);}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-icon{width:28px;height:28px;border:1.5px solid var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.rring{position:absolute;border:1px solid var(--amber);border-radius:50%;opacity:0;animation:rp 2.4s ease-out infinite;}
+.rring:nth-child(1){width:28px;height:28px;animation-delay:0s;}
+.rring:nth-child(2){width:46px;height:46px;animation-delay:.8s;}
+.rring:nth-child(3){width:64px;height:64px;animation-delay:1.6s;}
+@keyframes rp{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(1.4)}}
+.ldot{width:6px;height:6px;background:var(--amber);border-radius:50%;z-index:1;}
+.ltext{display:flex;flex-direction:column;line-height:1;}
+.lmain{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--cold);text-transform:uppercase;}
+.lsub{font-size:8px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;margin-top:3px;}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;}
+.nav-back:hover{color:var(--cold);}
+.hero-img{width:100%;max-width:860px;margin:0 auto;display:block;padding:32px 48px 0;}.hero-img img{width:100%;border-radius:10px;border:.5px solid var(--border);}
+.hero{padding:40px 48px 48px;max-width:860px;margin:0 auto;}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
+.meta-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(232,160,32,.12);color:var(--amber);border:.5px solid rgba(232,160,32,.3);}
+.meta-sub{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(79,209,197,.1);color:var(--teal);border:.5px solid rgba(79,209,197,.3);}
+.meta-date,.meta-read{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px;}
+.article-title{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.article-title em{font-style:italic;color:var(--amber);}
+.article-subtitle{font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;max-width:640px;margin-bottom:32px;}
+.article-byline{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);}
+.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--steel);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--amber);flex-shrink:0;}
+.byline-name{font-size:13px;font-weight:500;color:var(--cold);}
+.byline-role{font-size:12px;color:var(--muted);}
+.carousel{max-width:860px;margin:0 auto;padding:0 48px 40px;}
+.carousel-wrap{width:100%;max-width:480px;margin:0 auto;}
+.carousel-frame{position:relative;border-radius:10px;overflow:hidden;border:.5px solid var(--border);background:var(--steel);width:100%;}
+.carousel-track{display:flex;flex-wrap:nowrap;width:500%;transition:transform .4s ease;will-change:transform;}
+.cslide{width:20%;flex-shrink:0;}
+.cslide img{width:100%;height:auto;display:block;}
+.carousel-nav{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;transition:background .2s;}
+.cdot.active{background:var(--amber);}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,27,42,.55);border:.5px solid var(--border);color:var(--cold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;}
+.carousel-arrow.prev{left:10px;}
+.carousel-arrow.next{right:10px;}
+.specs-grid{max-width:860px;margin:0 auto;padding:0 48px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.spec-card{background:rgba(30,58,95,.35);border-radius:10px;padding:20px;border:.5px solid rgba(138,155,176,.12);text-align:center;}
+.spec-label{font-size:10px;color:var(--amber);letter-spacing:.14em;font-weight:600;text-transform:uppercase;margin-bottom:8px;}
+.spec-val{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--cold);line-height:1.1;}
+.spec-note{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.4;}
+.article-body{max-width:680px;margin:0 auto;padding:0 48px 64px;}
+.lang-toggle{display:flex;gap:4px;margin-bottom:40px;}
+.lt{font-size:11px;font-weight:500;padding:5px 14px;border-radius:20px;border:.5px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:all .2s;}
+.lt.active{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+.lang-section{display:none;}
+.lang-section.active{display:block;}
+h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--cold);margin:40px 0 16px;}
+p{font-size:16px;color:rgba(240,244,248,.85);margin-bottom:20px;line-height:1.85;}
+ul.policy-list{list-style:none;padding:0;margin:0 0 20px 0;}
+ul.policy-list li{font-size:16px;color:rgba(240,244,248,.85);line-height:1.85;margin-bottom:14px;padding-left:24px;position:relative;}
+ul.policy-list li::before{content:'—';position:absolute;left:0;color:var(--amber);font-weight:700;}
+ul.policy-list li strong{color:var(--cold);font-weight:600;}
+.pull-quote{border-left:3px solid var(--amber);padding:16px 24px;margin:32px 0;background:rgba(232,160,32,.06);border-radius:0 8px 8px 0;}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--cold);margin:0;line-height:1.5;}
+.sources{max-width:680px;margin:0 auto;padding:32px 48px 48px;border-top:.5px solid var(--border);}
+.sources-title{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.sources p{font-size:12px;color:var(--muted);margin-bottom:6px;}
+footer{padding:24px 48px;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;}
+.foot-txt{font-size:10px;color:var(--muted);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.specs-grid,.article-body,.sources,.carousel,.hero-img{padding-left:20px;padding-right:20px;}.article-title{font-size:30px;}.specs-grid{grid-template-columns:1fr;}footer{padding:20px;}}
+</style>
+<body>
+<nav>
+  <a class="logo" href="index.html">
+    <div class="logo-icon"><div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="ldot"></div></div>
+    <div class="ltext"><span class="lmain">Frontline Brief</span><span class="lsub">Geopolitical · Military · Economic</span></div>
+  </a>
+  <a class="nav-back" href="index.html"><i class="ti ti-arrow-left"></i> <span id="h-back">Back to All Articles</span></a>
+</nav>
+<div class="hero-img"><img src="assets/thesis-check-hero.jpg" alt="Map of Europe with the NATO emblem and the Russian flag"></div>
+<p id="h-cap" style="max-width:860px;margin:8px auto 0;padding:0 24px;font-size:11px;color:var(--muted);font-style:italic">Illustration: Europe, NATO and Russia.</p>
+<section class="hero">
+  <div class="article-meta">
+    <span class="meta-tag" id="h-cat">Strategic Affairs</span>
+    <span class="meta-sub" id="h-sub">Ukraine · Russia · NATO</span>
+    <span class="meta-date" id="h-date">21 November 2026</span>
+    <span class="meta-read"><i class="ti ti-clock" style="font-size:13px"></i> <span id="h-read">8 min read</span></span>
+  </div>
+  <h1 class="article-title" id="h-title">What I wrote in 2023 about the war in Ukraine — <em>and what actually happened</em></h1>
+  <p class="article-subtitle" id="h-subtitle">In January 2023 I completed my master's thesis on the confrontation between Russia and the West. Almost four years later, I am checking my own conclusions in public: where I was right, and where events took a different course.</p>
+  <div class="article-byline">
+    <div class="byline-avatar">NC</div>
+    <div><div class="byline-name" id="h-byname">Nikolaos Chouridis</div><div class="byline-role" id="h-byrole">Frontline Brief · Athens</div></div>
+  </div>
+</section>
+
+<div class="carousel">
+  <div class="carousel-wrap">
+  <div class="carousel-frame">
+    <div class="carousel-track" id="ctrack">
+      <div class="cslide"><img src="assets/thesis-check-poster-en.jpg" alt="What I Wrote in 2023 About the War in Ukraine — and What Actually Happened — English"></div>
+      <div class="cslide"><img src="assets/thesis-check-poster-el.jpg" alt="Τι έγραφα το 2023 για τον πόλεμο στην Ουκρανία και τι συνέβη τελικά — Ελληνικά"></div>
+      <div class="cslide"><img src="assets/thesis-check-poster-fr.jpg" alt="Ce que j&#x27;écrivais en 2023 sur la guerre en Ukraine — et ce qui s&#x27;est réellement passé — Français"></div>
+      <div class="cslide"><img src="assets/thesis-check-poster-da.jpg" alt="Hvad jeg skrev i 2023 om krigen i Ukraine – og hvad der faktisk skete — Dansk"></div>
+      <div class="cslide"><img src="assets/thesis-check-poster-sv.jpg" alt="Vad jag skrev 2023 om kriget i Ukraina – och vad som faktiskt hände — Svenska"></div>
+    </div>
+    <button class="carousel-arrow prev" onclick="cmove(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="carousel-arrow next" onclick="cmove(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  </div>
+  <div class="carousel-nav">
+    <button class="cdot active" onclick="cgo(0)"></button>
+    <button class="cdot" onclick="cgo(1)"></button>
+    <button class="cdot" onclick="cgo(2)"></button>
+    <button class="cdot" onclick="cgo(3)"></button>
+    <button class="cdot" onclick="cgo(4)"></button>
+  </div>
+</div>
+
+<div class="specs-grid" id="h-specs">
+  <div class="spec-card"><div class="spec-label">Thesis submitted</div><div class="spec-val">Jan 2023</div><div class="spec-note">Neapolis University Pafos · MSc European Politics</div></div>
+  <div class="spec-card"><div class="spec-label">Cold War climate</div><div class="spec-val">Confirmed</div><div class="spec-note">NATO 5% target · EU €418bn defence spending (2025)</div></div>
+  <div class="spec-card"><div class="spec-label">Sanctions</div><div class="spec-val">Attrition</div><div class="spec-note">Russian GDP growth 1% in 2025 · 0.4% forecast for 2026</div></div>
+  <div class="spec-card"><div class="spec-label">Russia–China</div><div class="spec-val">Asymmetric</div><div class="spec-note">>99% of trade settled in roubles and yuan</div></div>
+  <div class="spec-card"><div class="spec-label">NATO enlargement</div><div class="spec-val">Reversed</div><div class="spec-note">Finland (2023) and Sweden (2024) joined</div></div>
+  <div class="spec-card"><div class="spec-label">Peace talks</div><div class="spec-val">No ceasefire</div><div class="spec-note">Abu Dhabi, November 2026</div></div>
+</div>
+
+<div class="article-body">
+  <div class="lang-toggle">
+    <button class="lt active" onclick="setLang('en',this)">EN</button>
+    <button class="lt" onclick="setLang('el',this)">ΕΛ</button>
+    <button class="lt" onclick="setLang('fr',this)">FR</button>
+    <button class="lt" onclick="setLang('da',this)">DA</button>
+    <button class="lt" onclick="setLang('sv',this)">SV</button>
+  </div>
+  <div id="lang-en" class="lang-section active" lang="en">
+<h2>Introduction: why an analyst should check his own work</h2>
+<p>In January 2023 I submitted my master's thesis at Neapolis University Pafos. Its subject was the confrontation between Russia and NATO over Ukraine, from the annexation of Crimea to the first six months of the full-scale war.</p>
+<p>The thesis set out to answer four questions: why Russia chose to invade, whether Western sanctions would work, whether we had entered a new Cold War climate, and what all this meant for the global balance of power.</p>
+<p>Analysis is easy to write. It is rarely checked. Almost four years on, I think I owe it to readers to return to my conclusions and set them against what actually happened.</p>
+<h2>1. The Cold War climate: confirmed, and deeper</h2>
+<p>The thesis's central question was whether the period after Crimea amounted to an evolved form of the Cold War. My answer was yes. Today, that judgement not only holds up — it looks restrained.</p>
+<p>At The Hague Summit in June 2025, Allies committed to spending 5% of GDP on defence and security by 2035. EU member states' defence spending reached €418 billion in 2025. Europe now talks openly about rearmament, military mobility and a war industry — ideas that would have sounded exaggerated in 2021.</p>
+<p>The confrontation has also spread well beyond the battlefield: cyberattacks, hybrid threats, sabotage of infrastructure and information warfare. If I underestimated anything in 2023, it was how quickly the conflict would seep into European society as a whole.</p>
+<h2>2. Sanctions: they did not break Russia, but they are wearing it down</h2>
+<p>In the thesis I doubted that sanctions would lead to a rapid collapse of the Russian economy. That proved right: Russia adapted, found new buyers and kept fighting.</p>
+<p>The picture in 2026, however, is more complex. After two years of growth above 4% fuelled by war spending, the Russian economy slowed to 1% in 2025, and the government has cut its 2026 forecast to 0.4%. Oil and gas revenue fell last year to its lowest level since 2020, and the budget is in deficit for a fifth year in a row.</p>
+<p>The conclusion is not that sanctions failed, nor that they succeeded. It is that they work over time, through attrition rather than collapse — and that they depend on factors beyond Europe's control, as the oil price spike caused by the war with Iran has shown.</p>
+<div class="pull-quote"><p>Sanctions work through attrition, not collapse — and their results are measured in years, not months.</p></div>
+<h2>3. Russia and China: convergence, but not between equals</h2>
+<p>The thesis predicted closer cooperation between Russia and China against the West. That was confirmed. Russian exports to China have nearly doubled since 2022, and more than 99% of bilateral trade is now settled in roubles and yuan.</p>
+<p>What I did not weigh enough was the asymmetry. Russia is not gaining an equal ally. It is gaining a dominant trading partner that holds the upper hand in every negotiation. The "alliance" increasingly works as dependence.</p>
+<h2>4. NATO enlargement: the opposite outcome</h2>
+<p>In the thesis I analysed NATO's eastward enlargement as one of the main causes of Russia's reaction, as Moscow itself presented it. What followed the invasion, however, was the exact opposite of what the Kremlin wanted.</p>
+<p>Finland joined NATO in April 2023 and Sweden in March 2024. Two countries with a long tradition of neutrality abandoned it within months. Russia's land border with NATO more than doubled, and the Baltic became, in effect, an Allied sea.</p>
+<div class="pull-quote"><p>Using force to stop an alliance can end up strengthening it.</p></div>
+<p>It may be the clearest lesson of the war: using force to prevent an alliance from growing can make it stronger.</p>
+<h2>5. The "declining" West: more resilient than I assumed</h2>
+<p>In 2023 I wrote that the West looked confused between the interests of the EU and NATO, and that it might be in the position of a declining power facing rising ones. Here I owe some self-criticism.</p>
+<p>Europe proved more cohesive than I expected. It adopted successive sanctions packages, kept supporting Ukraine and launched its biggest rearmament since the end of the Cold War. That cohesion is not guaranteed: disagreements over sanctions and funding persist, and the talks to end the war are driven mainly by Washington. But this is not the picture of a West falling apart.</p>
+<h2>6. The pace of the war: attrition, not strategic delay</h2>
+<p>In the thesis's conclusions I suggested that Russia might be deliberately slowing its operations to wear down its opponent and divide the West. With what we know today, that explanation looks less convincing.</p>
+<p>The evidence points above all to a war of attrition in which Russia pays an enormous price for limited territorial gains. Even in November 2026, its casualties are reaching a possible new record without any significant change in the front line. The slow pace seems to reflect the limits of Russian power more than a calculated strategy.</p>
+<h2>7. What remains open</h2>
+<p>The thesis ended with a question: what would the outcome in Ukraine mean for a possible crisis over Taiwan, and for the global balance of power? That question remains open — and, if anything, is more relevant than ever.</p>
+<p>In November 2026, talks between the United States, Ukraine and Russia in Abu Dhabi have produced no ceasefire. Moscow still treats as its "demarcation line" a border that includes the four illegally annexed regions, rejects any Western troops in Ukraine as part of security guarantees, and refuses Europeans a real seat at the table.</p>
+<p>In other words, what is at stake is not only Ukraine's borders. It is Europe's entire post-Cold War security architecture.</p>
+<h2>What I learned as an analyst</h2>
+<p>I take three lessons from this exercise. First, grand theories of rising and declining powers are attractive, but they often underestimate the adaptability of democracies. Second, the economic effects of sanctions are measured in years, not months. Third, alliances react: aggression often produces the opposite of what it intends.</p>
+<p>The Cold War I described in 2023 has not ended. It has evolved into something more complex, broader and closer to the daily lives of Europeans. The comparison with the past remains useful — as long as we remember that history never repeats itself in exactly the same way.</p>
+  </div>
+  <div id="lang-el" class="lang-section" lang="el"><h2>Εισαγωγή: Γιατί ένας αναλυτής πρέπει να ελέγχει τον εαυτό του</h2>
+<p>Τον Ιανουάριο του 2023 κατέθεσα στο Πανεπιστήμιο Νεάπολις Πάφου τη μεταπτυχιακή μου διατριβή με θέμα την αντιπαράθεση Ρωσίας και NATO με επίκεντρο την Ουκρανία, από την προσάρτηση της Κριμαίας έως το πρώτο εξάμηνο του πολέμου.</p>
+<p>Η εργασία προσπαθούσε να απαντήσει σε τέσσερα ερωτήματα: γιατί έφτασε η Ρωσία στην εισβολή, αν οι δυτικές κυρώσεις θα ήταν αποτελεσματικές, αν βρισκόμαστε σε ένα νέο ψυχροπολεμικό κλίμα και τι σημαίνει όλο αυτό για την παγκόσμια ισορροπία ισχύος.</p>
+<p>Οι αναλύσεις γράφονται εύκολα. Σπάνια όμως ελέγχονται. Σχεδόν τέσσερα χρόνια αργότερα, θεωρώ υποχρέωσή μου να επιστρέψω στα συμπεράσματά μου και να τα συγκρίνω με όσα πραγματικά συνέβησαν.</p>
+<h2>1. Το ψυχροπολεμικό κλίμα: επιβεβαιώθηκε και βάθυνε</h2>
+<p>Το κεντρικό ερώτημα της διατριβής ήταν αν η περίοδος μετά την Κριμαία αποτελεί μια εξελικτική μορφή του Ψυχρού Πολέμου. Η απάντησή μου ήταν θετική. Σήμερα, η εκτίμηση αυτή όχι μόνο επιβεβαιώνεται, αλλά μοιάζει συγκρατημένη.</p>
+<p>Στη Σύνοδο της Χάγης, τον Ιούνιο του 2025, οι Σύμμαχοι δεσμεύτηκαν να διαθέτουν το 5% του ΑΕΠ για την άμυνα και την ασφάλεια έως το 2035. Οι αμυντικές δαπάνες των κρατών-μελών της ΕΕ έφτασαν τα 418 δισ. ευρώ το 2025. Η Ευρώπη μιλά ανοιχτά για επανεξοπλισμό, στρατιωτική κινητικότητα και πολεμική βιομηχανία, έννοιες που το 2021 θα ακούγονταν υπερβολικές.</p>
+<p>Παράλληλα, η αντιπαράθεση επεκτάθηκε πέρα από το πεδίο της μάχης: κυβερνοεπιθέσεις, υβριδικές απειλές, σαμποτάζ σε υποδομές και πόλεμος πληροφοριών. Αν κάτι υποτίμησα το 2023, ήταν η ταχύτητα με την οποία η σύγκρουση θα διαχεόταν σε ολόκληρη την ευρωπαϊκή κοινωνία.</p>
+<h2>2. Οι κυρώσεις: δεν λύγισαν τη Ρωσία, αλλά τη φθείρουν</h2>
+<p>Στη διατριβή αμφισβητούσα ότι οι κυρώσεις θα οδηγούσαν σε γρήγορη κατάρρευση της ρωσικής οικονομίας. Αυτό επιβεβαιώθηκε: η Ρωσία προσαρμόστηκε, βρήκε νέους αγοραστές και συνέχισε τον πόλεμο.</p>
+<p>Η εικόνα του 2026, όμως, είναι πιο σύνθετη. Μετά από δύο χρόνια ανάπτυξης άνω του 4% χάρη στις πολεμικές δαπάνες, η ρωσική οικονομία επιβραδύνθηκε στο 1% το 2025, ενώ η κυβέρνηση μείωσε την πρόβλεψη για το 2026 στο 0,4%. Τα έσοδα από πετρέλαιο και φυσικό αέριο έπεσαν πέρσι στο χαμηλότερο επίπεδο από το 2020, και ο προϋπολογισμός παραμένει ελλειμματικός για πέμπτη συνεχή χρονιά.</p>
+<p>Το συμπέρασμα δεν είναι ότι οι κυρώσεις απέτυχαν ή ότι πέτυχαν. Είναι ότι λειτουργούν σε βάθος χρόνου, μέσω φθοράς και όχι μέσω κατάρρευσης. Και ότι εξαρτώνται από παράγοντες έξω από τον έλεγχο της Ευρώπης, όπως έδειξε η άνοδος των τιμών του πετρελαίου λόγω του πολέμου στο Ιράν.</p>
+<div class="pull-quote"><p>Οι κυρώσεις λειτουργούν μέσω φθοράς, όχι μέσω κατάρρευσης, και τα αποτελέσματά τους μετριούνται σε χρόνια, όχι σε μήνες.</p></div>
+<h2>3. Ρωσία και Κίνα: σύγκλιση, αλλά όχι ισότιμη</h2>
+<p>Η διατριβή προέβλεπε στενότερη συνεργασία Ρωσίας και Κίνας απέναντι στη Δύση. Αυτό επιβεβαιώθηκε. Οι ρωσικές εξαγωγές προς την Κίνα σχεδόν διπλασιάστηκαν από το 2022, και πάνω από το 99% του διμερούς εμπορίου διακανονίζεται πλέον σε ρούβλια και γιουάν.</p>
+<p>Εκείνο που δεν είχα εκτιμήσει επαρκώς είναι η ασυμμετρία της σχέσης. Η Ρωσία δεν αποκτά έναν ισότιμο σύμμαχο. Αποκτά έναν κυρίαρχο εμπορικό εταίρο που έχει το πάνω χέρι στις διαπραγματεύσεις. Η «συμμαχία» λειτουργεί όλο και περισσότερο ως εξάρτηση.</p>
+<h2>4. Η διεύρυνση του NATO: το αντίθετο αποτέλεσμα</h2>
+<p>Στη διατριβή ανέλυα τη διεύρυνση του NATO προς Ανατολάς ως μία από τις βασικές αιτίες της ρωσικής αντίδρασης, όπως την παρουσίαζε η ίδια η Μόσχα. Αυτό που ακολούθησε την εισβολή, όμως, ήταν το ακριβώς αντίθετο από αυτό που επεδίωκε το Κρεμλίνο.</p>
+<p>Η Φινλανδία εντάχθηκε στο NATO τον Απρίλιο του 2023 και η Σουηδία τον Μάρτιο του 2024. Δύο χώρες με μακρά παράδοση ουδετερότητας εγκατέλειψαν την ουδετερότητα μέσα σε λίγους μήνες. Τα χερσαία σύνορα της Ρωσίας με το NATO υπερδιπλασιάστηκαν, και η Βαλτική έγινε ουσιαστικά συμμαχική θάλασσα.</p>
+<div class="pull-quote"><p>Η χρήση βίας για την αποτροπή μιας συμμαχίας μπορεί να καταλήξει να την ενισχύσει.</p></div>
+<p>Είναι ίσως το πιο σαφές δίδαγμα του πολέμου: η χρήση βίας για την αποτροπή μιας συμμαχίας μπορεί να την ενισχύσει.</p>
+<h2>5. Η «παρακμάζουσα» Δύση: πιο ανθεκτική απ' ό,τι υπέθετα</h2>
+<p>Το 2023 έγραφα ότι η Δύση εμφανιζόταν μπερδεμένη ανάμεσα στα συμφέροντα της ΕΕ και του NATO, και ότι ίσως βρισκόταν στη θέση μιας παρακμάζουσας δύναμης απέναντι σε ανερχόμενες δυνάμεις. Εδώ οφείλω να είμαι αυτοκριτικός.</p>
+<p>Η Ευρώπη αποδείχθηκε πιο συνεκτική απ' ό,τι υπέθετα. Υιοθέτησε διαδοχικά πακέτα κυρώσεων, συνέχισε τη στήριξη της Ουκρανίας και ξεκίνησε τον μεγαλύτερο επανεξοπλισμό της από το τέλος του Ψυχρού Πολέμου. Η συνοχή αυτή δεν είναι δεδομένη, καθώς οι διαφωνίες για τις κυρώσεις και τη χρηματοδότηση παραμένουν, ενώ οι διαπραγματεύσεις για το τέλος του πολέμου διεξάγονται κυρίως με αμερικανική πρωτοβουλία. Η εικόνα όμως δεν είναι αυτή μιας Δύσης σε αποσύνθεση.</p>
+<h2>6. Ο ρυθμός του πολέμου: φθορά, όχι στρατηγική καθυστέρηση</h2>
+<p>Στα συμπεράσματα της διατριβής διατύπωνα την υπόθεση ότι η Ρωσία καθυστερούσε συνειδητά την πρόοδο των επιχειρήσεων, για να φθείρει τον αντίπαλο και να διχάσει τη Δύση. Με τη γνώση του σήμερα, η εξήγηση αυτή φαίνεται λιγότερο πειστική.</p>
+<p>Τα στοιχεία δείχνουν κυρίως έναν πόλεμο φθοράς, στον οποίο η Ρωσία πληρώνει τεράστιο κόστος για περιορισμένα εδαφικά κέρδη. Ακόμη και τον Νοέμβριο του 2026, οι απώλειές της φτάνουν σε πιθανό νέο ρεκόρ χωρίς σημαντική μεταβολή στη γραμμή του μετώπου. Ο αργός ρυθμός φαίνεται να αντανακλά όρια ισχύος περισσότερο από υπολογισμένη στρατηγική.</p>
+<h2>7. Τι παραμένει ανοιχτό</h2>
+<p>Η διατριβή έκλεινε με ένα ερώτημα: τι θα σήμαινε η έκβαση του πολέμου στην Ουκρανία για ενδεχόμενη κρίση στην Ταϊβάν και για τη συνολική ισορροπία ισχύος. Το ερώτημα παραμένει ανοιχτό και, αν μη τι άλλο, είναι πιο επίκαιρο από ποτέ.</p>
+<p>Τον Νοέμβριο του 2026, οι συνομιλίες ΗΠΑ, Ουκρανίας και Ρωσίας στο Άμπου Ντάμπι δεν έχουν φέρει εκεχειρία. Η Μόσχα εξακολουθεί να θεωρεί ως «γραμμή οριοθέτησης» τα σύνορα που περιλαμβάνουν τις τέσσερις παράνομα προσαρτημένες περιφέρειες, απορρίπτει την παρουσία δυτικών στρατευμάτων στην Ουκρανία ως μέρος εγγυήσεων ασφαλείας και αρνείται ουσιαστική θέση των Ευρωπαίων στις διαπραγματεύσεις.</p>
+<p>Με άλλα λόγια, το διακύβευμα δεν είναι μόνο τα σύνορα της Ουκρανίας. Είναι η ίδια η αρχιτεκτονική ασφαλείας της Ευρώπης μετά τον Ψυχρό Πόλεμο.</p>
+<h2>Τι έμαθα ως αναλυτής</h2>
+<p>Από αυτή την άσκηση κρατώ τρία μαθήματα. Πρώτον, οι μεγάλες θεωρίες περί «ανόδου» και «παρακμής» δυνάμεων είναι ελκυστικές, αλλά συχνά υποτιμούν την ικανότητα προσαρμογής των δημοκρατιών. Δεύτερον, τα οικονομικά αποτελέσματα των κυρώσεων μετριούνται σε χρόνια, όχι σε μήνες. Τρίτον, οι συμμαχίες αντιδρούν: η επιθετικότητα συχνά παράγει το αντίθετο από το επιδιωκόμενο αποτέλεσμα.</p>
+<p>Ο Ψυχρός Πόλεμος που περιέγραφα το 2023 δεν τελείωσε. Εξελίχθηκε σε κάτι πιο σύνθετο, πιο ευρύ και πιο κοντά στην καθημερινότητα των Ευρωπαίων. Η σύγκριση με το παρελθόν παραμένει χρήσιμη, αρκεί να θυμόμαστε ότι η ιστορία δεν επαναλαμβάνεται ποτέ ακριβώς με τον ίδιο τρόπο.</p>  </div>
+  <div id="lang-fr" class="lang-section" lang="fr">
+<h2>Introduction : pourquoi un analyste doit se relire</h2>
+<p>En janvier 2023, j'ai soutenu mon mémoire de master à l'université Neapolis de Paphos. Il portait sur l'affrontement entre la Russie et l'OTAN autour de l'Ukraine, de l'annexion de la Crimée aux six premiers mois de la guerre.</p>
+<p>Le mémoire cherchait à répondre à quatre questions : pourquoi la Russie a choisi l'invasion, si les sanctions occidentales seraient efficaces, si nous étions entrés dans un nouveau climat de guerre froide, et ce que tout cela signifiait pour l'équilibre mondial des puissances.</p>
+<p>Une analyse s'écrit facilement ; elle est rarement vérifiée. Près de quatre ans plus tard, je crois devoir revenir sur mes conclusions et les confronter à ce qui s'est réellement passé.</p>
+<h2>1. Le climat de guerre froide : confirmé, et approfondi</h2>
+<p>La question centrale du mémoire était de savoir si la période ouverte par la Crimée constituait une forme évoluée de guerre froide. Ma réponse était oui. Aujourd'hui, ce jugement ne se contente pas de tenir : il paraît même prudent.</p>
+<p>Au sommet de La Haye, en juin 2025, les Alliés se sont engagés à consacrer 5 % de leur PIB à la défense et à la sécurité d'ici 2035. Les dépenses de défense des États membres de l'UE ont atteint 418 milliards d'euros en 2025. L'Europe parle ouvertement de réarmement, de mobilité militaire et d'économie de guerre — des notions qui auraient semblé excessives en 2021.</p>
+<p>L'affrontement a aussi débordé du champ de bataille : cyberattaques, menaces hybrides, sabotages d'infrastructures, guerre de l'information. Si j'ai sous-estimé quelque chose en 2023, c'est la vitesse à laquelle le conflit allait gagner l'ensemble de la société européenne.</p>
+<h2>2. Les sanctions : elles n'ont pas fait plier la Russie, mais elles l'usent</h2>
+<p>Dans le mémoire, je doutais que les sanctions provoquent un effondrement rapide de l'économie russe. C'était juste : la Russie s'est adaptée, a trouvé de nouveaux acheteurs et a poursuivi la guerre.</p>
+<p>Le tableau de 2026 est pourtant plus nuancé. Après deux années de croissance supérieure à 4 % portée par les dépenses militaires, l'économie russe a ralenti à 1 % en 2025, et le gouvernement a ramené sa prévision pour 2026 à 0,4 %. Les recettes pétrolières et gazières ont touché l'an dernier leur plus bas niveau depuis 2020, et le budget est déficitaire pour la cinquième année consécutive.</p>
+<p>La conclusion n'est ni que les sanctions ont échoué, ni qu'elles ont réussi. Elles agissent dans la durée, par l'usure plutôt que par l'effondrement — et dépendent de facteurs que l'Europe ne maîtrise pas, comme l'a montré la flambée du pétrole due à la guerre avec l'Iran.</p>
+<div class="pull-quote"><p>Les sanctions agissent par l'usure, pas par l'effondrement — et leurs effets se mesurent en années, pas en mois.</p></div>
+<h2>3. Russie et Chine : un rapprochement, mais pas d'égal à égal</h2>
+<p>Le mémoire anticipait une coopération plus étroite entre la Russie et la Chine face à l'Occident. C'est confirmé : les exportations russes vers la Chine ont presque doublé depuis 2022, et plus de 99 % des échanges bilatéraux se règlent désormais en roubles et en yuans.</p>
+<p>Ce que je n'avais pas assez pesé, c'est l'asymétrie. La Russie ne gagne pas un allié d'égal à égal, mais un partenaire commercial dominant qui garde la main dans chaque négociation. L'« alliance » fonctionne de plus en plus comme une dépendance.</p>
+<h2>4. L'élargissement de l'OTAN : l'effet inverse</h2>
+<p>Dans le mémoire, j'analysais l'élargissement de l'OTAN vers l'Est comme l'une des principales causes de la réaction russe, telle que Moscou la présentait. Ce qui a suivi l'invasion est pourtant l'exact opposé de ce que voulait le Kremlin.</p>
+<p>La Finlande a rejoint l'OTAN en avril 2023, la Suède en mars 2024. Deux pays de longue tradition neutre y ont renoncé en quelques mois. La frontière terrestre de la Russie avec l'OTAN a plus que doublé, et la Baltique est devenue de fait une mer alliée.</p>
+<div class="pull-quote"><p>Recourir à la force pour arrêter une alliance peut finir par la renforcer.</p></div>
+<p>C'est peut-être la leçon la plus nette de cette guerre : employer la force pour empêcher une alliance de s'étendre peut la rendre plus forte.</p>
+<h2>5. L'Occident « en déclin » : plus résistant que je ne le pensais</h2>
+<p>En 2023, j'écrivais que l'Occident semblait tiraillé entre les intérêts de l'UE et de l'OTAN, et qu'il occupait peut-être la place d'une puissance déclinante face à des puissances montantes. Je dois ici faire mon autocritique.</p>
+<p>L'Europe s'est montrée plus cohérente que je ne l'imaginais. Elle a adopté des paquets de sanctions successifs, maintenu son soutien à l'Ukraine et lancé son plus grand réarmement depuis la fin de la guerre froide. Cette cohésion n'est pas acquise : les désaccords sur les sanctions et le financement persistent, et les négociations pour mettre fin à la guerre sont surtout pilotées par Washington. Mais ce n'est pas l'image d'un Occident en décomposition.</p>
+<h2>6. Le rythme de la guerre : l'usure, pas un ralentissement calculé</h2>
+<p>Dans les conclusions du mémoire, j'avançais l'hypothèse que la Russie ralentissait délibérément ses opérations pour user son adversaire et diviser l'Occident. Avec le recul, cette explication paraît moins convaincante.</p>
+<p>Les faits montrent avant tout une guerre d'usure où la Russie paie un prix énorme pour des gains territoriaux limités. Même en novembre 2026, ses pertes atteindraient un nouveau record sans modification notable de la ligne de front. La lenteur semble refléter les limites de la puissance russe plus qu'une stratégie calculée.</p>
+<h2>7. Ce qui reste ouvert</h2>
+<p>Le mémoire se concluait par une question : que signifierait l'issue de la guerre en Ukraine pour une éventuelle crise autour de Taïwan et pour l'équilibre mondial ? La question reste ouverte — et elle est plus actuelle que jamais.</p>
+<p>En novembre 2026, les pourparlers entre les États-Unis, l'Ukraine et la Russie à Abou Dhabi n'ont débouché sur aucun cessez-le-feu. Moscou considère toujours comme « ligne de démarcation » une frontière incluant les quatre régions illégalement annexées, rejette toute présence de troupes occidentales en Ukraine dans le cadre de garanties de sécurité et refuse aux Européens une véritable place à la table.</p>
+<p>Autrement dit, l'enjeu ne se limite pas aux frontières de l'Ukraine. C'est toute l'architecture de sécurité européenne de l'après-guerre froide qui est en jeu.</p>
+<h2>Ce que j'en retiens en tant qu'analyste</h2>
+<p>Je tire trois leçons de cet exercice. D'abord, les grandes théories sur l'ascension et le déclin des puissances séduisent, mais sous-estiment souvent la capacité d'adaptation des démocraties. Ensuite, les effets économiques des sanctions se mesurent en années, pas en mois. Enfin, les alliances réagissent : l'agression produit souvent l'inverse de l'effet recherché.</p>
+<p>La guerre froide que je décrivais en 2023 n'est pas terminée. Elle a évolué vers quelque chose de plus complexe, de plus vaste et de plus proche du quotidien des Européens. La comparaison avec le passé reste utile — à condition de se souvenir que l'histoire ne se répète jamais à l'identique.</p>
+  </div>
+  <div id="lang-da" class="lang-section" lang="da">
+<h2>Indledning: Derfor bør en analytiker efterprøve sig selv</h2>
+<p>I januar 2023 afleverede jeg mit speciale på Neapolis University Pafos. Emnet var konfrontationen mellem Rusland og NATO med Ukraine i centrum – fra annekteringen af Krim til de første seks måneder af den fulde krig.</p>
+<p>Specialet søgte svar på fire spørgsmål: hvorfor Rusland valgte at invadere, om Vestens sanktioner ville virke, om vi var gået ind i et nyt koldkrigsklima, og hvad det hele betød for den globale magtbalance.</p>
+<p>Analyser er lette at skrive. De bliver sjældent efterprøvet. Næsten fire år senere mener jeg, at jeg skylder læserne at vende tilbage til mine konklusioner og holde dem op mod det, der faktisk skete.</p>
+<h2>1. Koldkrigsklimaet: bekræftet og forstærket</h2>
+<p>Specialets centrale spørgsmål var, om perioden efter Krim udgjorde en videreudviklet form for kold krig. Mit svar var ja. I dag holder den vurdering ikke bare – den virker nærmest forsigtig.</p>
+<p>På topmødet i Haag i juni 2025 forpligtede de allierede sig til at bruge 5 procent af BNP på forsvar og sikkerhed inden 2035. EU-landenes forsvarsudgifter nåede 418 mia. euro i 2025. Europa taler åbent om oprustning, militær mobilitet og krigsindustri – begreber, der ville have lydt overdrevne i 2021.</p>
+<p>Konfrontationen har også bredt sig langt ud over slagmarken: cyberangreb, hybride trusler, sabotage mod infrastruktur og informationskrig. Hvis jeg undervurderede noget i 2023, var det, hvor hurtigt konflikten ville sive ind i hele det europæiske samfund.</p>
+<h2>2. Sanktionerne: De knækkede ikke Rusland, men de slider på landet</h2>
+<p>I specialet tvivlede jeg på, at sanktionerne ville føre til et hurtigt sammenbrud i den russiske økonomi. Det holdt stik: Rusland tilpassede sig, fandt nye købere og fortsatte krigen.</p>
+<p>Billedet i 2026 er dog mere nuanceret. Efter to år med vækst over 4 procent drevet af krigsudgifter bremsede den russiske økonomi ned til 1 procent i 2025, og regeringen har sænket prognosen for 2026 til 0,4 procent. Olie- og gasindtægterne faldt sidste år til det laveste niveau siden 2020, og budgettet er i underskud for femte år i træk.</p>
+<p>Konklusionen er hverken, at sanktionerne slog fejl, eller at de lykkedes. Det er, at de virker over tid – gennem nedslidning, ikke sammenbrud – og at de afhænger af faktorer uden for Europas kontrol, som olieprisstigningen efter krigen med Iran har vist.</p>
+<div class="pull-quote"><p>Sanktioner virker gennem nedslidning, ikke sammenbrud – og effekten måles i år, ikke måneder.</p></div>
+<h2>3. Rusland og Kina: tilnærmelse, men ikke mellem ligemænd</h2>
+<p>Specialet forudså et tættere samarbejde mellem Rusland og Kina mod Vesten. Det blev bekræftet. Ruslands eksport til Kina er næsten fordoblet siden 2022, og over 99 procent af samhandlen afregnes nu i rubler og yuan.</p>
+<p>Det, jeg ikke vægtede nok, var asymmetrien. Rusland får ikke en ligeværdig allieret, men en dominerende handelspartner, der sidder med de bedste kort i hver forhandling. "Alliancen" fungerer i stigende grad som afhængighed.</p>
+<h2>4. NATO's udvidelse: det modsatte resultat</h2>
+<p>I specialet analyserede jeg NATO's udvidelse mod øst som en af hovedårsagerne til Ruslands reaktion, sådan som Moskva selv fremstillede det. Men det, der fulgte efter invasionen, var det stik modsatte af, hvad Kreml ønskede.</p>
+<p>Finland blev medlem af NATO i april 2023 og Sverige i marts 2024. To lande med en lang tradition for neutralitet opgav den på få måneder. Ruslands landegrænse med NATO blev mere end fordoblet, og Østersøen blev reelt et allieret hav.</p>
+<div class="pull-quote"><p>At bruge magt for at stoppe en alliance kan ende med at styrke den.</p></div>
+<p>Det er måske krigens klareste lære: Magtanvendelse for at forhindre en alliance i at vokse kan gøre den stærkere.</p>
+<h2>5. Det "dalende" Vesten: mere modstandsdygtigt, end jeg troede</h2>
+<p>I 2023 skrev jeg, at Vesten virkede splittet mellem EU's og NATO's interesser, og at det måske befandt sig i rollen som en dalende magt over for stigende magter. Her skylder jeg lidt selvkritik.</p>
+<p>Europa viste sig mere sammenhængende, end jeg havde ventet. Det vedtog den ene sanktionspakke efter den anden, fortsatte støtten til Ukraine og satte gang i sin største oprustning siden den kolde krigs afslutning. Sammenholdet er ikke givet: Uenighederne om sanktioner og finansiering består, og forhandlingerne om at afslutte krigen drives primært af Washington. Men det er ikke billedet af et Vesten i opløsning.</p>
+<h2>6. Krigens tempo: nedslidning, ikke strategisk forsinkelse</h2>
+<p>I specialets konklusioner fremsatte jeg hypotesen, at Rusland bevidst holdt tempoet nede for at slide modstanderen op og splitte Vesten. Med den viden, vi har i dag, virker den forklaring mindre overbevisende.</p>
+<p>Fakta peger først og fremmest på en udmattelseskrig, hvor Rusland betaler en enorm pris for begrænsede territoriale gevinster. Selv i november 2026 når de russiske tab muligvis et nyt rekordniveau uden væsentlige ændringer af frontlinjen. Det langsomme tempo ser ud til at afspejle grænserne for russisk magt mere end en kalkuleret strategi.</p>
+<h2>7. Det, der stadig er åbent</h2>
+<p>Specialet sluttede med et spørgsmål: Hvad ville udfaldet i Ukraine betyde for en mulig krise om Taiwan og for den globale magtbalance? Spørgsmålet er stadig åbent – og om noget mere aktuelt end nogensinde.</p>
+<p>I november 2026 har forhandlingerne mellem USA, Ukraine og Rusland i Abu Dhabi ikke ført til en våbenhvile. Moskva betragter fortsat en grænse, der omfatter de fire ulovligt annekterede regioner, som sin "demarkationslinje", afviser vestlige tropper i Ukraine som led i sikkerhedsgarantier og nægter europæerne en reel plads ved bordet.</p>
+<p>Det, der står på spil, er med andre ord ikke kun Ukraines grænser. Det er hele Europas sikkerhedsarkitektur efter den kolde krig.</p>
+<h2>Hvad jeg har lært som analytiker</h2>
+<p>Jeg tager tre lærdomme med fra denne øvelse. For det første er de store teorier om magters opstigning og fald forførende, men de undervurderer ofte demokratiers evne til at tilpasse sig. For det andet måles sanktioners økonomiske virkning i år, ikke måneder. For det tredje reagerer alliancer: Aggression giver ofte det modsatte af det tilsigtede resultat.</p>
+<p>Den kolde krig, jeg beskrev i 2023, er ikke slut. Den har udviklet sig til noget mere komplekst, bredere og tættere på europæernes hverdag. Sammenligningen med fortiden er stadig nyttig – så længe vi husker, at historien aldrig gentager sig helt på samme måde.</p>
+  </div>
+  <div id="lang-sv" class="lang-section" lang="sv">
+<h2>Inledning: därför bör en analytiker granska sig själv</h2>
+<p>I januari 2023 lämnade jag in min masteruppsats vid Neapolis University Pafos. Ämnet var konfrontationen mellan Ryssland och Nato med Ukraina i centrum – från annekteringen av Krim till krigets första sex månader.</p>
+<p>Uppsatsen sökte svar på fyra frågor: varför Ryssland valde att invadera, om västs sanktioner skulle fungera, om vi hade gått in i ett nytt kallt krigsklimat och vad allt detta betydde för den globala maktbalansen.</p>
+<p>Analyser är lätta att skriva. De granskas sällan. Nästan fyra år senare anser jag att jag är skyldig läsarna att återvända till mina slutsatser och pröva dem mot vad som faktiskt hände.</p>
+<h2>1. Det kalla krigsklimatet: bekräftat och fördjupat</h2>
+<p>Uppsatsens centrala fråga var om perioden efter Krim utgjorde en vidareutvecklad form av kallt krig. Mitt svar var ja. I dag håller den bedömningen inte bara – den framstår som försiktig.</p>
+<p>Vid toppmötet i Haag i juni 2025 åtog sig de allierade att lägga 5 procent av BNP på försvar och säkerhet till 2035. EU-ländernas försvarsutgifter nådde 418 miljarder euro 2025. Europa talar öppet om upprustning, militär rörlighet och krigsindustri – begrepp som hade låtit överdrivna 2021.</p>
+<p>Konfrontationen har också spridit sig långt bortom slagfältet: cyberattacker, hybridhot, sabotage mot infrastruktur och informationskrig. Om jag underskattade något 2023 var det hur snabbt konflikten skulle sippra in i hela det europeiska samhället.</p>
+<h2>2. Sanktionerna: de knäckte inte Ryssland, men de nöter ned landet</h2>
+<p>I uppsatsen tvivlade jag på att sanktionerna skulle leda till en snabb kollaps för den ryska ekonomin. Det stämde: Ryssland anpassade sig, hittade nya köpare och fortsatte kriget.</p>
+<p>Bilden 2026 är dock mer sammansatt. Efter två år med tillväxt över 4 procent, driven av krigsutgifter, bromsade den ryska ekonomin in till 1 procent 2025, och regeringen har sänkt prognosen för 2026 till 0,4 procent. Olje- och gasintäkterna föll i fjol till den lägsta nivån sedan 2020, och budgeten går med underskott för femte året i rad.</p>
+<p>Slutsatsen är varken att sanktionerna misslyckades eller att de lyckades. Den är att de verkar över tid – genom nötning snarare än kollaps – och att de beror på faktorer utanför Europas kontroll, vilket oljeprisrusningen efter kriget med Iran har visat.</p>
+<div class="pull-quote"><p>Sanktioner verkar genom nötning, inte kollaps – och effekterna mäts i år, inte månader.</p></div>
+<h2>3. Ryssland och Kina: närmande, men inte mellan jämlikar</h2>
+<p>Uppsatsen förutsåg ett närmare samarbete mellan Ryssland och Kina mot väst. Det har bekräftats. Rysslands export till Kina har nästan fördubblats sedan 2022, och över 99 procent av den bilaterala handeln görs nu upp i rubel och yuan.</p>
+<p>Det jag inte vägde in tillräckligt var asymmetrin. Ryssland får ingen jämbördig allierad, utan en dominerande handelspartner som har övertaget i varje förhandling. "Alliansen" fungerar allt mer som ett beroende.</p>
+<h2>4. Natos utvidgning: motsatt resultat</h2>
+<p>I uppsatsen analyserade jag Natos utvidgning österut som en av de främsta orsakerna till Rysslands reaktion, så som Moskva själv framställde det. Men det som följde efter invasionen var raka motsatsen till vad Kreml ville.</p>
+<p>Finland gick med i Nato i april 2023 och Sverige i mars 2024. Två länder med lång tradition av neutralitet övergav den på några månader. Rysslands landgräns mot Nato mer än fördubblades, och Östersjön blev i praktiken ett allierat hav.</p>
+<div class="pull-quote"><p>Att använda våld för att stoppa en allians kan sluta med att den stärks.</p></div>
+<p>Det är kanske krigets tydligaste lärdom: att använda våld för att hindra en allians från att växa kan göra den starkare.</p>
+<h2>5. Det "fallande" väst: mer motståndskraftigt än jag trodde</h2>
+<p>År 2023 skrev jag att väst verkade kluvet mellan EU:s och Natos intressen, och att det kanske befann sig i rollen som en fallande makt mot uppåtgående makter. Här är jag skyldig en viss självkritik.</p>
+<p>Europa visade sig mer sammanhållet än jag hade väntat mig. Det antog det ena sanktionspaketet efter det andra, fortsatte stödja Ukraina och inledde sin största upprustning sedan kalla krigets slut. Sammanhållningen är ingen självklarhet: oenigheten om sanktioner och finansiering kvarstår, och förhandlingarna om att avsluta kriget drivs främst av Washington. Men det är inte bilden av ett väst i upplösning.</p>
+<h2>6. Krigets tempo: nötning, inte strategisk fördröjning</h2>
+<p>I uppsatsens slutsatser förde jag fram hypotesen att Ryssland medvetet höll nere tempot för att nöta ut motståndaren och splittra väst. Med dagens kunskap framstår den förklaringen som mindre övertygande.</p>
+<p>Fakta pekar framför allt på ett utnötningskrig där Ryssland betalar ett enormt pris för begränsade territoriella vinster. Även i november 2026 når de ryska förlusterna möjligen en ny rekordnivå utan någon betydande förändring av frontlinjen. Det låga tempot tycks spegla gränserna för rysk makt snarare än en kalkylerad strategi.</p>
+<h2>7. Det som fortfarande är öppet</h2>
+<p>Uppsatsen avslutades med en fråga: vad skulle utgången i Ukraina betyda för en tänkbar kris kring Taiwan och för den globala maktbalansen? Frågan är fortfarande öppen – och om något mer aktuell än någonsin.</p>
+<p>I november 2026 har samtalen mellan USA, Ukraina och Ryssland i Abu Dhabi inte lett till något eldupphör. Moskva betraktar fortfarande en gräns som omfattar de fyra olagligt annekterade regionerna som sin "demarkationslinje", avvisar västliga trupper i Ukraina som del av säkerhetsgarantier och vägrar ge européerna en verklig plats vid bordet.</p>
+<p>Det som står på spel är med andra ord inte bara Ukrainas gränser. Det är hela Europas säkerhetsarkitektur efter kalla kriget.</p>
+<h2>Vad jag har lärt mig som analytiker</h2>
+<p>Jag tar med mig tre lärdomar från den här övningen. För det första är de stora teorierna om makters uppgång och fall lockande, men de underskattar ofta demokratiers förmåga att anpassa sig. För det andra mäts sanktioners ekonomiska effekter i år, inte månader. För det tredje reagerar allianser: aggression ger ofta motsatt resultat mot det avsedda.</p>
+<p>Det kalla krig jag beskrev 2023 har inte tagit slut. Det har utvecklats till något mer komplext, bredare och närmare européernas vardag. Jämförelsen med det förflutna är fortfarande användbar – så länge vi minns att historien aldrig upprepar sig på exakt samma sätt.</p>
+  </div>
+</div>
+<div class="sources">
+  <div class="sources-title" id="h-sources">Sources</div>
+  <p>Nikolaos Chouridis — MSc thesis on the Russia–NATO confrontation over Ukraine, Neapolis University Pafos (January 2023)</p>
+  <p>NATO — The Hague Summit Declaration (25 June 2025)</p>
+  <p>European Defence Agency — Defence Data 2025–2026 (July 2026)</p>
+  <p>BOFIT (Bank of Finland) — Weekly Review 7/2026; Forecast for Russia 2026–2028</p>
+  <p>The Moscow Times / Meduza — Russia cuts 2026 GDP growth forecast (May 2026)</p>
+  <p>Hellenic Shipping News — How China became Russia&#x27;s economic lifeline (2026)</p>
+  <p>Institute for the Study of War — Russian Offensive Campaign Assessments (November 2026)</p>
+  <p>Al Jazeera — Russia&#x27;s demands come from &#x27;different reality&#x27; as war effort stagnates (13 November 2026)</p>
+</div>
+<footer>
+  <div><div class="foot-brand">Frontline Brief</div><div class="foot-txt">© 2026 · Independent analysis · frontlinebrief.org</div></div>
+  <div style="font-size:11px;color:var(--muted)">Athens · Brussels · Copenhagen · Nicosia · Malmö</div>
+</footer>
+<script>
+const LANGS=["en", "el", "fr", "da", "sv"];
+const HDR={"en": {"cat": "Strategic Affairs", "sub": "Ukraine · Russia · NATO", "date": "21 November 2026", "read": "8 min read", "title": "What I wrote in 2023 about the war in Ukraine — <em>and what actually happened</em>", "subtitle": "In January 2023 I completed my master's thesis on the confrontation between Russia and the West. Almost four years later, I am checking my own conclusions in public: where I was right, and where events took a different course.", "back": "Back to All Articles", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Athens", "sources": "Sources", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">Thesis submitted</div><div class=\"spec-val\">Jan 2023</div><div class=\"spec-note\">Neapolis University Pafos · MSc European Politics</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Cold War climate</div><div class=\"spec-val\">Confirmed</div><div class=\"spec-note\">NATO 5% target · EU €418bn defence spending (2025)</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Sanctions</div><div class=\"spec-val\">Attrition</div><div class=\"spec-note\">Russian GDP growth 1% in 2025 · 0.4% forecast for 2026</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Russia–China</div><div class=\"spec-val\">Asymmetric</div><div class=\"spec-note\">>99% of trade settled in roubles and yuan</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NATO enlargement</div><div class=\"spec-val\">Reversed</div><div class=\"spec-note\">Finland (2023) and Sweden (2024) joined</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Peace talks</div><div class=\"spec-val\">No ceasefire</div><div class=\"spec-note\">Abu Dhabi, November 2026</div></div>", "cap": "Illustration: Europe, NATO and Russia."}, "el": {"cat": "Στρατηγικές Υποθέσεις", "sub": "Ουκρανία · Ρωσία · NATO", "date": "21 Νοεμβρίου 2026", "read": "8 λεπτά", "title": "Τι έγραφα το 2023 για τον πόλεμο στην Ουκρανία <em>και τι συνέβη τελικά</em>", "subtitle": "Τον Ιανουάριο του 2023 ολοκλήρωσα τη μεταπτυχιακή μου διατριβή για την αντιπαράθεση Ρωσίας και Δύσης. Σχεδόν τέσσερα χρόνια μετά, ελέγχω δημόσια τις εκτιμήσεις μου: πού επιβεβαιώθηκα και πού τα γεγονότα πήραν άλλη τροπή.", "back": "Πίσω στα Άρθρα", "byname": "Νικόλαος Χουρίδης", "byrole": "Frontline Brief · Αθήνα", "sources": "Πηγές", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">Υποβολή διατριβής</div><div class=\"spec-val\">Ιαν. 2023</div><div class=\"spec-note\">Πανεπιστήμιο Νεάπολις Πάφου · MSc Ευρωπαϊκή Πολιτική</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Ψυχροπολεμικό κλίμα</div><div class=\"spec-val\">Επιβεβαιώθηκε</div><div class=\"spec-note\">στόχος 5% NATO · €418 δισ. δαπάνες ΕΕ (2025)</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Κυρώσεις</div><div class=\"spec-val\">Φθορά</div><div class=\"spec-note\">ανάπτυξη Ρωσίας 1% το 2025 · πρόβλεψη 0,4% για το 2026</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Ρωσία–Κίνα</div><div class=\"spec-val\">Ασύμμετρη</div><div class=\"spec-note\">>99% του εμπορίου σε ρούβλια και γιουάν</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Διεύρυνση NATO</div><div class=\"spec-val\">Αντίθετο αποτέλεσμα</div><div class=\"spec-note\">ένταξη Φινλανδίας (2023) και Σουηδίας (2024)</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Διαπραγματεύσεις</div><div class=\"spec-val\">Χωρίς εκεχειρία</div><div class=\"spec-note\">Άμπου Ντάμπι, Νοέμβριος 2026</div></div>", "cap": "Ενδεικτική απεικόνιση: η Ευρώπη, το NATO και η Ρωσία."}, "fr": {"cat": "Affaires stratégiques", "sub": "Ukraine · Russie · OTAN", "date": "21 novembre 2026", "read": "8 min de lecture", "title": "Ce que j'écrivais en 2023 sur la guerre en Ukraine — <em>et ce qui s'est réellement passé</em>", "subtitle": "En janvier 2023, j'achevais mon mémoire de master sur l'affrontement entre la Russie et l'Occident. Près de quatre ans plus tard, je confronte publiquement mes conclusions aux faits : où j'avais raison, et où les événements ont pris un autre cours.", "back": "Retour aux articles", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Athènes", "sources": "Sources", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">Mémoire soutenu</div><div class=\"spec-val\">Janv. 2023</div><div class=\"spec-note\">Université Neapolis de Paphos · master en politique européenne</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Climat de guerre froide</div><div class=\"spec-val\">Confirmé</div><div class=\"spec-note\">objectif OTAN de 5 % · 418 Md€ de dépenses UE (2025)</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Sanctions</div><div class=\"spec-val\">Usure</div><div class=\"spec-note\">croissance russe 1 % en 2025 · 0,4 % prévu en 2026</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Russie–Chine</div><div class=\"spec-val\">Asymétrique</div><div class=\"spec-note\">>99 % des échanges en roubles et yuans</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Élargissement OTAN</div><div class=\"spec-val\">Effet inverse</div><div class=\"spec-note\">adhésion de la Finlande (2023) et de la Suède (2024)</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Négociations</div><div class=\"spec-val\">Pas de cessez-le-feu</div><div class=\"spec-note\">Abou Dhabi, novembre 2026</div></div>", "cap": "Illustration : l'Europe, l'OTAN et la Russie."}, "da": {"cat": "Strategiske anliggender", "sub": "Ukraine · Rusland · NATO", "date": "21. november 2026", "read": "8 min. læsning", "title": "Hvad jeg skrev i 2023 om krigen i Ukraine – <em>og hvad der faktisk skete</em>", "subtitle": "I januar 2023 afsluttede jeg mit speciale om konfrontationen mellem Rusland og Vesten. Næsten fire år senere efterprøver jeg offentligt mine konklusioner: hvor jeg fik ret, og hvor begivenhederne tog en anden drejning.", "back": "Tilbage til artikler", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Athen", "sources": "Kilder", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">Speciale afleveret</div><div class=\"spec-val\">Jan. 2023</div><div class=\"spec-note\">Neapolis University Pafos · MSc i europæisk politik</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Koldkrigsklima</div><div class=\"spec-val\">Bekræftet</div><div class=\"spec-note\">NATO's 5 %-mål · EU-forsvarsudgifter 418 mia. € (2025)</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Sanktioner</div><div class=\"spec-val\">Nedslidning</div><div class=\"spec-note\">russisk vækst 1 % i 2025 · prognose 0,4 % for 2026</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Rusland–Kina</div><div class=\"spec-val\">Asymmetrisk</div><div class=\"spec-note\">>99 % af handlen i rubler og yuan</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">NATO-udvidelse</div><div class=\"spec-val\">Modsat effekt</div><div class=\"spec-note\">Finland (2023) og Sverige (2024) blev medlemmer</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Fredsforhandlinger</div><div class=\"spec-val\">Ingen våbenhvile</div><div class=\"spec-note\">Abu Dhabi, november 2026</div></div>", "cap": "Illustration: Europa, NATO og Rusland."}, "sv": {"cat": "Strategiska frågor", "sub": "Ukraina · Ryssland · Nato", "date": "21 november 2026", "read": "8 min läsning", "title": "Vad jag skrev 2023 om kriget i Ukraina – <em>och vad som faktiskt hände</em>", "subtitle": "I januari 2023 slutförde jag min masteruppsats om konfrontationen mellan Ryssland och väst. Nästan fyra år senare granskar jag offentligt mina slutsatser: var jag hade rätt och var händelserna tog en annan vändning.", "back": "Tillbaka till artiklar", "byname": "Nikolaos Chouridis", "byrole": "Frontline Brief · Aten", "sources": "Källor", "specs": "  <div class=\"spec-card\"><div class=\"spec-label\">Uppsats inlämnad</div><div class=\"spec-val\">Jan. 2023</div><div class=\"spec-note\">Neapolis University Pafos · master i europeisk politik</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Kallt krigsklimat</div><div class=\"spec-val\">Bekräftat</div><div class=\"spec-note\">Natos 5 %-mål · EU:s försvarsutgifter 418 mdr € (2025)</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Sanktioner</div><div class=\"spec-val\">Nötning</div><div class=\"spec-note\">rysk tillväxt 1 % 2025 · prognos 0,4 % för 2026</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Ryssland–Kina</div><div class=\"spec-val\">Asymmetrisk</div><div class=\"spec-note\">>99 % av handeln i rubel och yuan</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Natos utvidgning</div><div class=\"spec-val\">Motsatt effekt</div><div class=\"spec-note\">Finland (2023) och Sverige (2024) gick med</div></div>\n  <div class=\"spec-card\"><div class=\"spec-label\">Fredssamtal</div><div class=\"spec-val\">Inget eldupphör</div><div class=\"spec-note\">Abu Dhabi, november 2026</div></div>", "cap": "Illustration: Europa, Nato och Ryssland."}};
+function setLang(lang,btn){
+  document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.lt').forEach(b=>b.classList.remove('active'));
+  document.getElementById('lang-'+lang).classList.add('active');
+  if(btn)btn.classList.add('active');
+  const h=HDR[lang];
+  ['cat','sub','date','read','back','byname','byrole','sources','cap'].forEach(k=>{document.getElementById('h-'+k).textContent=h[k];});
+  document.getElementById('h-title').innerHTML=h.title;
+  document.getElementById('h-subtitle').textContent=h.subtitle;
+  document.getElementById('h-specs').innerHTML=h.specs;
+  document.documentElement.lang=lang;
+  cgo(LANGS.indexOf(lang));
+  try{localStorage.setItem('preferred-lang',lang);}catch(e){}
+}
+let cIndex=0;
+function cgo(i){cIndex=i;document.getElementById('ctrack').style.transform='translateX(-'+(i*20)+'%)';document.querySelectorAll('.cdot').forEach((d,j)=>d.classList.toggle('active',j===i));}
+function cmove(dir){cIndex=(cIndex+dir+5)%5;cgo(cIndex);}
+window.addEventListener('load',function(){let s=null;try{s=localStorage.getItem('preferred-lang');}catch(e){}if(s&&LANGS.includes(s)&&s!=='en'){setLang(s,document.querySelectorAll('.lt')[LANGS.indexOf(s)]);}});
+</script>
+</body>
+</html>
